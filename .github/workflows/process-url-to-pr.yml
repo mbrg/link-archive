@@ -16,7 +16,7 @@ on:
         description: 'OpenAI model to use for summarization'
         required: false
         type: string
-        default: gpt-4-turbo-preview
+        default: gpt-4o-mini
 
 permissions:
   issues: read
