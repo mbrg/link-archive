@@ -2,7 +2,8 @@
 # /// script
 # requires-python = ">=3.12"
 # dependencies = [
-#     "pyyaml>=6.0.1"
+#     "pyyaml>=6.0.1",
+#     "requests>=2.31.0"
 # ]
 # ///
 
@@ -10,6 +11,16 @@ import os
 import sys
 import re
 import yaml
+import requests
+from typing import Tuple
+
+def validate_url(url: str) -> Tuple[bool, str]:
+    """Validate if a URL is accessible."""
+    try:
+        response = requests.head(url, timeout=5, allow_redirects=True)
+        return response.status_code < 400, f"Status code: {response.status_code}"
+    except requests.RequestException as e:
+        return False, str(e)
 
 def validate_files(toread_dir):
     """Validate newly added files."""
@@ -25,12 +36,25 @@ def validate_files(toread_dir):
             print(f"❌ Invalid filename format: {file}")
             sys.exit(1)
         
-        # Validate YAML front matter
+        # Validate YAML front matter and URL
         try:
             with open(file) as f:
-                yaml.safe_load(f.read().split('---')[1])
-        except:
-            print(f"❌ Invalid YAML front matter in: {file}")
+                content = f.read()
+                front_matter = yaml.safe_load(content.split('---')[1])
+                
+                if 'link' not in front_matter:
+                    print(f"❌ No link found in front matter of: {file}")
+                    sys.exit(1)
+                
+                url = front_matter['link']
+                is_valid, reason = validate_url(url)
+                if not is_valid:
+                    print(f"❌ Invalid URL in {file}: {url}")
+                    print(f"  Reason: {reason}")
+                    sys.exit(1)
+                
+        except Exception as e:
+            print(f"❌ Error processing {file}: {str(e)}")
             sys.exit(1)
 
 if __name__ == '__main__':
