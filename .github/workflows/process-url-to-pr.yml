@@ -59,7 +59,7 @@ jobs:
               repo: context.repo.repo,
               issue_number: ${{ github.event.inputs.issue_number }}
             });
-            return issue.data;
+            core.setOutput('body', issue.data.body);
 
       - name: Extract URL
         id: extract_url
