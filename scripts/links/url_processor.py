@@ -2,7 +2,7 @@
 # /// script
 # requires-python = ">=3.12"
 # dependencies = [
-#     "firecrawl>=0.1.0",
+#     "firecrawl-py>=0.1.0",
 #     "pyyaml>=6.0.1",
 #     "python-slugify>=8.0.1",
 #     "llm>=0.12.0"
@@ -34,7 +34,7 @@ def extract_page_content(url):
         raise ValueError("FIRECRAWL_API_KEY environment variable is required")
     
     app = FirecrawlApp(api_key=api_key)
-    result = app.extract(url)
+    result = app.scrape_url(url, formats=['markdown'])
     return result.title, result.markdown
 
 def process_content(content, model_name):

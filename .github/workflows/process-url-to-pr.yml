@@ -59,7 +59,7 @@ jobs:
           # Extract the first URL line and clean it up
           URL=$(echo "${{ steps.issue.outputs.body }}" | grep -m 1 '^URL:' | sed 's/^URL: //' | tr -d '\r')
           if [ -z "$URL" ]; then
-            echo "Error: No URL found in the issue body"
+            echo "Error: No URL found in the issue body. Ensure the issue contains a line starting with 'URL: '"
             exit 1
           fi
           echo "url=$URL" >> $GITHUB_OUTPUT
