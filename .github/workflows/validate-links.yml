@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - 'links-**'
+  pull_request:
+    branches:
+      - 'links-**'
   workflow_dispatch:
     inputs:
       branch:
