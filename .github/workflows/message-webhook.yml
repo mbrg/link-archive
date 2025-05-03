@@ -1,0 +1,39 @@
+name: Message Webhook
+
+on:
+  repository_dispatch:
+    types: [message_received]
+
+jobs:
+  process_message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract URL from JSON
+        id: extract_url
+        run: |
+          MESSAGE='${{ github.event.client_payload.message }}'
+          URL=$(echo $MESSAGE | jq -r '.url')
+          if [[ $URL =~ https?://[^\s]+ ]]; then
+            echo "url=$URL" >> $GITHUB_OUTPUT
+            echo "has_url=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_url=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Trigger URL Processing
+        if: steps.extract_url.outputs.has_url == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const message = JSON.parse("${{ github.event.client_payload.message }}");
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'receive-url.yml',
+              ref: 'main',
+              inputs: {
+                url: message.url,
+                source: message.source,
+                timestamp: message.timestamp
+              }
+            }); 
