@@ -1,14 +1,14 @@
 name: Merge PR
 
-# on:
-#   pull_request:
-#     types: [opened, synchronize, reopened]
-#   workflow_dispatch:
-#     inputs:
-#       pr_number:
-#         description: 'PR number to merge'
-#         required: true
-#         type: string
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number to merge'
+        required: true
+        type: string
 
 permissions:
   pull-requests: write
