@@ -19,7 +19,7 @@ on:
         default: gpt-4o-mini
 
 permissions:
-  issues: read
+  issues: write
   pull-requests: write
   contents: write
   actions: write
