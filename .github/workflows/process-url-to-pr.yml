@@ -71,7 +71,12 @@ jobs:
         id: process_url
         run: |
           source .venv/bin/activate
-          python scripts/links/url_processor.py "${{ steps.extract_url.outputs.url }}" "${{ github.event.inputs.toreaddir }}" "${{ github.event.inputs.model }}"
+          OUTPUT=$(python scripts/links/url_processor.py "${{ steps.extract_url.outputs.url }}" "${{ github.event.inputs.toreaddir }}" "${{ github.event.inputs.model }}")
+          echo "$OUTPUT" | while IFS=: read -r key value; do
+            if [ -n "$key" ] && [ -n "$value" ]; then
+              echo "${key}=${value}" >> $GITHUB_OUTPUT
+            fi
+          done
         env:
           PYTHONUNBUFFERED: 1
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -113,7 +118,7 @@ jobs:
               repo: context.repo.repo,
               title: `Add new link: ${{ steps.process_url.outputs.title }}`,
               body: `This PR adds a new link to the ${{ github.event.inputs.toreaddir }} directory.\n\nCloses #${{ github.event.inputs.issue_number }}`,
-              head: ${{ steps.create_branch.outputs.branch_name }},
+              head: '${{ steps.create_branch.outputs.branch_name }}',
               base: 'main'
             });
 

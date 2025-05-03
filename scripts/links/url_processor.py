@@ -144,13 +144,16 @@ def main():
     # Check for existing file
     existing_file = check_existing_file(toread_dir, clean_url)
     if existing_file:
-        print(f"existing_file={existing_file}")
+        print(f"existing_file:{existing_file}")
+        print(f"title:{title}")
         sys.exit(0)
     
     # Create and save new file
     filename = create_filename(title)
     save_file(toread_dir, filename, title, [], clean_url, content, model_name)
-    print(f"filename={filename}")
+    print(f"filename:{filename}")
+    print(f"title:{title}")
+    print("existing_file:")
 
 if __name__ == '__main__':
     main() 
