@@ -45,9 +45,8 @@ jobs:
         run: |
           uv venv .venv
           source .venv/bin/activate
-          # Extract dependencies from script metadata
-          DEPS=$(grep -A 10 "dependencies = \[" scripts/links/url_processor.py | grep -v "dependencies = \[" | grep -v "]" | sed 's/^[[:space:]]*"//;s/",*$//' | tr '\n' ' ')
-          uv pip install $DEPS
+          # Extract dependencies from script metadata and install them
+          python3 -c "import re; f=open('scripts/links/url_processor.py'); content=f.read(); f.close(); deps=re.findall(r'\"([^\"]+)\"', re.search(r'dependencies = \[(.*?)\]', content, re.DOTALL).group(1)); [print(dep) for dep in deps]" | while read dep; do uv pip install "$dep"; done
           playwright install chromium
 
       - name: Get Issue Data
