@@ -35,7 +35,7 @@ def extract_page_content(url):
     
     app = FirecrawlApp(api_key=api_key)
     try:
-        result = app.scrape(url)
+        result = app.extract(url)
         return result.title, result.markdown
     except Exception as e:
         print(f"Error extracting content: {e}", file=sys.stderr)
@@ -45,13 +45,12 @@ def process_content(content, model_name):
     """Process content using llm to generate summary and tags."""
     try:
         # Configure LLM with OpenAI API key
-        llm_config = {}
-        if api_key := os.getenv('OPENAI_API_KEY'):
-            llm_config['openai_api_key'] = api_key
-        else:
+        api_key = os.getenv('OPENAI_API_KEY')
+        if not api_key:
             raise ValueError("OPENAI_API_KEY environment variable is required")
         
-        model = llm.get_model(model_name, **llm_config)
+        model = llm.get_model(model_name)
+        model.api_key = api_key
         
         # Generate summary
         summary_response = model.prompt(
