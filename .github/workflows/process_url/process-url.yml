@@ -17,7 +17,7 @@ on:
         description: 'Directory where articles to read are stored'
         required: false
         type: string
-        default: _toread
+        default: links
       model:
         description: 'OpenAI model to use for summarization'
         required: false
