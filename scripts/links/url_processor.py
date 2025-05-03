@@ -7,7 +7,9 @@
 #     "python-slugify>=8.0.1",
 #     "llm>=0.12.0"
 # ]
+# post-install = "playwright install chromium"
 # ///
+# Note: After installing dependencies, run `playwright install chromium` to install the required browser.
 
 import urllib.parse
 from playwright.sync_api import sync_playwright
