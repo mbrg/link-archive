@@ -34,4 +34,4 @@ jobs:
           echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
       - name: Validate files
-        run: uv run --script scripts/links_workflow/frontmatter_validator.py links 
+        run: uv run --script scripts/links/frontmatter_validator.py links 
