@@ -19,6 +19,7 @@ on:
         default: gpt-3.5-turbo
 
 permissions:
+  issues: read
   pull-requests: write
   contents: write
 
