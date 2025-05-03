@@ -1,0 +1,30 @@
+name: Receive URL
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'URL to process'
+        required: true
+        type: string
+      source:
+        description: 'Source of the URL (e.g., slack)'
+        required: true
+        type: string
+
+jobs:
+  create_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Issue for URL
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Process URL: ${context.payload.inputs.url}`,
+              body: `URL: ${context.payload.inputs.url}\nSource: ${context.payload.inputs.source}\n\nCreated at: ${new Date().toISOString()}`,
+              labels: []
+            });
+            console.log(`Created issue #${issue.data.number}`); 
