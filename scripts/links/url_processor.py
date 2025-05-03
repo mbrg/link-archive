@@ -5,7 +5,8 @@
 #     "firecrawl-py>=0.1.0",
 #     "pyyaml>=6.0.1",
 #     "python-slugify>=8.0.1",
-#     "llm>=0.12.0"
+#     "llm>=0.12.0",
+#     "python-dotenv>=1.0.0"
 # ]
 # ///
 
@@ -22,6 +23,10 @@ import json
 from typing import Tuple, List, Optional
 from firecrawl import FirecrawlApp
 import logging
+from dotenv import load_dotenv
+
+# Load environment variables from .env file if it exists
+load_dotenv()
 
 def clean_url_string(url):
     """Clean URL by removing query parameters and fragments."""
@@ -32,7 +37,7 @@ def extract_page_content(url):
     """Extract title and content from a webpage using Firecrawl."""
     api_key = os.getenv('FIRECRAWL_API_KEY')
     if not api_key:
-        raise ValueError("FIRECRAWL_API_KEY environment variable is required")
+        raise ValueError("FIRECRAWL_API_KEY environment variable is required. Please set it in .env file or environment variables.")
     
     app = FirecrawlApp(api_key=api_key)
     result = app.scrape_url(url, formats=['markdown'])
@@ -46,7 +51,7 @@ def process_content(content, model_name):
     # Configure LLM with OpenAI API key
     api_key = os.getenv('OPENAI_API_KEY')
     if not api_key:
-        raise ValueError("OPENAI_API_KEY environment variable is required")
+        raise ValueError("OPENAI_API_KEY environment variable is required. Please set it in .env file or environment variables.")
     
     model = llm.get_model(model_name)
     model.api_key = api_key
