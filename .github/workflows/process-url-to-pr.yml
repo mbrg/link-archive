@@ -11,7 +11,7 @@ on:
         description: 'Directory where articles to read are stored'
         required: false
         type: string
-        default: links
+        default: archive
       model:
         description: 'OpenAI model to use for summarization'
         required: false
@@ -68,7 +68,7 @@ jobs:
       - name: Process URL
         id: process_url
         run: |
-          OUTPUT=$(uv run --script scripts/links/url_processor.py "${{ steps.extract_url.outputs.url }}" "${{ github.event.inputs.toreaddir }}" "${{ github.event.inputs.model }}")
+          OUTPUT=$(uv run --script scripts/archive/url_processor.py "${{ steps.extract_url.outputs.url }}" "${{ github.event.inputs.toreaddir }}" "${{ github.event.inputs.model }}")
           echo "$OUTPUT" | while IFS=: read -r key value; do
             if [ -n "$key" ] && [ -n "$value" ]; then
               echo "${key}=${value}" >> $GITHUB_OUTPUT
@@ -90,7 +90,7 @@ jobs:
         run: |
           URL_HASH=$(echo "${{ steps.extract_url.outputs.url }}" | sha256sum | cut -c1-8)
           TIMESTAMP=$(date +%s)
-          BRANCH_NAME="links-${TIMESTAMP}-${URL_HASH}"
+          BRANCH_NAME="archive-${TIMESTAMP}-${URL_HASH}"
           git checkout -b $BRANCH_NAME
           echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
         id: create_branch

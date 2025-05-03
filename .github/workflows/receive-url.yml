@@ -64,7 +64,7 @@ jobs:
               repo: context.repo.repo,
               title: `Process URL: ${context.payload.inputs.url}`,
               body: `URL: ${cleanedUrl}\nSource: ${context.payload.inputs.source}\n\nCreated at: ${new Date().toISOString()}`,
-              labels: ['links']
+              labels: ['archive']
             });
             console.log(`Created issue #${issue.data.number}`);
             return issue.data.number;
