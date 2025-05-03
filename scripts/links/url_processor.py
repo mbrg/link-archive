@@ -62,9 +62,9 @@ def process_content(content, model_name):
     tags_response = model.prompt(
         content,
         system="Generate 3-5 relevant technical tags for this content. Return the tags as a JSON array of strings.",
-        response_format={"type": "json_array"}
+        schema="tags[]"
     )
-    tags = json.loads(tags_response.text())
+    tags = tags_response["tags"]
     
     return summary, tags
 
