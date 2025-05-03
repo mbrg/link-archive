@@ -22,6 +22,7 @@ permissions:
   issues: read
   pull-requests: write
   contents: write
+  actions: write
 
 jobs:
   process:
@@ -117,6 +118,21 @@ jobs:
               body: `This PR adds a new link to the ${{ github.event.inputs.toreaddir }} directory.\n\nCloses #${{ github.event.inputs.issue_number }}`,
               head: '${{ steps.create_branch.outputs.branch_name }}',
               base: 'main'
+            });
+
+      - name: Trigger Link Validation
+        if: steps.process_url.outputs.existing_file == ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'validate-links.yml',
+              ref: '${{ steps.create_branch.outputs.branch_name }}',
+              inputs: {
+                branch: '${{ steps.create_branch.outputs.branch_name }}'
+              }
             });
 
       - name: Cleanup on failure
