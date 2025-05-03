@@ -49,7 +49,15 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: prNumber,
-                body: 'Cannot merge PR: Not all checks have passed.'
+                body: 'Cannot merge PR: Not all checks have passed. Closing PR.'
+              });
+              
+              // Close the PR
+              await github.rest.pulls.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: prNumber,
+                state: 'closed'
               });
               return;
             }
