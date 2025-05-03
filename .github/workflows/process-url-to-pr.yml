@@ -120,6 +120,7 @@ jobs:
               base: 'main'
             });
             core.setOutput('pr_number', pr.data.number);
+        id: create_pull_request
 
       - name: Trigger Validate and Merge
         if: steps.process_url.outputs.existing_file == ''
@@ -133,7 +134,7 @@ jobs:
               ref: 'main',
               inputs: {
                 branch: '${{ steps.create_branch.outputs.branch_name }}',
-                pr_number: '${{ steps.create_pull_request.outputs.pr_number }}'
+                pr_number: '${{ steps.Create_Pull_Request.outputs.pr_number }}'
               }
             });
 
