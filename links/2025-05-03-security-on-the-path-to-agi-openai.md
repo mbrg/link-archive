@@ -5,7 +5,7 @@ tags:
    - Security Initiatives
    - AGI Development
    - Cybersecurity
-   - Artificial Intelligence
+   - AI
 link: https://openai.com/index/security-on-the-path-to-agi/
 date: 2025-05-03
 summary: "OpenAI has expanded its Cybersecurity Grant Program to focus on cutting-edge areas such as AI-driven software patching, model privacy, and advanced threat detection. The program has funded 28 initiatives, seeking bold proposals to enhance cybersecurity practices. Additionally, OpenAI has augmented its Security Bug Bounty Program, increasing maximum payouts to $100,000 to incentivize meaningful security research. The company integrates AI into its cybersecurity defenses, deploying advanced detection methods and collaborating with security experts for continuous vulnerability assessments. These measures aim to safeguard its growing user base while proactively addressing emerging threats in the rapidly evolving landscape of AI."
