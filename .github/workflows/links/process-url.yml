@@ -2,7 +2,7 @@ name: Process URL
 
 on:
   issues:
-    types: [opened, labeled]
+    types: [opened]
   workflow_dispatch:
     inputs:
       issue_number:
@@ -97,7 +97,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: ${{ github.event.issue.number || github.event.inputs.issue_number }},
-              labels: ['duplicate'],
+              labels: ['duplicate', 'links'],
               state: 'closed'
             });
             
@@ -112,7 +112,7 @@ jobs:
         if: steps.check_duplicate.outputs.result != 'true'
         id: process_url
         run: |
-          uv run --script scripts/process_url_workflow/url_processor.py "${{ steps.extract_url.outputs.url }}" "${{ github.event.inputs.toreaddir }}" "${{ github.event.inputs.model }}"
+          uv run --script scripts/links_workflow/url_processor.py "${{ steps.extract_url.outputs.url }}" "${{ github.event.inputs.toreaddir }}" "${{ github.event.inputs.model }}"
         env:
           PYTHONUNBUFFERED: 1
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -138,7 +138,7 @@ jobs:
 
       - name: Validate new files
         if: steps.process_url.outputs.existing_file == ''
-        run: uv run --script scripts/process_url_workflow/frontmatter_validator.py "${{ github.event.inputs.toreaddir }}"
+        run: uv run --script scripts/links_workflow/frontmatter_validator.py "${{ github.event.inputs.toreaddir }}"
       
       - name: Push branch
         if: steps.process_url.outputs.existing_file == ''
