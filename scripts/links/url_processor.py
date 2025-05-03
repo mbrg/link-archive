@@ -2,16 +2,14 @@
 # /// script
 # requires-python = ">=3.12"
 # dependencies = [
-#     "playwright>=1.40.0",
+#     "firecrawl>=0.1.0",
 #     "pyyaml>=6.0.1",
 #     "python-slugify>=8.0.1",
 #     "llm>=0.12.0"
 # ]
-# post-install = "playwright install chromium"
 # ///
 
 import urllib.parse
-from playwright.sync_api import sync_playwright
 import yaml
 from datetime import datetime, timedelta
 import os
@@ -22,6 +20,7 @@ from slugify import slugify
 import llm
 import json
 from typing import Tuple, List, Optional
+from firecrawl import scrape
 
 def clean_url_string(url):
     """Clean URL by removing query parameters and fragments."""
@@ -29,16 +28,13 @@ def clean_url_string(url):
     return urllib.parse.urlunparse((parsed.scheme, parsed.netloc, parsed.path, '', '', ''))
 
 def extract_page_content(url):
-    """Extract title and content from a webpage using Playwright."""
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        page = browser.new_page()
-        page.goto(url)
-        page.wait_for_load_state('networkidle')
-        title = page.title()
-        content = page.content()
-        browser.close()
-        return title, content
+    """Extract title and content from a webpage using Firecrawl."""
+    try:
+        result = scrape(url)
+        return result.title, result.markdown
+    except Exception as e:
+        print(f"Error extracting content: {e}", file=sys.stderr)
+        return "", ""
 
 def process_content(content, model_name):
     """Process content using llm to generate summary and tags."""

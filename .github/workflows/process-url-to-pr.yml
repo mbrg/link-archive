@@ -41,14 +41,6 @@ jobs:
           curl -LsSf https://astral.sh/uv/install.sh | sh
           echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
-      - name: Set up environment
-        run: |
-          uv venv .venv
-          source .venv/bin/activate
-          # Extract dependencies from script metadata and install them
-          python3 -c "import re; f=open('scripts/links/url_processor.py'); content=f.read(); f.close(); deps=re.findall(r'\"([^\"]+)\"', re.search(r'dependencies = \[(.*?)\]', content, re.DOTALL).group(1)); [print(dep) for dep in deps]" | while read dep; do uv pip install "$dep"; done
-          playwright install chromium
-
       - name: Get Issue Data
         id: issue
         uses: actions/github-script@v7
@@ -75,8 +67,7 @@ jobs:
       - name: Process URL
         id: process_url
         run: |
-          source .venv/bin/activate
-          OUTPUT=$(python scripts/links/url_processor.py "${{ steps.extract_url.outputs.url }}" "${{ github.event.inputs.toreaddir }}" "${{ github.event.inputs.model }}")
+          OUTPUT=$(uv run --script scripts/links/url_processor.py "${{ steps.extract_url.outputs.url }}" "${{ github.event.inputs.toreaddir }}" "${{ github.event.inputs.model }}")
           echo "$OUTPUT" | while IFS=: read -r key value; do
             if [ -n "$key" ] && [ -n "$value" ]; then
               echo "${key}=${value}" >> $GITHUB_OUTPUT
