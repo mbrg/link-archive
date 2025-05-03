@@ -41,15 +41,6 @@ jobs:
           curl -LsSf https://astral.sh/uv/install.sh | sh
           echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
-      - name: Create and activate virtual environment
-        run: |
-          uv venv .venv
-          source .venv/bin/activate
-
-      - name: Install Playwright browsers
-        run: |
-          uv pip install playwright
-          uv run playwright install chromium
 
       - name: Get Issue Data
         id: issue
