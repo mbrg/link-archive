@@ -9,6 +9,10 @@ on:
         description: 'PR number to merge'
         required: true
         type: string
+  workflow_run:
+    workflows: ["Validate Links"]
+    types:
+      - completed
 
 permissions:
   pull-requests: write
