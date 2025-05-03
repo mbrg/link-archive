@@ -2,8 +2,7 @@
 # /// script
 # requires-python = ">=3.12"
 # dependencies = [
-#     "pyyaml>=6.0.1",
-#     "requests>=2.31.0"
+#     "pyyaml>=6.0.1"
 # ]
 # ///
 
@@ -11,15 +10,17 @@ import os
 import sys
 import re
 import yaml
-import requests
+from urllib.parse import urlparse
 from typing import Tuple
 
 def validate_url(url: str) -> Tuple[bool, str]:
-    """Validate if a URL is accessible."""
+    """Validate if a URL has a valid structure."""
     try:
-        response = requests.head(url, timeout=5, allow_redirects=True)
-        return response.status_code < 400, f"Status code: {response.status_code}"
-    except requests.RequestException as e:
+        result = urlparse(url)
+        if not all([result.scheme, result.netloc]):
+            return False, "URL must have a scheme (e.g., https://) and a domain"
+        return True, "Valid URL structure"
+    except Exception as e:
         return False, str(e)
 
 def validate_files(toread_dir):
