@@ -12,6 +12,7 @@ on:
 
 permissions:
   pull-requests: write
+  checks: read
 
 jobs:
   merge:

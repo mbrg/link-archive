@@ -12,7 +12,7 @@ on:
         type: string
 
 permissions:
-  checks: read
+  contents: read
 
 jobs:
   validate:
