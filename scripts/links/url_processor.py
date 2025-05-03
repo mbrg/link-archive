@@ -21,6 +21,7 @@ import llm
 import json
 from typing import Tuple, List, Optional
 from firecrawl import FirecrawlApp
+import logging
 
 def clean_url_string(url):
     """Clean URL by removing query parameters and fragments."""
@@ -35,7 +36,10 @@ def extract_page_content(url):
     
     app = FirecrawlApp(api_key=api_key)
     result = app.scrape_url(url, formats=['markdown'])
-    return result.title, result.markdown
+    logging.debug(f"Firecrawl results:\n---{result}\n---\n")
+
+    title = result.title if result.title else result.metadata.get("title", "")
+    return title, result.markdown
 
 def process_content(content, model_name):
     """Process content using llm to generate summary and tags."""
