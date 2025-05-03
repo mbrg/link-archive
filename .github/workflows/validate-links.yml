@@ -3,7 +3,7 @@ name: Validate Links
 on:
   push:
     branches:
-      - 'links-/**'
+      - 'links-**'
   workflow_dispatch:
     inputs:
       branch:
