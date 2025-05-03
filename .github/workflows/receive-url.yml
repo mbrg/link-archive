@@ -22,7 +22,7 @@ jobs:
       - name: Clean URL
         id: clean_url
         run: |
-          python3 -c "import urllib.parse; url = '${{ github.event.inputs.url }}'; parsed = urllib.parse.urlparse(url); print(urllib.parse.urlunparse((parsed.scheme, parsed.netloc, parsed.path, '', '', '')))" > cleaned_url.txt
+          python3 -c "import urllib.parse; url = '${{ github.event.inputs.url }}'; parsed = urllib.parse.urlparse(url); print(urllib.parse.urlunparse(('https' if parsed.scheme in ['http', 'https'] else parsed.scheme, parsed.netloc, parsed.path, '', '', '')))" > cleaned_url.txt
           echo "cleaned_url=$(cat cleaned_url.txt)" >> $GITHUB_OUTPUT
 
       - name: Check for Existing URL
