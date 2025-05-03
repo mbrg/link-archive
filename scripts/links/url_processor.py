@@ -59,7 +59,7 @@ def process_content(content, model_name):
     # Generate summary
     summary_response = model.prompt(
         content,
-        system="Summarize this content in a concise, technical style suitable for Michael Bargury's link log. Focus on key technical insights and implications. Keep it under 200 words."
+        system="Summarize this content in a concise, technical style suitable for Michael Bargury's link log (mbgsec.com). Focus on key technical insights and implications. Keep it under 100 words."
     )
     summary = summary_response.text().strip()
     
@@ -69,7 +69,7 @@ def process_content(content, model_name):
         system="Generate 3-5 relevant technical tags for this content. Return the tags as a JSON array of strings.",
         schema=llm.schema_dsl("mbgsec_blog_tag", multi=True)
     )
-    tags = json.loads(tags_response.text())
+    tags = [tag["mbgsec_blog_tag"] for tag in json.loads(tags_response.text())["items"]]
     
     return summary, tags
 
@@ -122,9 +122,10 @@ title: "{title}"
 tags:{tags_yaml}
 link: {clean_url}
 date: {datetime.now().strftime('%Y-%m-%d')}
+summary: "{summary}"
 ---
 
-{summary}
+{content}
 '''
     with open(f'{toread_dir}/{filename}', 'w') as f:
         f.write(file_content)
