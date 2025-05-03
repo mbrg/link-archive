@@ -6,3 +6,5 @@ _site
 .tmp/
 
 .DS_Store
+
+.env
