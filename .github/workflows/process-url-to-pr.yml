@@ -64,7 +64,12 @@ jobs:
       - name: Extract URL
         id: extract_url
         run: |
-          URL=$(echo "${{ steps.issue.outputs.body }}" | grep -o 'URL: .*' | cut -d' ' -f2)
+          # Extract the first URL line and clean it up
+          URL=$(echo "${{ steps.issue.outputs.body }}" | grep -m 1 '^URL:' | sed 's/^URL: //' | tr -d '\r')
+          if [ -z "$URL" ]; then
+            echo "Error: No URL found in the issue body"
+            exit 1
+          fi
           echo "url=$URL" >> $GITHUB_OUTPUT
 
       - name: Process URL
@@ -108,7 +113,7 @@ jobs:
         run: |
           git push origin ${{ steps.create_branch.outputs.branch_name }}
 
-      - name: Create or Update Pull Request
+      - name: Create Pull Request
         if: steps.process_url.outputs.existing_file == ''
         uses: actions/github-script@v7
         with:
