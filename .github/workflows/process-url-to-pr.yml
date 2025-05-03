@@ -62,7 +62,7 @@ jobs:
       - name: Process URL
         id: process_url
         run: |
-          uv run --script scripts/links/url_processor.py "${{ steps.extract_url.outputs.url }}" "${{ github.event.inputs.toreaddir }}" "${{ github.event.inputs.model }}"
+          uv run --script --no-build-isolation scripts/links/url_processor.py "${{ steps.extract_url.outputs.url }}" "${{ github.event.inputs.toreaddir }}" "${{ github.event.inputs.model }}"
         env:
           PYTHONUNBUFFERED: 1
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
