@@ -56,11 +56,13 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
+            const cleanedUrl = "${{ steps.clean_url.outputs.cleaned_url }}";
+            const duplicateIssueNumber = "${{ steps.check_duplicate.outputs.result }}";
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: `Duplicate URL: ${context.payload.inputs.url}`,
-              body: `URL: ${steps.clean_url.outputs.cleaned_url}\nSource: ${context.payload.inputs.source}\n\nThis URL has already been processed in issue #${duplicateIssue.number}.\nCreated at: ${new Date().toISOString()}`,
+              body: `URL: ${cleanedUrl}\nSource: ${context.payload.inputs.source}\n\nThis URL has already been processed in issue #${duplicateIssueNumber}.\nCreated at: ${new Date().toISOString()}`,
               labels: ['duplicate', 'links']
             });
 
@@ -69,11 +71,12 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
+            const cleanedUrl = "${{ steps.clean_url.outputs.cleaned_url }}";
             const issue = await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: `Process URL: ${context.payload.inputs.url}`,
-              body: `URL: ${steps.clean_url.outputs.cleaned_url}\nSource: ${context.payload.inputs.source}\n\nCreated at: ${new Date().toISOString()}`,
+              body: `URL: ${cleanedUrl}\nSource: ${context.payload.inputs.source}\n\nCreated at: ${new Date().toISOString()}`,
               labels: ['links']
             });
             console.log(`Created issue #${issue.data.number}`); 
