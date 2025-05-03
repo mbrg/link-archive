@@ -119,8 +119,9 @@ jobs:
               head: '${{ steps.create_branch.outputs.branch_name }}',
               base: 'main'
             });
+            core.setOutput('pr_number', pr.data.number);
 
-      - name: Trigger Link Validation
+      - name: Trigger Validate and Merge
         if: steps.process_url.outputs.existing_file == ''
         uses: actions/github-script@v7
         with:
@@ -128,10 +129,11 @@ jobs:
             await github.rest.actions.createWorkflowDispatch({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              workflow_id: 'validate-links.yml',
-              ref: '${{ steps.create_branch.outputs.branch_name }}',
+              workflow_id: 'validate-and-merge.yml',
+              ref: 'main',
               inputs: {
-                branch: '${{ steps.create_branch.outputs.branch_name }}'
+                branch: '${{ steps.create_branch.outputs.branch_name }}',
+                pr_number: '${{ steps.create_pull_request.outputs.pr_number }}'
               }
             });
 

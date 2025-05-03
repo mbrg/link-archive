@@ -1,32 +1,53 @@
-name: Merge PR
+name: Validate and Merge
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
   workflow_dispatch:
     inputs:
+      branch:
+        description: 'Branch to validate and merge'
+        required: true
+        type: string
       pr_number:
         description: 'PR number to merge'
         required: true
         type: string
-  workflow_run:
-    workflows: ["Validate Links"]
-    types:
-      - completed
 
 permissions:
+  contents: read
   pull-requests: write
   checks: read
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install UV
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Validate files
+        run: uv run --script scripts/links/frontmatter_validator.py links
+
   merge:
+    needs: validate
     runs-on: ubuntu-latest
     steps:
       - name: Merge PR
         uses: actions/github-script@v7
         with:
           script: |
-            const prNumber = ${{ github.event.pull_request.number || github.event.inputs.pr_number }};
+            const prNumber = ${{ github.event.inputs.pr_number }};
             
             // Get PR status
             const pr = await github.rest.pulls.get({
