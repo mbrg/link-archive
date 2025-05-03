@@ -5,7 +5,7 @@ tags:
    - AI Safety
    - Cybersecurity
    - Bug Bounty
-   - AGI
+   - AI
 link: https://openai.com/index/security-on-the-path-to-agi/
 date: 2025-05-03
 summary: "OpenAI's March 2025 updates highlight enhancements to its Cybersecurity Grant Program and Bug Bounty Program, focusing on proactive security measures as it approaches AGI. Key initiatives include funding diverse cybersecurity projects, introducing microgrants for innovative proposals, and increasing bug bounty payouts to $100K for critical findings. OpenAI's approach emphasizes AI-powered cyber defenses, continuous adversarial testing with partners like SpecterOps, and collaboration to combat malicious AI abuse. Ensuring robust security practices and safeguarding data is paramount, especially with a user base exceeding 400 million. The commitment to secure AI development remains a core objective."
