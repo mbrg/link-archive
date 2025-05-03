@@ -76,6 +76,7 @@ jobs:
         env:
           PYTHONUNBUFFERED: 1
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
 
       - name: Configure git
         if: steps.process_url.outputs.existing_file == ''

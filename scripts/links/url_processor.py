@@ -20,7 +20,7 @@ from slugify import slugify
 import llm
 import json
 from typing import Tuple, List, Optional
-from firecrawl import scrape
+from firecrawl import FirecrawlApp
 
 def clean_url_string(url):
     """Clean URL by removing query parameters and fragments."""
@@ -29,8 +29,13 @@ def clean_url_string(url):
 
 def extract_page_content(url):
     """Extract title and content from a webpage using Firecrawl."""
+    api_key = os.getenv('FIRECRAWL_API_KEY')
+    if not api_key:
+        raise ValueError("FIRECRAWL_API_KEY environment variable is required")
+    
+    app = FirecrawlApp(api_key=api_key)
     try:
-        result = scrape(url)
+        result = app.scrape(url)
         return result.title, result.markdown
     except Exception as e:
         print(f"Error extracting content: {e}", file=sys.stderr)
