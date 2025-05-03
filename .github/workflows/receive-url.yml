@@ -19,7 +19,53 @@ jobs:
   create_issue:
     runs-on: ubuntu-latest
     steps:
+      - name: Clean URL
+        id: clean_url
+        run: |
+          python3 -c "import urllib.parse; url = '${{ github.event.inputs.url }}'; parsed = urllib.parse.urlparse(url); print(urllib.parse.urlunparse((parsed.scheme, parsed.netloc, parsed.path, '', '', '')))" > cleaned_url.txt
+          echo "cleaned_url=$(cat cleaned_url.txt)" >> $GITHUB_OUTPUT
+
+      - name: Check for Existing URL
+        id: check_duplicate
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const currentUrl = "${{ steps.clean_url.outputs.cleaned_url }}";
+            
+            // Search for issues with the same URL
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'all',
+              since: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString() // Last 30 days
+            });
+            
+            const duplicateIssue = issues.data.find(issue => {
+              const urlMatch = issue.body.match(/URL: (.*)/);
+              return urlMatch && urlMatch[1] === currentUrl;
+            });
+            
+            if (duplicateIssue) {
+              console.log(`Found duplicate URL in issue #${duplicateIssue.number}`);
+              return true;
+            }
+            return false;
+
+      - name: Mark as Duplicate
+        if: steps.check_duplicate.outputs.result == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Duplicate URL: ${context.payload.inputs.url}`,
+              body: `URL: ${steps.clean_url.outputs.cleaned_url}\nSource: ${context.payload.inputs.source}\n\nThis URL has already been processed in issue #${duplicateIssue.number}.\nCreated at: ${new Date().toISOString()}`,
+              labels: ['duplicate', 'links']
+            });
+
       - name: Create Issue for URL
+        if: steps.check_duplicate.outputs.result != 'true'
         uses: actions/github-script@v7
         with:
           script: |
@@ -27,7 +73,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: `Process URL: ${context.payload.inputs.url}`,
-              body: `URL: ${context.payload.inputs.url}\nSource: ${context.payload.inputs.source}\n\nCreated at: ${new Date().toISOString()}`,
+              body: `URL: ${steps.clean_url.outputs.cleaned_url}\nSource: ${context.payload.inputs.source}\n\nCreated at: ${new Date().toISOString()}`,
               labels: ['links']
             });
             console.log(`Created issue #${issue.data.number}`); 
