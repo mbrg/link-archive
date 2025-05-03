@@ -22,7 +22,7 @@ import llm
 import json
 from typing import Tuple, List, Optional
 
-def clean_url(url):
+def clean_url_string(url):
     """Clean URL by removing query parameters and fragments."""
     parsed = urllib.parse.urlparse(url)
     return urllib.parse.urlunparse((parsed.scheme, parsed.netloc, parsed.path, '', '', ''))
@@ -137,7 +137,7 @@ def main():
     model_name = sys.argv[3]
     
     # Process URL
-    clean_url = clean_url(url)
+    clean_url = clean_url_string(url)
     title, content = extract_page_content(clean_url)
     
     # Check for existing file
