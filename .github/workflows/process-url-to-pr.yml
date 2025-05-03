@@ -34,7 +34,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
       - name: Install UV
         run: |
@@ -81,6 +81,7 @@ jobs:
           BRANCH_NAME="links-${TIMESTAMP}-${URL_HASH}"
           git checkout -b $BRANCH_NAME
           echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+        id: create_branch
 
       - name: Commit changes
         if: steps.process_url.outputs.existing_file == ''
