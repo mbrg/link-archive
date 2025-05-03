@@ -43,34 +43,30 @@ def extract_page_content(url):
 
 def process_content(content, model_name):
     """Process content using llm to generate summary and tags."""
-    try:
-        # Configure LLM with OpenAI API key
-        api_key = os.getenv('OPENAI_API_KEY')
-        if not api_key:
-            raise ValueError("OPENAI_API_KEY environment variable is required")
-        
-        model = llm.get_model(model_name)
-        model.api_key = api_key
-        
-        # Generate summary
-        summary_response = model.prompt(
-            content,
-            system="Summarize this content in a concise, technical style suitable for Michael Bargury's link log. Focus on key technical insights and implications. Keep it under 200 words."
-        )
-        summary = summary_response.text().strip()
-        
-        # Generate tags with structured output
-        tags_response = model.prompt(
-            content,
-            system="Generate 3-5 relevant technical tags for this content. Return the tags as a JSON array of strings.",
-            response_format={"type": "json_array"}
-        )
-        tags = json.loads(tags_response.text())
-        
-        return summary, tags
-    except Exception as e:
-        print(f"Error processing content: {e}", file=sys.stderr)
-        return content, []
+    # Configure LLM with OpenAI API key
+    api_key = os.getenv('OPENAI_API_KEY')
+    if not api_key:
+        raise ValueError("OPENAI_API_KEY environment variable is required")
+    
+    model = llm.get_model(model_name)
+    model.api_key = api_key
+    
+    # Generate summary
+    summary_response = model.prompt(
+        content,
+        system="Summarize this content in a concise, technical style suitable for Michael Bargury's link log. Focus on key technical insights and implications. Keep it under 200 words."
+    )
+    summary = summary_response.text().strip()
+    
+    # Generate tags with structured output
+    tags_response = model.prompt(
+        content,
+        system="Generate 3-5 relevant technical tags for this content. Return the tags as a JSON array of strings.",
+        response_format={"type": "json_array"}
+    )
+    tags = json.loads(tags_response.text())
+    
+    return summary, tags
 
 def check_existing_file(toread_dir, clean_url):
     """Check if URL already exists in recent files."""
