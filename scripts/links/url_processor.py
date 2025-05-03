@@ -64,7 +64,7 @@ def process_content(content, model_name):
         system="Generate 3-5 relevant technical tags for this content. Return the tags as a JSON array of strings.",
         schema=llm.schema_dsl("mbgsec_blog_tag", multi=True)
     )
-    tags = [tag["mbgsec_blog_tag"] for tag in json.loads(tags_response.text())]
+    tags = json.loads(tags_response.text())
     
     return summary, tags
 
