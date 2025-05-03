@@ -54,6 +54,7 @@ jobs:
 
       - name: Create Issue for URL
         if: steps.check_duplicate.outputs.result != 'true'
+        id: create_issue
         uses: actions/github-script@v7
         with:
           script: |
@@ -65,7 +66,8 @@ jobs:
               body: `URL: ${cleanedUrl}\nSource: ${context.payload.inputs.source}\n\nCreated at: ${new Date().toISOString()}`,
               labels: ['links']
             });
-            console.log(`Created issue #${issue.data.number}`); 
+            console.log(`Created issue #${issue.data.number}`);
+            return issue.data.number;
 
       - name: Trigger Process URL Workflow
         if: steps.check_duplicate.outputs.result != 'true'
@@ -78,6 +80,6 @@ jobs:
               workflow_id: 'process-url-to-pr.yml',
               ref: 'main',
               inputs: {
-                issue_number: issue.data.number.toString()
+                issue_number: "${{ steps.create_issue.outputs.result }}"
               }
             }); 
