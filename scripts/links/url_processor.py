@@ -34,12 +34,8 @@ def extract_page_content(url):
         raise ValueError("FIRECRAWL_API_KEY environment variable is required")
     
     app = FirecrawlApp(api_key=api_key)
-    try:
-        result = app.extract(url)
-        return result.title, result.markdown
-    except Exception as e:
-        print(f"Error extracting content: {e}", file=sys.stderr)
-        return "", ""
+    result = app.extract(url)
+    return result.title, result.markdown
 
 def process_content(content, model_name):
     """Process content using llm to generate summary and tags."""
