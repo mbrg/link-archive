@@ -43,6 +43,7 @@ jobs:
 
       - name: Install Playwright browsers
         run: |
+          uv pip install playwright
           uv run playwright install chromium
 
       - name: Get Issue Data
