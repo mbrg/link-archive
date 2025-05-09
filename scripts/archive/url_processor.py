@@ -122,7 +122,7 @@ title: "{title}"
 tags:{tags_yaml}
 link: {clean_url}
 date: {datetime.now().strftime('%Y-%m-%d')}
-summary: "{summary}"
+summary: "{summary.replace('"', '\\"')}"
 ---
 
 {content}
