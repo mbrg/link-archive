@@ -61,7 +61,7 @@ def process_content(content, model_name):
         content,
         system="Summarize this content in a concise, technical style suitable for Michael Bargury's link log (mbgsec.com). Focus on key technical insights and implications. Keep it under 100 words."
     )
-    summary = summary_response.text().strip()
+    summary = clean_string(summary_response.text())
     
     # Generate tags with structured output
     tags_response = model.prompt(
@@ -69,9 +69,19 @@ def process_content(content, model_name):
         system="Generate 3-5 relevant technical tags for this content. Return the tags as a JSON array of strings.",
         schema=llm.schema_dsl("mbgsec_blog_tag", multi=True)
     )
-    tags = [tag["mbgsec_blog_tag"] for tag in json.loads(tags_response.text())["items"]]
+    tags = [clean_string(tag["mbgsec_blog_tag"]) for tag in json.loads(tags_response.text())["items"]]
+
+    # Generate title
+    title_response = model.prompt(
+        content,
+        system="Reply with a concise one-liner title for this content. "
+    )
+    title = clean_string(title_response.text())
     
-    return summary, tags
+    return title, summary, tags
+
+def clean_string(text):
+    return text.strip().replace('"', '\\"').split('\n')[0]
 
 def check_existing_file(toread_dir, clean_url):
     """Check if URL already exists in recent files."""
@@ -109,7 +119,7 @@ def create_filename(title):
 def save_file(toread_dir, filename, title, tags, clean_url, content, model_name):
     """Save the article to a file with proper front matter."""
     # Process the content to get summary and tags
-    summary, generated_tags = process_content(content, model_name)
+    title, summary, generated_tags = process_content(content, model_name)
     
     # Combine provided tags with generated tags, removing duplicates
     all_tags = list(set(tags + generated_tags))
@@ -122,7 +132,7 @@ title: "{title}"
 tags:{tags_yaml}
 link: {clean_url}
 date: {datetime.now().strftime('%Y-%m-%d')}
-summary: "{summary.replace('"', '\\"')}"
+summary: "{summary}"
 ---
 
 {content}
