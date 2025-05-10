@@ -76,7 +76,7 @@ def process_content(content, model_name):
         content,
         system="Reply with a concise one-liner title for this content. "
     )
-    title = clean_string(title_response.text())
+    title = clean_string(title_response.text().strip('"'))
     
     return title, summary, tags
 
@@ -116,11 +116,8 @@ def create_filename(title):
     # Ensure the filename is valid for the filesystem
     return Path(filename).name
 
-def save_file(toread_dir, filename, title, tags, clean_url, content, model_name):
+def save_file(toread_dir, filename, title, tags, clean_url, content, generatedsummary, generated_tags):
     """Save the article to a file with proper front matter."""
-    # Process the content to get summary and tags
-    generated_title, generated_summary, generated_tags = process_content(content, model_name)
-    
     # Combine provided tags with generated tags, removing duplicates
     all_tags = list(set(tags + generated_tags))
     
@@ -160,9 +157,13 @@ def main():
         print(f"title:{title}")
         sys.exit(0)
     
+    # Process the content to get summary and tags
+    generated_title, generated_summary, generated_tags = process_content(content, model_name)
+    title_to_use = generated_title if title == '' else title
+    
     # Create and save new file
-    filename = create_filename(title)
-    save_file(toread_dir, filename, title, [], clean_url, content, model_name)
+    filename = create_filename(title_to_use)
+    save_file(toread_dir, filename, title_to_use, [], clean_url, content, generated_summary, generated_tags)
     print(f"filename:{filename}")
     print(f"title:{title}")
     print("existing_file:")
