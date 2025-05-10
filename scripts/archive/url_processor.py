@@ -119,7 +119,7 @@ def create_filename(title):
 def save_file(toread_dir, filename, title, tags, clean_url, content, model_name):
     """Save the article to a file with proper front matter."""
     # Process the content to get summary and tags
-    title, summary, generated_tags = process_content(content, model_name)
+    generated_title, generated_summary, generated_tags = process_content(content, model_name)
     
     # Combine provided tags with generated tags, removing duplicates
     all_tags = list(set(tags + generated_tags))
@@ -128,11 +128,11 @@ def save_file(toread_dir, filename, title, tags, clean_url, content, model_name)
     tags_yaml = '\n   - '.join([''] + all_tags)
     
     file_content = f'''---
-title: "{title}"
+title: "{generated_title if title == '' else title}"
 tags:{tags_yaml}
 link: {clean_url}
 date: {datetime.now().strftime('%Y-%m-%d')}
-summary: "{summary}"
+summary: "{generated_summary}"
 ---
 
 {content}
