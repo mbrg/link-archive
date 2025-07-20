@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   create-linklog:
-    if: github.event.review.state == 'approved' && contains(github.event.pull_request.labels.*.name, 'archive-review')
+    if: github.event.review.state == 'approved' && contains(github.event.pull_request.labels.*.name, 'ready-to-comment')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
