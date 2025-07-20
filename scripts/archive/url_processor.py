@@ -116,7 +116,7 @@ def create_filename(title):
     # Ensure the filename is valid for the filesystem
     return Path(filename).name
 
-def save_file(toread_dir, filename, title, tags, clean_url, content, generatedsummary, generated_tags):
+def save_file(toread_dir, filename, title, tags, clean_url, content, generated_summary, generated_tags):
     """Save the article to a file with proper front matter."""
     # Combine provided tags with generated tags, removing duplicates
     all_tags = list(set(tags + generated_tags))
@@ -125,7 +125,7 @@ def save_file(toread_dir, filename, title, tags, clean_url, content, generatedsu
     tags_yaml = '\n   - '.join([''] + all_tags)
     
     file_content = f'''---
-title: "{generated_title if title == '' else title}"
+title: "{title}"
 tags:{tags_yaml}
 link: {clean_url}
 date: {datetime.now().strftime('%Y-%m-%d')}
