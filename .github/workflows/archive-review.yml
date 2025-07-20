@@ -59,13 +59,37 @@ jobs:
               reviewers: [context.repo.owner]
             });
             
-            // Add label for archive review
-            await github.rest.issues.addLabels({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: prNumber,
-              labels: ['ready-to-comment']
-            });
+            // Add label for archive review - create if it doesn't exist
+            try {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                labels: ['ready-to-comment']
+              });
+            } catch (error) {
+              if (error.status === 422) {
+                // Label doesn't exist, create it
+                console.log('Creating ready-to-comment label...');
+                await github.rest.issues.createLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: 'ready-to-comment',
+                  description: 'Archive is ready for review and commenting',
+                  color: '0e8a16'
+                });
+                
+                // Now add the label
+                await github.rest.issues.addLabels({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: prNumber,
+                  labels: ['ready-to-comment']
+                });
+              } else {
+                throw error;
+              }
+            }
 
   close-pr:
     needs: validate
