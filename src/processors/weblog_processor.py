@@ -67,8 +67,15 @@ def parse_pr_comments(comments_input):
     """Parse PR review comments from GitHub API JSON."""
     try:
         # Always treat as a file path
+        print(f"Trying to open file: {comments_input}", file=sys.stderr)
+        print(f"File exists: {Path(comments_input).exists()}", file=sys.stderr)
+        print(f"File size: {Path(comments_input).stat().st_size if Path(comments_input).exists() else 'N/A'}", file=sys.stderr)
+        
         with open(comments_input, 'r', encoding='utf-8') as f:
-            comments_data = json.load(f)
+            contents = f.read()
+            print(f"File contents length: {len(contents)}", file=sys.stderr)
+            print(f"First 100 chars: {contents[:100]}", file=sys.stderr)
+            comments_data = json.loads(contents)
         
         # Extract review comments (line-specific comments)
         review_comments = []
