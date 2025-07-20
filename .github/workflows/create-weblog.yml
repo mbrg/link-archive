@@ -49,13 +49,15 @@ jobs:
               pull_number: prNumber
             });
             
+            console.log('Files in PR:', files.data.map(f => f.filename));
+            
             const archiveFile = files.data.find(file => 
               file.filename.startsWith('archive/') && 
               file.filename.endsWith('.md')
             );
             
             if (!archiveFile) {
-              throw new Error('No archive file found in PR');
+              throw new Error(`No archive file found in PR. Found files: ${files.data.map(f => f.filename).join(', ')}`);
             }
             
             // Get ALL review comments from ALL reviews (this includes historical reviews)
