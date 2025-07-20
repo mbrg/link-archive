@@ -8,45 +8,55 @@ The link archive system implements a GitHub Actions-based state machine that pro
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Issue_Created: User creates issue with URL
+    [*] --> Issue: 📝 Issue created with URL
     
-    Issue_Created --> Processing: Workflow triggered
-    Processing --> Archive_Created: Success
-    Processing --> Failed: Error
+    Issue --> Workflow1: 🤖 process-url-to-pr.yml
     
-    Archive_Created --> PR_Created: Creates PR
-    PR_Created --> Validation: Runs validation
+    Workflow1 --> PR: ✅ Creates PR
+    Workflow1 --> IssueComment: ❌ Error comment
     
-    Validation --> Ready_For_Review: ✅ Adds label
-    Validation --> PR_Closed: ❌ Closes PR
+    PR --> Workflow2: 🤖 validate-and-review.yml
     
-    Ready_For_Review --> Reviewing: Owner reviews
-    Reviewing --> Approved: Approves PR
-    Reviewing --> Changes_Requested: Requests changes
+    Workflow2 --> PRwithLabel: ✅ Adds label: ready-to-comment
+    Workflow2 --> PRClosed: ❌ Closes PR
     
-    Approved --> Weblog_Generation: Triggered by approval + label
-    Weblog_Generation --> Weblog_Created: Success
-    Weblog_Generation --> Failed: Error
+    PRwithLabel --> Review: 👤 Manual review
     
-    Weblog_Created --> Merged: Auto-merge
+    Review --> Comments: Add line comments
+    Review --> Approval: Approve PR
+    Review --> ChangesRequested: Request changes
     
-    Failed --> [*]: Manual fix needed
-    PR_Closed --> [*]: End
-    Changes_Requested --> Ready_For_Review: After fixes
-    Merged --> [*]: Complete
+    Comments --> Review: Continue reviewing
+    ChangesRequested --> PRwithLabel: After fixes
+    
+    Approval --> Workflow3: 🤖 create-weblog.yml
+    state Workflow3 {
+        [*] --> CheckLabel: Has ready-to-comment?
+        CheckLabel --> Generate: Yes
+        CheckLabel --> [*]: No
+        Generate --> AddWeblog: Add weblog to PR
+        AddWeblog --> Merge: Auto-merge PR
+    }
+    
+    Workflow3 --> Merged: ✅ Complete
+    
+    IssueComment --> Manual: 👤 Fix and retry
+    PRClosed --> Manual: 👤 Debug issue
+    Manual --> Issue: Retry
 
-    note right of Issue_Created
-        Format: URL: https://...
+    note right of Issue
+        Format: "URL: {url}"
+        Triggers: workflow_dispatch
     end note
 
-    note right of Ready_For_Review
+    note right of PRwithLabel
         Label: ready-to-comment
-        Reviewer assigned
+        Reviewer: repo owner
     end note
 
-    note right of Weblog_Generation
-        Workflow: create-weblog.yml
-        Requires: ready-to-comment label
+    note right of Workflow3
+        Trigger: pull_request_review
+        Condition: approved + label
     end note
 ```
 
