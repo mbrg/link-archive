@@ -39,7 +39,7 @@ def read_archive_file(archive_path):
     return frontmatter, markdown_content
 
 def extract_paragraph_for_line(content_lines, line_number):
-    """Extract the full paragraph containing the specified line."""
+    """Extract the full paragraph containing the specified line, expanding until empty lines."""
     if line_number <= 0 or line_number > len(content_lines):
         return ""
     
@@ -47,21 +47,32 @@ def extract_paragraph_for_line(content_lines, line_number):
     if not target_line:
         return ""
     
-    # Find paragraph boundaries (empty lines)
+    # Start with the target line
     start = line_number - 1
     end = line_number - 1
     
-    # Go backward to find paragraph start
-    while start > 0 and content_lines[start - 1].strip():
+    # Go backward until we hit an empty line or beginning of file
+    while start > 0:
+        prev_line = content_lines[start - 1].strip()
+        if not prev_line:  # Empty line - stop here
+            break
         start -= 1
     
-    # Go forward to find paragraph end  
-    while end < len(content_lines) - 1 and content_lines[end + 1].strip():
+    # Go forward until we hit an empty line or end of file
+    while end < len(content_lines) - 1:
+        next_line = content_lines[end + 1].strip()
+        if not next_line:  # Empty line - stop here
+            break
         end += 1
     
-    # Extract the paragraph
-    paragraph_lines = content_lines[start:end + 1]
-    return ' '.join(line.strip() for line in paragraph_lines if line.strip())
+    # Extract the full paragraph including all non-empty lines in range
+    paragraph_lines = []
+    for i in range(start, end + 1):
+        line = content_lines[i].strip()
+        if line:  # Only include non-empty lines
+            paragraph_lines.append(line)
+    
+    return ' '.join(paragraph_lines)
 
 def parse_pr_comments(comments_input):
     """Parse PR review comments from GitHub API JSON."""
@@ -144,28 +155,37 @@ def create_weblog_entry(frontmatter, archive_content, review_comments, pr_commen
         weblog_content.append("---\n")
     
     # Process ALL line-specific comments with quoted paragraphs
-    archive_lines = archive_content.split('\n')
+    # Use the full file content including frontmatter since line numbers reference the entire file
+    with open(archive_filename, 'r', encoding='utf-8') as f:
+        full_file_content = f.read()
+    archive_lines = full_file_content.split('\n')
     
     if review_comments:
         # Sort comments by line number to maintain logical order
         sorted_comments = sorted(review_comments, key=lambda x: x.get('line', 0))
-        for comment in sorted_comments:
+        for i, comment in enumerate(sorted_comments):
             # Include ALL comments, with or without line numbers
             if comment.get('line'):
                 # Extract the paragraph for this line
-                paragraph = extract_paragraph_for_line(archive_lines, comment['line'])
+                line_number = comment['line']
+                paragraph = extract_paragraph_for_line(archive_lines, line_number)
+                
                 if paragraph:
                     weblog_content.append(f"> {paragraph}\n")
                 else:
                     # If paragraph extraction fails, include the line itself
-                    if comment['line'] <= len(archive_lines):
-                        line_content = archive_lines[comment['line'] - 1].strip()
+                    if line_number <= len(archive_lines):
+                        line_content = archive_lines[line_number - 1].strip()
                         if line_content:
                             weblog_content.append(f"> {line_content}\n")
-                weblog_content.append(f"**My take:** {comment['body']}\n")
+                weblog_content.append(f"{comment['body']}\n")
             else:
                 # Comments without line numbers (shouldn't happen but include them anyway)
-                weblog_content.append(f"**My take:** {comment['body']}\n")
+                weblog_content.append(f"{comment['body']}\n")
+            
+            # Add delimiter between quote-comment pairs (except after the last one)
+            if i < len(sorted_comments) - 1:
+                weblog_content.append("---\n")
     
     return weblog_frontmatter, '\n'.join(weblog_content)
 
