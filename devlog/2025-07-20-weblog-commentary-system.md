@@ -4,6 +4,10 @@
 **Branch:** `review-system`  
 **Status:** Complete  
 
+## Threads
+
+https://ampcode.com/threads/T-7f083403-1668-480e-a57b-5e1f0ef4f56c
+
 ## Summary
 
 Implemented a comprehensive commentary system for the link archive that allows reviewing archive content and generating weblog entries with personal commentary. The system enables line-by-line commenting on archived articles through GitHub PR reviews, automatically generating weblog entries that quote specific paragraphs alongside commentary.
