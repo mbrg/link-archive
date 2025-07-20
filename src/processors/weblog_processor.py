@@ -97,18 +97,14 @@ def parse_pr_comments(comments_json):
 def create_weblog_entry(frontmatter, archive_content, review_comments, pr_comments, archive_filename):
     """Create weblog entry with quoted paragraphs and comments."""
     
-    # Create weblog frontmatter - carry over all fields from archive
-    weblog_frontmatter = {
-        'title': frontmatter['title'],
-        'date': datetime.now().strftime('%Y-%m-%d'),
-        'archive_link': f"archive/{Path(archive_filename).name}",
-        'tags': frontmatter.get('tags', []) + ['weblog'],
-        'type': 'weblog'
-    }
+    # Create weblog frontmatter - carry over ALL fields from archive
+    weblog_frontmatter = frontmatter.copy()  # Start with all archive fields
     
-    # Carry over description if it exists
-    if frontmatter.get('description'):
-        weblog_frontmatter['description'] = frontmatter['description']
+    # Add weblog-specific fields
+    weblog_frontmatter['date'] = datetime.now().strftime('%Y-%m-%d')
+    weblog_frontmatter['archive_link'] = f"archive/{Path(archive_filename).name}"
+    weblog_frontmatter['tags'] = frontmatter.get('tags', []) + ['weblog']
+    weblog_frontmatter['type'] = 'weblog'
     
     # Start building the weblog content
     weblog_content = [f"# {frontmatter['title']}\n"]
