@@ -118,13 +118,8 @@ def create_weblog_entry(frontmatter, archive_content, review_comments, pr_commen
     weblog_content.append(f"**Original:** [Link]({frontmatter.get('link', '#')})\n")
     weblog_content.append(f"**Archive:** [Link]({weblog_frontmatter['link']})\n")
     
-    # Add general comments first (after links)
-    if pr_comments:
-        for comment in pr_comments:
-            weblog_content.append(f"{comment['body']}\n")
-    
-    # Add small divider if there are both general comments and review comments
-    if pr_comments and review_comments:
+    # Add small divider before review comments
+    if review_comments:
         weblog_content.append("---\n")
     
     # Process line-specific comments with quoted paragraphs
