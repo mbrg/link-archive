@@ -207,10 +207,120 @@ The original link archive system was purely for preservation against link rot, b
 
 **Why deferred:** Focus on core workflow first, add complexity only when needed
 
+## Session 2: Production Fixes & Refinements
+
+**Date:** 2025-07-20 (continued)  
+**Focus:** Debugging and stabilizing the weblog creation workflow
+
+### Issues Discovered in Production Testing
+
+**Problem:** Weblog creation workflow failed when tested on PR #262 due to multiple technical issues:
+
+1. **JSON parsing errors in GitHub Actions**: Unicode characters and template variables breaking shell parsing
+2. **Missing quoted paragraphs**: Line number references were incorrect, causing empty quote blocks
+3. **Workflow permission errors**: `ready-to-comment` label creation failed when label didn't exist
+4. **Manual trigger missing**: No way to fix dangling PRs without new approvals
+
+### Key Fixes Implemented
+
+#### 1. GitHub Actions JSON Handling
+**Problem:** JSON containing emojis and template variables caused shell parsing failures
+```yaml
+# Before (broken)
+echo '${{ steps.get_pr_data.outputs.comments_json }}' > comments.json
+
+# After (fixed) 
+cat > comments.json << 'EOFJSON'
+${{ steps.get_pr_data.outputs.comments_json }}
+EOFJSON
+```
+**Why:** Heredoc syntax prevents shell interpretation of special characters
+
+#### 2. Paragraph Extraction Fix
+**Critical bug:** Line numbers in review comments reference the full file (including frontmatter), but processor was only using content after frontmatter extraction.
+
+```python
+# Before (broken)
+archive_lines = archive_content.split('\n')  # Missing frontmatter
+
+# After (fixed)
+with open(archive_filename, 'r', encoding='utf-8') as f:
+    full_file_content = f.read()
+archive_lines = full_file_content.split('\n')  # Full file with frontmatter
+```
+**Result:** All review comments now properly extract quoted paragraphs
+
+#### 3. Workflow Permission Handling
+**Added error handling for label creation:**
+```yaml
+try {
+  await github.rest.issues.addLabels({...labels: ['ready-to-comment']});
+} catch (error) {
+  if (error.status === 422) {
+    // Create label if it doesn't exist
+    await github.rest.issues.createLabel({
+      name: 'ready-to-comment',
+      description: 'Archive is ready for review and commenting',
+      color: '0e8a16'
+    });
+    // Then add it
+    await github.rest.issues.addLabels({...});
+  }
+}
+```
+
+#### 4. Manual Dispatch Support
+**Added workflow trigger for fixing dangling PRs:**
+```yaml
+on:
+  pull_request_review:
+    types: [submitted]
+  workflow_dispatch:  # New manual trigger
+    inputs:
+      pr_number:
+        description: 'PR number to create weblog for'
+        required: true
+        type: string
+```
+
+#### 5. Weblog Format Improvements
+**Removed verbose formatting:**
+```markdown
+# Before
+**My take:** Claude Sonnet 4 is actually a great model.
+
+# After  
+Claude Sonnet 4 is actually a great model.
+
+---  # Added delimiters between quote-comment pairs
+```
+**Why:** Cleaner, more natural reading experience
+
+### Testing & Validation
+
+**Local testing confirmed:**
+- ✅ Paragraph extraction works correctly for all line numbers
+- ✅ Review comments and approval comments both captured
+- ✅ JSON parsing handles Unicode and complex content
+- ✅ All historical review comments included (not just latest)
+- ✅ Clean formatting with proper delimiters
+
+**Production deployment:**
+- All fixes committed to main branch
+- Debug statements removed from workflows
+- Test files cleaned up
+
+### Technical Insights
+
+1. **GitHub API line numbers are 1-indexed and include frontmatter** - Critical for paragraph extraction
+2. **Heredoc is essential for complex JSON in GitHub Actions** - Prevents shell interpretation issues  
+3. **Permission errors need graceful handling** - Workflows should create missing resources
+4. **Manual triggers are essential for production** - Always need escape hatches for automation failures
+
 ## Conclusion
 
 The weblog commentary system successfully bridges the gap between pure link archival and personal publishing. It maintains the speed and reliability of the archive system while adding a human editorial layer that creates valuable, personalized content.
 
 The key insight was recognizing that commentary requires human judgment and context that can't be automated, while everything around that process (formatting, file management, deployment) should be fully automated.
 
-The resulting system is both powerful for creating rich commentary and simple enough to use regularly without friction.
+After production testing and fixes, the resulting system is both powerful for creating rich commentary and simple enough to use regularly without friction. The system correctly handles all edge cases discovered during real-world usage.
