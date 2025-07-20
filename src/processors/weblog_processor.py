@@ -95,13 +95,24 @@ def parse_pr_comments(comments_input):
                         'author': comment['user']['login']
                     })
         
-        return review_comments, pr_comments
+        # Extract review-level comments (approval comments)
+        review_approval_comments = []
+        if 'reviews' in comments_data:
+            for review in comments_data['reviews']:
+                if review.get('body') and review['body'].strip():
+                    review_approval_comments.append({
+                        'body': review['body'],
+                        'author': review['user']['login'],
+                        'state': review['state']
+                    })
+        
+        return review_comments, pr_comments, review_approval_comments
         
     except (json.JSONDecodeError, FileNotFoundError) as e:
         print(f"Error parsing comments: {e}", file=sys.stderr)
-        return [], []
+        return [], [], []
 
-def create_weblog_entry(frontmatter, archive_content, review_comments, pr_comments, archive_filename):
+def create_weblog_entry(frontmatter, archive_content, review_comments, pr_comments, review_approval_comments, archive_filename):
     """Create weblog entry with quoted paragraphs and comments."""
     
     # Create weblog frontmatter - carry over ALL fields from archive
@@ -118,7 +129,12 @@ def create_weblog_entry(frontmatter, archive_content, review_comments, pr_commen
     weblog_content.append(f"**Original:** [Link]({frontmatter.get('link', '#')})\n")
     weblog_content.append(f"**Archive:** [Link]({weblog_frontmatter['link']})\n")
     
-    # Add small divider before review comments
+    # Add review approval comments (from "Approve" button)
+    if review_approval_comments:
+        for approval_comment in review_approval_comments:
+            weblog_content.append(f"{approval_comment['body']}\n")
+    
+    # Add small divider before line-specific review comments
     if review_comments:
         weblog_content.append("---\n")
     
@@ -170,11 +186,11 @@ def main():
         frontmatter, archive_content = read_archive_file(archive_file)
         
         # Parse PR comments
-        review_comments, pr_comments = parse_pr_comments(comments_json)
+        review_comments, pr_comments, review_approval_comments = parse_pr_comments(comments_json)
         
         # Create weblog entry
         weblog_frontmatter, weblog_content = create_weblog_entry(
-            frontmatter, archive_content, review_comments, pr_comments, archive_file
+            frontmatter, archive_content, review_comments, pr_comments, review_approval_comments, archive_file
         )
         
         # Create the weblog file

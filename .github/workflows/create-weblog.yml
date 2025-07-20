@@ -71,9 +71,17 @@ jobs:
               issue_number: prNumber
             });
             
+            // Get PR reviews (for approval comments)
+            const reviews = await github.rest.pulls.listReviews({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber
+            });
+            
             const commentsData = {
               review_comments: reviewComments.data,
-              comments: prComments.data
+              comments: prComments.data,
+              reviews: reviews.data
             };
             
             core.setOutput('archive_file', archiveFile.filename);
