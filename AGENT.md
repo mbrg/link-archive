@@ -1,8 +1,8 @@
 # Link Archive Agent Guide
 
 ## Commands
-- **Test scripts**: `uv run --script src/processors/url_processor.py <url> <dir> <model>` - Process a URL and create archive
-- **Validate archive**: `uv run --script src/processors/frontmatter_validator.py <dir>` - Validate archive file frontmatter
+- **Test scripts**: `uv run --script src/processors/archive_processor.py <url> <dir> <model>` - Process a URL and create archive
+- **Validate archive**: `uv run --script src/processors/archive_validator.py <dir>` - Validate archive file frontmatter
 - **Validate weblog**: `uv run --script src/processors/weblog_validator.py <dir>` - Validate weblog entries
 - **Create weblog**: `uv run --script src/processors/weblog_processor.py <archive_file> <comments_json>` - Generate weblog from archive + PR comments
 - **Trigger workflow**: Use GitHub "Process URL" workflow with issue number containing `URL: <url>`
@@ -13,9 +13,9 @@
 
 - **Weblog entries**: `weblog/` - Final published entries with your commentary
 - **Core processors**: `src/processors/` - Python scripts using uv for dependency management
-  - `url_processor.py` - Process URLs into archive entries
+  - `archive_processor.py` - Process URLs into archive entries
   - `weblog_processor.py` - Convert archive files + PR comments into weblog entries
-  - `frontmatter_validator.py` - Validate archive file structure
+  - `archive_validator.py` - Validate archive file structure
   - `weblog_validator.py` - Validate weblog entry structure
 - **Commentary workflow**: Review archive PRs directly with line comments
 - **Maintenance tools**: `tools/` - Administrative scripts for repo maintenance
