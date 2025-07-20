@@ -146,7 +146,7 @@ jobs:
       - name: Add weblog to PR
         run: |
           git add "${{ steps.create_weblog.outputs.weblog_file }}"
-          git commit -m "Add weblog entry: ${{ steps.create_weblog.outputs.title }}"
+          git commit -m "Add weblog entry: ${{ steps.create_weblog.outputs.title }}" || git commit --amend -m "Update weblog entry: ${{ steps.create_weblog.outputs.title }}"
           git push origin ${{ steps.pr_info.outputs.branch_ref }}
 
       - name: Validate weblog entries
