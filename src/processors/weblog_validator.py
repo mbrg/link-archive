@@ -46,7 +46,7 @@ def validate_weblog_file(filepath):
         return errors
     
     # Validate required frontmatter fields
-    required_fields = ['title', 'date', 'original_link', 'archive_link', 'type']
+    required_fields = ['title', 'date', 'link', 'type']
     for field in required_fields:
         if field not in frontmatter:
             errors.append(f"Missing required field '{field}' in {filepath}")
@@ -66,11 +66,10 @@ def validate_weblog_file(filepath):
         except ValueError:
             errors.append(f"Invalid date format in {filepath}. Expected YYYY-MM-DD, got '{date_val}'")
     
-    # Validate URLs
-    for url_field in ['original_link', 'archive_link']:
-        url_val = frontmatter.get(url_field)
-        if url_val and not (url_val.startswith('http') or url_val.startswith('archive/')):
-            errors.append(f"Invalid {url_field} in {filepath}: '{url_val}'")
+    # Validate link field (should point to archive)
+    link_val = frontmatter.get('link')
+    if link_val and not link_val.startswith('archive/'):
+        errors.append(f"Weblog link should point to archive in {filepath}: '{link_val}'")
     
     # Validate tags is a list
     if 'tags' in frontmatter and not isinstance(frontmatter['tags'], list):
@@ -78,12 +77,12 @@ def validate_weblog_file(filepath):
     
     # Validate minimum content length
     if len(markdown_content.strip()) < 50:
-        errors.append(f"Linklog content too short in {filepath} (minimum 50 characters)")
+        errors.append(f"Weblog content too short in {filepath} (minimum 50 characters)")
     
-    # Check for required sections in content
-    if 'original_link' in frontmatter and frontmatter['original_link']:
-        if not any(link in markdown_content for link in [frontmatter['original_link'], 'Original:']):
-            errors.append(f"Linklog should reference original link in content: {filepath}")
+    # Check for archive link in content
+    if 'link' in frontmatter and frontmatter['link']:
+        if 'Archive:' not in markdown_content:
+            errors.append(f"Weblog should reference archive link in content: {filepath}")
     
     return errors
 
