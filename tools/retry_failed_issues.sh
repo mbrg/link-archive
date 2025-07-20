@@ -40,7 +40,7 @@ print_status "Fetching open issues..."
 
 # Get all open issues with URLs in the body
 # Filter out PDFs and only process issues that contain "URL:" lines
-ISSUES=$(gh issue list --state open --json number,body --jq '.[] | select(.body | test("URL:.*"; "i")) | select(.body | test("\\.pdf"; "i") | not) | .number')
+ISSUES=$(gh issue list --state open --limit 1000 --json number,body --jq '.[] | select(.body | test("URL:.*"; "i")) | select(.body | test("\\.pdf"; "i") | not) | .number')
 
 if [ -z "$ISSUES" ]; then
     print_warning "No open issues found with URLs (excluding PDFs)"
