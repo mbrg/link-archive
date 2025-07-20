@@ -8,7 +8,7 @@ tags:
    - OpenVSX
 link: https://ghuntley.com/amazon-kiro-source-code/
 date: 2025-07-20
-summary: "Amazon's Kiro is a Visual Studio Code fork (version 1.94) that integrates multiple AI models, including OpenAI's and Anthropic's, with ripgrep for enhanced code search capabilities. It addresses ecosystem fractures, notably for C++, .NET, and Python, by using OpenVSX for extension availability. Key features include Autonomy Modes (Autopilot and Supervised), dynamic context for code analysis, and a structured workflow for specs and design documentation. The multi-modal design, with 14 editing methods, raises concerns about complexity management and maintainability, necessitating ongoing tuning efforts. Kiro promotes an autonomous coding approach while facilitating collaborative programming."
+description: "Amazon's Kiro is a Visual Studio Code fork (version 1.94) that integrates multiple AI models, including OpenAI's and Anthropic's, with ripgrep for enhanced code search capabilities. It addresses ecosystem fractures, notably for C++, .NET, and Python, by using OpenVSX for extension availability. Key features include Autonomy Modes (Autopilot and Supervised), dynamic context for code analysis, and a structured workflow for specs and design documentation. The multi-modal design, with 14 editing methods, raises concerns about complexity management and maintainability, necessitating ongoing tuning efforts. Kiro promotes an autonomous coding approach while facilitating collaborative programming."
 ---
 
 It's another day, and another coding tool has been brought to market that uses [ripgrep under the hood](https://ghuntley.com/overton). This time it's Kiro by Amazon. What follows below is an analysis of this coding agent:

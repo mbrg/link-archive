@@ -10,13 +10,78 @@ Inspired by [Simon Willison's weblog](https://simonwillison.net/2024/Dec/22/link
 - [iPhone shortcut](triggers/iphone/) - Archive from iOS
 - [Mac shortcut](triggers/mac/) - Archive from macOS
 
-**Manual:** Run the "Process URL" GitHub workflow with any URL
+**Manual:** Use repository dispatch webhook or run workflows directly (for debugging)
 
 The system automatically fetches content, processes it with AI, and creates a pull request with structured markdown.
 
-## Setup
+### Setup
 
 1. Fork this repository
 2. Add repository secrets:
    - `OPENAI_API_KEY` - For content processing
    - `FIRECRAWL_API_KEY` - For web scraping
+
+### Commentary System
+
+1. Archive PR created with content for review
+2. You comment on specific lines to quote full paragraphs in weblog
+3. General PR comments become "Additional Thoughts" 
+4. On approval: weblog auto-generated with quoted content + your commentary
+5. Both archive and weblog validated before merge
+
+## Workflow Chain
+
+The system has multiple entry points that all funnel through the same core workflow:
+
+### Complete Workflow Chain
+
+```
+┌─────────────────┐    ┌──────────────────┐    ┌────────────────────┐
+│ External System │───▶│ message-webhook  │───▶│    receive-url     │
+│ (Webhook)       │    │      .yml        │    │       .yml         │
+└─────────────────┘    └──────────────────┘    └────────────────────┘
+                                                          │
+┌─────────────────┐                                       │
+│ iPhone Shortcut │──────────────────────────────────────▶│
+└─────────────────┘                                       │
+                                                          │
+┌─────────────────┐                                       │
+│  Mac Shortcut   │──────────────────────────────────────▶│
+└─────────────────┘                                       ▼
+                              🤖 AUTOMATED FLOW           
+                                                ┌────────────────────┐
+                                                │   Creates Issue    │
+                                                │   + Triggers       │
+                                                │ process-url-to-pr  │
+                                                └────────────────────┘
+                                                           │
+                                                           ▼
+                                                ┌────────────────────┐
+                                                │ process-url-to-pr  │
+                                                │    Creates         │
+                                                │   Archive PR       │
+                                                └────────────────────┘
+                                                           │
+                                                           ▼
+                                                ┌────────────────────┐
+                                                │ validate-and-review│
+                                                │ Validates + Adds   │
+                                                │   You as Reviewer  │
+                                                └────────────────────┘
+                                                         │        │
+                                                      ✅ │        │ ❌
+                               👤 MANUAL STEP           ▼        ▼
+                                        ┌────────────────────┐ ┌─────────────────┐
+                                        │   YOU REVIEW &     │ │ Closes PR on    │
+                                        │ COMMENT ON ARCHIVE │ │ Validation Error│
+                                        │     CONTENT        │ └─────────────────┘
+                                        └────────────────────┘
+                                                   │
+                               🤖 AUTOMATED ON APPROVAL
+                                                   ▼
+                                                ┌────────────────────┐
+                                                │  create-weblog     │
+                                                │ Creates Linklog +  │
+                                                │   Merges Both      │
+                                                └────────────────────┘
+```

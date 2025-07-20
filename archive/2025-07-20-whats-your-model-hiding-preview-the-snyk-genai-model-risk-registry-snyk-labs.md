@@ -8,7 +8,7 @@ tags:
    - risk assessment
 link: https://labs.snyk.io/resources/snyk-genai-model-risk-registry/
 date: 2025-07-20
-summary: "Snyk's GenAI Model Risk Registry addresses the critical security gap in evaluating open-source LLMs. By providing structured profiles with OWASP-aligned metrics, it enables teams to assess risks such as prompt injection and data leakage systematically. The initial version utilizes equal-weighted risk scores to facilitate comparison, promoting informed decision-making over guesswork. Future updates are expected to enhance scoring models and integrate with AI Bill of Materials (AI-BOM) for comprehensive risk management. The registry positions security as a central factor in LLM selection, essential for developers and AppSec teams."
+description: "Snyk's GenAI Model Risk Registry addresses the critical security gap in evaluating open-source LLMs. By providing structured profiles with OWASP-aligned metrics, it enables teams to assess risks such as prompt injection and data leakage systematically. The initial version utilizes equal-weighted risk scores to facilitate comparison, promoting informed decision-making over guesswork. Future updates are expected to enhance scoring models and integrate with AI Bill of Materials (AI-BOM) for comprehensive risk management. The registry positions security as a central factor in LLM selection, essential for developers and AppSec teams."
 ---
 
 [Skip to main content](https://labs.snyk.io/resources/snyk-genai-model-risk-registry/#main-content)

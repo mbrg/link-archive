@@ -8,7 +8,7 @@ tags:
    - AI Security
 link: https://arxiv.org/pdf/2505.23643
 date: 2025-07-20
-summary: "The paper presents FIDES, a planner utilizing information-flow control (IFC) to enhance the security of AI agents against prompt injection vulnerabilities. FIDES employs dynamic taint-tracking for confidentiality and integrity, allowing deterministic security policy enforcement. It features novel mechanisms for hiding and inspecting information while executing tasks. Evaluations in the AgentDojo framework indicate that FIDES effectively stops prompt injection attacks, achieving competitive utility compared to other planners. The performance of FIDES with advanced LLMs demonstrates improved task completion rates, particularly in complex data-dependent scenarios. This work highlights the importance of integrating security into AI agent design."
+description: "The paper presents FIDES, a planner utilizing information-flow control (IFC) to enhance the security of AI agents against prompt injection vulnerabilities. FIDES employs dynamic taint-tracking for confidentiality and integrity, allowing deterministic security policy enforcement. It features novel mechanisms for hiding and inspecting information while executing tasks. Evaluations in the AgentDojo framework indicate that FIDES effectively stops prompt injection attacks, achieving competitive utility compared to other planners. The performance of FIDES with advanced LLMs demonstrates improved task completion rates, particularly in complex data-dependent scenarios. This work highlights the importance of integrating security into AI agent design."
 ---
 
 |     |     |     |     |     |

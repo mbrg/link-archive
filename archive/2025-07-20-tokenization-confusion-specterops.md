@@ -8,7 +8,7 @@ tags:
    - Natural Language Processing
 link: https://specterops.io/blog/2025/06/03/tokenization-confusion/
 date: 2025-07-20
-summary: "The recent release of Meta's Llama Prompt Guard 2 highlights the complexities of prompt injection vulnerabilities in LLMs, particularly regarding tokenization methods. By employing Unigram tokenization, the model reveals susceptibility to evasion tactics where phrases can be manipulated to generate nonsensical tokens that bypass security checks. This investigation demonstrates that while model defenses may label certain prompts as non-malicious, the back-end LLM's interpretation can still trigger unintended behaviors. The implications suggest the need for improved tokenization strategies and enhanced monitoring tools to secure interactions with LLM APIs against sophisticated prompt manipulation techniques."
+description: "The recent release of Meta's Llama Prompt Guard 2 highlights the complexities of prompt injection vulnerabilities in LLMs, particularly regarding tokenization methods. By employing Unigram tokenization, the model reveals susceptibility to evasion tactics where phrases can be manipulated to generate nonsensical tokens that bypass security checks. This investigation demonstrates that while model defenses may label certain prompts as non-malicious, the back-end LLM's interpretation can still trigger unintended behaviors. The implications suggest the need for improved tokenization strategies and enhanced monitoring tools to secure interactions with LLM APIs against sophisticated prompt manipulation techniques."
 ---
 
 [Protect mission-critical assets from identity compromise with new Privilege Zones in BloodHound Enterprise. Learn More](https://specterops.io/privilege-zones/)

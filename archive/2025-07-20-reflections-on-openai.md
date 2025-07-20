@@ -8,7 +8,7 @@ tags:
    - OpenAI
 link: https://calv.info/openai-reflections
 date: 2025-07-20
-summary: "Calvin French-Owen's reflections on his OpenAI tenure reveal critical insights into the organization's rapid scaling, culture, and technological landscape. OpenAI's rapid growth from 1,000 to 3,000 employees introduced significant challenges, particularly in communication and organizational structure. The company's operations are predominantly Slack-based, emphasizing a bottoms-up, meritocratic culture. It employs a monorepo primarily in Python, leveraging Azure for infrastructure, and has a strong bias toward action in product development, exemplified by the quick launch of Codex. The internal focus on safety and practical risks aligns with OpenAI's broader goal of AGI, amid intense scrutiny from competitors and the public."
+description: "Calvin French-Owen's reflections on his OpenAI tenure reveal critical insights into the organization's rapid scaling, culture, and technological landscape. OpenAI's rapid growth from 1,000 to 3,000 employees introduced significant challenges, particularly in communication and organizational structure. The company's operations are predominantly Slack-based, emphasizing a bottoms-up, meritocratic culture. It employs a monorepo primarily in Python, leveraging Azure for infrastructure, and has a strong bias toward action in product development, exemplified by the quick launch of Codex. The internal focus on safety and practical risks aligns with OpenAI's broader goal of AGI, amid intense scrutiny from competitors and the public."
 ---
 
 Reflections on OpenAI

@@ -1,0 +1,134 @@
+name: Create Linklog Entry
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+jobs:
+  create-weblog:
+    if: github.event.review.state == 'approved' && contains(github.event.pull_request.labels.*.name, 'ready-to-comment')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install UV
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Get PR Files and Comments
+        id: get_pr_data
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            
+            // Get PR files
+            const files = await github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber
+            });
+            
+            const archiveFile = files.data.find(file => 
+              file.filename.startsWith('archive/') && 
+              file.filename.endsWith('.md')
+            );
+            
+            if (!archiveFile) {
+              throw new Error('No archive file found in PR');
+            }
+            
+            // Get review comments
+            const reviewComments = await github.rest.pulls.listReviewComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber
+            });
+            
+            // Get general PR comments
+            const prComments = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber
+            });
+            
+            const commentsData = {
+              review_comments: reviewComments.data,
+              comments: prComments.data
+            };
+            
+            core.setOutput('archive_file', archiveFile.filename);
+            core.setOutput('comments_json', JSON.stringify(commentsData));
+
+      - name: Checkout PR branch
+        run: |
+          git fetch origin ${{ github.event.pull_request.head.ref }}
+          git checkout ${{ github.event.pull_request.head.ref }}
+
+      - name: Create Linklog Entry
+        id: create_weblog
+        run: |
+          OUTPUT=$(uv run --script src/processors/weblog_processor.py "${{ steps.get_pr_data.outputs.archive_file }}" '${{ steps.get_pr_data.outputs.comments_json }}')
+          echo "$OUTPUT" | while IFS=: read -r key value; do
+            if [ -n "$key" ] && [ -n "$value" ]; then
+              echo "${key}=${value}" >> $GITHUB_OUTPUT
+            fi
+          done
+        env:
+          PYTHONUNBUFFERED: 1
+
+      - name: Configure git
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+
+      - name: Add weblog to PR
+        run: |
+          git add "${{ steps.create_weblog.outputs.weblog_file }}"
+          git commit -m "Add weblog entry: ${{ steps.create_weblog.outputs.title }}"
+          git push origin ${{ github.event.pull_request.head.ref }}
+
+      - name: Validate weblog entries
+        run: |
+          uv run --script src/processors/weblog_validator.py weblog
+
+      - name: Merge Archive PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            
+            // Add a comment explaining what happened
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              body: `✅ **Linklog entry created!**
+              
+Your review comments have been processed and a weblog entry has been created at \`${{ steps.create_weblog.outputs.weblog_file }}\`.
+
+The archive PR will now be merged with the weblog entry included.`
+            });
+            
+            // Merge the PR
+            await github.rest.pulls.merge({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber,
+              merge_method: 'squash',
+              commit_title: `Add archive + weblog: ${{ steps.create_weblog.outputs.title }}`,
+              commit_message: `Archive with weblog entry at ${{ steps.create_weblog.outputs.weblog_file }}`
+            });

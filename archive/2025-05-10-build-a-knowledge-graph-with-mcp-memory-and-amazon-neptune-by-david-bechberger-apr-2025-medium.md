@@ -8,7 +8,7 @@ tags:
    - Generative AI
 link: https://medium.com/@bechbd/build-a-knowledge-graph-with-mcp-memory-and-amazon-neptune-6dbf191c1f6c
 date: 2025-05-10
-summary: "The article outlines a method for building a knowledge graph using MCP Memory and Amazon Neptune without coding. It introduces the `neptune-memory` MCP server, which utilizes LLMs (like Anthropic's Claude) to facilitate conversation-based graph construction. Key elements include entities, relations, and observations making up the graph's structure. The system allows seamless integration and retrieval across sessions, enhancing information management across AI interactions. This presents significant implications for AI application development, making knowledge graph integration more user-friendly and accessible."
+description: "The article outlines a method for building a knowledge graph using MCP Memory and Amazon Neptune without coding. It introduces the `neptune-memory` MCP server, which utilizes LLMs (like Anthropic's Claude) to facilitate conversation-based graph construction. Key elements include entities, relations, and observations making up the graph's structure. The system allows seamless integration and retrieval across sessions, enhancing information management across AI interactions. This presents significant implications for AI application development, making knowledge graph integration more user-friendly and accessible."
 ---
 
 [Open in app](https://rsci.app.link/?%24canonical_url=https%3A%2F%2Fmedium.com%2Fp%2F6dbf191c1f6c&%7Efeature=LoOpenInAppButton&%7Echannel=ShowPostUnderUser&source=post_page---top_nav_layout_nav-----------------------------------------)

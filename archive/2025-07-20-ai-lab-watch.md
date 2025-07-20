@@ -8,7 +8,7 @@ tags:
    - Machine Learning Governance
 link: https://ailabwatch.org
 date: 2025-07-20
-summary: "AI Lab Watch evaluates safety practices among major AI companies, revealing varying degrees of commitment to risk assessment, safety research, and misuse prevention. Anthropic leads with a 27% overall score, excelling in safety research (68%) and risk assessment (44%). DeepMind follows at 21%, while OpenAI holds 17%. Notably, many firms show minimal attention to misuse prevention and extreme security. The report emphasizes the necessity for these companies to enhance safety protocols amid rising AI capabilities, suggesting deeper collaboration and transparency in safety initiatives."
+description: "AI Lab Watch evaluates safety practices among major AI companies, revealing varying degrees of commitment to risk assessment, safety research, and misuse prevention. Anthropic leads with a 27% overall score, excelling in safety research (68%) and risk assessment (44%). DeepMind follows at 21%, while OpenAI holds 17%. Notably, many firms show minimal attention to misuse prevention and extreme security. The report emphasizes the necessity for these companies to enhance safety protocols amid rising AI capabilities, suggesting deeper collaboration and transparency in safety initiatives."
 ---
 
 ### [AI Lab Watch](https://ailabwatch.org/)

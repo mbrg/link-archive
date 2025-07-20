@@ -8,7 +8,7 @@ tags:
    - Software Engineering
 link: https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
 date: 2025-07-20
-summary: "A randomized controlled trial studying the impact of early-2025 AI tools on experienced open-source developers revealed a surprising 19% increase in issue completion time when AI assistance was allowed. Despite expectations of increased productivity, developers misestimated their performance, believing AI had sped them up by 20%. The study, involving 16 developers working on high-profile repositories, suggests a discrepancy between AI benchmarks and real-world application, highlighting complexities in AI integration and productivity. Further studies will aim to monitor AI's evolving role in software development and its broader implications for AI R&D acceleration."
+description: "A randomized controlled trial studying the impact of early-2025 AI tools on experienced open-source developers revealed a surprising 19% increase in issue completion time when AI assistance was allowed. Despite expectations of increased productivity, developers misestimated their performance, believing AI had sped them up by 20%. The study, involving 16 developers working on high-profile repositories, suggests a discrepancy between AI benchmarks and real-world application, highlighting complexities in AI integration and productivity. Further studies will aim to monitor AI's evolving role in software development and its broader implications for AI R&D acceleration."
 ---
 
 [**Research**](https://metr.org/research)

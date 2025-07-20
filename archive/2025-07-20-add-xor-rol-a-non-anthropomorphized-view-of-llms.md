@@ -8,7 +8,7 @@ tags:
    - AI Safety
 link: https://addxorrol.blogspot.com/2025/07/a-non-anthropomorphized-view-of-llms.html
 date: 2025-07-20
-summary: "The author critiques the anthropomorphization of Large Language Models (LLMs), asserting they are merely mathematical functions performing probability-based word generation. The discussion raises the challenge of quantifying and bounding undesirable output sequences without clear definitions. The success of LLMs in solving complex NLP tasks is acknowledged, yet concerns about societal implications and ethical considerations remain. Emphasis is placed on reframing LLMs as sequence generators and moving past mythical attributes to better manage their deployment and societal impact. Understanding these models through a technical lens may facilitate clearer discussions surrounding AI alignment and safety."
+description: "The author critiques the anthropomorphization of Large Language Models (LLMs), asserting they are merely mathematical functions performing probability-based word generation. The discussion raises the challenge of quantifying and bounding undesirable output sequences without clear definitions. The success of LLMs in solving complex NLP tasks is acknowledged, yet concerns about societal implications and ethical considerations remain. Emphasis is placed on reframing LLMs as sequence generators and moving past mythical attributes to better manage their deployment and societal impact. Understanding these models through a technical lens may facilitate clearer discussions surrounding AI alignment and safety."
 ---
 
 |     |     |     |     |

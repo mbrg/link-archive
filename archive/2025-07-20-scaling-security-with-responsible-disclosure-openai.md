@@ -8,7 +8,7 @@ tags:
    - OpenSource
 link: https://openai.com/index/scaling-coordinated-vulnerability-disclosure/
 date: 2025-07-20
-summary: "OpenAI introduced an Outbound Coordinated Disclosure Policy to enhance its vulnerability reporting for third-party software. This framework prioritizes cooperative, respectful engagement in security disclosures, anticipating automated AI systems to unearth more complex vulnerabilities. The policy outlines validation, vendor communication, public disclosure protocols, and emphasizes a developer-friendly, non-rigid timeline for responses. As AI models advance in code reasoning, this approach aims for scalable, effective collaboration with software maintainers to foster a secure digital environment. Continuous improvement of this policy will adapt to emerging challenges in vulnerability management."
+description: "OpenAI introduced an Outbound Coordinated Disclosure Policy to enhance its vulnerability reporting for third-party software. This framework prioritizes cooperative, respectful engagement in security disclosures, anticipating automated AI systems to unearth more complex vulnerabilities. The policy outlines validation, vendor communication, public disclosure protocols, and emphasizes a developer-friendly, non-rigid timeline for responses. As AI models advance in code reasoning, this approach aims for scalable, effective collaboration with software maintainers to foster a secure digital environment. Continuous improvement of this policy will adapt to emerging challenges in vulnerability management."
 ---
 
 Switch to

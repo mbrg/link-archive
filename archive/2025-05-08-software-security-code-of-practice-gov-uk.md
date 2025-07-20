@@ -10,7 +10,7 @@ tags:
    - Software Security
 link: https://www.gov.uk/government/publications/software-security-code-of-practice
 date: 2025-05-08
-summary: "The UK government's voluntary Software Security Code of Practice, launched on May 7, 2025, establishes 14 principles for enhancing software security and resilience, aiming to mitigate supply chain attacks and other vulnerabilities in software development. Developed jointly with the Canadian Centre for Cyber Security and the National Cyber Security Centre, it emphasizes better communication between vendors and organizations, informed by extensive public feedback. The Code is essential for creating a secure software ecosystem, promoting consistent security standards across the industry. Developers and vendors are encouraged to adopt this framework to strengthen cybersecurity measures."
+description: "The UK government's voluntary Software Security Code of Practice, launched on May 7, 2025, establishes 14 principles for enhancing software security and resilience, aiming to mitigate supply chain attacks and other vulnerabilities in software development. Developed jointly with the Canadian Centre for Cyber Security and the National Cyber Security Centre, it emphasizes better communication between vendors and organizations, informed by extensive public feedback. The Code is essential for creating a secure software ecosystem, promoting consistent security standards across the industry. Developers and vendors are encouraged to adopt this framework to strengthen cybersecurity measures."
 ---
 
 ## Cookies on GOV.UK

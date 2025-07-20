@@ -8,7 +8,7 @@ tags:
    - AI Red Teaming
 link: https://dreadnode.io/blog/ai-red-team-benchmark
 date: 2025-07-20
-summary: "Dreadnode introduces AIRTBench, a benchmark for evaluating the adversarial capabilities of large language models (LLMs) in AI red teaming. Key findings reveal that frontier models (e.g., Claude-3.7-Sonnet) vastly outperform open-source counterparts in challenge-solving ability and execution speed, achieving over 5,000× faster results than human operators. Economic analysis highlights significant cost discrepancies per successful attack, urging strategic model selection for efficiency. Common errors, especially in tool utilization, emphasize the need for improvement in syntactic accuracy. AIRTBench serves as a critical resource for advancing autonomous security assessments, encouraging community contributions and reproducibility in research efforts."
+description: "Dreadnode introduces AIRTBench, a benchmark for evaluating the adversarial capabilities of large language models (LLMs) in AI red teaming. Key findings reveal that frontier models (e.g., Claude-3.7-Sonnet) vastly outperform open-source counterparts in challenge-solving ability and execution speed, achieving over 5,000× faster results than human operators. Economic analysis highlights significant cost discrepancies per successful attack, urging strategic model selection for efficiency. Common errors, especially in tool utilization, emphasize the need for improvement in syntactic accuracy. AIRTBench serves as a critical resource for advancing autonomous security assessments, encouraging community contributions and reproducibility in research efforts."
 ---
 
 [Skip to main content](https://dreadnode.io/#main)

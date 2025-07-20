@@ -8,7 +8,7 @@ tags:
    - Web Security
 link: https://brutecat.com/articles/leaking-google-phones
 date: 2025-07-20
-summary: "A recent study demonstrated a method for brute-forcing Google user phone numbers through its username recovery endpoint, revealing unintended vulnerabilities. By utilizing non-JavaScript (JS) forms that bypass Google’s bot detection, an attacker can confirm whether specific phone numbers are linked to Google accounts. Additionally, leveraging a botguard token from JS-enabled forms can further facilitate mass inquiries without triggering rate limits. Results indicated rapid brute-force capabilities across various country codes, with completion times as low as 5 seconds for certain numbers. Methodologies highlight significant implications for account security and privacy, prompting urgent review of recovery protocols."
+description: "A recent study demonstrated a method for brute-forcing Google user phone numbers through its username recovery endpoint, revealing unintended vulnerabilities. By utilizing non-JavaScript (JS) forms that bypass Google’s bot detection, an attacker can confirm whether specific phone numbers are linked to Google accounts. Additionally, leveraging a botguard token from JS-enabled forms can further facilitate mass inquiries without triggering rate limits. Results indicated rapid brute-force capabilities across various country codes, with completion times as low as 5 seconds for certain numbers. Methodologies highlight significant implications for account security and privacy, prompting urgent review of recovery protocols."
 ---
 
 [< Back](https://brutecat.com/)

@@ -8,7 +8,7 @@ tags:
    - AI Security
 link: https://unit42.paloaltonetworks.com/agentic-ai-threats/
 date: 2025-05-03
-summary: "Palo Alto Networks' Unit 42 highlights security risks associated with agentic AI applications, including prompt injection, tool misuse, and unauthorized access through systematic attacks on AI frameworks like CrewAI and AutoGen. Key findings indicate that vulnerabilities often stem from insecure design rather than framework flaws, emphasizing the need for robust mitigation strategies such as prompt hardening, content filtering, and tool vulnerability scanning. Effective AI security requires a layered defense, underscoring the necessity for tailored solutions like Prisma AIRS to safeguard AI systems from emerging threats in autonomous environments. Comprehensive testing and preventative measures are essential for resilience."
+description: "Palo Alto Networks' Unit 42 highlights security risks associated with agentic AI applications, including prompt injection, tool misuse, and unauthorized access through systematic attacks on AI frameworks like CrewAI and AutoGen. Key findings indicate that vulnerabilities often stem from insecure design rather than framework flaws, emphasizing the need for robust mitigation strategies such as prompt hardening, content filtering, and tool vulnerability scanning. Effective AI security requires a layered defense, underscoring the necessity for tailored solutions like Prisma AIRS to safeguard AI systems from emerging threats in autonomous environments. Comprehensive testing and preventative measures are essential for resilience."
 ---
 
 [palo alto networks](https://www.paloaltonetworks.com/unit42)

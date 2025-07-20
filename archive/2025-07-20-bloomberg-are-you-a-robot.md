@@ -8,7 +8,7 @@ tags:
    - cookies
 link: https://www.bloomberg.com/news/features/2025-06-06/how-hack-of-sec-s-edgar-system-exposed-flaws-in-us-financial-security
 date: 2025-07-20
-summary: "A security alert indicates unusual network activity from user devices, prompting verification via CAPTCHA to confirm human interaction. Users are advised to ensure compatibility of their browsers with JavaScript and cookies, as these settings may affect access. Additionally, a reference ID is provided for issues, suggesting a systematic tracking approach to support inquiries. This protocol highlights potential security measures and user verification techniques employed by platforms to mitigate automated access risks."
+description: "A security alert indicates unusual network activity from user devices, prompting verification via CAPTCHA to confirm human interaction. Users are advised to ensure compatibility of their browsers with JavaScript and cookies, as these settings may affect access. Additionally, a reference ID is provided for issues, suggesting a systematic tracking approach to support inquiries. This protocol highlights potential security measures and user verification techniques employed by platforms to mitigate automated access risks."
 ---
 
 ## We've detected unusual activity from your computer network

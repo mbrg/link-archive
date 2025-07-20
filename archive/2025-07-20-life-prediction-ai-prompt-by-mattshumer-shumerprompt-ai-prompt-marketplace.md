@@ -8,7 +8,7 @@ tags:
    - ChatGPT
 link: https://shumerprompt.com/prompts/life-prediction-prompt-0d2e9b70-35b8-460c-9ee5-ddbed3bc3041
 date: 2025-07-20
-summary: "The Life Prediction.js leverages ChatGPT for personalized life forecasting over the next 50 years, integrating user-specific data for tailored predictions. This prompt operates under the assumption that personalization features are active, potentially enhancing the accuracy of outcomes. The tool is positioned as a playful exploration of personal growth insights facilitated by AI, illustrating the growing intersection of machine learning and self-improvement. Key implications include the ethical considerations of AI in personal life assessments and the necessity for robust data privacy measures."
+description: "The Life Prediction.js leverages ChatGPT for personalized life forecasting over the next 50 years, integrating user-specific data for tailored predictions. This prompt operates under the assumption that personalization features are active, potentially enhancing the accuracy of outcomes. The tool is positioned as a playful exploration of personal growth insights facilitated by AI, illustrating the growing intersection of machine learning and self-improvement. Key implications include the ethical considerations of AI in personal life assessments and the necessity for robust data privacy measures."
 ---
 
 Feedback?

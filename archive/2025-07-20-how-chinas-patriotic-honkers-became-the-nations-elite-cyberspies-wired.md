@@ -8,7 +8,7 @@ tags:
    - China
 link: https://www.wired.com/story/china-honkers-elite-cyber-spies/
 date: 2025-07-20
-summary: "A recent analysis highlights the evolution of China’s Honkers, hackers initially motivated by patriotism who later integrated into state-sponsored cyber operations. Figures like Tan Dailin transitioned from low-level website defacements to orchestrating sophisticated attacks on behalf of the People’s Liberation Army (PLA) and Ministry of State Security (MSS). The Honkers, empowered by state interests, shaped a culture that blurred the lines between patriotism and espionage, utilizing tools like the GinWui rootkit and PlugX backdoor. This duality raises concerns about previously non-violent hackers becoming critical assets in state-sponsored cyber warfare."
+description: "A recent analysis highlights the evolution of China’s Honkers, hackers initially motivated by patriotism who later integrated into state-sponsored cyber operations. Figures like Tan Dailin transitioned from low-level website defacements to orchestrating sophisticated attacks on behalf of the People’s Liberation Army (PLA) and Ministry of State Security (MSS). The Honkers, empowered by state interests, shaped a culture that blurred the lines between patriotism and espionage, utilizing tools like the GinWui rootkit and PlugX backdoor. This duality raises concerns about previously non-violent hackers becoming critical assets in state-sponsored cyber warfare."
 ---
 
 Privacy Center

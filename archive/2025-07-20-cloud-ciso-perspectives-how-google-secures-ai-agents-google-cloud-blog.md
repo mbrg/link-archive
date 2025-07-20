@@ -8,7 +8,7 @@ tags:
    - Identity and Access Management
 link: https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-google-secures-ai-agents
 date: 2025-07-20
-summary: "In \"How Google Secures AI Agents,\" Anton Chuvakin from Google Cloud outlines a hybrid security paradigm to address the unique challenges of AI agents. Key strategies include enforcing well-defined human controller roles, limiting agent powers for adherence to least-privilege principles, and ensuring observability of agent actions through rigorous logging. Google's multi-layered approach blends traditional deterministic controls with dynamic reasoning-based defenses, such as adversarial training to minimize risks from rogue actions and data disclosures. This framework emphasizes continuous assurance to adapt to evolving threats while maintaining agent utility. Comprehensive insights can be found in Google’s detailed guidelines on securing AI agents."
+description: "In \"How Google Secures AI Agents,\" Anton Chuvakin from Google Cloud outlines a hybrid security paradigm to address the unique challenges of AI agents. Key strategies include enforcing well-defined human controller roles, limiting agent powers for adherence to least-privilege principles, and ensuring observability of agent actions through rigorous logging. Google's multi-layered approach blends traditional deterministic controls with dynamic reasoning-based defenses, such as adversarial training to minimize risks from rogue actions and data disclosures. This framework emphasizes continuous assurance to adapt to evolving threats while maintaining agent utility. Comprehensive insights can be found in Google’s detailed guidelines on securing AI agents."
 ---
 
 Security & Identity

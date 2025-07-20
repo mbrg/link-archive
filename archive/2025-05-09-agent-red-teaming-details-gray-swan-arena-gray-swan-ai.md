@@ -8,7 +8,7 @@ tags:
    - AI Security
 link: https://app.grayswan.ai/arena/challenge/agent-red-teaming
 date: 2025-05-09
-summary: "The UK AISI Agent Red-Teaming Challenge invites participants to test the limits of AI agents through direct and indirect attacks, focusing on vulnerabilities like confidentiality breaches and instruction violations. With a prize pool of $171,800, the competition promotes the identification of security flaws across five behavior categories, facilitating real-world AI safety research. Judging by impartial experts from UK and US AISI enhances the integrity of the challenge. Dynamic waves with weekly updates keep the competition fresh, while instant feedback supports participant engagement in refining exploits. Results will directly benefit the development of robust AI defenses."
+description: "The UK AISI Agent Red-Teaming Challenge invites participants to test the limits of AI agents through direct and indirect attacks, focusing on vulnerabilities like confidentiality breaches and instruction violations. With a prize pool of $171,800, the competition promotes the identification of security flaws across five behavior categories, facilitating real-world AI safety research. Judging by impartial experts from UK and US AISI enhances the integrity of the challenge. Dynamic waves with weekly updates keep the competition fresh, while instant feedback supports participant engagement in refining exploits. Results will directly benefit the development of robust AI defenses."
 ---
 
 [Leaderboard](https://app.grayswan.ai/arena/leaderboard) [About](https://app.grayswan.ai/arena/about)

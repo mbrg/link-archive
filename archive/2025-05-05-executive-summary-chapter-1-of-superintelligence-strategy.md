@@ -8,7 +8,7 @@ tags:
    - Military Competitiveness
 link: https://www.nationalsecurity.ai/chapter/executive-summary
 date: 2025-05-05
-summary: "The rise of advanced AI presents significant national security challenges, comparable to nuclear proliferation. This necessitates a framework of Mutual Assured AI Malfunction (MAIM) for deterrence among states, mirroring nuclear deterrence strategies. To prevent rogue actors from leveraging AI, concepts such as compute security, information security, and AI-specific safeguards are critical. States must also enhance their competitive edge through military adoption of AI, robust domestic chip manufacturing, and legal frameworks for AI governance. The interplay between AI development and security necessitates careful management to prevent destabilization and promote prosperity."
+description: "The rise of advanced AI presents significant national security challenges, comparable to nuclear proliferation. This necessitates a framework of Mutual Assured AI Malfunction (MAIM) for deterrence among states, mirroring nuclear deterrence strategies. To prevent rogue actors from leveraging AI, concepts such as compute security, information security, and AI-specific safeguards are critical. States must also enhance their competitive edge through military adoption of AI, robust domestic chip manufacturing, and legal frameworks for AI governance. The interplay between AI development and security necessitates careful management to prevent destabilization and promote prosperity."
 ---
 
 # Executive Summary

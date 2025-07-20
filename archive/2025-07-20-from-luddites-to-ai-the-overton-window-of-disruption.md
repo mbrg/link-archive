@@ -8,7 +8,7 @@ tags:
    - Disruptive Innovation
 link: https://ghuntley.com/overton/
 date: 2025-07-20
-summary: "The concept of the Overton Window applies to disruptive innovation, particularly in AI and software development. It shows how previously \"unthinkable\" technologies, like AI integrations in IDEs, can become mainstream by aligning with existing industry practices. Notably, Claude Code and Amp are examples of recent AI tools that have shifted perceptions. As the market evolves, firms must strategically frame innovations to transition from skepticism to acceptance, facilitating adoption while reshaping developer identities. This dynamic reflects historical patterns akin to the Luddite movement's resistance to automation."
+description: "The concept of the Overton Window applies to disruptive innovation, particularly in AI and software development. It shows how previously \"unthinkable\" technologies, like AI integrations in IDEs, can become mainstream by aligning with existing industry practices. Notably, Claude Code and Amp are examples of recent AI tools that have shifted perceptions. As the market evolves, firms must strategically frame innovations to transition from skepticism to acceptance, facilitating adoption while reshaping developer identities. This dynamic reflects historical patterns akin to the Luddite movement's resistance to automation."
 ---
 
 I've been thinking about [Overton Windows](https://en.wikipedia.org/wiki/Overton_window?ref=ghuntley.com) lately, but not of the political variety.

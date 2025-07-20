@@ -8,7 +8,7 @@ tags:
    - Artificial Intelligence
 link: https://3quarksdaily.com/3quarksdaily/2025/04/fermi-redux-where-is-all-the-ai-enabled-cybercrime.html
 date: 2025-05-05
-summary: "Malcolm Murray explores the absence of significant AI-enabled cybercrime despite advances in AI capabilities. He identifies several factors: 
+description: "Malcolm Murray explores the absence of significant AI-enabled cybercrime despite advances in AI capabilities. He identifies several factors: 
 
 1. **Defense Mechanisms**: Current AI defenses may limit cybercriminal access.
 2. **Adoption Curve**: Typical rapid tech adoption suggests slow uptake among cybercriminals.

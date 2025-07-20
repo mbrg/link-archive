@@ -8,7 +8,7 @@ tags:
    - deserialization
 link: https://trustedsec.com/blog/hunting-deserialization-vulnerabilities-with-claude
 date: 2025-07-20
-summary: "The blog post details the use of an MCP (Model Context Protocol) server to leverage AI, specifically Claude, for identifying deserialization vulnerabilities in .NET assemblies. It guides the setup of an MCP server via Docker and demonstrates how to detect known vulnerabilities, such as unsafe deserialization in `AddinUtil.exe`. The AI successfully maps attack paths and can generate proof-of-concept exploit code. Future exploration will aim at automating this analysis at scale, presenting potential implications for mitigating .NET security risks more efficiently. The approach highlights the evolving role of AI in cybersecurity vulnerability assessment and exploitation."
+description: "The blog post details the use of an MCP (Model Context Protocol) server to leverage AI, specifically Claude, for identifying deserialization vulnerabilities in .NET assemblies. It guides the setup of an MCP server via Docker and demonstrates how to detect known vulnerabilities, such as unsafe deserialization in `AddinUtil.exe`. The AI successfully maps attack paths and can generate proof-of-concept exploit code. Future exploration will aim at automating this analysis at scale, presenting potential implications for mitigating .NET security risks more efficiently. The approach highlights the evolving role of AI in cybersecurity vulnerability assessment and exploitation."
 ---
 
 - [Blog](https://trustedsec.com/blog)

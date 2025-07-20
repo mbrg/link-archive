@@ -8,7 +8,7 @@ tags:
    - data science
 link: https://roadmap.sh/ai-red-teaming
 date: 2025-05-04
-summary: "The new AI Red Teaming roadmap provides a structured learning path for aspiring AI red teaming experts. With a user-friendly interface and community engagement, it facilitates skill acquisition in AI security. The roadmap is part of a broader platform that boasts over 317K GitHub stars and a vibrant community of 1.5M users, reflecting its popularity among developers. This initiative emphasizes the growing need for specialized skills in AI security, indicating a trend towards enhanced cybersecurity measures in machine learning applications. Users can track progress and contribute to the educational content."
+description: "The new AI Red Teaming roadmap provides a structured learning path for aspiring AI red teaming experts. With a user-friendly interface and community engagement, it facilitates skill acquisition in AI security. The roadmap is part of a broader platform that boasts over 317K GitHub stars and a vibrant community of 1.5M users, reflecting its popularity among developers. This initiative emphasizes the growing need for specialized skills in AI security, indicating a trend towards enhanced cybersecurity measures in machine learning applications. Users can track progress and contribute to the educational content."
 ---
 
 [Master SQL with our new premium courseAnnouncing our SQL courseStart LearningVisit→](https://roadmap.sh/courses/sql)

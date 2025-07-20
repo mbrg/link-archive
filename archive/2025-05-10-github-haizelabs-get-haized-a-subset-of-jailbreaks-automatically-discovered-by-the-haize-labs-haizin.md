@@ -8,7 +8,7 @@ tags:
    - jailbreaks
 link: https://github.com/haizelabs/get-haized
 date: 2025-05-10
-summary: "The Haize Labs GitHub repository, get-haized, features a suite of tools designed for the automatic discovery of jailbreaks in AI systems. Utilizing advanced red-teaming and fuzzing algorithms, the suite targets input vulnerabilities across various modalities, including audio, video, code, and text. Demonstrated examples reveal the potential to bypass safety mechanisms implemented by AI companies. The tools expose critical weaknesses that could lead to misuse, highlighting the ongoing necessity for robust AI safety protocols. Access to the suite is available for those interested in refining AI safety measures."
+description: "The Haize Labs GitHub repository, get-haized, features a suite of tools designed for the automatic discovery of jailbreaks in AI systems. Utilizing advanced red-teaming and fuzzing algorithms, the suite targets input vulnerabilities across various modalities, including audio, video, code, and text. Demonstrated examples reveal the potential to bypass safety mechanisms implemented by AI companies. The tools expose critical weaknesses that could lead to misuse, highlighting the ongoing necessity for robust AI safety protocols. Access to the suite is available for those interested in refining AI safety measures."
 ---
 
 [Skip to content](https://github.com/haizelabs/get-haized#start-of-content)

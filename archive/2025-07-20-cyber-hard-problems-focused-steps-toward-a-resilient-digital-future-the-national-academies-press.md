@@ -8,7 +8,7 @@ tags:
    - technology policy
 link: https://nap.nationalacademies.org/catalog/29056/cyber-hard-problems-focused-steps-toward-a-resilient-digital-future
 date: 2025-07-20
-summary: "The report \"Cyber Hard Problems: Focused Steps Toward a Resilient Digital Future\" identifies critical technical challenges in cybersecurity, emphasizing the urgent need for enhanced resiliency against evolving threats. It updates the original Cyber Hard Problems list from 1996, highlighting issues exacerbated by human and societal misalignment. Key recommendations include fostering community-wide coordination in research and development to effectively address these challenges. This strategic approach aims to mitigate risks associated with the increasing complexity and ubiquity of cyber technologies, underscoring the necessity for a resilient digital framework for national security."
+description: "The report \"Cyber Hard Problems: Focused Steps Toward a Resilient Digital Future\" identifies critical technical challenges in cybersecurity, emphasizing the urgent need for enhanced resiliency against evolving threats. It updates the original Cyber Hard Problems list from 1996, highlighting issues exacerbated by human and societal misalignment. Key recommendations include fostering community-wide coordination in research and development to effectively address these challenges. This strategic approach aims to mitigate risks associated with the increasing complexity and ubiquity of cyber technologies, underscoring the necessity for a resilient digital framework for national security."
 ---
 
 [Skip to main content](https://nap.nationalacademies.org/catalog/29056/cyber-hard-problems-focused-steps-toward-a-resilient-digital-future#content)

@@ -8,7 +8,7 @@ tags:
    - Agentic AI
 link: https://mamtaupadhyay.com/2025/06/08/toolchain-integrity-in-mcp/
 date: 2025-07-20
-summary: "The article addresses critical vulnerabilities in Multi-Command Processor (MCP) architectures, emphasizing \"Toolchain Integrity\" as a significant threat, often underestimated compared to prompt injection and memory leaks. Key risks include malicious plugins, over-permissive APIs, and untrusted transitive dependencies. LLMs often trust tool outputs without sanitization, leading to potential exploitation via tool response re-prompting. The author recommends strict vetting of plugins, validation of I/O, auditing third-party code, and rate-limiting tool use to mitigate these vulnerabilities. The central theme underscores that security must encompass the entire toolchain, not just user inputs."
+description: "The article addresses critical vulnerabilities in Multi-Command Processor (MCP) architectures, emphasizing \"Toolchain Integrity\" as a significant threat, often underestimated compared to prompt injection and memory leaks. Key risks include malicious plugins, over-permissive APIs, and untrusted transitive dependencies. LLMs often trust tool outputs without sanitization, leading to potential exploitation via tool response re-prompting. The author recommends strict vetting of plugins, validation of I/O, auditing third-party code, and rate-limiting tool use to mitigate these vulnerabilities. The central theme underscores that security must encompass the entire toolchain, not just user inputs."
 ---
 
 [Skip to content](https://mamtaupadhyay.com/2025/06/08/toolchain-integrity-in-mcp/#primary)

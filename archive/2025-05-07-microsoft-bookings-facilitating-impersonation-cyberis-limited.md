@@ -8,7 +8,7 @@ tags:
    - cybersecurity
 link: https://www.cyberis.com/article/microsoft-bookings-facilitating-impersonation
 date: 2025-05-07
-summary: "Microsoft Bookings allows end users to create accounts in Entra, introducing significant security vulnerabilities. Attackers can leverage this feature to produce impersonation email accounts, allowing for phishing attacks under the guise of legitimate users, potentially even mimicking high-profile executives. They can also hijack dormant accounts linked to ex-employees, create functional mailboxes without consuming licenses, and exploit these for malicious purposes like domain validation. To mitigate these risks, organizations are advised to audit shared Bookings pages, disable user access unless necessary, and monitor account creation activities within Entra."
+description: "Microsoft Bookings allows end users to create accounts in Entra, introducing significant security vulnerabilities. Attackers can leverage this feature to produce impersonation email accounts, allowing for phishing attacks under the guise of legitimate users, potentially even mimicking high-profile executives. They can also hijack dormant accounts linked to ex-employees, create functional mailboxes without consuming licenses, and exploit these for malicious purposes like domain validation. To mitigate these risks, organizations are advised to audit shared Bookings pages, disable user access unless necessary, and monitor account creation activities within Entra."
 ---
 
 [Skip to main content](https://www.cyberis.com/article/microsoft-bookings-facilitating-impersonation#main-content)
