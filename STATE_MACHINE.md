@@ -17,7 +17,7 @@ stateDiagram-v2
     
     PR --> Workflow2: 🤖 validate-and-review.yml
     
-    Workflow2 --> PRwithLabel: ✅ Adds label: ready-to-comment
+    Workflow2 --> PRwithLabel: ✅ Adds label
     Workflow2 --> PRClosed: ❌ Closes PR
     
     PRwithLabel --> Review: 👤 Manual review
@@ -31,7 +31,7 @@ stateDiagram-v2
     
     Approval --> Workflow3: 🤖 create-weblog.yml
     state Workflow3 {
-        [*] --> CheckLabel: Has ready-to-comment?
+        [*] --> CheckLabel: Has label?
         CheckLabel --> Generate: Yes
         CheckLabel --> [*]: No
         Generate --> AddWeblog: Add weblog to PR
@@ -45,7 +45,7 @@ stateDiagram-v2
     Manual --> Issue: Retry
 
     note right of Issue
-        Format: "URL: {url}"
+        Format: URL: https://...
         Triggers: workflow_dispatch
     end note
 
