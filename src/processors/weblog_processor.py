@@ -97,30 +97,40 @@ def parse_pr_comments(comments_json):
 def create_weblog_entry(frontmatter, archive_content, review_comments, pr_comments, archive_filename):
     """Create weblog entry with quoted paragraphs and comments."""
     
-    # Create weblog frontmatter
+    # Create weblog frontmatter - carry over all fields from archive
     weblog_frontmatter = {
         'title': frontmatter['title'],
         'date': datetime.now().strftime('%Y-%m-%d'),
-        'original_link': frontmatter['link'],
         'archive_link': f"archive/{Path(archive_filename).name}",
         'tags': frontmatter.get('tags', []) + ['weblog'],
         'type': 'weblog'
     }
     
+    # Carry over description if it exists
+    if frontmatter.get('description'):
+        weblog_frontmatter['description'] = frontmatter['description']
+    
     # Start building the weblog content
     weblog_content = [f"# {frontmatter['title']}\n"]
-    weblog_content.append(f"**Original:** [{frontmatter['title']}]({frontmatter['link']})")
-    weblog_content.append(f"**Archive:** [Local copy]({weblog_frontmatter['archive_link']}) (in case of link rot)\n")
+    weblog_content.append(f"**Archive:** [Link]({weblog_frontmatter['archive_link']})\n")
     
-    if frontmatter.get('summary'):
-        weblog_content.append(f"**Summary:** {frontmatter['summary']}\n")
+    # Add general comments first (after links)
+    general_comments = []
+    if pr_comments:
+        general_comments = [c for c in pr_comments 
+                          if not c['body'].lower().startswith(('lgtm', 'approved', 'looks good'))]
+        if general_comments:
+            for comment in general_comments:
+                weblog_content.append(f"{comment['body']}\n")
+    
+    # Add small divider if there are both general comments and review comments
+    if general_comments and review_comments:
+        weblog_content.append("---\n")
     
     # Process line-specific comments with quoted paragraphs
     archive_lines = archive_content.split('\n')
     
     if review_comments:
-        weblog_content.append("## Key Points & Commentary\n")
-        
         for comment in review_comments:
             if comment.get('line'):
                 # Extract the paragraph for this line
@@ -129,29 +139,13 @@ def create_weblog_entry(frontmatter, archive_content, review_comments, pr_commen
                     weblog_content.append(f"> {paragraph}\n")
                     weblog_content.append(f"**My take:** {comment['body']}\n")
     
-    # Add general comments
-    if pr_comments:
-        general_comments = [c for c in pr_comments 
-                          if not c['body'].lower().startswith(('lgtm', 'approved', 'looks good'))]
-        if general_comments:
-            weblog_content.append("## Additional Thoughts\n")
-            for comment in general_comments:
-                weblog_content.append(f"{comment['body']}\n")
-    
     return weblog_frontmatter, '\n'.join(weblog_content)
 
-def generate_weblog_filename(title, date_str=None):
-    """Generate filename for weblog entry."""
-    if date_str is None:
-        date_str = datetime.now().strftime('%Y-%m-%d')
-    
-    slug = slugify(title)
-    return f"{date_str}-{slug}.md"
-
-def create_weblog_file(frontmatter, content, output_dir="weblog"):
+def create_weblog_file(frontmatter, content, archive_filename, output_dir="weblog"):
     """Create the weblog markdown file."""
     
-    filename = generate_weblog_filename(frontmatter['title'])
+    # Reuse the archive filename
+    filename = Path(archive_filename).name
     filepath = Path(output_dir) / filename
     
     # Create the final weblog content
@@ -189,7 +183,7 @@ def main():
         )
         
         # Create the weblog file
-        weblog_file = create_weblog_file(weblog_frontmatter, weblog_content)
+        weblog_file = create_weblog_file(weblog_frontmatter, weblog_content, archive_file)
         
         # Output for GitHub Actions
         print(f"weblog_file:{weblog_file}")

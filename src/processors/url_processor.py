@@ -47,7 +47,7 @@ def extract_page_content(url):
     return title, result.markdown
 
 def process_content(content, model_name):
-    """Process content using llm to generate summary and tags."""
+    """Process content using llm to generate description and tags."""
     # Configure LLM with OpenAI API key
     api_key = os.getenv('OPENAI_API_KEY')
     if not api_key:
@@ -56,12 +56,12 @@ def process_content(content, model_name):
     model = llm.get_model(model_name)
     model.api_key = api_key
     
-    # Generate summary
-    summary_response = model.prompt(
+    # Generate description
+    description_response = model.prompt(
         content,
-        system="Summarize this content in a concise, technical style suitable for Michael Bargury's link log (mbgsec.com). Focus on key technical insights and implications. Keep it under 100 words."
+        system="Describe this content in a concise, technical style suitable for Michael Bargury's link log (mbgsec.com). Focus on key technical insights and implications. Keep it under 100 words."
     )
-    summary = clean_string(summary_response.text())
+    description = clean_string(description_response.text())
     
     # Generate tags with structured output
     tags_response = model.prompt(
@@ -78,7 +78,7 @@ def process_content(content, model_name):
     )
     title = clean_string(title_response.text().strip('"'))
     
-    return title, summary, tags
+    return title, description, tags
 
 def clean_string(text):
     return text.strip().replace('"', '\\"').split('\n')[0]
@@ -116,7 +116,7 @@ def create_filename(title):
     # Ensure the filename is valid for the filesystem
     return Path(filename).name
 
-def save_file(toread_dir, filename, title, tags, clean_url, content, generated_summary, generated_tags):
+def save_file(toread_dir, filename, title, tags, clean_url, content, generated_description, generated_tags):
     """Save the article to a file with proper front matter."""
     # Combine provided tags with generated tags, removing duplicates
     all_tags = list(set(tags + generated_tags))
@@ -129,7 +129,7 @@ title: "{title}"
 tags:{tags_yaml}
 link: {clean_url}
 date: {datetime.now().strftime('%Y-%m-%d')}
-summary: "{generated_summary}"
+description: "{generated_description}"
 ---
 
 {content}
@@ -157,13 +157,13 @@ def main():
         print(f"title:{title}")
         sys.exit(0)
     
-    # Process the content to get summary and tags
-    generated_title, generated_summary, generated_tags = process_content(content, model_name)
+    # Process the content to get description and tags
+    generated_title, generated_description, generated_tags = process_content(content, model_name)
     title_to_use = generated_title if title == '' else title
     
     # Create and save new file
     filename = create_filename(title_to_use)
-    save_file(toread_dir, filename, title_to_use, [], clean_url, content, generated_summary, generated_tags)
+    save_file(toread_dir, filename, title_to_use, [], clean_url, content, generated_description, generated_tags)
     print(f"filename:{filename}")
     print(f"title:{title}")
     print("existing_file:")

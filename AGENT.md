@@ -25,7 +25,7 @@
 ## Code Style
 - **Python**: Use uv script headers for dependencies, Python 3.12+, type hints
 - **Filenames**: `YYYY-MM-DD-slugified-title.md` format for archive files
-- **YAML frontmatter**: title, tags (array), link, date, summary fields required
+- **YAML frontmatter**: title, tags (array), link, date, description fields required
 - **Environment**: Load from .env file, fallback to environment variables
 - **Error handling**: Validate URLs, check API keys, graceful failures with GitHub comments
 - **Git workflow**: Feature branches, automated PRs, validation before merge

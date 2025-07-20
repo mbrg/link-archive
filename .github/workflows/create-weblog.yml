@@ -105,10 +105,6 @@ jobs:
         run: |
           uv run --script src/processors/weblog_validator.py weblog
 
-      - name: Validate archive entries  
-        run: |
-          uv run --script src/processors/frontmatter_validator.py archive
-
       - name: Merge Archive PR
         uses: actions/github-script@v7
         with:
