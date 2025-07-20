@@ -119,10 +119,12 @@ jobs:
           ${{ steps.get_pr_data.outputs.comments_json }}
           EOFJSON
       
-      - name: Check JSON file
+      - name: Validate JSON file
         run: |
-          echo "JSON file size: $(wc -c < comments.json) bytes"
-          echo "First 100 chars: $(head -c 100 comments.json)"
+          if [ ! -f comments.json ] || [ ! -s comments.json ]; then
+            echo "Error: comments.json file is missing or empty"
+            exit 1
+          fi
       
       - name: Create Weblog Entry
         id: create_weblog
