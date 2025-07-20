@@ -115,8 +115,8 @@ jobs:
         with:
           script: |
             const fs = require('fs');
-            const commentsJson = `${{ steps.get_pr_data.outputs.comments_json }}`;
-            fs.writeFileSync('comments.json', commentsJson);
+            const commentsData = ${{ steps.get_pr_data.outputs.comments_json }};
+            fs.writeFileSync('comments.json', JSON.stringify(commentsData));
       
       - name: Create Weblog Entry
         id: create_weblog
