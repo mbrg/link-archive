@@ -147,17 +147,11 @@ jobs:
 
       - name: Add weblog to PR
         run: |
-          # Check if there are any changes to commit
-          if git diff --staged --quiet; then
-            echo "No changes to commit - weblog already up to date"
-            exit 0
-          fi
-          
           git add "${{ steps.create_weblog.outputs.weblog_file }}"
           
-          # Check if there are still changes after adding
+          # Check if there are changes to commit after adding
           if git diff --staged --quiet; then
-            echo "No changes to commit after git add"
+            echo "No changes to commit - weblog already up to date"
             exit 0
           fi
           
