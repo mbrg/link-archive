@@ -16,8 +16,8 @@ from dotenv import load_dotenv
 # Load environment variables from .env file if it exists
 load_dotenv()
 
-def validate_linklog_file(filepath):
-    """Validate a linklog markdown file."""
+def validate_weblog_file(filepath):
+    """Validate a weblog markdown file."""
     errors = []
     
     try:
@@ -53,9 +53,9 @@ def validate_linklog_file(filepath):
         elif not frontmatter[field]:
             errors.append(f"Empty required field '{field}' in {filepath}")
     
-    # Validate type is 'linklog'
-    if frontmatter.get('type') != 'linklog':
-        errors.append(f"Type must be 'linklog' in {filepath}, got '{frontmatter.get('type')}'")
+    # Validate type is 'weblog'
+    if frontmatter.get('type') != 'weblog':
+        errors.append(f"Type must be 'weblog' in {filepath}, got '{frontmatter.get('type')}'")
     
     # Validate date format (YYYY-MM-DD)
     date_val = frontmatter.get('date')
@@ -88,7 +88,7 @@ def validate_linklog_file(filepath):
     return errors
 
 def validate_directory(directory):
-    """Validate all linklog files in a directory."""
+    """Validate all weblog files in a directory."""
     directory_path = Path(directory)
     
     if not directory_path.exists():
@@ -100,17 +100,17 @@ def validate_directory(directory):
         return False
     
     all_errors = []
-    linklog_files = list(directory_path.glob('*.md'))
+    weblog_files = list(directory_path.glob('*.md'))
     
-    if not linklog_files:
+    if not weblog_files:
         print(f"No markdown files found in {directory}")
         return True
     
-    for filepath in linklog_files:
+    for filepath in weblog_files:
         if filepath.name == '.gitkeep':
             continue
             
-        errors = validate_linklog_file(filepath)
+        errors = validate_weblog_file(filepath)
         if errors:
             all_errors.extend([f"{filepath.name}: {error}" for error in errors])
     
@@ -120,12 +120,12 @@ def validate_directory(directory):
             print(f"  - {error}")
         return False
     
-    print(f"All {len(linklog_files)} linklog files are valid")
+    print(f"All {len(weblog_files)} weblog files are valid")
     return True
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python linklog_validator.py <directory>")
+        print("Usage: python weblog_validator.py <directory>")
         sys.exit(1)
     
     directory = sys.argv[1]

@@ -24,10 +24,10 @@ The system automatically fetches content, processes it with AI, and creates a pu
 ### Commentary System
 
 1. Archive PR created with content for review
-2. You comment on specific lines to quote full paragraphs in linklog
+2. You comment on specific lines to quote full paragraphs in weblog
 3. General PR comments become "Additional Thoughts" 
-4. On approval: linklog auto-generated with quoted content + your commentary
-5. Both archive and linklog validated before merge
+4. On approval: weblog auto-generated with quoted content + your commentary
+5. Both archive and weblog validated before merge
 
 ## Workflow Chain
 
@@ -80,7 +80,7 @@ The system has multiple entry points that all funnel through the same core workf
                                🤖 AUTOMATED ON APPROVAL
                                                    ▼
                                                 ┌────────────────────┐
-                                                │  create-linklog    │
+                                                │  create-weblog    │
                                                 │ Creates Linklog +  │
                                                 │   Merges Both      │
                                                 └────────────────────┘

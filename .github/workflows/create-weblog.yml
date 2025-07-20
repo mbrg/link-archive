@@ -10,7 +10,7 @@ permissions:
   actions: write
 
 jobs:
-  create-linklog:
+  create-weblog:
     if: github.event.review.state == 'approved' && contains(github.event.pull_request.labels.*.name, 'ready-to-comment')
     runs-on: ubuntu-latest
     steps:
@@ -79,9 +79,9 @@ jobs:
           git checkout ${{ github.event.pull_request.head.ref }}
 
       - name: Create Linklog Entry
-        id: create_linklog
+        id: create_weblog
         run: |
-          OUTPUT=$(uv run --script src/processors/linklog_processor.py "${{ steps.get_pr_data.outputs.archive_file }}" '${{ steps.get_pr_data.outputs.comments_json }}')
+          OUTPUT=$(uv run --script src/processors/weblog_processor.py "${{ steps.get_pr_data.outputs.archive_file }}" '${{ steps.get_pr_data.outputs.comments_json }}')
           echo "$OUTPUT" | while IFS=: read -r key value; do
             if [ -n "$key" ] && [ -n "$value" ]; then
               echo "${key}=${value}" >> $GITHUB_OUTPUT
@@ -95,15 +95,15 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
 
-      - name: Add linklog to PR
+      - name: Add weblog to PR
         run: |
-          git add "${{ steps.create_linklog.outputs.linklog_file }}"
-          git commit -m "Add linklog entry: ${{ steps.create_linklog.outputs.title }}"
+          git add "${{ steps.create_weblog.outputs.weblog_file }}"
+          git commit -m "Add weblog entry: ${{ steps.create_weblog.outputs.title }}"
           git push origin ${{ github.event.pull_request.head.ref }}
 
-      - name: Validate linklog entries
+      - name: Validate weblog entries
         run: |
-          uv run --script src/processors/linklog_validator.py linklog
+          uv run --script src/processors/weblog_validator.py weblog
 
       - name: Validate archive entries  
         run: |
@@ -122,9 +122,9 @@ jobs:
               issue_number: prNumber,
               body: `✅ **Linklog entry created!**
               
-Your review comments have been processed and a linklog entry has been created at \`${{ steps.create_linklog.outputs.linklog_file }}\`.
+Your review comments have been processed and a weblog entry has been created at \`${{ steps.create_weblog.outputs.weblog_file }}\`.
 
-The archive PR will now be merged with the linklog entry included.`
+The archive PR will now be merged with the weblog entry included.`
             });
             
             // Merge the PR
@@ -133,6 +133,6 @@ The archive PR will now be merged with the linklog entry included.`
               repo: context.repo.repo,
               pull_number: prNumber,
               merge_method: 'squash',
-              commit_title: `Add archive + linklog: ${{ steps.create_linklog.outputs.title }}`,
-              commit_message: `Archive with linklog entry at ${{ steps.create_linklog.outputs.linklog_file }}`
+              commit_title: `Add archive + weblog: ${{ steps.create_weblog.outputs.title }}`,
+              commit_message: `Archive with weblog entry at ${{ steps.create_weblog.outputs.weblog_file }}`
             });

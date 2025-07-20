@@ -94,67 +94,67 @@ def parse_pr_comments(comments_json):
         print(f"Error parsing comments JSON: {e}", file=sys.stderr)
         return [], []
 
-def create_linklog_entry(frontmatter, archive_content, review_comments, pr_comments, archive_filename):
-    """Create linklog entry with quoted paragraphs and comments."""
+def create_weblog_entry(frontmatter, archive_content, review_comments, pr_comments, archive_filename):
+    """Create weblog entry with quoted paragraphs and comments."""
     
-    # Create linklog frontmatter
-    linklog_frontmatter = {
+    # Create weblog frontmatter
+    weblog_frontmatter = {
         'title': frontmatter['title'],
         'date': datetime.now().strftime('%Y-%m-%d'),
         'original_link': frontmatter['link'],
         'archive_link': f"archive/{Path(archive_filename).name}",
-        'tags': frontmatter.get('tags', []) + ['linklog'],
-        'type': 'linklog'
+        'tags': frontmatter.get('tags', []) + ['weblog'],
+        'type': 'weblog'
     }
     
-    # Start building the linklog content
-    linklog_content = [f"# {frontmatter['title']}\n"]
-    linklog_content.append(f"**Original:** [{frontmatter['title']}]({frontmatter['link']})")
-    linklog_content.append(f"**Archive:** [Local copy]({linklog_frontmatter['archive_link']}) (in case of link rot)\n")
+    # Start building the weblog content
+    weblog_content = [f"# {frontmatter['title']}\n"]
+    weblog_content.append(f"**Original:** [{frontmatter['title']}]({frontmatter['link']})")
+    weblog_content.append(f"**Archive:** [Local copy]({weblog_frontmatter['archive_link']}) (in case of link rot)\n")
     
     if frontmatter.get('summary'):
-        linklog_content.append(f"**Summary:** {frontmatter['summary']}\n")
+        weblog_content.append(f"**Summary:** {frontmatter['summary']}\n")
     
     # Process line-specific comments with quoted paragraphs
     archive_lines = archive_content.split('\n')
     
     if review_comments:
-        linklog_content.append("## Key Points & Commentary\n")
+        weblog_content.append("## Key Points & Commentary\n")
         
         for comment in review_comments:
             if comment.get('line'):
                 # Extract the paragraph for this line
                 paragraph = extract_paragraph_for_line(archive_lines, comment['line'])
                 if paragraph:
-                    linklog_content.append(f"> {paragraph}\n")
-                    linklog_content.append(f"**My take:** {comment['body']}\n")
+                    weblog_content.append(f"> {paragraph}\n")
+                    weblog_content.append(f"**My take:** {comment['body']}\n")
     
     # Add general comments
     if pr_comments:
         general_comments = [c for c in pr_comments 
                           if not c['body'].lower().startswith(('lgtm', 'approved', 'looks good'))]
         if general_comments:
-            linklog_content.append("## Additional Thoughts\n")
+            weblog_content.append("## Additional Thoughts\n")
             for comment in general_comments:
-                linklog_content.append(f"{comment['body']}\n")
+                weblog_content.append(f"{comment['body']}\n")
     
-    return linklog_frontmatter, '\n'.join(linklog_content)
+    return weblog_frontmatter, '\n'.join(weblog_content)
 
-def generate_linklog_filename(title, date_str=None):
-    """Generate filename for linklog entry."""
+def generate_weblog_filename(title, date_str=None):
+    """Generate filename for weblog entry."""
     if date_str is None:
         date_str = datetime.now().strftime('%Y-%m-%d')
     
     slug = slugify(title)
     return f"{date_str}-{slug}.md"
 
-def create_linklog_file(frontmatter, content, output_dir="linklog"):
-    """Create the linklog markdown file."""
+def create_weblog_file(frontmatter, content, output_dir="weblog"):
+    """Create the weblog markdown file."""
     
-    filename = generate_linklog_filename(frontmatter['title'])
+    filename = generate_weblog_filename(frontmatter['title'])
     filepath = Path(output_dir) / filename
     
-    # Create the final linklog content
+    # Create the final weblog content
     final_content = f"""---
 {yaml.dump(frontmatter, default_flow_style=False)}---
 
@@ -170,7 +170,7 @@ def create_linklog_file(frontmatter, content, output_dir="linklog"):
 
 def main():
     if len(sys.argv) < 3:
-        print("Usage: python linklog_processor.py <archive_file> <comments_json>")
+        print("Usage: python weblog_processor.py <archive_file> <comments_json>")
         sys.exit(1)
     
     archive_file = sys.argv[1]
@@ -183,17 +183,17 @@ def main():
         # Parse PR comments
         review_comments, pr_comments = parse_pr_comments(comments_json)
         
-        # Create linklog entry
-        linklog_frontmatter, linklog_content = create_linklog_entry(
+        # Create weblog entry
+        weblog_frontmatter, weblog_content = create_weblog_entry(
             frontmatter, archive_content, review_comments, pr_comments, archive_file
         )
         
-        # Create the linklog file
-        linklog_file = create_linklog_file(linklog_frontmatter, linklog_content)
+        # Create the weblog file
+        weblog_file = create_weblog_file(weblog_frontmatter, weblog_content)
         
         # Output for GitHub Actions
-        print(f"linklog_file:{linklog_file}")
-        print(f"title:{linklog_frontmatter['title']}")
+        print(f"weblog_file:{weblog_file}")
+        print(f"title:{weblog_frontmatter['title']}")
         
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
