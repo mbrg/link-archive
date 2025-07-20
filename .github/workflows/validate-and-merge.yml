@@ -37,7 +37,7 @@ jobs:
           echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
       - name: Validate files
-        run: uv run --script scripts/archive/frontmatter_validator.py archive
+        run: uv run --script src/processors/frontmatter_validator.py archive
 
   merge:
     needs: validate
