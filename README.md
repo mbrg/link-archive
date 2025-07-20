@@ -80,7 +80,7 @@ The system has multiple entry points that all funnel through the same core workf
                                🤖 AUTOMATED ON APPROVAL
                                                    ▼
                                                 ┌────────────────────┐
-                                                │  create-weblog    │
+                                                │  create-weblog     │
                                                 │ Creates Linklog +  │
                                                 │   Merges Both      │
                                                 └────────────────────┘
