@@ -10,8 +10,32 @@ permissions:
   actions: write
 
 jobs:
+  check-conditions:
+    runs-on: ubuntu-latest
+    outputs:
+      should_create_weblog: ${{ steps.check.outputs.should_create }}
+    steps:
+      - name: Check if weblog creation is needed
+        id: check
+        run: |
+          if [[ "${{ github.event.review.state }}" != "approved" ]]; then
+            echo "Review not approved, skipping weblog creation"
+            echo "should_create=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          if [[ "${{ contains(github.event.pull_request.labels.*.name, 'ready-to-comment') }}" != "true" ]]; then
+            echo "PR does not have 'ready-to-comment' label, skipping weblog creation"
+            echo "should_create=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          echo "Conditions met, proceeding with weblog creation"
+          echo "should_create=true" >> $GITHUB_OUTPUT
+
   create-weblog:
-    if: github.event.review.state == 'approved' && contains(github.event.pull_request.labels.*.name, 'ready-to-comment')
+    needs: check-conditions
+    if: needs.check-conditions.outputs.should_create == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
