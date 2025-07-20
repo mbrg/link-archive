@@ -147,9 +147,28 @@ jobs:
 
       - name: Add weblog to PR
         run: |
+          # Check if there are any changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit - weblog already up to date"
+            exit 0
+          fi
+          
           git add "${{ steps.create_weblog.outputs.weblog_file }}"
-          git commit -m "Add weblog entry: ${{ steps.create_weblog.outputs.title }}" || git commit --amend -m "Update weblog entry: ${{ steps.create_weblog.outputs.title }}"
-          git push origin ${{ steps.pr_info.outputs.branch_ref }}
+          
+          # Check if there are still changes after adding
+          if git diff --staged --quiet; then
+            echo "No changes to commit after git add"
+            exit 0
+          fi
+          
+          # Try to commit, if it fails due to "nothing to commit", that's fine
+          if git commit -m "Add weblog entry: ${{ steps.create_weblog.outputs.title }}"; then
+            # Pull any remote changes and push
+            git pull origin ${{ steps.pr_info.outputs.branch_ref }} --rebase || true
+            git push origin ${{ steps.pr_info.outputs.branch_ref }}
+          else
+            echo "Nothing to commit or commit failed"
+          fi
 
       - name: Validate weblog entries
         run: |
