@@ -119,6 +119,11 @@ jobs:
           ${{ steps.get_pr_data.outputs.comments_json }}
           EOFJSON
       
+      - name: Check JSON file
+        run: |
+          echo "JSON file size: $(wc -c < comments.json) bytes"
+          echo "First 100 chars: $(head -c 100 comments.json)"
+      
       - name: Create Weblog Entry
         id: create_weblog
         run: |
