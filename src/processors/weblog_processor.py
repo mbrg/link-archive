@@ -66,12 +66,9 @@ def extract_paragraph_for_line(content_lines, line_number):
 def parse_pr_comments(comments_input):
     """Parse PR review comments from GitHub API JSON."""
     try:
-        # Check if input is a file path or JSON string
-        if Path(comments_input).exists():
-            with open(comments_input, 'r', encoding='utf-8') as f:
-                comments_data = json.load(f)
-        else:
-            comments_data = json.loads(comments_input)
+        # Always treat as a file path
+        with open(comments_input, 'r', encoding='utf-8') as f:
+            comments_data = json.load(f)
         
         # Extract review comments (line-specific comments)
         review_comments = []
