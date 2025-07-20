@@ -95,10 +95,11 @@ def parse_pr_comments(comments_input):
                         'author': comment['user']['login']
                     })
         
-        # Extract review-level comments (approval comments)
+        # Extract ALL review-level comments (approval comments, change requests, etc.)
         review_approval_comments = []
         if 'reviews' in comments_data:
             for review in comments_data['reviews']:
+                # Include ALL reviews with comments, regardless of state
                 if review.get('body') and review['body'].strip():
                     review_approval_comments.append({
                         'body': review['body'],
@@ -138,17 +139,29 @@ def create_weblog_entry(frontmatter, archive_content, review_comments, pr_commen
     if review_comments:
         weblog_content.append("---\n")
     
-    # Process line-specific comments with quoted paragraphs
+    # Process ALL line-specific comments with quoted paragraphs
     archive_lines = archive_content.split('\n')
     
     if review_comments:
-        for comment in review_comments:
+        # Sort comments by line number to maintain logical order
+        sorted_comments = sorted(review_comments, key=lambda x: x.get('line', 0))
+        for comment in sorted_comments:
+            # Include ALL comments, with or without line numbers
             if comment.get('line'):
                 # Extract the paragraph for this line
                 paragraph = extract_paragraph_for_line(archive_lines, comment['line'])
                 if paragraph:
                     weblog_content.append(f"> {paragraph}\n")
-                    weblog_content.append(f"**My take:** {comment['body']}\n")
+                else:
+                    # If paragraph extraction fails, include the line itself
+                    if comment['line'] <= len(archive_lines):
+                        line_content = archive_lines[comment['line'] - 1].strip()
+                        if line_content:
+                            weblog_content.append(f"> {line_content}\n")
+                weblog_content.append(f"**My take:** {comment['body']}\n")
+            else:
+                # Comments without line numbers (shouldn't happen but include them anyway)
+                weblog_content.append(f"**My take:** {comment['body']}\n")
     
     return weblog_frontmatter, '\n'.join(weblog_content)
 
