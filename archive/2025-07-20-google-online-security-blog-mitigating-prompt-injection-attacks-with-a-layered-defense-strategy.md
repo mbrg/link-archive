@@ -10,7 +10,7 @@ tags:
    - ERR_BLOCKED_BY_CLIENT
 link: https://security.googleblog.com/2025/06/mitigating-prompt-injection-attacks.html
 date: 2025-07-20
-summary: "2542116.fls.doubleclick.net is flagged as blocked by a browser extension, generating an ERR_BLOCKED_BY_CLIENT error. This indicates that client-side restrictions, likely from ad-blocking or privacy extensions, are hindering access to this DoubleClick domain. This blockage raises implications for online advertising practices and user tracking, emphasizing the importance of understanding how such extensions influence web analytics and ad delivery. Users are prompted to disable extensions to regain access, highlighting the ongoing conflict between user privacy and marketing strategies."
+description: "2542116.fls.doubleclick.net is flagged as blocked by a browser extension, generating an ERR_BLOCKED_BY_CLIENT error. This indicates that client-side restrictions, likely from ad-blocking or privacy extensions, are hindering access to this DoubleClick domain. This blockage raises implications for online advertising practices and user tracking, emphasizing the importance of understanding how such extensions influence web analytics and ad delivery. Users are prompted to disable extensions to regain access, highlighting the ongoing conflict between user privacy and marketing strategies."
 ---
 
 2542116.fls.doubleclick.net

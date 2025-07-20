@@ -8,7 +8,7 @@ tags:
    - Grant Program
 link: https://openai.com/index/security-on-the-path-to-agi/
 date: 2025-05-03
-summary: "OpenAI is enhancing its cybersecurity initiatives as it progresses toward AGI. The updated Cybersecurity Grant Program now accepts broader project proposals focusing on AI-driven patching, model privacy, and advanced threat response. Notably, the maximum bug bounty payout has increased to $100,000 for critical findings. OpenAI emphasizes contributions from the cybersecurity community, continuous red teaming for proactive defense, and collaboration to counter malicious AI misuse. Security measures are evolving alongside infrastructure advancements, incorporating cutting-edge practices like zero-trust architectures. As user base expands, adherence to rigorous security protocols remains paramount."
+description: "OpenAI is enhancing its cybersecurity initiatives as it progresses toward AGI. The updated Cybersecurity Grant Program now accepts broader project proposals focusing on AI-driven patching, model privacy, and advanced threat response. Notably, the maximum bug bounty payout has increased to $100,000 for critical findings. OpenAI emphasizes contributions from the cybersecurity community, continuous red teaming for proactive defense, and collaboration to counter malicious AI misuse. Security measures are evolving alongside infrastructure advancements, incorporating cutting-edge practices like zero-trust architectures. As user base expands, adherence to rigorous security protocols remains paramount."
 ---
 
 Switch to

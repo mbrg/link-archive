@@ -8,7 +8,7 @@ tags:
    - AI Agents
 link: https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus
 date: 2025-07-20
-summary: "The Manus project emphasizes context engineering to enhance AI agents by focusing on key metrics like KV-cache hit rate, which impacts latency and cost significantly. It advocates for stable prompt prefixes, append-only context, and explicit cache breakpoints to optimize performance. Dynamic tool management is discouraged; instead, a state machine is used to mask actions. The file system becomes an externalized memory for efficiently managing extensive inputs. To maintain focus in lengthy tasks, agents utilize dynamic recitation of goals. Notably, retaining erroneous actions fosters adaptive learning in agents, underscoring the importance of careful context shaping for improved agent behavior."
+description: "The Manus project emphasizes context engineering to enhance AI agents by focusing on key metrics like KV-cache hit rate, which impacts latency and cost significantly. It advocates for stable prompt prefixes, append-only context, and explicit cache breakpoints to optimize performance. Dynamic tool management is discouraged; instead, a state machine is used to mask actions. The file system becomes an externalized memory for efficiently managing extensive inputs. To maintain focus in lengthy tasks, agents utilize dynamic recitation of goals. Notably, retaining erroneous actions fosters adaptive learning in agents, underscoring the importance of careful context shaping for improved agent behavior."
 ---
 
 English

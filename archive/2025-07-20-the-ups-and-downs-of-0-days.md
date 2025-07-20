@@ -8,7 +8,7 @@ tags:
    - exploit analysis
 link: https://blog.google/threat-analysis-group/0-days-exploited-wild-2022/%23:~:text%3DOver%252040%2525%2520of%2520the%25200%252Ddays%2520discovered%2520were%2520variants%2520of%2520previously%2520reported%2520vulnerabilities/
 date: 2025-07-20
-summary: "In 2022, 41 0-day vulnerabilities were exploited in the wild, a significant drop from 69 in 2021, signaling improvements in cybersecurity resilience. Notably, patch delays on Android platforms allowed n-days to function like 0-days. Although browsers saw fewer 0-day exploits due to enhanced defenses, many attackers shifted to 0-click methods. Over 40% of 0-days were variants of previously identified vulnerabilities, underscoring a persistent challenge. The report advocates for faster patching, broader mitigations, and improved collaboration in vulnerability management to effectively tackle these trends."
+description: "In 2022, 41 0-day vulnerabilities were exploited in the wild, a significant drop from 69 in 2021, signaling improvements in cybersecurity resilience. Notably, patch delays on Android platforms allowed n-days to function like 0-days. Although browsers saw fewer 0-day exploits due to enhanced defenses, many attackers shifted to 0-click methods. Over 40% of 0-days were variants of previously identified vulnerabilities, underscoring a persistent challenge. The report advocates for faster patching, broader mitigations, and improved collaboration in vulnerability management to effectively tackle these trends."
 ---
 
 [Threat Analysis Group](https://blog.google/threat-analysis-group/)

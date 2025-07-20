@@ -8,7 +8,7 @@ tags:
    - cybersecurity
 link: https://www.recordedfuture.com/research/2024-malicious-infrastructure-report
 date: 2025-05-05
-summary: "The 2024 Malicious Infrastructure Report by Insikt Group documents a notable evolution in malware trends, emphasizing the rise of Malware-as-a-Service (MaaS) infostealers, particularly LummaC2, amidst law enforcement disruptions to rival threats. Key findings include continued dominance of AsyncRAT and QuasarRAT, significant shifts in relay network usage by state-sponsored actors, and an increase in malicious infrastructure tracked. Key recommendations for defenders involve leveraging threat intelligence, improving detection methodologies, and adapting strategies to confrontation evolving cyber threats, particularly those utilizing legitimate services and targeting mobile platforms."
+description: "The 2024 Malicious Infrastructure Report by Insikt Group documents a notable evolution in malware trends, emphasizing the rise of Malware-as-a-Service (MaaS) infostealers, particularly LummaC2, amidst law enforcement disruptions to rival threats. Key findings include continued dominance of AsyncRAT and QuasarRAT, significant shifts in relay network usage by state-sponsored actors, and an increase in malicious infrastructure tracked. Key recommendations for defenders involve leveraging threat intelligence, improving detection methodologies, and adapting strategies to confrontation evolving cyber threats, particularly those utilizing legitimate services and targeting mobile platforms."
 ---
 
 Research (Insikt)

@@ -8,7 +8,7 @@ tags:
    - Software Security
 link: https://www.ncsc.gov.uk/collection/software-security-code-of-practice-implementation-guidance
 date: 2025-05-08
-summary: "The UK's Software Security Code of Practice provides a framework for software vendors to ensure security is integral to software development. This implementation guidance outlines approaches for demonstrating conformance to the Code's principles, focusing on outcome-related claims detailed in the Assurance Principles and Claims (APC) document. The aim is to facilitate vendors in evidencing security measures, thus reinforcing the mandate that security should be fundamental rather than an add-on. This intervention underscores the growing necessity for built-in security in software solutions amidst increasing cybersecurity threats."
+description: "The UK's Software Security Code of Practice provides a framework for software vendors to ensure security is integral to software development. This implementation guidance outlines approaches for demonstrating conformance to the Code's principles, focusing on outcome-related claims detailed in the Assurance Principles and Claims (APC) document. The aim is to facilitate vendors in evidencing security measures, thus reinforcing the mandate that security should be fundamental rather than an add-on. This intervention underscores the growing necessity for built-in security in software solutions amidst increasing cybersecurity threats."
 ---
 
 ## Cookies on this site

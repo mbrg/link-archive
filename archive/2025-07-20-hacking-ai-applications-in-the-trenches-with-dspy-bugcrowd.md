@@ -8,7 +8,7 @@ tags:
    - DSPy
 link: https://www.bugcrowd.com/blog/hacking-llm-applications-in-the-trenches-with-dspy/
 date: 2025-07-20
-summary: "The article discusses the use of DSPy for automated AI red teaming at scale, emphasizing the nuances of AI application security. It distinguishes between AI Red Teaming (AIRT) and traditional security assessments, highlighting vulnerabilities unique to LLMs that standard approaches may overlook. DSPy enables structured prompt engineering, enhancing attack effectiveness through optimization strategies like MIPROv2. The article outlines a methodology for creating evaluative frameworks using multiple model interactions to quantitatively assess attack outcomes. This framework allows iterative refinement of adversarial prompts while addressing ethical and operational implications for businesses adopting AI technologies."
+description: "The article discusses the use of DSPy for automated AI red teaming at scale, emphasizing the nuances of AI application security. It distinguishes between AI Red Teaming (AIRT) and traditional security assessments, highlighting vulnerabilities unique to LLMs that standard approaches may overlook. DSPy enables structured prompt engineering, enhancing attack effectiveness through optimization strategies like MIPROv2. The article outlines a methodology for creating evaluative frameworks using multiple model interactions to quantitatively assess attack outcomes. This framework allows iterative refinement of adversarial prompts while addressing ethical and operational implications for businesses adopting AI technologies."
 ---
 
 [Facebook](https://www.bugcrowd.com/#facebook) [Twitter](https://www.bugcrowd.com/#twitter) [LinkedIn](https://www.bugcrowd.com/#linkedin)

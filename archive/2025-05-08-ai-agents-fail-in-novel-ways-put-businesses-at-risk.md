@@ -8,7 +8,7 @@ tags:
    - Risk Management
 link: https://www.darkreading.com/vulnerabilities-threats/ai-agents-fail-novel-put-businesses-at-risk
 date: 2025-05-08
-summary: "Microsoft's AI Red Team identifies 10 novel failure modes in agentic AI systems that risk compromising security. Key vulnerabilities include agent compromise, indirect prompt injection, human-in-the-loop bypass, and memory poisoning, enabling attackers to manipulate AI actions, potentially treating AI as malicious insiders. Companies must adopt robust threat modeling, logging, and monitoring practices while integrating defense-in-depth strategies early in development. This approach emphasizes the necessity of identifying trust boundaries within AI systems to mitigate risks effectively, underscoring the need for continuous testing and vigilance as AI deployment accelerates."
+description: "Microsoft's AI Red Team identifies 10 novel failure modes in agentic AI systems that risk compromising security. Key vulnerabilities include agent compromise, indirect prompt injection, human-in-the-loop bypass, and memory poisoning, enabling attackers to manipulate AI actions, potentially treating AI as malicious insiders. Companies must adopt robust threat modeling, logging, and monitoring practices while integrating defense-in-depth strategies early in development. This approach emphasizes the necessity of identifying trust boundaries within AI systems to mitigate risks effectively, underscoring the need for continuous testing and vigilance as AI deployment accelerates."
 ---
 
 - [Vulnerabilities & Threats](https://www.darkreading.com/vulnerabilities-threats)

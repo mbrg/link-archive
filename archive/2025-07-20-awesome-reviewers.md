@@ -8,7 +8,7 @@ tags:
    - Best Practices
 link: https://awesomereviewers.com/
 date: 2025-07-20
-summary: "The \"Awesome Reviewers\" resource compiles effective system prompts for AI-assisted code reviews, integrating best practices from prominent open-source projects. It encompasses 1,790 prompts across various categories (e.g., AI, security, algorithms) targeting common challenges like error handling, performance optimization, and coding standards. This resource serves as a practical repository for developers, enhancing coding reliability, maintainability, and security through standardized practices and insightful documentation. Leveraging such tools could significantly streamline code review processes, reduce technical debt, and bolster collaboration within teams."
+description: "The \"Awesome Reviewers\" resource compiles effective system prompts for AI-assisted code reviews, integrating best practices from prominent open-source projects. It encompasses 1,790 prompts across various categories (e.g., AI, security, algorithms) targeting common challenges like error handling, performance optimization, and coding standards. This resource serves as a practical repository for developers, enhancing coding reliability, maintainability, and security through standardized practices and insightful documentation. Leveraging such tools could significantly streamline code review processes, reduce technical debt, and bolster collaboration within teams."
 ---
 
 # Awesome Reviewers ✨

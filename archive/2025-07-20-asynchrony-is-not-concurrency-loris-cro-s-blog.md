@@ -11,7 +11,7 @@ tags:
    - async I/O
 link: https://kristoff.it/blog/asynchrony-is-not-concurrency/
 date: 2025-07-20
-summary: "Loris Cro differentiates between asynchrony, concurrency, and parallelism in programming, proposing precise definitions for each term. He argues that misunderstanding these distinctions has led to inefficiencies in software ecosystems and unnecessary code duplication. In Zig, asynchrony can occur without concurrency, allowing synchronous and asynchronous code to coexist without forcing users into \"async-only\" paradigms. This design choice mitigates deadlocks and enhances the usability of libraries. Cro emphasizes that understanding these concepts can significantly improve software architecture and implementation efficiency, particularly in the context of Zig's async I/O capabilities."
+description: "Loris Cro differentiates between asynchrony, concurrency, and parallelism in programming, proposing precise definitions for each term. He argues that misunderstanding these distinctions has led to inefficiencies in software ecosystems and unnecessary code duplication. In Zig, asynchrony can occur without concurrency, allowing synchronous and asynchronous code to coexist without forcing users into \"async-only\" paradigms. This design choice mitigates deadlocks and enhances the usability of libraries. Cro emphasizes that understanding these concepts can significantly improve software architecture and implementation efficiency, particularly in the context of Zig's async I/O capabilities."
 ---
 
 _Personal Website_

@@ -8,7 +8,7 @@ tags:
    - Token Trajectory
 link: https://github.com/vgel/logitloom
 date: 2025-05-09
-summary: "Logitloom is a tool designed for visualizing token trajectory trees, facilitating exploration of instruct and base models. It supports various APIs, notably Deepseek for chat models and Hyperbolic's 405-base for completions, enabling users to adjust parameters like tree depth and diversity. Key features include real-time tree expansion, token probability analysis, and UTF-8 repair for better character rendering. Built with Bun, the development process emphasizes efficient bundling and local API key management. This tool offers insights into token generation, enhancing model interpretability and performance diagnostics."
+description: "Logitloom is a tool designed for visualizing token trajectory trees, facilitating exploration of instruct and base models. It supports various APIs, notably Deepseek for chat models and Hyperbolic's 405-base for completions, enabling users to adjust parameters like tree depth and diversity. Key features include real-time tree expansion, token probability analysis, and UTF-8 repair for better character rendering. Built with Bun, the development process emphasizes efficient bundling and local API key management. This tool offers insights into token generation, enhancing model interpretability and performance diagnostics."
 ---
 
 [Skip to content](https://github.com/vgel/logitloom#start-of-content)

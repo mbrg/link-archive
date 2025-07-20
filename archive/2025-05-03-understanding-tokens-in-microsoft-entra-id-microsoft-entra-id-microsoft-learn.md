@@ -8,7 +8,7 @@ tags:
    - Microsoft Entra ID
 link: https://learn.microsoft.com/en-us/entra/identity/devices/concept-tokens-microsoft-entra-id
 date: 2025-05-03
-summary: "Microsoft Entra ID outlines critical strategies to mitigate token theft risks as sophisticated attack vectors evolve. Key recommendations include deploying phishing-resistant MFA, hardening devices against malware, and enforcing device-bound tokens. Tokens, essential for authentication, must be managed with a defense-in-depth approach, prioritizing the protection of sign-in session tokens due to their longevity. The increased occurrence of adversary-in-the-middle (AiTM) attacks underscores the necessity for organizations to secure token management practices. Continuous access evaluation and minimized token exposure are imperative to thwart unauthorized access and data exfiltration."
+description: "Microsoft Entra ID outlines critical strategies to mitigate token theft risks as sophisticated attack vectors evolve. Key recommendations include deploying phishing-resistant MFA, hardening devices against malware, and enforcing device-bound tokens. Tokens, essential for authentication, must be managed with a defense-in-depth approach, prioritizing the protection of sign-in session tokens due to their longevity. The increased occurrence of adversary-in-the-middle (AiTM) attacks underscores the necessity for organizations to secure token management practices. Continuous access evaluation and minimized token exposure are imperative to thwart unauthorized access and data exfiltration."
 ---
 
 Table of contents Exit focus mode

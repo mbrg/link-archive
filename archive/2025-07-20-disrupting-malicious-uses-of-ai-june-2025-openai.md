@@ -8,7 +8,7 @@ tags:
    - Cybersecurity
 link: https://openai.com/global-affairs/disrupting-malicious-uses-of-ai-june-2025/
 date: 2025-07-20
-summary: "OpenAI's June 2025 report outlines advancements in combating malicious AI applications. Key initiatives include developing AI tools that detect and disrupt activities such as social engineering, cyber espionage, and covert influence operations. The report emphasizes the importance of establishing protective regulations against authoritarian misuse and leveraging AI to enhance investigative capabilities in cybersecurity. This proactive approach aims to ensure AI contributes positively by mitigating real-world threats and promoting democratic values. For further insights, refer to the full report [here](https://cdn.openai.com/threat-intelligence-reports/5f73af09-a3a3-4a55-992e-069237681620/disrupting-malicious-uses-of-ai-june-2025.pdf)."
+description: "OpenAI's June 2025 report outlines advancements in combating malicious AI applications. Key initiatives include developing AI tools that detect and disrupt activities such as social engineering, cyber espionage, and covert influence operations. The report emphasizes the importance of establishing protective regulations against authoritarian misuse and leveraging AI to enhance investigative capabilities in cybersecurity. This proactive approach aims to ensure AI contributes positively by mitigating real-world threats and promoting democratic values. For further insights, refer to the full report [here](https://cdn.openai.com/threat-intelligence-reports/5f73af09-a3a3-4a55-992e-069237681620/disrupting-malicious-uses-of-ai-june-2025.pdf)."
 ---
 
 Switch to

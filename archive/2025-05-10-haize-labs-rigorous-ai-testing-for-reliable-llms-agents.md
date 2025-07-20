@@ -8,7 +8,7 @@ tags:
    - AI Reliability
 link: https://www.haizelabs.com/
 date: 2025-05-10
-summary: "Haize Labs offers an end-to-end platform for building reliable AI applications, focusing on trust, safety, and performance. Key features include dynamic testing (Haize), case-specific evaluations (Judge), comprehensive monitoring, and continuous optimization (Robustify). Recent collaborations with industry leaders like AI21 Labs underscore their commitment to ethical AI standards, leveraging approaches such as automated red-teaming and mechanistic interpretability. These innovations signal significant advancements in ensuring AI robustness, making Haize Labs a pivotal player in AI application safety and reliability."
+description: "Haize Labs offers an end-to-end platform for building reliable AI applications, focusing on trust, safety, and performance. Key features include dynamic testing (Haize), case-specific evaluations (Judge), comprehensive monitoring, and continuous optimization (Robustify). Recent collaborations with industry leaders like AI21 Labs underscore their commitment to ethical AI standards, leveraging approaches such as automated red-teaming and mechanistic interpretability. These innovations signal significant advancements in ensuring AI robustness, making Haize Labs a pivotal player in AI application safety and reliability."
 ---
 
 # Build AI Systems You Can Trust.

@@ -8,7 +8,7 @@ tags:
    - Prompt Engineering
 link: https://substack.com/inbox/post/166963945
 date: 2025-07-20
-summary: "AI-driven coding tools face significant challenges in securely generating code due to their inability to tap into the nuanced organizational knowledge required for context-aware coding, leading to compliance and security oversights (e.g., HIPAA for healthcare). Furthermore, models struggle with underspecified inputs, potentially creating insecure implementations. Key areas for improvement include enhancing AI's collaborative interactions with engineers, refining prompt engineering, and advancing vulnerability detection mechanisms. Research into self-patching and context-aware fixes is ongoing, but effective AI code generation remains hampered by limitations in understanding organizational specifics and secure coding practices."
+description: "AI-driven coding tools face significant challenges in securely generating code due to their inability to tap into the nuanced organizational knowledge required for context-aware coding, leading to compliance and security oversights (e.g., HIPAA for healthcare). Furthermore, models struggle with underspecified inputs, potentially creating insecure implementations. Key areas for improvement include enhancing AI's collaborative interactions with engineers, refining prompt engineering, and advancing vulnerability detection mechanisms. Research into self-patching and context-aware fixes is ongoing, but effective AI code generation remains hampered by limitations in understanding organizational specifics and secure coding practices."
 ---
 
 # Subscriptions

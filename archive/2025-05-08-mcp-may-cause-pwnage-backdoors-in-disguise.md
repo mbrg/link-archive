@@ -8,7 +8,7 @@ tags:
    - 0-day vulnerabilities
 link: https://blog.jaisal.dev/articles/mcp
 date: 2025-05-08
-summary: "The blog post explores significant vulnerabilities within the Model Context Protocol (MCP), revealing potential for Remote Code Execution (RCE) through improper server configurations and insecure API implementations. Key findings include:
+description: "The blog post explores significant vulnerabilities within the Model Context Protocol (MCP), revealing potential for Remote Code Execution (RCE) through improper server configurations and insecure API implementations. Key findings include:
 
 1. **0.0.0.0 Binding**: MCP servers and inspectors allowing access from all interfaces, raising exposure to attacks.
 2. **CSRF to Command Execution**: GET requests on the MCP Inspector enabling arbitrary command execution.

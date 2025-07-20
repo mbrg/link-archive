@@ -8,7 +8,7 @@ tags:
    - AI Security
 link: https://servicenow.github.io/DoomArena/
 date: 2025-05-03
-summary: "DoomArena introduces a modular framework for simulating security threats against AI agents, enabling researchers to evaluate vulnerabilities and defenses. Notably, the framework allows for testing under various attack scenarios, such as malicious user inputs and injected pop-ups. Evaluation results show GPT-4o's susceptibility to attacks, though defenses like a GPT-4o-based judge can significantly reduce success rates. DoomArena's design supports customizable threat models and seamless integration with existing agent environments, making it an invaluable tool for improving AI security. Future enhancements may include expanding environment options and developing adaptive defenses."
+description: "DoomArena introduces a modular framework for simulating security threats against AI agents, enabling researchers to evaluate vulnerabilities and defenses. Notably, the framework allows for testing under various attack scenarios, such as malicious user inputs and injected pop-ups. Evaluation results show GPT-4o's susceptibility to attacks, though defenses like a GPT-4o-based judge can significantly reduce success rates. DoomArena's design supports customizable threat models and seamless integration with existing agent environments, making it an invaluable tool for improving AI security. Future enhancements may include expanding environment options and developing adaptive defenses."
 ---
 
 ## Overview

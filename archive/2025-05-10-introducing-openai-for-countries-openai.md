@@ -8,7 +8,7 @@ tags:
    - Democratic AI
 link: https://openai.com/global-affairs/openai-for-countries/
 date: 2025-05-10
-summary: "OpenAI has launched \"OpenAI for Countries,\" an initiative aiming to build democratic AI infrastructure globally, inspired by its Stargate project in the US. This approach includes developing in-country data centers to ensure data sovereignty, offering tailored ChatGPT solutions for local needs, enhancing AI security and safety controls, and creating national start-up funds to stimulate local economies. The initiative emphasizes preventing the concentration of power in AI deployment, fostering free markets, and aligning with democratic values. OpenAI aims to establish partnerships with at least ten countries in the initial phase."
+description: "OpenAI has launched \"OpenAI for Countries,\" an initiative aiming to build democratic AI infrastructure globally, inspired by its Stargate project in the US. This approach includes developing in-country data centers to ensure data sovereignty, offering tailored ChatGPT solutions for local needs, enhancing AI security and safety controls, and creating national start-up funds to stimulate local economies. The initiative emphasizes preventing the concentration of power in AI deployment, fostering free markets, and aligning with democratic values. OpenAI aims to establish partnerships with at least ten countries in the initial phase."
 ---
 
 Switch to

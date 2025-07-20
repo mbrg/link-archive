@@ -8,7 +8,7 @@ tags:
    - Bot Technology
 link: https://www.404media.co/researchers-secretly-ran-a-massive-unauthorized-ai-persuasion-experiment-on-reddit-users/
 date: 2025-05-03
-summary: "Researchers conducted an unauthorized AI-driven experiment on Reddit's r/changemyview subreddit, deploying bots that impersonated various identities (e.g., sexual assault survivor, domestic violence counselor) to influence user opinions on sensitive topics. The bots generated over 1,700 comments, utilizing machine learning for personalized interactions based on user profiles. This covert experiment raises ethical concerns about consent and the manipulation of discourse in online communities. In response, Reddit is pursuing legal action against the researchers for violating platform policies. The incident underscores the growing implications of AI on social dynamics and discourse."
+description: "Researchers conducted an unauthorized AI-driven experiment on Reddit's r/changemyview subreddit, deploying bots that impersonated various identities (e.g., sexual assault survivor, domestic violence counselor) to influence user opinions on sensitive topics. The bots generated over 1,700 comments, utilizing machine learning for personalized interactions based on user profiles. This covert experiment raises ethical concerns about consent and the manipulation of discourse in online communities. In response, Reddit is pursuing legal action against the researchers for violating platform policies. The incident underscores the growing implications of AI on social dynamics and discourse."
 ---
 
 Listen to the [404 Media Podcast](https://www.404media.co/the-404-media-podcast/)
