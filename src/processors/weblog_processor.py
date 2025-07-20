@@ -63,10 +63,15 @@ def extract_paragraph_for_line(content_lines, line_number):
     paragraph_lines = content_lines[start:end + 1]
     return ' '.join(line.strip() for line in paragraph_lines if line.strip())
 
-def parse_pr_comments(comments_json):
+def parse_pr_comments(comments_input):
     """Parse PR review comments from GitHub API JSON."""
     try:
-        comments_data = json.loads(comments_json)
+        # Check if input is a file path or JSON string
+        if Path(comments_input).exists():
+            with open(comments_input, 'r', encoding='utf-8') as f:
+                comments_data = json.load(f)
+        else:
+            comments_data = json.loads(comments_input)
         
         # Extract review comments (line-specific comments)
         review_comments = []
@@ -79,19 +84,21 @@ def parse_pr_comments(comments_json):
                     'author': comment['user']['login']
                 })
         
-        # Extract general PR comments
+        # Extract general PR comments (excluding bot comments)
         pr_comments = []
         if 'comments' in comments_data:
             for comment in comments_data['comments']:
-                pr_comments.append({
-                    'body': comment['body'],
-                    'author': comment['user']['login']
-                })
+                # Skip GitHub bot comments
+                if comment['user']['login'] != 'github-actions[bot]':
+                    pr_comments.append({
+                        'body': comment['body'],
+                        'author': comment['user']['login']
+                    })
         
         return review_comments, pr_comments
         
-    except json.JSONDecodeError as e:
-        print(f"Error parsing comments JSON: {e}", file=sys.stderr)
+    except (json.JSONDecodeError, FileNotFoundError) as e:
+        print(f"Error parsing comments: {e}", file=sys.stderr)
         return [], []
 
 def create_weblog_entry(frontmatter, archive_content, review_comments, pr_comments, archive_filename):
@@ -108,19 +115,16 @@ def create_weblog_entry(frontmatter, archive_content, review_comments, pr_commen
     
     # Start building the weblog content
     weblog_content = [f"# {frontmatter['title']}\n"]
+    weblog_content.append(f"**Original:** [Link]({frontmatter.get('link', '#')})\n")
     weblog_content.append(f"**Archive:** [Link]({weblog_frontmatter['link']})\n")
     
     # Add general comments first (after links)
-    general_comments = []
     if pr_comments:
-        general_comments = [c for c in pr_comments 
-                          if not c['body'].lower().startswith(('lgtm', 'approved', 'looks good'))]
-        if general_comments:
-            for comment in general_comments:
-                weblog_content.append(f"{comment['body']}\n")
+        for comment in pr_comments:
+            weblog_content.append(f"{comment['body']}\n")
     
     # Add small divider if there are both general comments and review comments
-    if general_comments and review_comments:
+    if pr_comments and review_comments:
         weblog_content.append("---\n")
     
     # Process line-specific comments with quoted paragraphs
