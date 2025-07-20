@@ -111,12 +111,8 @@ jobs:
           git checkout ${{ steps.pr_info.outputs.branch_ref }}
 
       - name: Write Comments JSON
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            const commentsData = ${{ steps.get_pr_data.outputs.comments_json }};
-            fs.writeFileSync('comments.json', JSON.stringify(commentsData));
+        run: |
+          echo '${{ steps.get_pr_data.outputs.comments_json }}' > comments.json
       
       - name: Create Weblog Entry
         id: create_weblog
