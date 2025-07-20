@@ -64,7 +64,7 @@ The system has multiple entry points that all funnel through the same core workf
                                                            │
                                                            ▼
                                                 ┌────────────────────┐
-                                                │ validate-and-review│
+                                                │  archive-review    │
                                                 │ Validates + Adds   │
                                                 │   You as Reviewer  │
                                                 └────────────────────┘
@@ -81,7 +81,7 @@ The system has multiple entry points that all funnel through the same core workf
                                                    ▼
                                                 ┌────────────────────┐
                                                 │  create-weblog     │
-                                                │ Creates Linklog +  │
+                                                │ Creates Weblog +   │
                                                 │   Merges Both      │
                                                 └────────────────────┘
 ```

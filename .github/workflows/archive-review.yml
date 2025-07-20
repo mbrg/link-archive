@@ -1,4 +1,4 @@
-name: Validate and Review
+name: Archive Review
 
 on:
   workflow_dispatch:

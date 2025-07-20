@@ -1,4 +1,4 @@
-name: Create Linklog Entry
+name: Create Weblog Entry
 
 on:
   pull_request_review:
@@ -102,7 +102,7 @@ jobs:
           git fetch origin ${{ github.event.pull_request.head.ref }}
           git checkout ${{ github.event.pull_request.head.ref }}
 
-      - name: Create Linklog Entry
+      - name: Create Weblog Entry
         id: create_weblog
         run: |
           OUTPUT=$(uv run --script src/processors/weblog_processor.py "${{ steps.get_pr_data.outputs.archive_file }}" '${{ steps.get_pr_data.outputs.comments_json }}')
@@ -140,7 +140,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: prNumber,
-              body: `✅ **Linklog entry created!**
+              body: `✅ **Weblog entry created!**
               
 Your review comments have been processed and a weblog entry has been created at \`${{ steps.create_weblog.outputs.weblog_file }}\`.
 
