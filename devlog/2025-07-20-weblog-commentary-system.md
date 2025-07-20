@@ -32,7 +32,7 @@ The original link archive system was purely for preservation against link rot, b
 **Why:** The user found pure automation insufficient - they wanted editorial control and the ability to add commentary before publication.
 
 **Implementation:**
-- Modified `validate-and-review.yml` to add reviewer instead of auto-merging
+- Modified `validate-and-review.yml` (renamed to `archive-review.yml`) to add reviewer instead of auto-merging
 - Created `create-weblog.yml` workflow triggered on PR approval
 - Added `ready-to-comment` label to identify reviewable PRs
 
