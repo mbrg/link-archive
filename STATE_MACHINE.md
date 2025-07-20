@@ -8,32 +8,46 @@ The link archive system implements a GitHub Actions-based state machine that pro
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Issue_Created: User creates GitHub Issue<br/>with "URL: {url}"
+    [*] --> Issue_Created: User creates issue with URL
     
-    Issue_Created --> Processing: process-url-to-pr.yml<br/>triggered
+    Issue_Created --> Processing: Workflow triggered
     Processing --> Archive_Created: Success
     Processing --> Failed: Error
     
-    Archive_Created --> PR_Created: Creates PR with<br/>archive file
-    PR_Created --> Validation: validate-and-review.yml<br/>runs
+    Archive_Created --> PR_Created: Creates PR
+    PR_Created --> Validation: Runs validation
     
-    Validation --> Ready_For_Review: Validation passes<br/>✅ Label: ready-to-comment<br/>👤 Reviewer assigned
-    Validation --> PR_Closed: Validation fails<br/>❌ PR closed
+    Validation --> Ready_For_Review: ✅ Adds label
+    Validation --> PR_Closed: ❌ Closes PR
     
-    Ready_For_Review --> Reviewing: Owner reviews<br/>and comments
-    Reviewing --> Approved: PR approved ✅
-    Reviewing --> Changes_Requested: Changes requested
+    Ready_For_Review --> Reviewing: Owner reviews
+    Reviewing --> Approved: Approves PR
+    Reviewing --> Changes_Requested: Requests changes
     
-    Approved --> Weblog_Generation: create-weblog.yml<br/>triggered by approval<br/>+ ready-to-comment label
+    Approved --> Weblog_Generation: Triggered by approval + label
     Weblog_Generation --> Weblog_Created: Success
     Weblog_Generation --> Failed: Error
     
-    Weblog_Created --> Merged: PR auto-merged<br/>with squash commit
+    Weblog_Created --> Merged: Auto-merge
     
-    Failed --> [*]: Manual intervention<br/>Error comment on issue
+    Failed --> [*]: Manual fix needed
     PR_Closed --> [*]: End
     Changes_Requested --> Ready_For_Review: After fixes
     Merged --> [*]: Complete
+
+    note right of Issue_Created
+        Format: URL: https://...
+    end note
+
+    note right of Ready_For_Review
+        Label: ready-to-comment
+        Reviewer assigned
+    end note
+
+    note right of Weblog_Generation
+        Workflow: create-weblog.yml
+        Requires: ready-to-comment label
+    end note
 ```
 
 ## States and Transitions
