@@ -112,6 +112,8 @@ jobs:
         run: |
           git fetch origin ${{ steps.pr_info.outputs.branch_ref }}
           git checkout ${{ steps.pr_info.outputs.branch_ref }}
+          git fetch origin main
+          git rebase origin/main
 
       - name: Write Comments JSON
         run: |
