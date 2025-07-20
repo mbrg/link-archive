@@ -1,5 +1,5 @@
 ---
-title: "Steve Jobs, Rick Rubin and "taste"  - by Trungphan2"
+title: "Steve Jobs, Rick Rubin and \"taste\"  - by Trungphan2"
 tags:
    - Steve Jobs
    - Taste
