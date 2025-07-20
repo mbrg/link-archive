@@ -39,7 +39,8 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const prNumber = context.payload.pull_request?.number || ${{ github.event.inputs.pr_number }};
+            const prNumber = context.payload.pull_request?.number || parseInt('${{ github.event.inputs.pr_number }}');
+            console.log(`Processing PR number: ${prNumber}`);
             
             // Get PR files
             const files = await github.rest.pulls.listFiles({
@@ -95,7 +96,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const prNumber = context.payload.pull_request?.number || ${{ github.event.inputs.pr_number }};
+            const prNumber = context.payload.pull_request?.number || parseInt('${{ github.event.inputs.pr_number }}');
             
             const pr = await github.rest.pulls.get({
               owner: context.repo.owner,
@@ -145,7 +146,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const prNumber = context.payload.pull_request?.number || ${{ github.event.inputs.pr_number }};
+            const prNumber = context.payload.pull_request?.number || parseInt('${{ github.event.inputs.pr_number }}');
             
             // Add a comment explaining what happened
             const weblogFile = "${{ steps.create_weblog.outputs.weblog_file }}";
