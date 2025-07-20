@@ -24,6 +24,14 @@ jobs:
       - name: Check if weblog creation is needed
         id: check
         run: |
+          # Check if this is a manual dispatch
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "Manual dispatch, proceeding with weblog creation"
+            echo "should_create=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          # For PR review events, check approval state
           if [[ "${{ github.event.review.state }}" != "approved" ]]; then
             echo "Review not approved, skipping weblog creation"
             echo "should_create=false" >> $GITHUB_OUTPUT
