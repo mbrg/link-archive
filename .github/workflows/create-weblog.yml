@@ -3,6 +3,12 @@ name: Create Weblog Entry
 on:
   pull_request_review:
     types: [submitted]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number to create weblog for'
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -57,7 +63,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const prNumber = context.payload.pull_request.number;
+            const prNumber = context.payload.pull_request?.number || ${{ github.event.inputs.pr_number }};
             
             // Get PR files
             const files = await github.rest.pulls.listFiles({
@@ -97,10 +103,25 @@ jobs:
             core.setOutput('archive_file', archiveFile.filename);
             core.setOutput('comments_json', JSON.stringify(commentsData));
 
+      - name: Get PR Branch Info
+        id: pr_info
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request?.number || ${{ github.event.inputs.pr_number }};
+            
+            const pr = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber
+            });
+            
+            core.setOutput('branch_ref', pr.data.head.ref);
+
       - name: Checkout PR branch
         run: |
-          git fetch origin ${{ github.event.pull_request.head.ref }}
-          git checkout ${{ github.event.pull_request.head.ref }}
+          git fetch origin ${{ steps.pr_info.outputs.branch_ref }}
+          git checkout ${{ steps.pr_info.outputs.branch_ref }}
 
       - name: Create Weblog Entry
         id: create_weblog
@@ -123,7 +144,7 @@ jobs:
         run: |
           git add "${{ steps.create_weblog.outputs.weblog_file }}"
           git commit -m "Add weblog entry: ${{ steps.create_weblog.outputs.title }}"
-          git push origin ${{ github.event.pull_request.head.ref }}
+          git push origin ${{ steps.pr_info.outputs.branch_ref }}
 
       - name: Validate weblog entries
         run: |
@@ -133,7 +154,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const prNumber = context.payload.pull_request.number;
+            const prNumber = context.payload.pull_request?.number || ${{ github.event.inputs.pr_number }};
             
             // Add a comment explaining what happened
             const weblogFile = "${{ steps.create_weblog.outputs.weblog_file }}";
