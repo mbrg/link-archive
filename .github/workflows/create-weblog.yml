@@ -57,25 +57,28 @@ jobs:
               throw new Error('No archive file found in PR');
             }
             
-            // Get review comments
+            // Get ALL review comments from ALL reviews (this includes historical reviews)
             const reviewComments = await github.rest.pulls.listReviewComments({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              pull_number: prNumber
+              pull_number: prNumber,
+              per_page: 100 // Ensure we get all comments
             });
             
             // Get general PR comments
             const prComments = await github.rest.issues.listComments({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: prNumber
+              issue_number: prNumber,
+              per_page: 100 // Ensure we get all comments
             });
             
-            // Get PR reviews (for approval comments)
+            // Get ALL PR reviews (this includes all historical reviews)
             const reviews = await github.rest.pulls.listReviews({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              pull_number: prNumber
+              pull_number: prNumber,
+              per_page: 100 // Ensure we get all reviews
             });
             
             const commentsData = {
