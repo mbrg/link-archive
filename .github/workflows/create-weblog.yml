@@ -41,7 +41,7 @@ jobs:
 
   create-weblog:
     needs: check-conditions
-    if: needs.check-conditions.outputs.should_create == 'true'
+    if: needs.check-conditions.outputs.should_create_weblog == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
