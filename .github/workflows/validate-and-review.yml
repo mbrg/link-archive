@@ -1,4 +1,4 @@
-name: Validate and Merge
+name: Validate and Review
 
 on:
   workflow_dispatch:
@@ -16,6 +16,7 @@ permissions:
   contents: write
   pull-requests: write
   checks: read
+  actions: write
 
 jobs:
   validate:
@@ -39,23 +40,31 @@ jobs:
       - name: Validate files
         run: uv run --script src/processors/frontmatter_validator.py archive
 
-  merge:
+  add-reviewer:
     needs: validate
     if: needs.validate.result == 'success'
     runs-on: ubuntu-latest
     steps:
-      - name: Merge PR
+      - name: Add Reviewer and Label
         uses: actions/github-script@v7
         with:
           script: |
             const prNumber = ${{ github.event.inputs.pr_number }};
             
-            // Merge the PR
-            await github.rest.pulls.merge({
+            // Add owner as reviewer
+            await github.rest.pulls.requestReviewers({
               owner: context.repo.owner,
               repo: context.repo.repo,
               pull_number: prNumber,
-              merge_method: 'squash'
+              reviewers: [context.repo.owner]
+            });
+            
+            // Add label for archive review
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              labels: ['archive-review']
             });
 
   close-pr:

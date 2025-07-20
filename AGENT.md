@@ -2,13 +2,22 @@
 
 ## Commands
 - **Test scripts**: `uv run --script src/processors/url_processor.py <url> <dir> <model>` - Process a URL and create archive
-- **Validate**: `uv run --script src/processors/frontmatter_validator.py <dir>` - Validate archive file frontmatter
+- **Validate archive**: `uv run --script src/processors/frontmatter_validator.py <dir>` - Validate archive file frontmatter
+- **Validate linklog**: `uv run --script src/processors/linklog_validator.py <dir>` - Validate linklog entries
+- **Create linklog**: `uv run --script src/processors/linklog_processor.py <archive_file> <comments_json>` - Generate linklog from archive + PR comments
 - **Trigger workflow**: Use GitHub "Process URL" workflow with issue number containing `URL: <url>`
 
 ## Architecture
 - **Main workflow**: `.github/workflows/process-url-to-pr.yml` - Automated URL processing and PR creation
 - **Archive storage**: `archive/` - Markdown files with YAML frontmatter, dated filenames
+
+- **Linklog entries**: `linklog/` - Final published entries with your commentary
 - **Core processors**: `src/processors/` - Python scripts using uv for dependency management
+  - `url_processor.py` - Process URLs into archive entries
+  - `linklog_processor.py` - Convert archive files + PR comments into linklog entries
+  - `frontmatter_validator.py` - Validate archive file structure
+  - `linklog_validator.py` - Validate linklog entry structure
+- **Commentary workflow**: Review archive PRs directly with line comments
 - **Maintenance tools**: `tools/` - Administrative scripts for repo maintenance
 - **External APIs**: Firecrawl (scraping), OpenAI (summarization), requires API keys in secrets
 - **Triggers**: iOS/macOS shortcuts in `triggers/` for mobile/desktop URL submission
