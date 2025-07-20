@@ -99,11 +99,17 @@ jobs:
           git fetch origin ${{ steps.pr_info.outputs.branch_ref }}
           git checkout ${{ steps.pr_info.outputs.branch_ref }}
 
+      - name: Write Comments JSON
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const commentsJson = `${{ steps.get_pr_data.outputs.comments_json }}`;
+            fs.writeFileSync('comments.json', commentsJson);
+      
       - name: Create Weblog Entry
         id: create_weblog
         run: |
-          # Write comments JSON to file to avoid shell escaping issues
-          echo '${{ steps.get_pr_data.outputs.comments_json }}' > comments.json
           OUTPUT=$(uv run --script src/processors/weblog_processor.py "${{ steps.get_pr_data.outputs.archive_file }}" comments.json)
           echo "$OUTPUT" | while IFS=: read -r key value; do
             if [ -n "$key" ] && [ -n "$value" ]; then
