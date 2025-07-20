@@ -136,13 +136,14 @@ jobs:
             const prNumber = context.payload.pull_request.number;
             
             // Add a comment explaining what happened
+            const weblogFile = "${{ steps.create_weblog.outputs.weblog_file }}";
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: prNumber,
               body: `✅ **Weblog entry created!**
               
-Your review comments have been processed and a weblog entry has been created at \`${{ steps.create_weblog.outputs.weblog_file }}\`.
+Your review comments have been processed and a weblog entry has been created at \`${weblogFile}\`.
 
 The archive PR will now be merged with the weblog entry included.`
             });
