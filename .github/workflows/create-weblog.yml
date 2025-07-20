@@ -108,6 +108,11 @@ jobs:
             
             core.setOutput('branch_ref', pr.data.head.ref);
 
+      - name: Configure git
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+
       - name: Checkout PR branch
         run: |
           git fetch origin ${{ steps.pr_info.outputs.branch_ref }}
@@ -139,11 +144,6 @@ jobs:
           done
         env:
           PYTHONUNBUFFERED: 1
-
-      - name: Configure git
-        run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
 
       - name: Add weblog to PR
         run: |
