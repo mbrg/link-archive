@@ -1,6 +1,8 @@
 # Personal Link Archive
 
-Github-based system to archive web links you find valuable with a single tap. Combat [link rot](https://en.wikipedia.org/wiki/Link_rot) by creating permanent, searchable archives.
+Github-based system to archive web links you find valuable with a single tap.
+Combat [link rot](https://en.wikipedia.org/wiki/Link_rot) by creating permanent, searchable archives.
+Inspired by [Simon Willison's weblog](https://simonwillison.net/2024/Dec/22/link-blog/).
 
 ## Quick Start
 
