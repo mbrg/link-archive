@@ -29,3 +29,7 @@
 - **Environment**: Load from .env file, fallback to environment variables
 - **Error handling**: Validate URLs, check API keys, graceful failures with GitHub comments
 - **Git workflow**: Feature branches, automated PRs, validation before merge
+
+## Commit Guidelines
+
+When committing your work don't add credit to an AI assistant and don't add co-authors.
