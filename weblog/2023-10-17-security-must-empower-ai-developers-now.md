@@ -22,5 +22,3 @@ type: weblog
 
 Enterprises need to create a secure structure for tracking, assessing, and monitoring their growing stable of AI business apps.
 
-Enterprises need to create a secure structure for tracking, assessing, and monitoring their growing stable of AI business apps.
-

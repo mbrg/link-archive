@@ -22,6 +22,3 @@ type: weblog
 ---
 
 Security teams that embrace low-code/no-code can change the security mindset of business users.
-
-Security teams that embrace low-code/no-code can change the security mindset of business users.
-

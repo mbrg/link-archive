@@ -21,6 +21,3 @@ type: weblog
 ---
 
 With the introduction of generative AI, even more business users are going to create low-code/no-code applications. Prepare to protect them.
-
-With the introduction of generative AI, even more business users are going to create low-code/no-code applications. Prepare to protect them.
-

@@ -24,5 +24,3 @@ type: weblog
 
 No-code has lowered the barrier for non-developers to create applications. Artificial intelligence will completely eliminate it.
 
-No-code has lowered the barrier for non-developers to create applications. Artificial intelligence will completely eliminate it.
-

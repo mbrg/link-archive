@@ -22,6 +22,3 @@ type: weblog
 ---
 
 What's scarier than keeping all of your passwords in one place and having that place raided by hackers? Maybe reusing insecure passwords.
-
-What's scarier than keeping all of your passwords in one place and having that place raided by hackers? Maybe reusing insecure passwords.
-

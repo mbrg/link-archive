@@ -23,5 +23,3 @@ type: weblog
 
 How can we build security back into software development in a low-code/no-code environment?
 
-How can we build security back into software development in a low-code/no-code environment?
-

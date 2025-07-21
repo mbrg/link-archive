@@ -22,6 +22,3 @@ type: weblog
 ---
 
 A login, a PA trial license, and some good old hacking are all that's needed to nab SQL databases
-
-A login, a PA trial license, and some good old hacking are all that's needed to nab SQL databases
-

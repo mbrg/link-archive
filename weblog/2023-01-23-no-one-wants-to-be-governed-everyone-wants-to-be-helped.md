@@ -23,5 +23,3 @@ type: weblog
 
 Here's how a security team can present itself to citizen developers as a valuable resource rather than a bureaucratic roadblock.
 
-Here's how a security team can present itself to citizen developers as a valuable resource rather than a bureaucratic roadblock.
-

@@ -23,5 +23,3 @@ type: weblog
 
 While low-code/no-code tools can speed up application development, sometimes it's worth taking a slower approach for a safer product.
 
-While low-code/no-code tools can speed up application development, sometimes it's worth taking a slower approach for a safer product.
-

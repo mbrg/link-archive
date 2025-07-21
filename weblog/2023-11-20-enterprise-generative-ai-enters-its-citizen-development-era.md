@@ -23,5 +23,3 @@ type: weblog
 
 Business users are building Copilots and GPTs with enterprise data. What can security teams do about it?
 
-Business users are building Copilots and GPTs with enterprise data. What can security teams do about it?
-

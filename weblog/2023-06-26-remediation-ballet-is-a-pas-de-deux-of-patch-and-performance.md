@@ -21,6 +21,3 @@ type: weblog
 ---
 
 AI-generated code promises quicker fixes for vulnerabilities, but ultimately developers and security teams must balance competing interests.
-
-AI-generated code promises quicker fixes for vulnerabilities, but ultimately developers and security teams must balance competing interests.
-

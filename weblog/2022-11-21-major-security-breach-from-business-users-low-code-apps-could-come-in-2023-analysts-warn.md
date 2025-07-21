@@ -23,6 +23,3 @@ type: weblog
 ---
 
 Here's what that means about our current state as an industry, and why we should be happy about it.
-
-Here's what that means about our current state as an industry, and why we should be happy about it.
-

@@ -22,6 +22,3 @@ type: weblog
 ---
 
 Large vendors are commoditizing capabilities that claim to provide absolute security guarantees backed up by formal verification. How significant are these promises?
-
-Large vendors are commoditizing capabilities that claim to provide absolute security guarantees backed up by formal verification. How significant are these promises?
-

@@ -23,5 +23,3 @@ type: weblog
 
 Security for AI is the Next Big Thing! Too bad no one knows what any of that really means.
 
-Security for AI is the Next Big Thing! Too bad no one knows what any of that really means.
-
