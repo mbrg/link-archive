@@ -69,9 +69,9 @@ jobs:
         id: process_url
         run: |
           OUTPUT=$(uv run --script src/processors/archive_processor.py "${{ steps.extract_url.outputs.url }}" "${{ github.event.inputs.toreaddir }}" "${{ github.event.inputs.model }}")
-          echo "$OUTPUT" | while IFS=: read -r key value; do
-            if [ -n "$key" ] && [ -n "$value" ]; then
-              echo "${key}=${value}" >> $GITHUB_OUTPUT
+          echo "$OUTPUT" | while IFS=: read -r key rest; do
+            if [ -n "$key" ] && [ -n "$rest" ]; then
+              echo "${key}=${rest}" >> $GITHUB_OUTPUT
             fi
           done
         env:
