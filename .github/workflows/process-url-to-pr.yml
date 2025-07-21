@@ -107,14 +107,19 @@ jobs:
           git push origin ${{ steps.create_branch.outputs.branch_name }}
 
       - name: Create Pull Request
-        if: steps.process_url.outputs.existing_file == ''
+        if: steps.process_url.outputs.existing_file == '' && steps.process_url.outputs.title != ''
         uses: actions/github-script@v7
         with:
           script: |
+            const title = "${{ steps.process_url.outputs.title }}";
+            if (!title || title.trim() === '') {
+              throw new Error('Cannot create PR with empty title. Title extraction failed.');
+            }
+            
             const pr = await github.rest.pulls.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `Add new link: ${{ steps.process_url.outputs.title }}`,
+              title: `Add new link: ${title}`,
               body: `This PR adds a new link to the ${{ github.event.inputs.toreaddir }} directory.\n\nCloses #${{ github.event.inputs.issue_number }}`,
               head: '${{ steps.create_branch.outputs.branch_name }}',
               base: 'main'
@@ -122,8 +127,20 @@ jobs:
             core.setOutput('pr_number', pr.data.number);
         id: create_pull_request
 
+      - name: Handle Empty Title Error
+        if: steps.process_url.outputs.existing_file == '' && steps.process_url.outputs.title == ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ github.event.inputs.issue_number }},
+              body: `❌ **Failed to create archive PR**\n\nTitle extraction failed for the provided URL. This could be due to:\n- Invalid or inaccessible URL\n- Page content extraction issues\n- LLM processing errors\n\nPlease check the [workflow logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details and try again.`
+            });
+
       - name: Trigger Archive Review
-        if: steps.process_url.outputs.existing_file == ''
+        if: steps.process_url.outputs.existing_file == '' && steps.process_url.outputs.title != ''
         uses: actions/github-script@v7
         with:
           script: |
