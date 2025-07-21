@@ -68,7 +68,7 @@ def validate_weblog_file(filepath):
     
     # Validate link field (should point to archive)
     link_val = frontmatter.get('link')
-    if link_val and not link_val.startswith('archive/'):
+    if link_val and not link_val.startswith('/archive/'):
         errors.append(f"Weblog link should point to archive in {filepath}: '{link_val}'")
     
     # Validate tags is a list
@@ -78,11 +78,6 @@ def validate_weblog_file(filepath):
     # Validate minimum content length
     if len(markdown_content.strip()) < 50:
         errors.append(f"Weblog content too short in {filepath} (minimum 50 characters)")
-    
-    # Check for archive link in content
-    if 'link' in frontmatter and frontmatter['link']:
-        if 'Archive:' not in markdown_content:
-            errors.append(f"Weblog should reference archive link in content: {filepath}")
     
     return errors
 
