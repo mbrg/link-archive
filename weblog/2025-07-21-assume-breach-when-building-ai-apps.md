@@ -23,3 +23,5 @@ type: weblog
 
 AI jailbreaks are not vulnerabilities; they are expected behavior.
 
+AI jailbreaks are not vulnerabilities; they are expected behavior.
+
