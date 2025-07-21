@@ -137,6 +137,10 @@ jobs:
         id: create_weblog
         run: |
           OUTPUT=$(uv run --script src/processors/weblog_processor.py "${{ steps.get_pr_data.outputs.archive_file }}" comments.json)
+          if [ $? -ne 0 ]; then
+            echo "Error creating weblog entry"
+            exit 1
+          fi
           echo "$OUTPUT" | while IFS=: read -r key value; do
             if [ -n "$key" ] && [ -n "$value" ]; then
               echo "${key}=${value}" >> $GITHUB_OUTPUT
@@ -247,3 +251,21 @@ jobs:
                 body: successBody
               });
             }
+
+      - name: Post Error Comment
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request?.number || parseInt('${{ github.event.inputs.pr_number }}');
+            
+            const errorBody = "❌ **Weblog creation failed!**\n\n" +
+              "An error occurred while processing your review comments.\n\n" +
+              "Please check the [workflow logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details.";
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              body: errorBody
+            });
