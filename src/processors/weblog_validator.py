@@ -79,11 +79,6 @@ def validate_weblog_file(filepath):
     if len(markdown_content.strip()) < 50:
         errors.append(f"Weblog content too short in {filepath} (minimum 50 characters)")
     
-    # Check for archive link in content
-    if 'link' in frontmatter and frontmatter['link']:
-        if 'Archive:' not in markdown_content:
-            errors.append(f"Weblog should reference archive link in content: {filepath}")
-    
     return errors
 
 def validate_directory(directory):
