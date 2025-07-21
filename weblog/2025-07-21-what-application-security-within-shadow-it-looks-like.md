@@ -23,3 +23,5 @@ type: weblog
 
 AppSec is hard for traditional software development, let alone citizen developers. So how did two people resolve 70,000 vulnerabilities in three months?
 
+AppSec is hard for traditional software development, let alone citizen developers. So how did two people resolve 70,000 vulnerabilities in three months?
+
