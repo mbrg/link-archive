@@ -164,7 +164,10 @@ def main():
     
     # Process the content to get description and tags
     generated_title, generated_description, generated_tags = process_content(content, model_name)
-    title_to_use = generated_title if title == '' else title
+    
+    # Clean the original title and prefer it if it's good, otherwise use generated
+    clean_original_title = clean_string(title) if title else ""
+    title_to_use = clean_original_title if clean_original_title else generated_title
     
     # Create and save new file
     filename = create_filename(title_to_use)
