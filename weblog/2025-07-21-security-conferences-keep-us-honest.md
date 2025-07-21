@@ -23,3 +23,5 @@ type: weblog
 
 Conferences are where vendors and security researchers meet face to face to address problems and discuss solutions — despite the risks associated with public disclosure.
 
+Conferences are where vendors and security researchers meet face to face to address problems and discuss solutions — despite the risks associated with public disclosure.
+
