@@ -24,3 +24,5 @@ type: weblog
 
 The tantalizing promise of true artificial intelligence, or at least decent machine learning, has whipped into a gallop large organizations not built for speed.
 
+The tantalizing promise of true artificial intelligence, or at least decent machine learning, has whipped into a gallop large organizations not built for speed.
+
