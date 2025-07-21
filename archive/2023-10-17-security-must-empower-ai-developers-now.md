@@ -1,98 +1,71 @@
 ---
-date: '2025-07-21'
-description: The LastPass breach underscores critical vulnerabilities in password
-  management systems. Despite hackers accessing source code and user data, the architecture’s
-  reliance on strong master passwords and endpoint MFA mitigates threat severity.
-  However, the incident raises concerns around implicit user responsibility in selecting
-  and recommending password managers. The balance of convenience versus the potential
-  for catastrophic breaches remains tenuous. Users must reinforce security protocols,
-  such as rotating sensitive passwords, and question the robustness of their chosen
-  vault providers. The systemic design flaws must prompt introspection into the shared
-  security paradigm of password management tools.
-link: https://www.darkreading.com/edge-articles/despite-breach-lastpass-demonstrates-the-power-of-password-management
+date: 2023-10-17
+description: The rise of generative AI (GenAI) necessitates a structured security
+  framework for enterprises to manage their rapidly developing AI applications. As
+  companies race to leverage GenAI for productivity gains, security teams must address
+  inherent vulnerabilities, including identity management and threat modeling, particularly
+  for evolving frameworks like LangChain and AutoGPT. A centralized security resource
+  can aid in the inventory, assessment, and monitoring of these applications, enhancing
+  overall security posture. Organizations must adapt quickly to ensure secure development
+  practices while navigating a diverse ecosystem of AI tools.
+link: https://www.darkreading.com/application-security/security-must-empower-ai-developers-now
 tags:
+- Generative AI
+- Application Security
 - Cybersecurity
-- Password Management
-- Data Breaches
-- MFA
-- LastPass
-title: Despite Breach, LastPass Demonstrates the Power of Password Management
+- Security Best Practices
+- AI Security
+title: Security Must Empower AI Developers Now
 ---
 
-- [Cyberattacks & Data Breaches](https://www.darkreading.com/cyberattacks-data-breaches)
+- [Application Security](https://www.darkreading.com/application-security)
+- [Commentary](https://www.darkreading.com/latest-commentary)
 
 [![The Edge Logo](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt530eb1f4e672eb44/653a71690e92cc040a3e9d6d/Dark_Reading_Logo_TheEdge_0.png?width=700&auto=webp&quality=80&disable=upscale)\\
 \\
 Cybersecurity In-Depth: Feature articles on security strategy, latest trends, and people to know.](https://www.darkreading.com/program/the-edge)
 
-# Despite Breach, LastPass Demonstrates the Power of Password Management
+# Security Must Empower AI Developers Now
 
-What's scarier than keeping all of your passwords in one place and having that place raided by hackers? Maybe reusing insecure passwords.
+Enterprises need to create a secure structure for tracking, assessing, and monitoring their growing stable of AI business apps.
 
 [![Picture of Michael Bargury](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbd8a249d11a28466/64f150aad5f7ca2f7665bf81/Michael_Bargury_zenity.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/michael-bargury)
 
 [Michael Bargury](https://www.darkreading.com/author/michael-bargury), CTO & Co-Founder, Zenity
 
-February 20, 2023
+October 16, 2023
 
-5 Min Read
+3 Min Read
 
-![Photo of the aftermath of a car burglary, with the passenger side window smashed and safety glass pieces everywhere](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt43d1e6a0c2e0dabb/64f1651611a9e52894193259/carburglary-Jeffrey_Isaac_Greenberg_16_-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
+![3d rendering of warehouse robots delivering boxes in a shelf-lined warehouse](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt1c2cf20b8401241a/654e39d82e6653040a3303a2/inventory-Kittipong_Jirasukhanont-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Source: Jeffrey Isaac Greenberg 16+ via Alamy Stock Photo
+Source: Kittipong Jirasukhanont via Alamy Stock Photo
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management&title=Despite%20Breach%2C%20LastPass%20Demonstrates%20the%20Power%20of%20Password%20Management)[Email](mailto:?subject=Despite%20Breach,%20LastPass%20Demonstrates%20the%20Power%20of%20Password%20Management&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Despite%20Breach%2C%20LastPass%20Demonstrates%20the%20Power%20of%20Password%20Management%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyberattacks-data-breaches%2Fdespite-breach-lastpass-demonstrates-the-power-of-password-management)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now&title=Security%20Must%20Empower%20AI%20Developers%20Now)[Email](mailto:?subject=Security%20Must%20Empower%20AI%20Developers%20Now&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Security%20Must%20Empower%20AI%20Developers%20Now%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fapplication-security%2Fsecurity-must-empower-ai-developers-now)
 
-A few months ago, LastPass [suffered a significant breach](https://blog.lastpass.com/2022/12/notice-of-recent-security-incident/). Hackers got both the source code and user data, including encrypted secret vaults and plaintext metadata. This [is not](https://www.darkreading.com/cloud-security/lastpass-data-breach-source-code-stolen) the first breach LastPass had suffered.
+There is no doubt that generative artificial intelligence (GenAI) is going to change how business gets done. [Research firms are estimating huge productivity gains](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier#work-and-productivity) across all sectors that, if fulfilled, would completely transform every industry. With such great potential gain, it is clear why every enterprise is striving to enable their teams to build AI-powered applications as fast as possible. However, security teams must act now to ensure these apps will hold up to scrutiny.
 
-[This breach](https://www.darkreading.com/application-security/lastpass-discloses-second-breach-in-three-months) put me in a weird situation. I'd been a champion of using secret vaults for a few years now. After a brief period of trial and examination, I chose LastPass even though it [had been breached before](https://blog.lastpass.com/2015/06/lastpass-security-notice/). Being happy with the experience despite its quirks and a trying onboarding, I recommended its use to anyone I cared about — my family, friends, and colleagues. I helped them onboard and generate random passwords, install the app everywhere, and come up with a really good master password. In some cases, this wasn't easy and took a lot of guidance and convincing on my part.
+## The Race to Capture AI Business Value First
 
-The obvious fact I had failed to realize at the time was that a recommendation as strong as that comes with an implicit responsibility. When those people see a major news article about their passwords belonging to hackers now, they reach out to me for questions. They are right — I got them into this mess, didn't I?
+Some enterprises have already built hundreds of AI-powered apps so far. The rate of development is just incredible, with notable examples like [Microsoft releasing Copilot applications](https://www.darkreading.com/threat-intelligence/microsoft-security-copilot-ai-assistant-next-level) at a rate far beyond what a huge enterprise typically delivers.
 
-## Why Evangelize Secret Managers?
+Because of the immaturity of the frameworks and tooling around [AI app development](https://www.darkreading.com/cyber-risk/ai-has-your-business-data), these are being built with a wide range of technologies. Development frameworks that build on top of the few fundamental models are numerous and vary significantly, and they keep on popping up. Frameworks such as [LangChain](https://www.langchain.com/) and [AutoGPT](https://autogpt.net/) have gained significant popularity at an unprecedented pace. In a major enterprise, you can easily expect to find tens of different frameworks being used to build these applications.
 
-I was not always convinced secret managers were a good idea, especially commercial ones with their own cloud infra. As a teen, I started off where more people do, using one "good password" for everything, appending a service-specific prefix or suffix to avoid straight password duplication. I also had the unfortunate experience of working in an enterprise that forced me to change my password every 30 days. The number appended to the end of your password was a token of seniority in that org. I reached some number in the 40s and was really proud of myself and how experienced I was. Of course, when you're proud of something, you really want to share it. And so we did.
+The first organizations that are able to capture productivity gains from AI before others will have a huge win. Therefore, we are taking part in a race where we have to make do with the frameworks available right now and just get things done. It will probably take a long time for frameworks to standardize, and by that time you'll already be late to the game.
 
-I always knew that sharing the chunky part of my password across services was a bad idea. That knowledge became a reality when I started to understand [how hackers leverage these common yet faulty tactics](https://www.darkreading.com/remote-workforce/norton-lifelock-warns-on-password-manager-account-compromises) to their advantage. Appending two letters to your "good password" does nothing to stop an attacker from compromising one service based on a compromised password for the other. It only makes you feel good about complying with a bad policy. Fortunately, monthly password changes are now passe.
+We have to face reality: Business is being reimagined — with unproven tools, frameworks, and threat models — at an unprecedented pace.
 
-But my first attempt at solving my password problem was using my dad's custom-built bare C based password manager. It was very basic: encrypt and decrypt a text file. You pop the encrypted file on a shared drive and congrats, you have a secret manager! Of course, this has clear downsides, like no mobile support, auto-fill, or password generation. I also wrote [my own cli-based interface](https://github.com/mbrg/crd) on top of cloud and native keyvaults. It was great, but still, no utilities. I used these two options for a long while. I was still looking for solutions with those utility features, but anything with the word "cloud" in it was denied at the doorstep.
+## Security: Where Do We Even Begin?
 
-Then I took an advanced crypto course as part of a masters in computer science. The beauty of Merkel trees and zero knowledge proofs excited my imagination and made me devour the Web in search of real-world applications. I encountered a scientific paper describing secret vaults, and the idea just clicked. Of course, it makes perfect sense! The only way for my passwords to be truly secure is to assume the vault provider is malicious and still be confident that they can't accomplish anything significant. I had reached the conclusion that a password manager that follows the theory would be safe to use.
+Building so many new applications in such a short time frame has huge security implications. First, these are just more applications, with the same security risks as any other application introduces; they need to get identity, dataflow, and secret management right, to name a few concerns. Second, GenAI creates some unique security challenges, which frameworks such as the [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/) help to capture and educate on.
 
-The other threat vector to get my password is a malicious vendor or party within that vendor. They could, for example, steal my master password from the client application, making the theorized protections irrelevant. After reading through reviews putting different password manager clients under scrutiny, I became convinced that the implementations are up to standards and it's time to migrate.
+Advanced security organizations, in collaboration with IT, are putting together dedicated centers to inventory, assess, and secure these applications. Note that these require creating entirely new processes and newly delegated responsibilities. Ideally, these centers can act as an enabling resource for developers, offering threat modeling and design review services to ensure secure standards are met.
 
-Several years afterwards, I found myself with hundreds of auto-generated passwords managed by my password manager. I had also been able to convince the people I care about to go through that journey too. I was really happy about it.
+Creating a centralized resource is not an easy feat. Finding all AI-powered projects across an enterprise is a huge challenge, as [inventory always is](https://www.darkreading.com/cybersecurity-analytics/analysis-log4j-vulnerability-highlights-the-value-of-defense-in-depth-accurate-inventory). Developing the technical skills required to audit these applications is difficult as well — especially due to the proliferation of different AI frameworks, each with its own quirks and gotchas. Monitoring these apps in production is yet another challenge, both from a technical perspective of getting the right data from immature development frameworks and from the security analysis perspective of knowing what to look for.
 
-## What If My Vault Gets Breached?
+These are not insurmountable challenges, however. In fact, they follow the typical application security problem formula of inventory, security assessment, and runtime protection. To get ahead and enable our business to capture the AI revolution first, we have to start making headway in solving those problems.
 
-If hackers actually get access to my plaintext passwords, I will be in a world of hurt. I do have MFA enabled on anything important, but MFA-anyway is notoriously hard to pull off. Just thinking about rolling all those passwords manually gives me a headache. I don't see myself being able to convince my family to do it for their accounts too.
-
-In short, this scenario would be catastrophic.
-
-Wait, Didn't Your Password Manager Just Get Breached?
-
-Well yes, most definitely. One colleague who chose LastPass on my advice recently asked me two questions after reading a concerning article. What happened? and How should he react?
-
-My answer for the first question couldn't be worse. Hackers compromised both code and data. Data contains our vaults, with plaintext metadata including email addresses and our encrypted passwords.
-
-My answer to the second question was very different. There is no indication of the hackers stealing master passwords by abusing the client. We can assume that didn't happen or we would see a whole host of reproductions across the industry. So if your master password is strong enough not to be cracked and you have MFA on everything that matters, you are fine. If you still feel iffy, roll your important passwords.
-
-Concrete steps to take if you were affected by the breach:
-
-- Roll your master password.
-
-- Enable MFA and roll passwords everywhere that matters.
-
-- If your master password was weak, I strongly advise you to roll all of your passwords.
-
-
-How Can That Be? Aren't Those Answers Contradictory?
-
-The seemingly contradictory nature of these two answers shows just how powerful avoiding storage of sensitive data is.
-
-LastPass got breached. Repeatedly. Attackers took everything there is to take. The impact is severe, but not catastrophic at least given what we know now. That's a brilliant property of the system's design.
-
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management&title=Despite%20Breach%2C%20LastPass%20Demonstrates%20the%20Power%20of%20Password%20Management)[Email](mailto:?subject=Despite%20Breach,%20LastPass%20Demonstrates%20the%20Power%20of%20Password%20Management&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Despite%20Breach%2C%20LastPass%20Demonstrates%20the%20Power%20of%20Password%20Management%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyberattacks-data-breaches%2Fdespite-breach-lastpass-demonstrates-the-power-of-password-management)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now&title=Security%20Must%20Empower%20AI%20Developers%20Now)[Email](mailto:?subject=Security%20Must%20Empower%20AI%20Developers%20Now&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Security%20Must%20Empower%20AI%20Developers%20Now%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fapplication-security%2Fsecurity-must-empower-ai-developers-now)
 
 ## About the Author
 
@@ -133,6 +106,22 @@ Events
 You May Also Like
 
 * * *
+
+[Application Security\\
+\\
+'Void Banshee' Exploits Second Microsoft Zero-Day](https://www.darkreading.com/application-security/void-banshee-exploits-second-microsoft-zero-day)
+
+[Application Security\\
+\\
+Microsoft VS Code Undermined in Asian Spy Attack](https://www.darkreading.com/application-security/microsoft-vs-code-undermined-in-asian-spy-attack)
+
+[Application Security\\
+\\
+Hackers Use Rare Stealth Techniques to Down Asian Military, Gov't Orgs](https://www.darkreading.com/application-security/hackers-use-rare-stealth-techniques-to-down-asian-military-govt-orgs)
+
+[Application Security\\
+\\
+Microsoft Talks Kernel Drivers Post CrowdStrike Outage](https://www.darkreading.com/application-security/microsoft-lowballs-crowdstrike-outage-impact)
 
 ### Edge Picks
 

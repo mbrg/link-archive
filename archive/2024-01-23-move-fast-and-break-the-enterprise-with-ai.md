@@ -1,72 +1,79 @@
 ---
-date: '2025-07-21'
-description: The rise of low-code/no-code platforms accelerates application development
-  but introduces significant security risks. These tools allow non-technical users
-  to create applications rapidly, often bypassing established security protocols.
-  The article emphasizes that while empowering citizen developers enhances productivity,
-  it increases the likelihood of unintentional data exposure, particularly in automations
-  involving sensitive information. The author advocates for implementing automated
-  guardrails to prompt users to reconsider their actions, thus balancing speed and
-  security without stifling innovation. This highlights the need for proactive governance
-  in emergent development environments.
-link: https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good
+date: 2024-01-23
+description: 'Michael Bargury''s article discusses the disruptive potential of AI
+  in enterprise environments, highlighting the rapid deployment of AI solutions like
+  Microsoft 365 Copilot across major companies. Key risks include: 1. **Permission
+  Management:** AI models may retain access to outdated data after personnel changes,
+  complicating security protocols. 2. **Data Boundary Erosion:** AI''s ability to
+  aggregate and access vast datasets challenges traditional data segregation principles.
+  3. **Activity Monitoring Dilemmas:** AI impersonation blurs the lines for monitoring
+  suspicious activities, complicating anomaly detection. These factors signal a need
+  for reevaluated security frameworks amidst fast-paced AI integration, emphasizing
+  innovation over static practices.'
+link: https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai
 tags:
-- Application Security
-- Low-Code Development
-- No-Code Development
-- Security Governance
-- Cyber Risk
-title: Citizen Development Moves Too Fast for Its Own Good
+- Cybersecurity
+- Artificial Intelligence
+- Machine Learning
+- Enterprise Security
+- Data Privacy
+title: Move Fast and Break the Enterprise With AI
 ---
 
-- [Application Security](https://www.darkreading.com/application-security)
 - [Cyber Risk](https://www.darkreading.com/cyber-risk)
 
 [![The Edge Logo](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt530eb1f4e672eb44/653a71690e92cc040a3e9d6d/Dark_Reading_Logo_TheEdge_0.png?width=700&auto=webp&quality=80&disable=upscale)\\
 \\
 Cybersecurity In-Depth: Feature articles on security strategy, latest trends, and people to know.](https://www.darkreading.com/program/the-edge)
 
-# Citizen Development Moves Too Fast for Its Own Good
+# Move Fast and Break the Enterprise With AI
 
-While low-code/no-code tools can speed up application development, sometimes it's worth taking a slower approach for a safer product.
+The tantalizing promise of true artificial intelligence, or at least decent machine learning, has whipped into a gallop large organizations not built for speed.
 
 [![Picture of Michael Bargury](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbd8a249d11a28466/64f150aad5f7ca2f7665bf81/Michael_Bargury_zenity.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/michael-bargury)
 
 [Michael Bargury](https://www.darkreading.com/author/michael-bargury), CTO & Co-Founder, Zenity
 
-December 16, 2024
+January 23, 2024
 
-3 Min Read
+4 Min Read
 
-![In Bavaria, boy driving pedal go-kart on a tiled driveway is chased by a running woman. Both are smiling. A house and trees are in the background.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt698afe9030477799/675cd1190c2b8ada1abfb51b/gokart-Westend61_GmbH-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
+![Jockeys race four horses down a racetrack, crops raised](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltf90b5e2bcc0f7e30/65af52aa45b4a8040a1f810b/horserace-Michael_Turner-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Source: Westend61 GmbH via Alamy Stock Photo
+Source: Michael Turner via Alamy Stock Photo
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good&title=Citizen%20Development%20Moves%20Too%20Fast%20for%20Its%20Own%20Good)[Email](mailto:?subject=Citizen%20Development%20Moves%20Too%20Fast%20for%20Its%20Own%20Good&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Citizen%20Development%20Moves%20Too%20Fast%20for%20Its%20Own%20Good%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fapplication-security%2Fcitizen-development-moves-too-fast-for-its-own-good)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai&title=Move%20Fast%20and%20Break%20the%20Enterprise%20With%20AI)[Email](mailto:?subject=Move%20Fast%20and%20Break%20the%20Enterprise%20With%20AI&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Move%20Fast%20and%20Break%20the%20Enterprise%20With%20AI%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fmove-fast-and-break-the-enterprise-with-ai)
 
 COMMENTARY
 
-Say you're working on an important financial report for your company, with a strict deadline. You need to share it with external financial advisers, but security restrictions are preventing you from adding them directly. You grab the report, open your personal email, upload the report — and just before you hit send, you realize this is probably not a wise decision. You delete your draft.
+Working for a large enterprise for many years often leaves you with a strong feeling that everything will forever stay the same. Sure, some things change, even drastically. There are ups and downs, reorgs on a regular cadence, and sometimes companies even reinvent and rejuvenate themselves like Satya Nadella's Microsoft did in recent years. But most things stay the same, and culture runs deep. There is an inherent unwillingness to change; after all, these are large, successful enterprises — why change?
 
-I'm sure you can think of many other examples where you got into a similar situation in the heat of the moment; hopefully you bumped into a security guardrail that made you think twice. Sometimes some friction is needed to slow us down and get us to rethink.
+Security professionals often reach a point in their careers where they look back and ask: Have we made any progress? Are organizations really more secure today than they were 20 years ago? Sure, the threat landscape is different, but so is the amount of money and, more importantly, mindshare being spent on security throughout the industry. Even with all of that, some things never change. We have evergreen sayings, like "developers don't care about security," "you can't secure the perimeter," "x is the new perimeter," and my personal (un)favorite, "users are the weakest link."
 
-## Low-Code/No-Code Makes Things Too Easy
+Securing a large enterprise means having to deal with the problems of a large enterprise, which, as stated above, has a basic unwillingness to change.
 
-Business units can't wait around for IT and development units to get to their items on an ever-growing backlog. Low-code/no-code platforms have really made a difference in large enterprises in the past few years, and generative artificial intelligence has turbocharged this trend. Nontechnical users are empowered to create applications by describing them to a chatbot that does everything from generate the database to the user interface. They are also creating automations to streamline business processes, either by chatting with a chatbot or using drag-and-drop. This is all happening at the heart of the enterprise and is wonderful for productivity.
+Until it does.
 
-Security controls provided by low-code/no-code platforms typically focus on the point that an application [inherits its user's permissions](https://www.darkreading.com/cyber-risk/watch-out-for-user-impersonation-in-low-code-no-code-apps). That means that, theoretically, a user could manually do everything the application or automation does on their behalf. So what's the problem?
+## Changing at the Speed of AI
 
-People are not robots. We don't move the same amount of data, we are not consistent when we do something again and again, and — most importantly — we have common sense. A human can understand that sharing a financial report externally is not a good idea, while sharing nonsensitive files might be all right. But if an automation is set up to sync data between you and your external vendors, with the intent of sharing nonsensitive files, no one is going to be there to flag it or second-guess when sensitive files are also transferred unintentionally.
+Enter artificial intelligence (AI). Emboldened by the technology's promise of changing all industries, large enterprises are mobilizing their AI initiatives at lightning speed. It's been incredible (and frightening) to see how fast Microsoft and others, including Salesforce, Google, and Amazon, have pushed AI directly into their core enterprise offerings. They do this despite knowing that AI has serious problems that no one can really solve yet, like [alignment](https://openai.com/blog/our-approach-to-alignment-research) with human values and [safety](https://www.safe.ai/statement-on-ai-risk) risks. They do this because their customers — the entire enterprise market — are eager to adopt the bleeding edge to get one up on their competition.
 
-You could say that the person who created the automation should have thought about it, and you're right. But that requires them to stop and think. If you can create an automation by talking to a chatbot, then you quickly get into a situation where you're creating automations left and right without fully thinking through the consequences. Low-code/no-code platforms are lowering the bar to be creative within the enterprise, which is wonderful but also dangerous.
+Whether you are an AI enthusiast or an AI skeptic doesn't matter at this point. The winds of change are blowing, and an opportunity has opened up in which enterprises are willing to risk their core competencies to reap the rewards of AI before their competitors do.
 
-## Tapping the Brakes, Not Taking the Keys
+## Breaking the Enterprise
 
-Some friction could make all the difference in the world, if carefully used. Allowing citizen developers to create automations and applications is great, but perhaps if there are external data sources or vendors, somebody needs to take a second look. Low-code/no-code [doesn't really follow the software development life cycle process](https://www.darkreading.com/cyber-risk/where-there-s-no-code-there-s-no-sdlc), but notifying the security team or center of excellence for selective reviews where it matters is feasible. We must be careful not to add too much friction, however, or we'll lose the productivity benefits that citizen development brings — or people are going to find ways around our controls.
+The most significant advancement in enterprise AI is business Copilots. Every large Microsoft shop is looking into [Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365/microsoft-copilot) to seek fulfillment of the promise of a huge productivity boost. [Google](https://workspace.google.com/solutions/ai/), [AWS](https://aws.amazon.com/blogs/aws/introducing-amazon-q-a-new-generative-ai-powered-assistant-preview/), and [Salesforce](https://www.salesforce.com/news/press-releases/2023/09/12/ai-einstein-news-dreamforce/) have released their own versions: Duet AI, Amazon Q, and Einstein, respectively. They're doing this because they see a huge value to be gained. This idea of a Copilot also [completely breaks](https://www.zenity.io/microsoft-copilot-studio-vulnerabilities-explained/)[key assumptions](https://www.darkreading.com/cybersecurity-analytics/generative-ai-empowers-users-but-challenges-security) about how an enterprise operates.
 
-To hit the right balance, we should let citizen developers build freely but intervene where needed. We should set up automated guardrails that catch when developers go outside of our approved risk zone and intervene — even if just by nudging them to stop and rethink.
+- Breaking permissions. To service my requests, my personal corporate AI needs to munch through all of the data I can access in order to index it so that it's available for query. Pretty soon we can expect it to train on the previous conversation I had with it. Now let's consider what happens when I move to a different role in the company or somebody removes my access. Can we remove that knowledge from the AI's neural network? That does not seem to be an existing capability of models today. Maybe tomorrow?
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good&title=Citizen%20Development%20Moves%20Too%20Fast%20for%20Its%20Own%20Good)[Email](mailto:?subject=Citizen%20Development%20Moves%20Too%20Fast%20for%20Its%20Own%20Good&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Citizen%20Development%20Moves%20Too%20Fast%20for%20Its%20Own%20Good%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fapplication-security%2Fcitizen-development-moves-too-fast-for-its-own-good)
+- Breaking data boundaries. If a single AI can answer questions across all of my corporate data access, it is difficult to see how data boundaries could be maintained. Every control we put in front of data becomes meaningless, when the AI can read the data and write it infinite times from its "memory."
+
+- Breaking activity monitoring. We're used to monitoring user activity to find snooping employees or distinguish between human and scripted behavior. When AI works by user impersonation and has to touch every piece of data to which I have access to build an index, does [anomalous access](https://www.darkreading.com/vulnerabilities-threats/are-ai-engineered-threats-fud-or-reality-) mean anything anymore?
+
+
+These problems might have solutions right around the corner, or they might be insurmountable in AI's current form and require a fundamental rethink. But one thing is clear: The problems have not been solved, yet we're moving forward anyway. And that is bound to be interesting.
+
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai&title=Move%20Fast%20and%20Break%20the%20Enterprise%20With%20AI)[Email](mailto:?subject=Move%20Fast%20and%20Break%20the%20Enterprise%20With%20AI&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Move%20Fast%20and%20Break%20the%20Enterprise%20With%20AI%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fmove-fast-and-break-the-enterprise-with-ai)
 
 ## About the Author
 
@@ -108,21 +115,21 @@ You May Also Like
 
 * * *
 
-[Application Security\\
+[Cyber Risk\\
 \\
-Gmail for Sensitive Comms: What's the Risk?](https://www.darkreading.com/application-security/gmail-not-secure-way-send-sensitive-comms)
+How CISOs Can Effectively Communicate Cyber-Risk](https://www.darkreading.com/cyber-risk/how-cisos-can-effectively-communicate-cyber-risk)
 
-[Application Security\\
+[Cyber Risk\\
 \\
-DeepSeek Jailbreak Reveals Its Entire System Prompt](https://www.darkreading.com/application-security/deepseek-jailbreak-system-prompt)
+Ransomware Gangs Pummel Southeast Asia](https://www.darkreading.com/cyber-risk/ransomware-gangs-pummel-southeast-asia)
 
-[Application Security\\
+[Cyber Risk\\
 \\
-Platform Engineering Is Security Engineering](https://www.darkreading.com/application-security/platform-engineering-is-security-engineering)
+India's Critical Infrastructure Suffers Spike in Cyberattacks](https://www.darkreading.com/cyber-risk/india-s-critical-infrastructure-suffers-spike-in-cyberattacks)
 
-[Application Security\\
+[Cyber Risk\\
 \\
-Hundreds of LLM Servers Expose Corporate, Health & Other Online Data](https://www.darkreading.com/application-security/hundreds-of-llm-servers-expose-corporate-health-and-other-online-data)
+NIST Hands Off Post-Quantum Cryptography Work to Cyber Teams](https://www.darkreading.com/cyber-risk/nist-post-quantum-cryptography-work-cyber-teams)
 
 ### Edge Picks
 

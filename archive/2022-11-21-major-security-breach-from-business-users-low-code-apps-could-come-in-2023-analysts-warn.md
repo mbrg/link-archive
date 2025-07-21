@@ -1,75 +1,78 @@
 ---
-date: '2025-07-21'
-description: In "Assume Breach When Building AI Apps," Michael Bargury emphasizes
-  the inevitability of AI jailbreaks, urging developers to design applications with
-  the understanding that such exploits are a matter of context, not mere vulnerabilities.
-  The rise of AI jailbreaking communities highlights the ease with which these bypasses
-  can be discovered, outpacing defensive strategies. Bargury advocates for proactive
-  oversight rather than reliance on perimeter defenses, suggesting monitoring systems
-  capable of rapid response to potential exploits, framing AI as an unpredictable
-  asset that requires diligent governance. This perspective is crucial for developers
-  and security professionals adapting to AI's growing role in enterprise applications.
-link: https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps
+date: 2022-11-21
+description: Forrester analysts predict significant security breaches in enterprises
+  stemming from low-code/no-code (LCNC) applications in 2023. As business users increasingly
+  leverage LCNC for critical app development, security teams must adapt, shifting
+  perceptions of these applications from experiments to essential infrastructure.
+  The potential for exploitation arises due to a lack of security expertise among
+  citizen developers and possible vulnerabilities in LCNC platforms. This landscape
+  underscores the need for robust security governance and proactive monitoring alongside
+  empowering business users. Organizations must address these security gaps to mitigate
+  risks associated with decentralized development in enterprise environments.
+link: https://www.darkreading.com/edge-articles/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn
 tags:
-- application security
-- jailbreaking
+- citizen developers
+- data breach
+- low-code development
 - cybersecurity
-- AI security
-- vulnerability management
-title: Assume Breach When Building AI Apps
+- security threats
+title: Major Security Breach From Business Users' Low-Code Apps Could Come in 2023,
+  Analysts Warn
 ---
 
-- [Application Security](https://www.darkreading.com/application-security)
+- [Cyberattacks & Data Breaches](https://www.darkreading.com/cyberattacks-data-breaches)
 
 [![The Edge Logo](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt530eb1f4e672eb44/653a71690e92cc040a3e9d6d/Dark_Reading_Logo_TheEdge_0.png?width=700&auto=webp&quality=80&disable=upscale)\\
 \\
 Cybersecurity In-Depth: Feature articles on security strategy, latest trends, and people to know.](https://www.darkreading.com/program/the-edge)
 
-# Assume Breach When Building AI Apps
+# Major Security Breach From Business Users' Low-Code Apps Could Come in 2023, Analysts Warn
 
-AI jailbreaks are not vulnerabilities; they are expected behavior.
+Here's what that means about our current state as an industry, and why we should be happy about it.
 
 [![Picture of Michael Bargury](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbd8a249d11a28466/64f150aad5f7ca2f7665bf81/Michael_Bargury_zenity.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/michael-bargury)
 
 [Michael Bargury](https://www.darkreading.com/author/michael-bargury), CTO & Co-Founder, Zenity
 
-August 19, 2024
+November 21, 2022
 
-4 Min Read
+5 Min Read
 
-![person in a dark suit and beard breaking out of a white wall](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd42c317460171325/66bfe2c2473f2f75eb0c2115/Break-it-iStock_000047114688_Medium.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
+![Low Code software development platform technology concept, businessman holding phone](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd103233337f42db8/64f15af2bafd245afc0e4cd1/lowcode-Murrstock-AdobeStock.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Source: Pinkypills via iStock
+Source: Murrstock via Adobe Stock
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps&title=Assume%20Breach%20When%20Building%20AI%20Apps)[Email](mailto:?subject=Assume%20Breach%20When%20Building%20AI%20Apps&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Assume%20Breach%20When%20Building%20AI%20Apps%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fapplication-security%2Fassume-breach-when-building-ai-apps)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn&title=Major%20Security%20Breach%20From%20Business%20Users%27%20Low-Code%20Apps%20Could%20Come%20in%202023%2C%20Analysts%20Warn)[Email](mailto:?subject=Major%20Security%20Breach%20From%20Business%20Users%27%20Low-Code%20Apps%20Could%20Come%20in%202023,%20Analysts%20Warn&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Major%20Security%20Breach%20From%20Business%20Users%27%20Low-Code%20Apps%20Could%20Come%20in%202023%2C%20Analysts%20Warn%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyberattacks-data-breaches%2Fmajor-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)
 
-COMMENTARY
+In a recent report, [Forrester analysts warned](https://www.sdxcentral.com/articles/analysis/forrester-low-code-citizen-development-will-lead-to-major-data-breach-in-2023/2022/11/) of a looming major security breach at a large enterprise in 2023 rooted in business users using low-code/no-code (LCNC). The first part of this prediction is, unfortunately, a shared industry assumption: It would be surprising if we had an entire year without major headline security breaches. But the second part — forecasting that this major breach would be the result of business users, aka citizen developers, using LCNC — is an extraordinary attempt to wake up the security community before it's too late.
 
-If you are still a skeptic about artificial intelligence (AI), you won't be for long. I was recently using Claude.ai to model security data I had at hand into a graph for attack path analysis. While I can do this myself, Claude took care of the task in minutes. More importantly, Claude was just as quick to adapt the script when significant changes were made to the initial requirements. Instead of me having to switch between being a security researcher and data engineer — exploring the graph, identifying a missing property or relation, and adapting the script — I could keep on my researcher hat while Claude played the engineer.
+This prediction is so powerful since it comes in strong contrast to the tendency some security teams have to treat apps built by business users as toys or POCs rather than critical infrastructure. This assumption, warns Forrester, is wrong and will lead to dire results. In recent years, [LCNC has become a reality in the enterprise](https://www.darkreading.com/cyber-risk/you-can-t-opt-out-of-citizen-development), and business users have been building impactful apps that large organizations now rely on — with or without the security team's knowledge.
 
-These are moments of clarity, when you realize your toolbox has been upgraded, saving you hours or days of work. It seems like many people have been having those moments, becoming more convinced of the impact AI is going to have in the enterprise.
+To understand why Forrester is issuing this warning, we must unpack its underlying assumptions. Doing so will show that it is full of new information about the analysts' reading and assumption of the market, which the reader is free to evaluate.
 
-But AI isn't infallible. There have been a number of public examples of AI jailbreaking, where the generative AI model was fed carefully crafted prompts to do or say unintended things. It can mean bypassing built-in safety features and guardrails or accessing capabilities that are supposed to be restricted. AI companies are trying to solve jailbreaking; some say they have either done so or are making significant progress. Jailbreaking is treated as a fixable problem — a quirk we'll soon get rid of.
+## When a Security Breach Becomes a Major Headline
 
-As part of that mindset, AI vendors are treating jailbreaks as vulnerabilities. They expect researchers to submit their latest prompts to a bug-bounty program instead of publishing them on social media for laughs. Some security leaders are [talking about AI jailbreaks in terms of responsible disclosure](https://twitter.com/markrussinovich/status/1806036596556476852), creating a clear contrast with those supposedly irresponsible people who disclose jailbreaks publicly.
+Consider the factors it takes for a security breach to become a major headline. First, obviously a breach needs to occur. While this assumption is trivial, note that it relies on an underlying assumption that hackers are focusing their efforts on LCNC apps and finding success in breaking them. For hackers to focus their efforts on LCNC, the perceived reward needs to be big enough compared to the perceived difficulty — which means hackers must be convinced that LCNC holds significant business data or facilitate important business workflows for them to be a worthy target. Success in breaching LCNC apps means that hackers can exploit either platform or app-level vulnerabilities to own these apps.
 
-## Reality Sees Things Differently
+Since business users are not security experts and often lack guidance, this is unfortunately an easy assumption to make. In fact, [in a case documented by the Microsoft Detection and Response team](https://www.zenity.io/hackers-abuse-low-code-platforms-and-turn-them-against-their-owners/), an APT group used live-off-the-land on some LCNC to remain hidden and persistent within a multinational organization for more than six months while defenders were actively trying to kick them off. In another case last year, a simple misconfiguration resulted in [almost 40 million confidential records being exposed to the Internet](https://www.cpomagazine.com/cyber-security/microsoft-power-apps-data-leak-fallout-38-million-records-exposed-state-and-city-governments-among-those-breached/).
 
-Meanwhile, AI jailbreaking communities are popping up on social media and community platforms, such as Discord and Reddit, like mushrooms after the rain. These communities are more akin to gaming speedrunners than to security researchers. Whenever a new generative AI model is released, these communities race to see who can find a jailbreak first. It usually takes minutes, and they never fail. These communities do not know about, of care about, responsible disclosure.
+Second, the breach must involve business-critical apps or data; otherwise the story just won't be as interesting for a major headline. The criticality of the app or data needs to be rooted in the business' value proposition for it to be obvious to every external security practitioner that this will have significant business impact on the breached company. LCNC and citizen development [has grown significantly in recent years](https://www.quark.com/about/blog/low-code-no-code-componentized-content-solutions-increase-enterprise-agility), delivering on its promise of empowering business users to address their own needs. Business-led development has become a strategic initiative in some organizations. Many large organizations have a dedicated group of admins who manage and operate these LCNC citizen development platforms, which are sometimes called Centers of Excellence.
 
-[To quote an X post from Pliny the Prompter](https://x.com/i/web/status/1807105884381978700), a popular social media account from the AI breaking community: "circumventing AI 'safety' measures is getting easier as they become more powerful, not harder. this may seem counterintuitive but it's all about the surface area of attack, which seems to be expanding much faster than anyone on defense can keep up with."
+Third, the breach needs to be detected. A breach could be announced publicly by hackers willfully publishing it to hurt the breached company or push the company to yield to the hacker's demands. It could also be detected inside the breached company if business-critical apps have stopped working or security teams have identified it. In any case, breach detection [comes seven months after](https://venturebeat.com/security/report-average-time-to-detect-and-contain-a-breach-is-287-days/) hackers had their initial successful access, on average. Doing the math, and considering the predicted headlines are to come in 2023, this means that hackers may have already breached business-critical LCNC apps.
 
-Let's imagine for a second that vulnerability disclosure could work — that we can get every person on the planet to submit their evil prompts to a National Vulnerability Database-style repository before sharing it with their friends. Would that actually help? Last year at DEF CON, the AI village hosted the largest public AI red-teaming event, where they [reportedly collected over 17,000 jailbreaking conversations](https://www.humane-intelligence.org/grt). This was an incredible effort with huge benefits to our understanding of securing AI, but it did not make any significant change to the rate at which AI jailbreaks are discovered.
+Lastly, and again trivially, the breach needs to be publicized. Of course, any organization that suffered a major breach would be happy if the news of its unfortunate event did not reach major news outlets. Assuming that the breached organization would work against it, and that not all major breaches are reported on, this means that next year should bring far more than one major security breach resulting from business users building with LCNC.
 
-Vulnerabilities are quirks of the application in which they were found. If the application is complex, it has more surface for vulnerabilities. AI captures human languages so well, but can we really hope to enumerate all quirks of the human experience?
+Unpacking the Forrester prediction for 2023 reveals a set of assumptions about the world we live in now. Business users are building business-critical apps with LCNC. Hackers are acutely aware of and have probably developed dedicated tools and exploits to breach such apps across the industry. Some security teams are probably dealing with a detected breach at this very moment.
 
-## Stop Worrying About Jailbreaks
+## Why We Should Be Happy About the Prediction
 
-We need to operate under the assumption that AI jailbreaks are trivial. Don't give your AI application capabilities it should not be using. If the AI application can perform actions and relies on people not knowing those prompts as a defense mechanism, expect those actions to be eventually exploited by a persistent user.
+While discussing a predicted major breach feels gloomy and pessimistic, the larger message is positive: Business users are succeeding in moving the needle in the enterprise using LCNC and solving problems on their own.
 
-AI startups are suggesting we think of AI agents as employees who know a lot of facts but need guidance on applying their knowledge to the real world. As security professionals, I believe we need a different analogy: I suggest you think of an AI agent as an expert you want to hire, even though that expert defrauded their previous employer. You really need this employee, so you put a bunch of guardrails in place to ensure this employee won't defraud you as well. But at the end of the day, every data and access you give this problematic employee exposes your organization and is risky. Instead of trying to create systems that can't be jailbroken, let's focus on applications that are easy to monitor for when they inevitably are, so we can quickly respond and limit the impact.
+There has long been a gap between business users who can articulate the problems they need solved to do their job better — thus making the business stronger — and IT teams that are failing under the pressure and have limited capability, which renders them unable to meet most of those requirements. LCNC is the latest development trying to bridge that gap by empowering business users to address their problems as they see fit. The business empowerment goal, part of IT decentralization, has been pursued by endless innovation waves, including productivity tools like Office, application generators, visual coders, and lately RPA and LCNC. As we saw above, this prediction is predicated on the amazing fact that LCNC is actually succeeding in empowering business users, and that they in turn succeed in changing business outcomes.
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps&title=Assume%20Breach%20When%20Building%20AI%20Apps)[Email](mailto:?subject=Assume%20Breach%20When%20Building%20AI%20Apps&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Assume%20Breach%20When%20Building%20AI%20Apps%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fapplication-security%2Fassume-breach-when-building-ai-apps)
+Like every new technology, LCNC comes with a new set of challenges. While we've been successful at leveraging LCNC for business impact, we haven't been as good at making sure those apps, the identities they use, and the data they handle are secure. This will not be an easy task, as security teams are not used to monitoring and guiding business users and the apps they develop. However, our role as security teams is to enable the business, and the business clearly shows it wants LCNC.
+
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn&title=Major%20Security%20Breach%20From%20Business%20Users%27%20Low-Code%20Apps%20Could%20Come%20in%202023%2C%20Analysts%20Warn)[Email](mailto:?subject=Major%20Security%20Breach%20From%20Business%20Users%27%20Low-Code%20Apps%20Could%20Come%20in%202023,%20Analysts%20Warn&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Major%20Security%20Breach%20From%20Business%20Users%27%20Low-Code%20Apps%20Could%20Come%20in%202023%2C%20Analysts%20Warn%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyberattacks-data-breaches%2Fmajor-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)
 
 ## About the Author
 
@@ -110,22 +113,6 @@ Events
 You May Also Like
 
 * * *
-
-[Application Security\\
-\\
-'Void Banshee' Exploits Second Microsoft Zero-Day](https://www.darkreading.com/application-security/void-banshee-exploits-second-microsoft-zero-day)
-
-[Application Security\\
-\\
-Microsoft VS Code Undermined in Asian Spy Attack](https://www.darkreading.com/application-security/microsoft-vs-code-undermined-in-asian-spy-attack)
-
-[Application Security\\
-\\
-Hackers Use Rare Stealth Techniques to Down Asian Military, Gov't Orgs](https://www.darkreading.com/application-security/hackers-use-rare-stealth-techniques-to-down-asian-military-govt-orgs)
-
-[Application Security\\
-\\
-Microsoft Talks Kernel Drivers Post CrowdStrike Outage](https://www.darkreading.com/application-security/microsoft-lowballs-crowdstrike-outage-impact)
 
 ### Edge Picks
 

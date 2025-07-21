@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2022-06-20
 description: The article emphasizes the security vulnerabilities associated with low-code/no-code
   platforms, particularly regarding credential sharing and identity management. It
   highlights that these platforms facilitate embedding user identities in applications,

@@ -1,22 +1,21 @@
 ---
-date: '2025-07-21'
-description: The emergence of enterprise-level generative AI tools, such as OpenAI's
-  custom GPTs and Microsoft's Copilot Studio, enables business users to easily create
-  AI applications using organizational data. These tools facilitate user impersonation,
-  complicating security oversight, as AI actions become indistinguishable from legitimate
-  user activities. Security teams must shift focus from traditional monitoring to
-  integrating strategies that account for citizen-developed applications, particularly
-  as low-code/no-code platforms proliferate. Adopting industry standards for assessing
-  risks associated with these applications will be crucial for maintaining security
-  in an evolving landscape dominated by agile AI development.
-link: https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era
+date: 2023-06-26
+description: The article discusses the evolving landscape of vulnerability remediation,
+  emphasizing the integration of AI in code generation. While tools like GitHub Copilot
+  enhance efficiency, developers and security teams must navigate the complexities
+  of applying patches without disrupting existing functionality. The balance between
+  security patch implementation and software performance is crucial, particularly
+  in large enterprises with divided responsibilities. The article advocates for recognizing
+  both mitigation risks and vulnerability threats, suggesting a measured approach
+  to remediation that acknowledges the inherent challenges of both realms.
+link: https://www.darkreading.com/edge/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance
 tags:
-- Generative AI
-- No-Code Development
+- Application Security
+- AI in Security
+- Vulnerability Management
+- Patch Management
 - Cybersecurity
-- Citizen Development
-- Enterprise Security
-title: Enterprise Generative AI Enters Its Citizen Development Era
+title: Remediation Ballet Is a Pas de Deux of Patch and Performance
 ---
 
 - [Cyber Risk](https://www.darkreading.com/cyber-risk)
@@ -25,49 +24,61 @@ title: Enterprise Generative AI Enters Its Citizen Development Era
 \\
 Cybersecurity In-Depth: Feature articles on security strategy, latest trends, and people to know.](https://www.darkreading.com/program/the-edge)
 
-# Enterprise Generative AI Enters Its Citizen Development Era
+# Remediation Ballet Is a Pas de Deux of Patch and Performance
 
-Business users are building Copilots and GPTs with enterprise data. What can security teams do about it?
+AI-generated code promises quicker fixes for vulnerabilities, but ultimately developers and security teams must balance competing interests.
 
 [![Picture of Michael Bargury](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbd8a249d11a28466/64f150aad5f7ca2f7665bf81/Michael_Bargury_zenity.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/michael-bargury)
 
 [Michael Bargury](https://www.darkreading.com/author/michael-bargury), CTO & Co-Founder, Zenity
 
-November 19, 2023
+June 26, 2023
 
 4 Min Read
 
-![Robot version of a human hand hangs in a display case in Dortmund art exhibition; photo by Bernd Thissen](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt5fefa7b26ae3cb5b/655f4a4b71d6b8040a39617b/robothand-dpa_picture_alliance-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
+![Ballerina Polina Semionova and male dancer Jason Reilly in passionate Ballet pas de deux taken from the wings](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt8100003ea6f7ff0e/64f176317de67f334000e4e1/pasdedeux-Sian_Trenberth-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Source: dpa picture alliance via Alamy Stock Photo
+Source: Sian Trenberth via Alamy Stock Photo
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era&title=Enterprise%20Generative%20AI%20Enters%20Its%20Citizen%20Development%20Era)[Email](mailto:?subject=Enterprise%20Generative%20AI%20Enters%20Its%20Citizen%20Development%20Era&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Enterprise%20Generative%20AI%20Enters%20Its%20Citizen%20Development%20Era%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fenterprise-generative-ai-enters-its-citizen-development-era)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance&title=Remediation%20Ballet%20Is%20a%20Pas%20de%20Deux%20of%20Patch%20and%20Performance)[Email](mailto:?subject=Remediation%20Ballet%20Is%20a%20Pas%20de%20Deux%20of%20Patch%20and%20Performance&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Remediation%20Ballet%20Is%20a%20Pas%20de%20Deux%20of%20Patch%20and%20Performance%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fremediation-ballet-is-a-pas-de-deux-of-patch-and-performance)
 
-There are times where we get a clear before-and-after moment that demands a reevaluation of our most basic assumptions. This month, [OpenAI announced custom GPTs](https://openai.com/blog/introducing-gpts), a no-code tool for people to create their own Generative Pre-trained Transformer (GPT) models based on their own data and using their own plug-ins. What used to be a tight mandate for a team inside a large R&D group or a chatbot startup can now be accomplished by my grandfather in five minutes while using a couple of wiki links as a knowledge base. Security leaders need to recognize that artificial intelligence (AI) tools are not something that is coming in the nebulous future; they are here.
+Recent advancements in artificial intelligence (AI) have rekindled the spirit of fully automated vulnerability remediation. The industry is booming with attempts to provide tailored remediation that works in your code base, taking into account your unique environment and circumstances, powered by generative AI. The tech is incredible and is already showing signs of success. The big question remains: Are we ready to embrace it?
 
-More importantly, these GPTs can act on the user's behalf. [OpenAI's tight integration with Zapier](https://zapier.com/blog/gpt-assistant/) means thousands of connectors are at your disposal, letting the AI query your CRM, update your ERP, or monitor your servers with a few clicks. How does the AI authenticate to all these services, you might ask? Great question, but more on that later.
+Ask any developer using [GitHub Copilot](https://www.darkreading.com/cybersecurity-analytics/generative-ai-empowers-users-but-challenges-security) or one of the alternatives, and you will find wonderful examples of how AI can generate context-aware code completion suggestions that save a ton of time. You'll also find examples of irrelevant, overly complex, or flat-out-wrong suggestions generated at bulk.
 
-Another thought you might have is, well, this is amazing and all, but we will never allow this to happen in our highly regulated security-focused enterprise. You might have even blocked ChatGPT on the network level long ago and are now constantly monitoring for more bots to add to that deny list — which is annoying, but you can manage.
+There's no doubt we're witnessing a breakthrough in technology that will produce automated code generation far better than everything we've seen before. However, tech is only one piece in the remediation puzzle, with significant weight falling on process and people.
 
-Enter Microsoft. Last week at its Ignite conference, [Microsoft announced Copilot Studio](https://www.microsoft.com/en-us/microsoft-365/blog/2023/11/15/introducing-microsoft-copilot-studio-and-new-features-in-copilot-for-microsoft-365/), its own no-code GPT creator. It has everything the OpenAI tool has, from uploading files to use as a knowledge base to a chat interface for configuration and click-to-add integrations called plug-ins. Copilot Studio allows users to integrate their Copilots with Microsoft 365, Azure SaaS, and hundreds of other enterprise systems. This integration is done via user impersonation, meaning the Copilot acts on behalf of users.
+## New Tech, Old Challenges
 
-Here's the thing about these Microsoft-generated user impersonation bots: You can't block them. You have no way to distinguish between an AI-generated operation and a user-triggered operation because they look exactly alike in the logs. Copilots are hosted as applications inside your M365 environment, so forget about network-level blocks. Users log into these Copilots with their corporate credentials. The bottom line is that while GPTs live in the consumer world, Copilots live in the enterprise world.
+Every change to an application is a balancing act between introducing improvements and protecting existing functionality. Urgent changes, including security fixes, take this problem to the extreme by introducing tight schedule constraints and a strong pressure to get things right. Applying [patches can have unexpected consequences](https://www.darkreading.com/vulnerabilities-threats/patching-poses-security-problems-with-move-to-more-remote-work), which in the worst case can mean an outage.
 
-## How Did This Happen So Quickly?
+Ask any IT manager who handles patching, and you will hear a never-ending list of horror stories where users were unable to go about their day-to-day work because of a [seemingly benign patch](https://www.darkreading.com/vulnerabilities-threats/mcafee-offers-compensation-to-enterprise-customers-hit-by-faulty-av-update). But [failing to apply a patch](https://www.darkreading.com/vulnerabilities-threats/firms-still-struggle-to-prioritize-security-vulnerabilities), only to have the [vulnerability exploited as part of a breach](https://www.darkreading.com/cyberattacks-data-breaches/accellion-data-breach-resulted-in-extortion-attempts-against-multiple-victims), can also have devastating consequences for the entire organization, as readers of this column are acutely aware.
 
-Well, it didn't. Microsoft and other major vendors — such as Salesforce, UiPath, and ServiceNow — have been building low-code/no-code platforms that [lowered the bar to building enterprise applications](https://www.darkreading.com/cyber-risk/you-can-t-opt-out-of-citizen-development) for years now. These companies have been building out hundreds of integrations, visual builders, automated production deployments, and [credential-sharing-as-a-service](https://www.darkreading.com/cyber-risk/credential-sharing-as-a-service-hidden-risk-of-low-code-no-code).
+Good software engineering is focused on finding a balance that maintains the ability to apply changes to the application at a fast pace while [protecting the application](https://www.darkreading.com/cyber-risk/where-there-s-no-code-there-s-no-sdlc) and its maintainers from bad changes. There are plenty of challenges in achieving this goal, including legacy software that cannot be easily changed and ever-changing system requirements, to name just a couple.
 
-Chatbots are the killer app for low-code/no-code platforms. Who needs to code when you can leverage a platform that out of the box gives you everything you need to create, share, monitor, upgrade, and embed your bot within minutes inside the enterprise, directly on top of business data?
+In reality, maintaining the ability to change software is a difficult goal that cannot always be attained, and teams have to accept the risk of some changes resulting in unexpected consequences that need more remediation. The main challenge for engineers lies in ensuring that the proposed change would produce expected results, not in writing the actual code change, which generative AI can now do for us. Security fixes are no different.
 
-A crucial point here is just how easy it now is to build no-code apps. In recent years, professional developers and business users alike have used platforms, like the Power Platform, to build millions of new business applications, including some that handle sensitive data and facilitate business-critical processes. While some companies have started to [centralize the GenAI apps](https://www.darkreading.com/application-security/security-must-empower-ai-developers-now) being created by the engineering teams, this won't be enough. Security teams have to look at what business users are building as well. In fact, the sheer number of business users, combined with the ease of creating bots, suggests that security teams should, in fact, focus more on what business users are building.
+## Overlapping Responsibility for Application Security
 
-## Where Do We Even Begin?
+Another major challenge that becomes acute in large enterprises is the fractioning of responsibility. A central AppSec team in charge of reducing risk across the organization cannot be expected to understand the potential consequences of applying a specific fix to a particular application. Some solutions, such as virtual patching and network controls, allow security teams to fix problems without relying on development teams, which could simplify mitigation, reduce required engineering resources, or eliminate buy-in.
 
-Luckily, a growing number of organizations have already integrated citizen development (business users building apps) into their application security programs, and some of their insights have been [publicly](https://www.youtube.com/watch?v=nHDUVzrpZEk&t=23971s)[shared](https://www.zenity.io/securing-my-lcnc-where-to-start/). [Industry standards](https://owasp.org/www-project-top-10-low-code-no-code-security-risks/) that categorize, explain, and suggest remediation for security risks of low-code/no-code apps have emerged.
+Politics aside, solutions like these are blunt tools that are bound to cause friction. Network controls, such as firewalls and Web application firewalls (WAFs), are an area where IT and security traditionally have much autonomy, and developers just have to deal with it. They represent a clear choice to put control before productivity and to accept the added friction for developers.
 
-Not using code doesn't mean no vulnerabilities, especially logical ones. However, it typically does mean the [lack of a software development life cycle (SDLC)](https://www.darkreading.com/cyber-risk/where-there-s-no-code-there-s-no-sdlc), [visibility](https://www.zenity.io/unlocking-supply-chain-transparency-for-low-code-no-code-apps-with-sbom/), and controls. Whether our users are creating a GPT or a Copilot, they are doing so today and in large quantities. For security leaders, it's either get on board now and bring these new developers under the security umbrella — or miss the train and hope for the best.
+For application vulnerabilities, fixes require changing either the application's code or the application's environment. While changing the application's code is within the scope of responsibility of a development team, changing the environment has always been a way for security teams to intervene and might present a better path for AI-generated remediations to be applied.
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era&title=Enterprise%20Generative%20AI%20Enters%20Its%20Citizen%20Development%20Era)[Email](mailto:?subject=Enterprise%20Generative%20AI%20Enters%20Its%20Citizen%20Development%20Era&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Enterprise%20Generative%20AI%20Enters%20Its%20Citizen%20Development%20Era%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fenterprise-generative-ai-enters-its-citizen-development-era)
+In the on-premises world, this usually meant security agents managing workloads and infrastructure. In managed environments, like a public cloud provider or low-code/no-code platform, security teams could fully understand and examine changes to the environment, which allowed deeper intervention in application behavior.
+
+Configuration, for example, can change the behavior of an application without changing its code, thus applying a security mitigation while limiting consequences. A good example of this is enabling built-in encryption-at-rest for databases, [preventing public data access](https://www.zenity.io/microsoft-power-pages-low-code-misconfiguration-remains-a-top-security-risk/), or masking sensitive data handled by a low-code app.
+
+## Striking the Right Balance
+
+It is important to note that environment changes can have adverse effects on the application. Encryption comes at a performance cost, and masking makes debugging more difficult. However, these are risks more and more organizations are willing to take for the benefit of increasing security mitigation at lower engineering cost.
+
+At the end of the day, even once a mitigation is available, organizations have to balance the risk of security vulnerabilities with the risk of applying mitigations. It is clear that AI-generated mitigations reduce the cost of remediation, but the risk of applying them will always exist. However, failing to remediate for fear of consequences puts us on one end of the spectrum between those two risks, which is far away from a perfect balance. Applying any auto-generated remediation automatically would be the other end of the spectrum.
+
+Instead of choosing either extreme, we should acknowledge both the vulnerability risks and the mitigation risks and find a balance between the two. Mitigations will sometimes break applications. But choosing not to accept this risk means, by default, choosing to accept the risk of security breach due to lack of mitigation.
+
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance&title=Remediation%20Ballet%20Is%20a%20Pas%20de%20Deux%20of%20Patch%20and%20Performance)[Email](mailto:?subject=Remediation%20Ballet%20Is%20a%20Pas%20de%20Deux%20of%20Patch%20and%20Performance&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Remediation%20Ballet%20Is%20a%20Pas%20de%20Deux%20of%20Patch%20and%20Performance%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fremediation-ballet-is-a-pas-de-deux-of-patch-and-performance)
 
 ## About the Author
 

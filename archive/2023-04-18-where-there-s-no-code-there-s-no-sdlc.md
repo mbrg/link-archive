@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2023-04-18
 description: The rise of low-code/no-code development poses significant challenges
   to traditional software development life cycle (SDLC) security practices. This paradigm
   shift enables business users to rapidly build applications without formal coding,

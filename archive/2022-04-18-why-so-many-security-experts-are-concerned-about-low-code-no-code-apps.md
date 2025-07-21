@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2022-04-18
 description: Recent concerns about low-code/no-code applications highlight significant
   security vulnerabilities in enterprise environments. Key issues include the lack
   of governance regarding data access (32%), trust in platform security (26%), inadequate

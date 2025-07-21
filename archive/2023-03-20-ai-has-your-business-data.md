@@ -1,22 +1,23 @@
 ---
-date: '2025-07-21'
-description: Michael Bargury emphasizes the transformative potential of low-code/no-code
-  platforms in enhancing cybersecurity mindshare among business users. By fostering
-  collaboration and security awareness similar to DevSecOps achieved with developers,
-  security teams can mitigate risks associated with shadow IT. As business units increasingly
-  create critical applications independently, engaging these users early in the security
-  dialogue is essential. This strategy aligns security as a business enabler, enabling
-  smoother implementation of broader security initiatives like zero trust and identity
-  systems. Addressing this shift presents a crucial opportunity for organizations
-  to promote a holistic security culture.
-link: https://www.darkreading.com/edge-articles/embracing-the-next-generation-of-business-developers
+date: 2023-03-20
+description: The integration of AI into low-code/no-code platforms, exemplified by
+  Microsoft’s AI Copilot for Power Apps, dramatically reduces barriers for business
+  users to create applications leveraging organizational data. This trend raises significant
+  cybersecurity concerns, as unregulated access through user impersonation can lead
+  to unauthorized data exposure and credential sharing. With business users empowered
+  to create applications without IT oversight, security professionals must rethink
+  governance strategies and implement proactive guidance to prevent potential data
+  breaches linked to this democratization of app development. The reliance on users'
+  discretion amidst growing AI capabilities poses a critical challenge for enterprise
+  security models.
+link: https://www.darkreading.com/edge-articles/ai-has-your-business-data
 tags:
-- Security Awareness
-- Business Collaboration
-- Low-Code/No-Code
-- DevSecOps
+- Data Privacy
+- Business Empowerment
+- Low-Code Development
+- Artificial Intelligence
 - Cybersecurity
-title: Embracing the Next Generation of Business Developers
+title: AI Has Your Business Data
 ---
 
 - [Cyber Risk](https://www.darkreading.com/cyber-risk)
@@ -25,57 +26,59 @@ title: Embracing the Next Generation of Business Developers
 \\
 Cybersecurity In-Depth: Feature articles on security strategy, latest trends, and people to know.](https://www.darkreading.com/program/the-edge)
 
-# Embracing the Next Generation of Business Developers
+# AI Has Your Business Data
 
-Security teams that embrace low-code/no-code can change the security mindset of business users.
+No-code has lowered the barrier for non-developers to create applications. Artificial intelligence will completely eliminate it.
 
 [![Picture of Michael Bargury](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbd8a249d11a28466/64f150aad5f7ca2f7665bf81/Michael_Bargury_zenity.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/michael-bargury)
 
 [Michael Bargury](https://www.darkreading.com/author/michael-bargury), CTO & Co-Founder, Zenity
 
-October 24, 2022
+March 20, 2023
 
 5 Min Read
 
-![Man standing next to two seated coworkers who are working on a project together. They all look happy.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt1ba3d2007b396441/64f15591e0ecf1691d65e7b1/teamcollab-Dmytro_Sidelnikov-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
+![Photo of two toy robots standing on a laptop keyboard, staring at the display, which contains a layout of book pages](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt8ae371eda1673e31/64f15e55bf9134d51b853349/aidata-Josef_Kubes-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Source: Dmytro Sidelnikov via Alamy Stock Photo
+Source: Josef Kubes via Alamy Stock Photo
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers&title=Embracing%20the%20Next%20Generation%20of%20Business%20Developers)[Email](mailto:?subject=Embracing%20the%20Next%20Generation%20of%20Business%20Developers&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Embracing%20the%20Next%20Generation%20of%20Business%20Developers%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fembracing-the-next-generation-of-business-developers)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/ai-has-your-business-data)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/ai-has-your-business-data)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/ai-has-your-business-data)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/ai-has-your-business-data&title=AI%20Has%20Your%20Business%20Data)[Email](mailto:?subject=AI%20Has%20Your%20Business%20Data&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20AI%20Has%20Your%20Business%20Data%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fai-has-your-business-data)
 
-Security teams constantly strive for mindshare and alignment within the business. Seasoned security leaders often describe how security needs to serve the business and how it depends on business buy-in about the importance of security to succeed. As a result, security teams invest a lot in raising security awareness, educating business users, and explaining why security is crucial to the business and cannot succeed without business users.
+Ever since ChatGPT captured our imaginations, people have been contemplating its pending impact on the business world. This week these thoughts became a reality, with Google and Microsoft embedding artificial reality (AI) features into their business productivity suites.
 
-Without buy-in from business leaders, security teams can apply security measures only through formal gates, enforced controls, and corporate policies that, without proper communication, can often cause frustration and end up making the business buy-in problem worse. When business teams see security as a business-enabler, however, the conversation changes completely. People reach out to security to get input early on in the process, and security teams can focus on helping teams assess where to invest their security efforts.
+Microsoft took another major step by releasing AI Copilot for Power Apps, Microsoft's low-code platform. Power Apps can connect far and beyond the Microsoft ecosystem, with almost 1,000 [built-in connectors](https://learn.microsoft.com/en-us/connectors/connector-reference/connector-reference-powerapps-connectors) to everything from Salesforce to on-prem and Amazon Web Services. With one swift move, AI has been integrated into the day-to-day workflows of the world's largest organizations.
 
-This dynamic is so fundamental to organizations that often security leaders focus most of their efforts on building relationships with business leaders to get that executive buy-in. In the best cases, that also translates to bringing business units and security teams closer together. With this lens, we can see just how important and transformational DevSecOps is. Suddenly, development teams more easily collaborate and even sometimes lead the effort for better security. The indirect effect of having more people — that is, developers, not just security professionals — thinking with a security mindset can be transformational to the ability of the security team to make big strides forward.
+This is an amazing achievement, and other low-code/no-code platforms will surely try to catch up quickly. But ask yourself: Who will make the decision to integrate data with AI? Who will grant access? The answer: Every business user, and you won't even know because they'll let AI impersonate their accounts.
 
-An organization where lots of developers understand and push for security in their day-to-day work is far more likely to go along with large security projects like rolling out a new identity system or applying zero trust, even though those might require some patience from users during implementation. This indirect effect could end up being much more important than the fact that we now have automated security tests as part of the CI/CD, even though those are important as well.
+## AI + Low-Code/No-Code = A Perfect Storm
 
-## Bringing Developers Closer to the Security Mindset
+In recent years, low-code/no-code has given business users newfound freedom. They were granted developer-level power that enabled them to customize their digital experiences with the technical skills they already had rather than having to learn new ones. [Business users have started building applications](https://www.darkreading.com/cyber-risk/3-ways-no-code-developers-can-shoot-themselves-in-the-foot) that solve the problems that hurt most, on top of their day-to-day business data, without relying on IT or waiting for resources. After just a few years of low-code/no-code, many enterprises find themselves with tens or hundreds of thousands of applications, built outside of IT [with no oversight or control](https://www.darkreading.com/cyber-risk/why-so-many-security-experts-are-concerned-about-low-code-no-code-apps).
 
-One possible explanation for the success of DevSecOps is the value of automation. Whether it's through catching syntax errors, identifying an insecure dependency, or detecting hard-coded secrets, automated security testing helps developers achieve more in less time. The argument that automation is the reason why developers are jumping on the security bandwagon seems to imply that developers always saw the importance of security but lacked the resources to act on it.
+Forget about continuous integration and continuous delivery (CI/CD) or security reviews — most of these applications follow the "push save to deploy to production" model instead. Quickly and quietly, applications developed outside of IT without the software development life cycle (SDLC) have become a significant portion of enterprise business applications. This has already become [a major concern for enterprise security](https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn).
 
-While automation is extremely helpful, I find that the change in mindset for some development teams is far greater than just a change in the resources discussion. More and more developers are seeing security as part of their responsibility, rather than the responsibility of someone else.
+[Enter AI](https://cloudblogs.microsoft.com/powerplatform/2023/03/16/power-platform-is-leading-a-new-era-of-ai-generated-low-code-app-development/). Imagine that every conversation you had with ChatGPT involved you giving it access to business data and left behind a nice little application you could play around with and share with others. Have a long business email? Let AI shorten it for you. Need to find relevant customers in your CRM? Let AI generate statistics for you. Need to analyze user behavior over product telemetry? Let AI query the database for you. Don't stop there! Create mini-applications to allow answering those questions repeatedly, and share them with your co-workers! Every application requires access — your access. Low-code has lowered the barrier for non-developers to create applications. AI, however, will completely eliminate it.
 
-There is a bigger shift here than just a reduction in the cost of applying good security practices. Security teams started talking to developers in the language of developers, rather than the language of security. This is a crucial point. Instead of painting a beautiful picture of how security should work, DevSecOps shifts the conversation to a much more practical one: How do we make one step forward to where our developers actually are?
+Low-code/no-code provides ease of connectivity to business data by removing the difficult hurdles around authentication, and it provides a host of widgets business users can combine creatively to address their needs. AI brings power to everyone, allowing them to create by simply asking for what they want. The two techniques fit together like hand in glove. Superpowered by AI, low-code/no-code expands from "everyone can build an application" to "everyone builds an application for everything they think of, all of the time."
 
-Note that the goal remains the same — guiding developer teams toward a beautiful picture of how security should work. However, crucially, we start off at the practical side of the discussion and help guide every step of the journey rather than describe a future that seems far away or even impractical.
+## You Are Not in Control
 
-By shifting the security conversation to the language of developers and meeting them where they are, security teams and developers now share a security mindset, which helps with both day-to-day operations and the large security strides forward that require developer buy-in.
+Who decides what data the AI can access? You might be thinking this would be IT or the security team, but you would be wrong. Business users are making those decisions. But how?
 
-While the success with developers is important, security still struggles with getting mindshare for a much larger portion of corporate employees, namely business users. Can we apply lessons learned from DevSecOps to bringing business users closer to security?
+Imagine a scenario where every business user in a large [enterprise starts to build their own applications](https://www.darkreading.com/cyber-risk/you-can-t-opt-out-of-citizen-development). Setting aside the skill gap, the No. 1 hurdle to progress would be identity and access. Provisioning an application identity and granting the right permissions to it would require approval, which would trigger questions and perhaps even a security review. You won't get to tens of thousands of applications in a large enterprise this way.
 
-## The Times They Are A-Changin'
+To circumvent this hurdle, low-code/no-code platforms made a significant compromise: Applications can — and mostly do — [impersonate users rather than have their own identities](https://www.darkreading.com/cyber-risk/watch-out-for-user-impersonation-in-low-code-no-code-apps). This completely negates the permission issue. As a low-code/no-code developer, I can embed my own identity within my newly created application. I can even share my credentials with others, so they'll be able to build their own applications with my access to data or perform operations on my behalf. No more waiting for approval — we have a green light to create!
 
-In recent years, business units have been experiencing a tectonic shift brought forth by low-code/no-code platforms. By gaining the skills required to facilitate business processes or create custom applications on their own, business units have drastically reduced their reliance on IT and continue to accelerate digital transformation. Leading analyst firms [predict](https://www.gartner.com/en/newsroom/press-releases/2021-11-10-gartner-says-cloud-will-be-the-centerpiece-of-new-digital-experiences) that most enterprise applications will be developed using low-code/no-code by 2025, and [surveys reveal](https://www.quark.com/about/blog/low-code-no-code-componentized-content-solutions-increase-enterprise-agility) that business users are already a large part of — and in some cases, the majority of — low-code/no-code builders.
+The problem with this [credentials-sharing-as-a-service](https://youtu.be/D3A62Rzozq4) is that it completely negates the enterprise permission model. If users are sharing their credentials with each other, there's no easy way to distinguish them. Moreover, an application can leverage credentials across your organizational boundary — say, an employee's personal email account — in combination with a business account. To add a cherry on top, moving data between one account and another is done by automated copy and paste on the low-code/no-code platform's cloud. No data gets transmitted, so there is no opportunity to [block data leaking out](https://www.zenity.io/low-code-security-and-business-email-compromise-via-email-auto-forwarding/).
 
-The trend of business users becoming builders can be both a challenge and an opportunity for security teams. If left outside of security's perceived scope of responsibility, it will lead to a significant growth in shadow IT. However, it also presents an unprecedented opportunity to cultivate a security mindset with business users. If DevSecOps made developers more security-aware, an equivalent for low-code/no-code could do the same for business users. As with developers, the fundamental change of bringing business users closer to the security mindset would mean drastically increasing security mindshare across the organization. Low-code/no-code presents a unique [security awareness opportunity](https://www.zenity.io/blog/citizen-developers-security-awareness/).
+Credential sharing and data leakage have been a major issue with low-code/no-code applications. AI doesn't change that, but it magnifies the scale of the problem. When AI is plugged into a low-code/no-code platform, the AI gains potential access to everything the platform can access. The transition between potential and in-practice access is up to whoever prompts the AI to build a low-code/no-code application for them. We are trusting our business users with making the right choice without any guardrails or guidance.
 
-When trying to capture the security awareness opportunity that low-code/no-code presents, we should apply the lessons we learned from DevSecOps by meeting business users where they are. The [low-code/no-code development process](https://www.zenity.io/blog/low-code-sdlc-build-fast-stay-secure/) significantly differs from pro-code DevOps. Many business users nowadays are building their applications and automating their processes with low-code/no-code. Security teams should familiarize themselves with those platforms and their development processes, and learn [how to talk about security](https://www.darkreading.com/cyber-risk/in-app-development-does-no-code-mean-no-security-) for such purpose-built applications in the native language of business development.
+## Business Users Build Enterprise Applications
 
-Low-code/no-code is so dominant with business users that it is already being used for business-critical applications within many organizations [even if their security teams don't know about it](https://www.darkreading.com/cyber-risk/you-can-t-opt-out-of-citizen-development). With analysts [predicting](https://www.gartner.com/en/newsroom/press-releases/2021-11-10-gartner-says-cloud-will-be-the-centerpiece-of-new-digital-experiences) that 70% of new enterprise applications will be built with low-code/no-code in three years, it is apparent that we have a unique window of opportunity to affect the way that these applications will get built. But even more importantly, this is an opportunity to influence the next generation of developers — namely business users — and the way they will think about security and their roles in it.
+More than a specific technology, low-code/no-code is an idea — a strong push into IT decentralization and business empowerment. It has already brought tremendous productivity benefits to the world's largest organizations because the employees who know best how to impact the business are the business users.
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers&title=Embracing%20the%20Next%20Generation%20of%20Business%20Developers)[Email](mailto:?subject=Embracing%20the%20Next%20Generation%20of%20Business%20Developers&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Embracing%20the%20Next%20Generation%20of%20Business%20Developers%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fembracing-the-next-generation-of-business-developers)
+For professionals in IT and security, this is a paradigm shift. No longer can we rely on the security savviness of developers or official security mandates. We must [embrace business users](https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers) and help guide them in the right direction. If we fail to do so, the forces of productivity and data-hungry AI will surely be glad to do that for us.
+
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/ai-has-your-business-data)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/ai-has-your-business-data)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/ai-has-your-business-data)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/ai-has-your-business-data&title=AI%20Has%20Your%20Business%20Data)[Email](mailto:?subject=AI%20Has%20Your%20Business%20Data&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20AI%20Has%20Your%20Business%20Data%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fai-has-your-business-data)
 
 ## About the Author
 

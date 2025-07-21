@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2022-05-16
 description: The inevitability of low-code/no-code platforms in enterprise settings
   necessitates a robust strategy for managing their associated security risks. As
   citizen development proliferates—predicted to outnumber professional developers

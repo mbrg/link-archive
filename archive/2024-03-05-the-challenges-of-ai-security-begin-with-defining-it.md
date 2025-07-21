@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2024-03-05
 description: Michael Bargury discusses the evolving landscape of AI security, highlighting
   the lack of consensus on definitions and practices. Key challenges include achieving
   visibility over AI applications, preventing data leaks, controlling AI models, and

@@ -1,80 +1,90 @@
 ---
-date: '2025-07-21'
-description: Michael Bargury highlights the duality of cybersecurity research and
-  responsible disclosure at security conferences, using his Black Hat USA presentation
-  as a case study. He divulged vulnerabilities in Microsoft’s Azure environment, emphasizing
-  that the shared responsibility model leaves customers needing to secure their own
-  systems. Bargury notes a shift from zero-day revelations to fostering vendor accountability
-  and transparency. He argues that public discourse can compel organizations to prioritize
-  security over public relations. This evolution in vulnerability reporting underscores
-  an ongoing need for collaboration between researchers and vendors to enhance overall
-  cybersecurity resilience.
-link: https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest
+date: 2022-09-26
+description: Michael Bargury argues that the traditional separation of SaaS and public
+  cloud security hinders effective risk management as low-code SaaS platforms evolve
+  into business-centric application development solutions. With business users increasingly
+  acting as developers, applications built on these platforms require the same rigorous
+  security measures applied to cloud-hosted applications. This shift necessitates
+  a reevaluation of security strategies to include the myriad applications stemming
+  from enterprise SaaS, which currently lack adequate visibility and governance, thus
+  exposing organizations to heightened cyber risks.
+link: https://www.darkreading.com/edge-articles/we-re-thinking-about-saas-the-wrong-way
 tags:
-- Vulnerability Disclosure
-- Information Security
-- Cybersecurity
-- Security Conferences
-- Risk Management
-title: Security Conferences Keep Us Honest
+- Cyber Risk Management
+- Cloud Computing
+- Application Development
+- SaaS Security
+- Low Code
+title: We're Thinking About SaaS the Wrong Way
 ---
 
 - [Cyber Risk](https://www.darkreading.com/cyber-risk)
-- [Commentary](https://www.darkreading.com/latest-commentary)
 
 [![The Edge Logo](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt530eb1f4e672eb44/653a71690e92cc040a3e9d6d/Dark_Reading_Logo_TheEdge_0.png?width=700&auto=webp&quality=80&disable=upscale)\\
 \\
 Cybersecurity In-Depth: Feature articles on security strategy, latest trends, and people to know.](https://www.darkreading.com/program/the-edge)
 
-# Security Conferences Keep Us Honest
+# We're Thinking About SaaS the Wrong Way
 
-Conferences are where vendors and security researchers meet face to face to address problems and discuss solutions — despite the risks associated with public disclosure.
+Many enterprise applications are built outside of IT, but we still treat the platforms they're built with as point solutions.
 
 [![Picture of Michael Bargury](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbd8a249d11a28466/64f150aad5f7ca2f7665bf81/Michael_Bargury_zenity.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/michael-bargury)
 
 [Michael Bargury](https://www.darkreading.com/author/michael-bargury), CTO & Co-Founder, Zenity
 
-September 18, 2023
+September 26, 2022
 
-4 Min Read
+6 Min Read
 
-![Photo of an audience member taking a photo of a conference presentation with their cell phone](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbfe19b843f56c5ca/654e398658cf9d040abf76a2/audience-PG_Arphexad-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
+![Businessman reaches out to touch Low Code button on a screen full of icons](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltf3dd13eae8ac4e0b/64f161946ec0b12a4f30f592/lowcode-photon_photo-AdobeStock.jpeg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Source: PG Arphexad via Alamy Stock Photo
+Source: photon\_photo via Adobe Stock
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest&title=Security%20Conferences%20Keep%20Us%20Honest)[Email](mailto:?subject=Security%20Conferences%20Keep%20Us%20Honest&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Security%20Conferences%20Keep%20Us%20Honest%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fsecurity-conferences-keep-us-honest)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way&title=We%27re%20Thinking%20About%20SaaS%20the%20Wrong%20Way)[Email](mailto:?subject=We%27re%20Thinking%20About%20SaaS%20the%20Wrong%20Way&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20We%27re%20Thinking%20About%20SaaS%20the%20Wrong%20Way%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fwe-re-thinking-about-saas-the-wrong-way)
 
-In August on a stage at [Black Hat USA](https://www.blackhat.com/us-23/briefings/schedule/index.html#all-you-need-is-guest-32647), I described in detail how [Microsoft guest accounts could gain access to view and manipulate sensitive corporate data](https://www.darkreading.com/application-security/azure-ad-guests-steal-data-microsoft-power-apps), including SQL servers and Azure resources. On top of that, I showed how Power Platform could be leveraged by a hacker to [create internal phishing applications](https://www.blackhat.com/us-23/arsenal/schedule/index.html#powerguest-aad-guest-exploitation-beyond-enumeration-33687) that automatically authenticate their victims and create a backdoor that persists even if the hacked user is deleted. These are still open issues today, as mitigation falls in the customer's side of the shared responsibility model — meaning every Microsoft customer would have to monitor and harden their own environments to mitigate these security holes.
+We're used to thinking about securing software-as-a-service (SaaS) platforms and the cloud as two separate beasts. This separation stems from the way SaaS and the public cloud first emerged as small point solutions and an extension of the traditional data center, respectively. Today, due to the advent of low code, this separation is wrong, and it's holding us back from seeing what's right in front of our eyes. Low code makes SaaS platforms a part of the public cloud, a place where developers build multiple applications rather than consuming a single one: a cloud platform.
 
-Preparing for the talk, I thought long and hard about what information to share, well aware of the double-edged sword that security research can be. How can I share enough to raise awareness and drive people to action while not making the problem worse by putting it on hackers' radar? After considering that we've already observed all of these issues being exploited in the wild, I decided to share the information; it was important that we leveled the playing field and gave security teams the knowledge and tools they need to keep their organizations secure.
+Failing to shift our mindset leads to where we are today, with those applications being left up for grabs with no security visibility. And to make matters worse, low-code applications are embedded right into platforms like Salesforce and Microsoft Dynamics, which we all use and that hold our most sensitive business data.
 
-This security researcher's dilemma is not new, and I'm definitely not the first or only one to have to deal with it. I could point to [a few](https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/nyxgeek%20-%20Track%20the%20Planet%20Mapping%20Identities%20Monitoring%20Presence%20and%20Decoding%20Business%20Alliances%20in%20the%20Azure%20Ecosystem.pdf)[other](https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/byt3bl33d3r%20-%20SpamChannel%20Spoofing%20Emails%20From%202%20Million%2B%20Domains%20and%20Virtually%20Becoming%20Satan.pdf)[researchers](https://www.tenable.com/security/research/tra-2023-25) who were in a similar position, where they could either remain silent or educate everyone about an [unsolved security issue](https://www.darkreading.com/cyber-risk/a-fintech-horror-story-how-one-company-prioritizes-cybersecurity).
+## How Did We Get Here?
 
-## The Bad Ol' Days
+Origin stories are always interesting because they explain something fundamental about the way we perceive the hero of the story. While SaaS started as an extension of the corporate network, the public cloud started as an extension of the data center. Those very different starting points explain why securing SaaS started with shadow IT (protecting the perimeter) and securing the public cloud started with workload protection (lift-and-shift servers and their network/host agents). This also meant that different security teams were tasked with securing SaaS and the cloud, which of course led to a separation of tools, different threat modeling, and, most importantly, the formation of different security mindsets.
 
-Gone are the days when security researchers used to drop zero-day vulnerabilities on the Black Hat or DEF CON stages. That is, of course, a very good thing — although we did lose something as a security community (but more on that later). In conjunction, most vendors realize that security researchers are acting to keep them honest and improve the security state of the entire community. [As cybersecurity executive Kymberlee Price put it](https://securityconversations.com/episode/kymberlee-price-reflects-on-life-at-the-msrc-hacker-vendor-engagement-bug-bounties/) in a recent interview with Ryan Naraine, just because security researchers are publishing vulnerabilities, it doesn't make them the enemy; if they were the bad guys, they would be using the vulnerability — they wouldn't tell you about them at all.
+Both SaaS and the public cloud have drastically evolved from those early days. Public cloud vendors introduced ever more granular compute paradigms, gradually introducing infrastructure as a service (IaaS), platform as a service (PaaS), and serverless to help developers focus on the business problem at hand. They also built an entire ecosystem of ready-made solutions for complex yet common problems — identity, permissions, logging, configuration, and deployment, to name a few.
 
-Admittedly, we do still get zero-day drops now and again, with the pain of recent example Log4Shell being a fresh memory. But it feels like the average researcher, especially one who works for a respectable security vendor or consultancy, goes the vulnerability disclosure route first.
+SaaS used to mean a point solution for a specific problem. Salesforce started as a CRM, ServiceNow as a ticketing system, and Office365 as email, spreadsheets, docs, and slides. (While this is more than one solution, these are very specific ones.) Contrast that with today: Salesforce Developers are building apps for [just about any business need](https://www.salesforce.com/products/platform/app-gallery/) on top of the Salesforce Platform, ServiceNow low-code apps are [handling just about anything](https://www.servicenow.com/customers.html#filterTag1=servicenow%3Aproducts-and-solutions%2Fservicenow-platform) from HR to health and finance processes, and Power Platform, Microsoft's low-code platform embedded into Office365, is being used by more than [20 million users](https://news.microsoft.com/wp-content/uploads/prod/2022/07/07192022_Inspire_Satya_Nadella.pdf) across the industry [to solve every business need](https://powerapps.microsoft.com/en-us/blog/power-platform-stories/), from productivity through procurement and COVID-related processes.
 
-It is important to remember why people are sharing this information publicly. It is because they don't feel like they can get the vendor to fix the problem within a reasonable time frame. In the bad ol' days, security researchers essentially lit fires that forced vendors to fix things right away.
+Clearly, these have become enterprise-grade application development platforms, not point solutions to specific business problems. Many developers today choose to build their applications on platform-provided abstractions, whether those are serverless functions on the public cloud or extendable building blocks on SaaS low-code platforms.
 
-## Where We Are Today
+## The Introduction of Business Developers
 
-We're mostly in a whole different ballpark today. Most security researchers I know engage with the vendor, wait around for a reply, and then wait some more before they go out and expose things publicly.
+Comparing how SaaS platforms started and where they are now clearly shows how far these have come from their earlier versions. But there's still a major shift we haven't mentioned yet: the introduction of business developers.
 
-It is important to notice the balance of power here. As a researcher, you typically find yourself facing a giant enterprise with endless resources, a strong media presence, and a whole bunch of lawyers. In many cases, you can get the feeling that those endless resources are used to avoid a PR crisis and nullify the issue rather than face it and actually make customers more secure. While [some organizations do help researchers](https://www.eff.org/) through those challenges, it always feels like David vs. Goliath.
+SaaS low-code platforms draw their power from the data they maintain and their existing users. Those are both not limited to IT but rather skew heavily toward the business. Having access to both business data and business users means that SaaS is in the perfect position to tackle the most pressing issue many enterprises face today — digital transformation.
 
-The main issue with responsible disclosure, coordinated disclosure, and the popular vulnerability disclosure platforms today is that they put all of the decision at the sole discretion of the organization whose vulnerability is being reported, without any transparency. Sure, we have the CVE system. But issuing those is mostly at the vendor's discretion. For the cloud services we all rely on today, the situation is even worse, with many vendors refusing to issue a CVE and having no transparency for security issues discovered and fixed on their services.
+With a global shortage of developers and the difficulty of streamlining a business process with so many stakeholders, low-code platforms introduce a shortcut, letting the business users streamline their processes themselves without waiting for IT.
 
-## Keeping Ourselves Honest
+Low code is taking off with business users, so much so that in his 2019 Inspire keynote, Microsoft CEO Satya Nadella [discussed the opportunity](https://qz.com/1740052/microsoft-shares-plan-to-make-anyone-a-software-developer/) of low code to empower people and to create new white-collar jobs just like Excel did.
 
-We've long known that discussing problems out in the open is the best way to push ourselves to do the right thing. We seem to rediscover this fact again and again in different contexts, be it developing open source software, challenging security by obscurity, or launching initiatives for open government. In today's state of vulnerability disclosure, many feel the pendulum has swung too much to one side, pushing vendors to make choices that minimize short-term visibility concerns at the cost of long-term customer trust and the security of the ecosystem.
+Just like the public cloud is an application development platform enabling developers to focus on their business logic, SaaS platforms have become application development platforms using low code to empower business users to become developers and address any business need.
 
-Vendor security teams that receive vulnerability reports are doing incredible jobs trying to get their organizations to fix the issues and build strong relationships with researchers. But they too need help. Creating urgency to fix an issue is difficult when the organization feels they control the situation, even while their customers might be at risk.
+SaaS is now focused on new types of developers addressing a whole range of unmet business needs with dedicated applications, creating a new type of cloud: the business cloud.
 
-Security conferences are where security researchers can help vendors make the right choices. They provide a tiny stick a security researcher can poke the vendor with, in hopes of spurring them into action. Information is put out there for the entire community to see and decide whether they accept the current state of things. In public.
+## Securing Low Code as an Extension of Cloud
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest&title=Security%20Conferences%20Keep%20Us%20Honest)[Email](mailto:?subject=Security%20Conferences%20Keep%20Us%20Honest&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Security%20Conferences%20Keep%20Us%20Honest%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fsecurity-conferences-keep-us-honest)
+With the realization that some SaaS platforms are now application development platforms and an extension of the cloud, we should re-examine the [responsibilities](https://www.darkreading.com/cyber-risk/addressing-the-low-code-security-elephant-in-the-room) for securing those applications and bringing them under the security team's umbrella.
+
+We should treat platforms like Salesforce, ServiceNow, and Office365 the same way we treat AWS, Azure, and GCP, where we focus on the applications that were built and are hosted in these application development platforms rather than treating the whole platform as a single application.
+
+Shadow IT, for example, remains an issue with smaller and an ever-growing number of point-solution SaaS. But it doesn't make sense to treat any single platform mentioned above as a single app to discover and catalog. Instead, we should discover and catalog the applications built with those platforms — and there are tens of thousands of those. In most organizations, this enormous complexity is hidden behind a single line in an application inventory.
+
+Applications built with SaaS low-code platforms should be [examined](https://owasp.org/www-project-top-10-low-code-no-code-security-risks/) with the same security rigor we use for those built on the cloud because, at the end of the day, an application is an application, no matter where it was built and hosted.
+
+What does matter for the security of our business applications is the people, process, and tools that are involved in making, maintaining, and protecting those applications. For applications built in the cloud, we have professional developers, automated CI/CD processes, and various security tools from code scanning and dynamic analysis through runtime monitoring and prevention. For applications built on SaaS low-code platforms, we have some professional developers but also business users who are [not security-savvy](https://www.darkreading.com/cyber-risk/3-ways-no-code-developers-can-shoot-themselves-in-the-foot), with [few to no deployment processes](https://www.zenity.io/blog/low-code-sdlc-build-fast-stay-secure/) and no security controls or guarantees.
+
+Thinking about low-code platforms as part of SaaS makes it difficult for us to see that a [huge](https://www.techrepublic.com/article/report-60-of-apps-are-built-outside-of-it-and-thats-a-good-thing/)[portion](https://www.gartner.com/en/newsroom/press-releases/2021-11-10-gartner-says-cloud-will-be-the-centerpiece-of-new-digital-experiences) of our business applications are now being built by the business, outside of IT and outside of security control. To begin seeing the problem and figuring out our approach to it, we must shift our mindset to acknowledge low-code platforms as a part of the cloud and treat the applications on those platforms like we do any other application.
+
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way&title=We%27re%20Thinking%20About%20SaaS%20the%20Wrong%20Way)[Email](mailto:?subject=We%27re%20Thinking%20About%20SaaS%20the%20Wrong%20Way&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20We%27re%20Thinking%20About%20SaaS%20the%20Wrong%20Way%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fwe-re-thinking-about-saas-the-wrong-way)
 
 ## About the Author
 
@@ -115,22 +125,6 @@ Events
 You May Also Like
 
 * * *
-
-[Cyber Risk\\
-\\
-How CISOs Can Effectively Communicate Cyber-Risk](https://www.darkreading.com/cyber-risk/how-cisos-can-effectively-communicate-cyber-risk)
-
-[Cyber Risk\\
-\\
-Ransomware Gangs Pummel Southeast Asia](https://www.darkreading.com/cyber-risk/ransomware-gangs-pummel-southeast-asia)
-
-[Cyber Risk\\
-\\
-India's Critical Infrastructure Suffers Spike in Cyberattacks](https://www.darkreading.com/cyber-risk/india-s-critical-infrastructure-suffers-spike-in-cyberattacks)
-
-[Cyber Risk\\
-\\
-NIST Hands Off Post-Quantum Cryptography Work to Cyber Teams](https://www.darkreading.com/cyber-risk/nist-post-quantum-cryptography-work-cyber-teams)
 
 ### Edge Picks
 

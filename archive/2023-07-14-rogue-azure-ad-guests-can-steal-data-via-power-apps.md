@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2023-07-14
 description: A new vulnerability reported by Michael Bargury at Black Hat USA reveals
   how improperly configured Azure AD guest accounts and over-permissive Power Apps
   connections can lead to unauthorized data access. By manipulating default settings,

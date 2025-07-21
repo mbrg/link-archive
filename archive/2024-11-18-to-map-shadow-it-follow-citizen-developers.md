@@ -1,84 +1,77 @@
 ---
-date: '2025-07-21'
-description: The article discusses the evolving landscape of vulnerability remediation,
-  emphasizing the integration of AI in code generation. While tools like GitHub Copilot
-  enhance efficiency, developers and security teams must navigate the complexities
-  of applying patches without disrupting existing functionality. The balance between
-  security patch implementation and software performance is crucial, particularly
-  in large enterprises with divided responsibilities. The article advocates for recognizing
-  both mitigation risks and vulnerability threats, suggesting a measured approach
-  to remediation that acknowledges the inherent challenges of both realms.
-link: https://www.darkreading.com/edge/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance
+date: 2024-11-18
+description: In "To Map Shadow IT, Follow Citizen Developers," Michael Bargury discusses
+  the pervasive issue of shadow IT, where employees use unauthorized tools to meet
+  business needs. He emphasizes the dual role of citizen development—allowing users
+  to create apps with low-code/no-code platforms while exposing potential security
+  risks. By tracing user-built applications and their integrations with existing systems,
+  organizations can better understand their shadow IT landscape. This approach fosters
+  a proactive stance in governance, balancing efficiency with security, albeit requiring
+  careful risk management to mitigate vulnerabilities.
+link: https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers
 tags:
-- Application Security
-- AI in Security
-- Vulnerability Management
-- Patch Management
+- SaaS Security
+- Low-Code Development
 - Cybersecurity
-title: Remediation Ballet Is a Pas de Deux of Patch and Performance
+- Shadow IT
+- Citizen Development
+title: To Map Shadow IT, Follow Citizen Developers
 ---
 
 - [Cyber Risk](https://www.darkreading.com/cyber-risk)
+- [Insider Threats](https://www.darkreading.com/vulnerabilities-threats/insider-threats)
 
 [![The Edge Logo](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt530eb1f4e672eb44/653a71690e92cc040a3e9d6d/Dark_Reading_Logo_TheEdge_0.png?width=700&auto=webp&quality=80&disable=upscale)\\
 \\
 Cybersecurity In-Depth: Feature articles on security strategy, latest trends, and people to know.](https://www.darkreading.com/program/the-edge)
 
-# Remediation Ballet Is a Pas de Deux of Patch and Performance
+# To Map Shadow IT, Follow Citizen Developers
 
-AI-generated code promises quicker fixes for vulnerabilities, but ultimately developers and security teams must balance competing interests.
+The tangle of user-built tools is formidable to manage, but it can lead to a greater understanding of real-world business needs.
 
 [![Picture of Michael Bargury](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbd8a249d11a28466/64f150aad5f7ca2f7665bf81/Michael_Bargury_zenity.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/michael-bargury)
 
 [Michael Bargury](https://www.darkreading.com/author/michael-bargury), CTO & Co-Founder, Zenity
 
-June 26, 2023
+November 18, 2024
 
 4 Min Read
 
-![Ballerina Polina Semionova and male dancer Jason Reilly in passionate Ballet pas de deux taken from the wings](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt8100003ea6f7ff0e/64f176317de67f334000e4e1/pasdedeux-Sian_Trenberth-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
+![Shadow of hot-air balloon over the Namib desert. Namib-Naukluft Park, Namibia](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt5de5c92bd6a90dcd/673682a6897306f6b9292ba6/balloonshadow-Martin_Harvey-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Source: Sian Trenberth via Alamy Stock Photo
+Source: Martin Harvey via Alamy Stock Photo
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance&title=Remediation%20Ballet%20Is%20a%20Pas%20de%20Deux%20of%20Patch%20and%20Performance)[Email](mailto:?subject=Remediation%20Ballet%20Is%20a%20Pas%20de%20Deux%20of%20Patch%20and%20Performance&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Remediation%20Ballet%20Is%20a%20Pas%20de%20Deux%20of%20Patch%20and%20Performance%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fremediation-ballet-is-a-pas-de-deux-of-patch-and-performance)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers&title=To%20Map%20Shadow%20IT%2C%20Follow%20Citizen%20Developers)[Email](mailto:?subject=To%20Map%20Shadow%20IT,%20Follow%20Citizen%20Developers&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20To%20Map%20Shadow%20IT%2C%20Follow%20Citizen%20Developers%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fto-map-shadow-it-follow-citizen-developers)
 
-Recent advancements in artificial intelligence (AI) have rekindled the spirit of fully automated vulnerability remediation. The industry is booming with attempts to provide tailored remediation that works in your code base, taking into account your unique environment and circumstances, powered by generative AI. The tech is incredible and is already showing signs of success. The big question remains: Are we ready to embrace it?
+COMMENTARY
 
-Ask any developer using [GitHub Copilot](https://www.darkreading.com/cybersecurity-analytics/generative-ai-empowers-users-but-challenges-security) or one of the alternatives, and you will find wonderful examples of how AI can generate context-aware code completion suggestions that save a ton of time. You'll also find examples of irrelevant, overly complex, or flat-out-wrong suggestions generated at bulk.
+Shadow IT is what your business runs on while waiting for IT to provide an enterprise solution. It's your sales team buying licenses to an obscure software-as-a-service (SaaS) because it helps them get the job done. Or it's your finance team using an unapproved tool because the approved one is too clunky. Sometimes shadow IT exists specifically to bypass an overly annoying security mechanism — figuring out a way to forward business emails to your personal Gmail account because it's easier to view on mobile, for example.
 
-There's no doubt we're witnessing a breakthrough in technology that will produce automated code generation far better than everything we've seen before. However, tech is only one piece in the remediation puzzle, with significant weight falling on process and people.
+You might hope shadow IT is a problem only for large enterprises, too big to centrally manage. My experience running a small startup suggests otherwise. We agonized over our choice of a productivity tools suite — considering pros and cons and balancing user experience with governability. And people are happy to use our tool of choice; they just also use other tools in parallel. We run on Google Workspace, but many of our employees use Office because they're used to it. We use Google Drive for file sharing, but we quickly learned some people prefer iCloud.
 
-## New Tech, Old Challenges
+People's personal preferences play a significant role here. They want to get their jobs done, not worry about learning a new tool. Platforms make this tendency even worse. Many try to get you to use and rely on them for a long time before asking for added licensing. Consider local file saves on Windows or Mac. By default, every local file save actually gets saved in a directory backed up into Microsoft's or Apple's cloud.
 
-Every change to an application is a balancing act between introducing improvements and protecting existing functionality. Urgent changes, including security fixes, take this problem to the extreme by introducing tight schedule constraints and a strong pressure to get things right. Applying [patches can have unexpected consequences](https://www.darkreading.com/vulnerabilities-threats/patching-poses-security-problems-with-move-to-more-remote-work), which in the worst case can mean an outage.
+A large enterprise might have more mature security controls to prevent use of unauthorized software, but it also has much more variety in the software people would like to use. The sheer size of an enterprise and the independence of different business units exacerbate the software spread even further. The standard industry security practice for controlling software usage combines bringing in security on every license purchase and restricting software and SaaS usage on the endpoint. While those tactics are useful, they are limited in scope. Paying out of pocket, which some users will do to get the software they want, bypasses enterprise procurement.
 
-Ask any IT manager who handles patching, and you will hear a never-ending list of horror stories where users were unable to go about their day-to-day work because of a [seemingly benign patch](https://www.darkreading.com/vulnerabilities-threats/mcafee-offers-compensation-to-enterprise-customers-hit-by-faulty-av-update). But [failing to apply a patch](https://www.darkreading.com/vulnerabilities-threats/firms-still-struggle-to-prioritize-security-vulnerabilities), only to have the [vulnerability exploited as part of a breach](https://www.darkreading.com/cyberattacks-data-breaches/accellion-data-breach-resulted-in-extortion-attempts-against-multiple-victims), can also have devastating consequences for the entire organization, as readers of this column are acutely aware.
+## Approved Apps Lead to Building Unapproved Apps
 
-Good software engineering is focused on finding a balance that maintains the ability to apply changes to the application at a fast pace while [protecting the application](https://www.darkreading.com/cyber-risk/where-there-s-no-code-there-s-no-sdlc) and its maintainers from bad changes. There are plenty of challenges in achieving this goal, including legacy software that cannot be easily changed and ever-changing system requirements, to name just a couple.
+Expanding the use of existing platforms into new and unapproved feature sets is even more pervasive. Did you purchase Office 365 for productivity or Salesforce for your sales reps? Congrats. You've now empowered your business users to build their own apps [with the no-code/low-code platform bundled in](https://www.darkreading.com/cyber-risk/you-can-t-opt-out-of-citizen-development). Unapproved uses of enterprise platforms also bypass SaaS usage controls. Enterprises can't block access to Microsoft or Salesforce, but through them users can send corporate data to unapproved systems.
 
-In reality, maintaining the ability to change software is a difficult goal that cannot always be attained, and teams have to accept the risk of some changes resulting in unexpected consequences that need more remediation. The main challenge for engineers lies in ensuring that the proposed change would produce expected results, not in writing the actual code change, which generative AI can now do for us. Security fixes are no different.
+With each new discovery of an unapproved system, the security team can either try to block it or bring it under their umbrella. Either way, it's an endless game of whack-a-mole. Some tools can help with this discovery, but they often lack context about how these systems are used and which are actually important to business functions.
 
-## Overlapping Responsibility for Application Security
+What if we could ask every business user what systems they use in their day-to-day, regardless of corporate policies? And ask which of those are truly vital for the business? That could give us the ultimate list: a full mapping of shadow IT, coupled with its business importance. Unfortunately, that doesn't work — simply asking people likely won't result in a full list, and what end users find vital may be different from what management does.
 
-Another major challenge that becomes acute in large enterprises is the fractioning of responsibility. A central AppSec team in charge of reducing risk across the organization cannot be expected to understand the potential consequences of applying a specific fix to a particular application. Some solutions, such as virtual patching and network controls, allow security teams to fix problems without relying on development teams, which could simplify mitigation, reduce required engineering resources, or eliminate buy-in.
+## User-Built Tools Expose Shadow IT Network
 
-Politics aside, solutions like these are blunt tools that are bound to cause friction. Network controls, such as firewalls and Web application firewalls (WAFs), are an area where IT and security traditionally have much autonomy, and developers just have to deal with it. They represent a clear choice to put control before productivity and to accept the added friction for developers.
+Enter [citizen development](https://www.darkreading.com/application-security/building-application-security-into-shadow-it), in which business users leverage low-code/no-code tools to streamline their processes, analyze their data, and build custom business applications for their use cases. To be relevant, these apps must connect to the data and processes that the business uses in practice. A citizen developer is not going to call IT to integrate their app with the approved corporate service; instead, they'll connect directly to what we call shadow IT.
 
-For application vulnerabilities, fixes require changing either the application's code or the application's environment. While changing the application's code is within the scope of responsibility of a development team, changing the environment has always been a way for security teams to intervene and might present a better path for AI-generated remediations to be applied.
+Here's an example. Consider a sales team using an unapproved tool for lead tracking. To sync it with the approved CRM, they use no-code automation. By finding automations that connect to the CRM and following the data flow, we can easily find the unapproved tool and what type of data it holds.
 
-In the on-premises world, this usually meant security agents managing workloads and infrastructure. In managed environments, like a public cloud provider or low-code/no-code platform, security teams could fully understand and examine changes to the environment, which allowed deeper intervention in application behavior.
+Embracing citizen development can leave security teams at a much better spot — having visibility into what software the business actually runs on — if used right.
 
-Configuration, for example, can change the behavior of an application without changing its code, thus applying a security mitigation while limiting consequences. A good example of this is enabling built-in encryption-at-rest for databases, [preventing public data access](https://www.zenity.io/microsoft-power-pages-low-code-misconfiguration-remains-a-top-security-risk/), or masking sensitive data handled by a low-code app.
+That "if" is very important. Citizen development [introduces its fair share of security risks](https://www.darkreading.com/cyber-risk/3-ways-no-code-developers-can-shoot-themselves-in-the-foot), which must be mitigated to avoid adverse effects. But by embracing citizen development, we're letting business users codify what used to be a copy-paste data integration. Following these processes will lead us directly to the most important elements of shadow IT.
 
-## Striking the Right Balance
-
-It is important to note that environment changes can have adverse effects on the application. Encryption comes at a performance cost, and masking makes debugging more difficult. However, these are risks more and more organizations are willing to take for the benefit of increasing security mitigation at lower engineering cost.
-
-At the end of the day, even once a mitigation is available, organizations have to balance the risk of security vulnerabilities with the risk of applying mitigations. It is clear that AI-generated mitigations reduce the cost of remediation, but the risk of applying them will always exist. However, failing to remediate for fear of consequences puts us on one end of the spectrum between those two risks, which is far away from a perfect balance. Applying any auto-generated remediation automatically would be the other end of the spectrum.
-
-Instead of choosing either extreme, we should acknowledge both the vulnerability risks and the mitigation risks and find a balance between the two. Mitigations will sometimes break applications. But choosing not to accept this risk means, by default, choosing to accept the risk of security breach due to lack of mitigation.
-
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/remediation-ballet-is-a-pas-de-deux-of-patch-and-performance&title=Remediation%20Ballet%20Is%20a%20Pas%20de%20Deux%20of%20Patch%20and%20Performance)[Email](mailto:?subject=Remediation%20Ballet%20Is%20a%20Pas%20de%20Deux%20of%20Patch%20and%20Performance&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Remediation%20Ballet%20Is%20a%20Pas%20de%20Deux%20of%20Patch%20and%20Performance%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fremediation-ballet-is-a-pas-de-deux-of-patch-and-performance)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers&title=To%20Map%20Shadow%20IT%2C%20Follow%20Citizen%20Developers)[Email](mailto:?subject=To%20Map%20Shadow%20IT,%20Follow%20Citizen%20Developers&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20To%20Map%20Shadow%20IT%2C%20Follow%20Citizen%20Developers%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fto-map-shadow-it-follow-citizen-developers)
 
 ## About the Author
 
@@ -119,6 +112,22 @@ Events
 You May Also Like
 
 * * *
+
+[Cyber Risk\\
+\\
+How CISOs Can Effectively Communicate Cyber-Risk](https://www.darkreading.com/cyber-risk/how-cisos-can-effectively-communicate-cyber-risk)
+
+[Cyber Risk\\
+\\
+Ransomware Gangs Pummel Southeast Asia](https://www.darkreading.com/cyber-risk/ransomware-gangs-pummel-southeast-asia)
+
+[Cyber Risk\\
+\\
+India's Critical Infrastructure Suffers Spike in Cyberattacks](https://www.darkreading.com/cyber-risk/india-s-critical-infrastructure-suffers-spike-in-cyberattacks)
+
+[Cyber Risk\\
+\\
+NIST Hands Off Post-Quantum Cryptography Work to Cyber Teams](https://www.darkreading.com/cyber-risk/nist-post-quantum-cryptography-work-cyber-teams)
 
 ### Edge Picks
 

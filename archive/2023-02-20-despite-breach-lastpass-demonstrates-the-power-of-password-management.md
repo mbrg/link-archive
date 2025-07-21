@@ -1,23 +1,22 @@
 ---
-date: '2025-07-21'
-description: Forrester analysts predict significant security breaches in enterprises
-  stemming from low-code/no-code (LCNC) applications in 2023. As business users increasingly
-  leverage LCNC for critical app development, security teams must adapt, shifting
-  perceptions of these applications from experiments to essential infrastructure.
-  The potential for exploitation arises due to a lack of security expertise among
-  citizen developers and possible vulnerabilities in LCNC platforms. This landscape
-  underscores the need for robust security governance and proactive monitoring alongside
-  empowering business users. Organizations must address these security gaps to mitigate
-  risks associated with decentralized development in enterprise environments.
-link: https://www.darkreading.com/edge-articles/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn
+date: 2023-02-20
+description: The LastPass breach underscores critical vulnerabilities in password
+  management systems. Despite hackers accessing source code and user data, the architecture’s
+  reliance on strong master passwords and endpoint MFA mitigates threat severity.
+  However, the incident raises concerns around implicit user responsibility in selecting
+  and recommending password managers. The balance of convenience versus the potential
+  for catastrophic breaches remains tenuous. Users must reinforce security protocols,
+  such as rotating sensitive passwords, and question the robustness of their chosen
+  vault providers. The systemic design flaws must prompt introspection into the shared
+  security paradigm of password management tools.
+link: https://www.darkreading.com/edge-articles/despite-breach-lastpass-demonstrates-the-power-of-password-management
 tags:
-- citizen developers
-- data breach
-- low-code development
-- cybersecurity
-- security threats
-title: Major Security Breach From Business Users' Low-Code Apps Could Come in 2023,
-  Analysts Warn
+- Cybersecurity
+- Password Management
+- Data Breaches
+- MFA
+- LastPass
+title: Despite Breach, LastPass Demonstrates the Power of Password Management
 ---
 
 - [Cyberattacks & Data Breaches](https://www.darkreading.com/cyberattacks-data-breaches)
@@ -26,53 +25,74 @@ title: Major Security Breach From Business Users' Low-Code Apps Could Come in 20
 \\
 Cybersecurity In-Depth: Feature articles on security strategy, latest trends, and people to know.](https://www.darkreading.com/program/the-edge)
 
-# Major Security Breach From Business Users' Low-Code Apps Could Come in 2023, Analysts Warn
+# Despite Breach, LastPass Demonstrates the Power of Password Management
 
-Here's what that means about our current state as an industry, and why we should be happy about it.
+What's scarier than keeping all of your passwords in one place and having that place raided by hackers? Maybe reusing insecure passwords.
 
 [![Picture of Michael Bargury](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbd8a249d11a28466/64f150aad5f7ca2f7665bf81/Michael_Bargury_zenity.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/michael-bargury)
 
 [Michael Bargury](https://www.darkreading.com/author/michael-bargury), CTO & Co-Founder, Zenity
 
-November 21, 2022
+February 20, 2023
 
 5 Min Read
 
-![Low Code software development platform technology concept, businessman holding phone](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd103233337f42db8/64f15af2bafd245afc0e4cd1/lowcode-Murrstock-AdobeStock.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
+![Photo of the aftermath of a car burglary, with the passenger side window smashed and safety glass pieces everywhere](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt43d1e6a0c2e0dabb/64f1651611a9e52894193259/carburglary-Jeffrey_Isaac_Greenberg_16_-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Source: Murrstock via Adobe Stock
+Source: Jeffrey Isaac Greenberg 16+ via Alamy Stock Photo
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn&title=Major%20Security%20Breach%20From%20Business%20Users%27%20Low-Code%20Apps%20Could%20Come%20in%202023%2C%20Analysts%20Warn)[Email](mailto:?subject=Major%20Security%20Breach%20From%20Business%20Users%27%20Low-Code%20Apps%20Could%20Come%20in%202023,%20Analysts%20Warn&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Major%20Security%20Breach%20From%20Business%20Users%27%20Low-Code%20Apps%20Could%20Come%20in%202023%2C%20Analysts%20Warn%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyberattacks-data-breaches%2Fmajor-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management&title=Despite%20Breach%2C%20LastPass%20Demonstrates%20the%20Power%20of%20Password%20Management)[Email](mailto:?subject=Despite%20Breach,%20LastPass%20Demonstrates%20the%20Power%20of%20Password%20Management&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Despite%20Breach%2C%20LastPass%20Demonstrates%20the%20Power%20of%20Password%20Management%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyberattacks-data-breaches%2Fdespite-breach-lastpass-demonstrates-the-power-of-password-management)
 
-In a recent report, [Forrester analysts warned](https://www.sdxcentral.com/articles/analysis/forrester-low-code-citizen-development-will-lead-to-major-data-breach-in-2023/2022/11/) of a looming major security breach at a large enterprise in 2023 rooted in business users using low-code/no-code (LCNC). The first part of this prediction is, unfortunately, a shared industry assumption: It would be surprising if we had an entire year without major headline security breaches. But the second part — forecasting that this major breach would be the result of business users, aka citizen developers, using LCNC — is an extraordinary attempt to wake up the security community before it's too late.
+A few months ago, LastPass [suffered a significant breach](https://blog.lastpass.com/2022/12/notice-of-recent-security-incident/). Hackers got both the source code and user data, including encrypted secret vaults and plaintext metadata. This [is not](https://www.darkreading.com/cloud-security/lastpass-data-breach-source-code-stolen) the first breach LastPass had suffered.
 
-This prediction is so powerful since it comes in strong contrast to the tendency some security teams have to treat apps built by business users as toys or POCs rather than critical infrastructure. This assumption, warns Forrester, is wrong and will lead to dire results. In recent years, [LCNC has become a reality in the enterprise](https://www.darkreading.com/cyber-risk/you-can-t-opt-out-of-citizen-development), and business users have been building impactful apps that large organizations now rely on — with or without the security team's knowledge.
+[This breach](https://www.darkreading.com/application-security/lastpass-discloses-second-breach-in-three-months) put me in a weird situation. I'd been a champion of using secret vaults for a few years now. After a brief period of trial and examination, I chose LastPass even though it [had been breached before](https://blog.lastpass.com/2015/06/lastpass-security-notice/). Being happy with the experience despite its quirks and a trying onboarding, I recommended its use to anyone I cared about — my family, friends, and colleagues. I helped them onboard and generate random passwords, install the app everywhere, and come up with a really good master password. In some cases, this wasn't easy and took a lot of guidance and convincing on my part.
 
-To understand why Forrester is issuing this warning, we must unpack its underlying assumptions. Doing so will show that it is full of new information about the analysts' reading and assumption of the market, which the reader is free to evaluate.
+The obvious fact I had failed to realize at the time was that a recommendation as strong as that comes with an implicit responsibility. When those people see a major news article about their passwords belonging to hackers now, they reach out to me for questions. They are right — I got them into this mess, didn't I?
 
-## When a Security Breach Becomes a Major Headline
+## Why Evangelize Secret Managers?
 
-Consider the factors it takes for a security breach to become a major headline. First, obviously a breach needs to occur. While this assumption is trivial, note that it relies on an underlying assumption that hackers are focusing their efforts on LCNC apps and finding success in breaking them. For hackers to focus their efforts on LCNC, the perceived reward needs to be big enough compared to the perceived difficulty — which means hackers must be convinced that LCNC holds significant business data or facilitate important business workflows for them to be a worthy target. Success in breaching LCNC apps means that hackers can exploit either platform or app-level vulnerabilities to own these apps.
+I was not always convinced secret managers were a good idea, especially commercial ones with their own cloud infra. As a teen, I started off where more people do, using one "good password" for everything, appending a service-specific prefix or suffix to avoid straight password duplication. I also had the unfortunate experience of working in an enterprise that forced me to change my password every 30 days. The number appended to the end of your password was a token of seniority in that org. I reached some number in the 40s and was really proud of myself and how experienced I was. Of course, when you're proud of something, you really want to share it. And so we did.
 
-Since business users are not security experts and often lack guidance, this is unfortunately an easy assumption to make. In fact, [in a case documented by the Microsoft Detection and Response team](https://www.zenity.io/hackers-abuse-low-code-platforms-and-turn-them-against-their-owners/), an APT group used live-off-the-land on some LCNC to remain hidden and persistent within a multinational organization for more than six months while defenders were actively trying to kick them off. In another case last year, a simple misconfiguration resulted in [almost 40 million confidential records being exposed to the Internet](https://www.cpomagazine.com/cyber-security/microsoft-power-apps-data-leak-fallout-38-million-records-exposed-state-and-city-governments-among-those-breached/).
+I always knew that sharing the chunky part of my password across services was a bad idea. That knowledge became a reality when I started to understand [how hackers leverage these common yet faulty tactics](https://www.darkreading.com/remote-workforce/norton-lifelock-warns-on-password-manager-account-compromises) to their advantage. Appending two letters to your "good password" does nothing to stop an attacker from compromising one service based on a compromised password for the other. It only makes you feel good about complying with a bad policy. Fortunately, monthly password changes are now passe.
 
-Second, the breach must involve business-critical apps or data; otherwise the story just won't be as interesting for a major headline. The criticality of the app or data needs to be rooted in the business' value proposition for it to be obvious to every external security practitioner that this will have significant business impact on the breached company. LCNC and citizen development [has grown significantly in recent years](https://www.quark.com/about/blog/low-code-no-code-componentized-content-solutions-increase-enterprise-agility), delivering on its promise of empowering business users to address their own needs. Business-led development has become a strategic initiative in some organizations. Many large organizations have a dedicated group of admins who manage and operate these LCNC citizen development platforms, which are sometimes called Centers of Excellence.
+But my first attempt at solving my password problem was using my dad's custom-built bare C based password manager. It was very basic: encrypt and decrypt a text file. You pop the encrypted file on a shared drive and congrats, you have a secret manager! Of course, this has clear downsides, like no mobile support, auto-fill, or password generation. I also wrote [my own cli-based interface](https://github.com/mbrg/crd) on top of cloud and native keyvaults. It was great, but still, no utilities. I used these two options for a long while. I was still looking for solutions with those utility features, but anything with the word "cloud" in it was denied at the doorstep.
 
-Third, the breach needs to be detected. A breach could be announced publicly by hackers willfully publishing it to hurt the breached company or push the company to yield to the hacker's demands. It could also be detected inside the breached company if business-critical apps have stopped working or security teams have identified it. In any case, breach detection [comes seven months after](https://venturebeat.com/security/report-average-time-to-detect-and-contain-a-breach-is-287-days/) hackers had their initial successful access, on average. Doing the math, and considering the predicted headlines are to come in 2023, this means that hackers may have already breached business-critical LCNC apps.
+Then I took an advanced crypto course as part of a masters in computer science. The beauty of Merkel trees and zero knowledge proofs excited my imagination and made me devour the Web in search of real-world applications. I encountered a scientific paper describing secret vaults, and the idea just clicked. Of course, it makes perfect sense! The only way for my passwords to be truly secure is to assume the vault provider is malicious and still be confident that they can't accomplish anything significant. I had reached the conclusion that a password manager that follows the theory would be safe to use.
 
-Lastly, and again trivially, the breach needs to be publicized. Of course, any organization that suffered a major breach would be happy if the news of its unfortunate event did not reach major news outlets. Assuming that the breached organization would work against it, and that not all major breaches are reported on, this means that next year should bring far more than one major security breach resulting from business users building with LCNC.
+The other threat vector to get my password is a malicious vendor or party within that vendor. They could, for example, steal my master password from the client application, making the theorized protections irrelevant. After reading through reviews putting different password manager clients under scrutiny, I became convinced that the implementations are up to standards and it's time to migrate.
 
-Unpacking the Forrester prediction for 2023 reveals a set of assumptions about the world we live in now. Business users are building business-critical apps with LCNC. Hackers are acutely aware of and have probably developed dedicated tools and exploits to breach such apps across the industry. Some security teams are probably dealing with a detected breach at this very moment.
+Several years afterwards, I found myself with hundreds of auto-generated passwords managed by my password manager. I had also been able to convince the people I care about to go through that journey too. I was really happy about it.
 
-## Why We Should Be Happy About the Prediction
+## What If My Vault Gets Breached?
 
-While discussing a predicted major breach feels gloomy and pessimistic, the larger message is positive: Business users are succeeding in moving the needle in the enterprise using LCNC and solving problems on their own.
+If hackers actually get access to my plaintext passwords, I will be in a world of hurt. I do have MFA enabled on anything important, but MFA-anyway is notoriously hard to pull off. Just thinking about rolling all those passwords manually gives me a headache. I don't see myself being able to convince my family to do it for their accounts too.
 
-There has long been a gap between business users who can articulate the problems they need solved to do their job better — thus making the business stronger — and IT teams that are failing under the pressure and have limited capability, which renders them unable to meet most of those requirements. LCNC is the latest development trying to bridge that gap by empowering business users to address their problems as they see fit. The business empowerment goal, part of IT decentralization, has been pursued by endless innovation waves, including productivity tools like Office, application generators, visual coders, and lately RPA and LCNC. As we saw above, this prediction is predicated on the amazing fact that LCNC is actually succeeding in empowering business users, and that they in turn succeed in changing business outcomes.
+In short, this scenario would be catastrophic.
 
-Like every new technology, LCNC comes with a new set of challenges. While we've been successful at leveraging LCNC for business impact, we haven't been as good at making sure those apps, the identities they use, and the data they handle are secure. This will not be an easy task, as security teams are not used to monitoring and guiding business users and the apps they develop. However, our role as security teams is to enable the business, and the business clearly shows it wants LCNC.
+Wait, Didn't Your Password Manager Just Get Breached?
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn&title=Major%20Security%20Breach%20From%20Business%20Users%27%20Low-Code%20Apps%20Could%20Come%20in%202023%2C%20Analysts%20Warn)[Email](mailto:?subject=Major%20Security%20Breach%20From%20Business%20Users%27%20Low-Code%20Apps%20Could%20Come%20in%202023,%20Analysts%20Warn&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Major%20Security%20Breach%20From%20Business%20Users%27%20Low-Code%20Apps%20Could%20Come%20in%202023%2C%20Analysts%20Warn%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyberattacks-data-breaches%2Fmajor-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn)
+Well yes, most definitely. One colleague who chose LastPass on my advice recently asked me two questions after reading a concerning article. What happened? and How should he react?
+
+My answer for the first question couldn't be worse. Hackers compromised both code and data. Data contains our vaults, with plaintext metadata including email addresses and our encrypted passwords.
+
+My answer to the second question was very different. There is no indication of the hackers stealing master passwords by abusing the client. We can assume that didn't happen or we would see a whole host of reproductions across the industry. So if your master password is strong enough not to be cracked and you have MFA on everything that matters, you are fine. If you still feel iffy, roll your important passwords.
+
+Concrete steps to take if you were affected by the breach:
+
+- Roll your master password.
+
+- Enable MFA and roll passwords everywhere that matters.
+
+- If your master password was weak, I strongly advise you to roll all of your passwords.
+
+
+How Can That Be? Aren't Those Answers Contradictory?
+
+The seemingly contradictory nature of these two answers shows just how powerful avoiding storage of sensitive data is.
+
+LastPass got breached. Repeatedly. Attackers took everything there is to take. The impact is severe, but not catastrophic at least given what we know now. That's a brilliant property of the system's design.
+
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyberattacks-data-breaches/despite-breach-lastpass-demonstrates-the-power-of-password-management&title=Despite%20Breach%2C%20LastPass%20Demonstrates%20the%20Power%20of%20Password%20Management)[Email](mailto:?subject=Despite%20Breach,%20LastPass%20Demonstrates%20the%20Power%20of%20Password%20Management&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Despite%20Breach%2C%20LastPass%20Demonstrates%20the%20Power%20of%20Password%20Management%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyberattacks-data-breaches%2Fdespite-breach-lastpass-demonstrates-the-power-of-password-management)
 
 ## About the Author
 

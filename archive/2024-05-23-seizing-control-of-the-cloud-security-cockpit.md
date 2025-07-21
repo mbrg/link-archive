@@ -1,71 +1,83 @@
 ---
-date: '2025-07-21'
-description: The rise of generative AI (GenAI) necessitates a structured security
-  framework for enterprises to manage their rapidly developing AI applications. As
-  companies race to leverage GenAI for productivity gains, security teams must address
-  inherent vulnerabilities, including identity management and threat modeling, particularly
-  for evolving frameworks like LangChain and AutoGPT. A centralized security resource
-  can aid in the inventory, assessment, and monitoring of these applications, enhancing
-  overall security posture. Organizations must adapt quickly to ensure secure development
-  practices while navigating a diverse ecosystem of AI tools.
-link: https://www.darkreading.com/application-security/security-must-empower-ai-developers-now
+date: 2024-05-23
+description: The article highlights the critical role of secure configuration management
+  in cloud and SaaS environments, likening current practices to an unregulated cockpit.
+  Misconfiguration remains a key cause of security vulnerabilities, exacerbated by
+  fluid user interfaces and the decentralized nature of decision-making. The piece
+  advocates for standardized practices to consolidate disparate efforts in mitigating
+  these risks, suggesting that aligned industry standards could significantly reduce
+  misconfiguration incidents. Continuous change in service functionalities adds complexity,
+  necessitating robust security governance frameworks to handle evolving threats and
+  configurations effectively.
+link: https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit
 tags:
-- Generative AI
-- Application Security
-- Cybersecurity
-- Security Best Practices
-- AI Security
-title: Security Must Empower AI Developers Now
+- configuration-management
+- cloud-security
+- misconfiguration
+- SaaS-security
+- cybersecurity-strategy
+title: Seizing Control of the Cloud Security Cockpit
 ---
 
-- [Application Security](https://www.darkreading.com/application-security)
-- [Commentary](https://www.darkreading.com/latest-commentary)
+- [Сloud Security](https://www.darkreading.com/cloud-security)
 
 [![The Edge Logo](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt530eb1f4e672eb44/653a71690e92cc040a3e9d6d/Dark_Reading_Logo_TheEdge_0.png?width=700&auto=webp&quality=80&disable=upscale)\\
 \\
 Cybersecurity In-Depth: Feature articles on security strategy, latest trends, and people to know.](https://www.darkreading.com/program/the-edge)
 
-# Security Must Empower AI Developers Now
+# Seizing Control of the Cloud Security Cockpit
 
-Enterprises need to create a secure structure for tracking, assessing, and monitoring their growing stable of AI business apps.
+Much like an airplane's dashboard, configurations are the way we control cloud applications and SaaS tools. It's also the entry point for too many security threats. Here are some ideas for making the configuration process more secure.
 
 [![Picture of Michael Bargury](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbd8a249d11a28466/64f150aad5f7ca2f7665bf81/Michael_Bargury_zenity.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/michael-bargury)
 
 [Michael Bargury](https://www.darkreading.com/author/michael-bargury), CTO & Co-Founder, Zenity
 
-October 16, 2023
+May 23, 2024
 
 3 Min Read
 
-![3d rendering of warehouse robots delivering boxes in a shelf-lined warehouse](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt1c2cf20b8401241a/654e39d82e6653040a3303a2/inventory-Kittipong_Jirasukhanont-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
+![Airbus A380 cockpit, full of dials and controls and computers and joysticks](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt4ef53068f6e61e95/664e5067e0559141b7072b54/cockpit-JLBvdWOLF-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Source: Kittipong Jirasukhanont via Alamy Stock Photo
+Source: JLBvdWOLF via Alamy Stock Photo
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now&title=Security%20Must%20Empower%20AI%20Developers%20Now)[Email](mailto:?subject=Security%20Must%20Empower%20AI%20Developers%20Now&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Security%20Must%20Empower%20AI%20Developers%20Now%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fapplication-security%2Fsecurity-must-empower-ai-developers-now)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit&title=Seizing%20Control%20of%20the%20Cloud%20Security%20Cockpit)[Email](mailto:?subject=Seizing%20Control%20of%20the%20Cloud%20Security%20Cockpit&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Seizing%20Control%20of%20the%20Cloud%20Security%20Cockpit%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcloud-security%2Fseizing-control-cloud-security-configuration-cockpit)
 
-There is no doubt that generative artificial intelligence (GenAI) is going to change how business gets done. [Research firms are estimating huge productivity gains](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier#work-and-productivity) across all sectors that, if fulfilled, would completely transform every industry. With such great potential gain, it is clear why every enterprise is striving to enable their teams to build AI-powered applications as fast as possible. However, security teams must act now to ensure these apps will hold up to scrutiny.
+The image of a cockpit always struck me as overwhelming. So many knobs and whistles of different shapes and sizes. Do pilots really need all those options at arm's length? On every flight? And how do they verify that they're all in the right position before takeoff?
 
-## The Race to Capture AI Business Value First
+Today's enterprises have tens of millions of these — or, rather, their digital equivalent: configuration. The cloud and software as a service (SaaS) are now ubiquitous, and they brought with them countless choices to make. Unlike aircraft, we do not have standards and procedures to ensure each and every toggle is switched to the right position. It is no wonder that misconfiguration continues to be the most dominant reason for [cloud security issues](https://www.darkreading.com/cyber-risk/10-essential-processes-for-reducing-top-11-cloud-risks).
 
-Some enterprises have already built hundreds of AI-powered apps so far. The rate of development is just incredible, with notable examples like [Microsoft releasing Copilot applications](https://www.darkreading.com/threat-intelligence/microsoft-security-copilot-ai-assistant-next-level) at a rate far beyond what a huge enterprise typically delivers.
+## Opaque Configurations
 
-Because of the immaturity of the frameworks and tooling around [AI app development](https://www.darkreading.com/cyber-risk/ai-has-your-business-data), these are being built with a wide range of technologies. Development frameworks that build on top of the few fundamental models are numerous and vary significantly, and they keep on popping up. Frameworks such as [LangChain](https://www.langchain.com/) and [AutoGPT](https://autogpt.net/) have gained significant popularity at an unprecedented pace. In a major enterprise, you can easily expect to find tens of different frameworks being used to build these applications.
+Commercial aircraft have thorough manuals that detail the function and implications of each and every toggle in that cockpit. For cloud and SaaS, you'll typically find a one-line explanation hidden on an obscure documentation page. If you're lucky, that short snippet is meaningful and still up to date. In most cases, however, you aren't that lucky — the docs were written three years ago and the service is now widely different. Entire companies are built on the premise of having a team of experts to figure out what these toggles do. They reverse-engineer, poke around, and brute-force their way to capture the meaning of each configuration.
 
-The first organizations that are able to capture productivity gains from AI before others will have a huge win. Therefore, we are taking part in a race where we have to make do with the frameworks available right now and just get things done. It will probably take a long time for frameworks to standardize, and by that time you'll already be late to the game.
+In the SaaS and platform-as-a-service (PaaS) worlds, things become even worse. You never really have a full understanding of how things are built under the hood, so building an intuition about which knob does what becomes a guessing game.
 
-We have to face reality: Business is being reimagined — with unproven tools, frameworks, and threat models — at an unprecedented pace.
+## Distributed Choice
 
-## Security: Where Do We Even Begin?
+A cockpit is managed by the captain and first officer, two highly trained professionals with well-defined responsibilities. They are sometimes backed up by the flight engineer, a well-oiled human machine who triple-checks that everything is in order. For cloud and SaaS, it's the Wild West. People across the enterprise make configuration choices every day — or, worse, fail to make them and leave an insecure default on.
 
-Building so many new applications in such a short time frame has huge security implications. First, these are just more applications, with the same security risks as any other application introduces; they need to get identity, dataflow, and secret management right, to name a few concerns. Second, GenAI creates some unique security challenges, which frameworks such as the [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/) help to capture and educate on.
+It's not just your cloud developers and SaaS admins, even though they have received most of the attention. Business users are making those choices, too. [They leverage low-code/no-code](https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers) to build and customize their business processes, making configuration choices by the dozens as they go.
 
-Advanced security organizations, in collaboration with IT, are putting together dedicated centers to inventory, assess, and secure these applications. Note that these require creating entirely new processes and newly delegated responsibilities. Ideally, these centers can act as an enabling resource for developers, offering threat modeling and design review services to ensure secure standards are met.
+Security teams have this problem, too. Can you really say your security stack is 100% optimized and correctly configured? How many incidents could have been prevented by a technology deployed in audit mode rather than enforcement mode?
 
-Creating a centralized resource is not an easy feat. Finding all AI-powered projects across an enterprise is a huge challenge, as [inventory always is](https://www.darkreading.com/cybersecurity-analytics/analysis-log4j-vulnerability-highlights-the-value-of-defense-in-depth-accurate-inventory). Developing the technical skills required to audit these applications is difficult as well — especially due to the proliferation of different AI frameworks, each with its own quirks and gotchas. Monitoring these apps in production is yet another challenge, both from a technical perspective of getting the right data from immature development frameworks and from the security analysis perspective of knowing what to look for.
+## Constant Change
 
-These are not insurmountable challenges, however. In fact, they follow the typical application security problem formula of inventory, security assessment, and runtime protection. To get ahead and enable our business to capture the AI revolution first, we have to start making headway in solving those problems.
+Imagine what would happen if the cockpit changed its toggles — their functionality, their implications, or just their appearance — every quarter. Now imagine it changes multiple times a day.
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/application-security/security-must-empower-ai-developers-now&title=Security%20Must%20Empower%20AI%20Developers%20Now)[Email](mailto:?subject=Security%20Must%20Empower%20AI%20Developers%20Now&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Security%20Must%20Empower%20AI%20Developers%20Now%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fapplication-security%2Fsecurity-must-empower-ai-developers-now)
+[Continuous delivery](https://www.darkreading.com/cyber-risk/where-there-s-no-code-there-s-no-sdlc) is the holy grail of enterprise cloud and SaaS companies hoping to move fast. We have given permission to vendors to change their offerings under the hood as much and as fast as they can. This is a good thing, mostly, because this is how excellent software gets built. However, applying that same principle to the user interface means configuration can change at an alarming rate. The meaning of an existing configuration could change as well, making it much more difficult to understand what's going on.
+
+Even if configuration options are the same, the enterprise environment is ever-evolving. SaaS and cloud resources are connected in different ways. They hold different data subject to different sets of regulations. Risk decisions adapt as the threat landscape changes.
+
+## It's Time for Standards
+
+Public pressure in recent years has forced big vendors to change their insecure default, which helps put us all in a better position. S3 buckets are now [shut off from the Internet](https://aws.amazon.com/blogs/aws/heads-up-amazon-s3-security-changes-are-coming-in-april-of-2023/) by default. [So are Copilot bots](https://www.zenity.io/blog/security/microsoft-copilot-studio-vulnerabilities-explained/) built with Microsoft's Copilot Studio.
+
+Some cloud and SaaS platforms have started publishing recommended configurations for a secure deployment. CISA and other organizations have [put out excellent recommendations](https://www.cisa.gov/resources-tools/services/secure-cloud-business-applications-scuba-project) to follow.
+
+These are, however, all dispersed efforts. Working together through industry standards might be what is needed to finally make a real impact in reducing the ever-growing risk of misconfiguration.
+
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit&title=Seizing%20Control%20of%20the%20Cloud%20Security%20Cockpit)[Email](mailto:?subject=Seizing%20Control%20of%20the%20Cloud%20Security%20Cockpit&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Seizing%20Control%20of%20the%20Cloud%20Security%20Cockpit%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcloud-security%2Fseizing-control-cloud-security-configuration-cockpit)
 
 ## About the Author
 
@@ -106,22 +118,6 @@ Events
 You May Also Like
 
 * * *
-
-[Application Security\\
-\\
-'Void Banshee' Exploits Second Microsoft Zero-Day](https://www.darkreading.com/application-security/void-banshee-exploits-second-microsoft-zero-day)
-
-[Application Security\\
-\\
-Microsoft VS Code Undermined in Asian Spy Attack](https://www.darkreading.com/application-security/microsoft-vs-code-undermined-in-asian-spy-attack)
-
-[Application Security\\
-\\
-Hackers Use Rare Stealth Techniques to Down Asian Military, Gov't Orgs](https://www.darkreading.com/application-security/hackers-use-rare-stealth-techniques-to-down-asian-military-govt-orgs)
-
-[Application Security\\
-\\
-Microsoft Talks Kernel Drivers Post CrowdStrike Outage](https://www.darkreading.com/application-security/microsoft-lowballs-crowdstrike-outage-impact)
 
 ### Edge Picks
 

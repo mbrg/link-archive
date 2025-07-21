@@ -1,90 +1,72 @@
 ---
-date: '2025-07-21'
-description: Michael Bargury argues that the traditional separation of SaaS and public
-  cloud security hinders effective risk management as low-code SaaS platforms evolve
-  into business-centric application development solutions. With business users increasingly
-  acting as developers, applications built on these platforms require the same rigorous
-  security measures applied to cloud-hosted applications. This shift necessitates
-  a reevaluation of security strategies to include the myriad applications stemming
-  from enterprise SaaS, which currently lack adequate visibility and governance, thus
-  exposing organizations to heightened cyber risks.
-link: https://www.darkreading.com/edge-articles/we-re-thinking-about-saas-the-wrong-way
+date: 2024-12-16
+description: The rise of low-code/no-code platforms accelerates application development
+  but introduces significant security risks. These tools allow non-technical users
+  to create applications rapidly, often bypassing established security protocols.
+  The article emphasizes that while empowering citizen developers enhances productivity,
+  it increases the likelihood of unintentional data exposure, particularly in automations
+  involving sensitive information. The author advocates for implementing automated
+  guardrails to prompt users to reconsider their actions, thus balancing speed and
+  security without stifling innovation. This highlights the need for proactive governance
+  in emergent development environments.
+link: https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good
 tags:
-- Cyber Risk Management
-- Cloud Computing
-- Application Development
-- SaaS Security
-- Low Code
-title: We're Thinking About SaaS the Wrong Way
+- Application Security
+- Low-Code Development
+- No-Code Development
+- Security Governance
+- Cyber Risk
+title: Citizen Development Moves Too Fast for Its Own Good
 ---
 
+- [Application Security](https://www.darkreading.com/application-security)
 - [Cyber Risk](https://www.darkreading.com/cyber-risk)
 
 [![The Edge Logo](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt530eb1f4e672eb44/653a71690e92cc040a3e9d6d/Dark_Reading_Logo_TheEdge_0.png?width=700&auto=webp&quality=80&disable=upscale)\\
 \\
 Cybersecurity In-Depth: Feature articles on security strategy, latest trends, and people to know.](https://www.darkreading.com/program/the-edge)
 
-# We're Thinking About SaaS the Wrong Way
+# Citizen Development Moves Too Fast for Its Own Good
 
-Many enterprise applications are built outside of IT, but we still treat the platforms they're built with as point solutions.
+While low-code/no-code tools can speed up application development, sometimes it's worth taking a slower approach for a safer product.
 
 [![Picture of Michael Bargury](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbd8a249d11a28466/64f150aad5f7ca2f7665bf81/Michael_Bargury_zenity.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/michael-bargury)
 
 [Michael Bargury](https://www.darkreading.com/author/michael-bargury), CTO & Co-Founder, Zenity
 
-September 26, 2022
+December 16, 2024
 
-6 Min Read
+3 Min Read
 
-![Businessman reaches out to touch Low Code button on a screen full of icons](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltf3dd13eae8ac4e0b/64f161946ec0b12a4f30f592/lowcode-photon_photo-AdobeStock.jpeg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
+![In Bavaria, boy driving pedal go-kart on a tiled driveway is chased by a running woman. Both are smiling. A house and trees are in the background.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt698afe9030477799/675cd1190c2b8ada1abfb51b/gokart-Westend61_GmbH-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Source: photon\_photo via Adobe Stock
+Source: Westend61 GmbH via Alamy Stock Photo
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way&title=We%27re%20Thinking%20About%20SaaS%20the%20Wrong%20Way)[Email](mailto:?subject=We%27re%20Thinking%20About%20SaaS%20the%20Wrong%20Way&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20We%27re%20Thinking%20About%20SaaS%20the%20Wrong%20Way%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fwe-re-thinking-about-saas-the-wrong-way)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good&title=Citizen%20Development%20Moves%20Too%20Fast%20for%20Its%20Own%20Good)[Email](mailto:?subject=Citizen%20Development%20Moves%20Too%20Fast%20for%20Its%20Own%20Good&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Citizen%20Development%20Moves%20Too%20Fast%20for%20Its%20Own%20Good%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fapplication-security%2Fcitizen-development-moves-too-fast-for-its-own-good)
 
-We're used to thinking about securing software-as-a-service (SaaS) platforms and the cloud as two separate beasts. This separation stems from the way SaaS and the public cloud first emerged as small point solutions and an extension of the traditional data center, respectively. Today, due to the advent of low code, this separation is wrong, and it's holding us back from seeing what's right in front of our eyes. Low code makes SaaS platforms a part of the public cloud, a place where developers build multiple applications rather than consuming a single one: a cloud platform.
+COMMENTARY
 
-Failing to shift our mindset leads to where we are today, with those applications being left up for grabs with no security visibility. And to make matters worse, low-code applications are embedded right into platforms like Salesforce and Microsoft Dynamics, which we all use and that hold our most sensitive business data.
+Say you're working on an important financial report for your company, with a strict deadline. You need to share it with external financial advisers, but security restrictions are preventing you from adding them directly. You grab the report, open your personal email, upload the report — and just before you hit send, you realize this is probably not a wise decision. You delete your draft.
 
-## How Did We Get Here?
+I'm sure you can think of many other examples where you got into a similar situation in the heat of the moment; hopefully you bumped into a security guardrail that made you think twice. Sometimes some friction is needed to slow us down and get us to rethink.
 
-Origin stories are always interesting because they explain something fundamental about the way we perceive the hero of the story. While SaaS started as an extension of the corporate network, the public cloud started as an extension of the data center. Those very different starting points explain why securing SaaS started with shadow IT (protecting the perimeter) and securing the public cloud started with workload protection (lift-and-shift servers and their network/host agents). This also meant that different security teams were tasked with securing SaaS and the cloud, which of course led to a separation of tools, different threat modeling, and, most importantly, the formation of different security mindsets.
+## Low-Code/No-Code Makes Things Too Easy
 
-Both SaaS and the public cloud have drastically evolved from those early days. Public cloud vendors introduced ever more granular compute paradigms, gradually introducing infrastructure as a service (IaaS), platform as a service (PaaS), and serverless to help developers focus on the business problem at hand. They also built an entire ecosystem of ready-made solutions for complex yet common problems — identity, permissions, logging, configuration, and deployment, to name a few.
+Business units can't wait around for IT and development units to get to their items on an ever-growing backlog. Low-code/no-code platforms have really made a difference in large enterprises in the past few years, and generative artificial intelligence has turbocharged this trend. Nontechnical users are empowered to create applications by describing them to a chatbot that does everything from generate the database to the user interface. They are also creating automations to streamline business processes, either by chatting with a chatbot or using drag-and-drop. This is all happening at the heart of the enterprise and is wonderful for productivity.
 
-SaaS used to mean a point solution for a specific problem. Salesforce started as a CRM, ServiceNow as a ticketing system, and Office365 as email, spreadsheets, docs, and slides. (While this is more than one solution, these are very specific ones.) Contrast that with today: Salesforce Developers are building apps for [just about any business need](https://www.salesforce.com/products/platform/app-gallery/) on top of the Salesforce Platform, ServiceNow low-code apps are [handling just about anything](https://www.servicenow.com/customers.html#filterTag1=servicenow%3Aproducts-and-solutions%2Fservicenow-platform) from HR to health and finance processes, and Power Platform, Microsoft's low-code platform embedded into Office365, is being used by more than [20 million users](https://news.microsoft.com/wp-content/uploads/prod/2022/07/07192022_Inspire_Satya_Nadella.pdf) across the industry [to solve every business need](https://powerapps.microsoft.com/en-us/blog/power-platform-stories/), from productivity through procurement and COVID-related processes.
+Security controls provided by low-code/no-code platforms typically focus on the point that an application [inherits its user's permissions](https://www.darkreading.com/cyber-risk/watch-out-for-user-impersonation-in-low-code-no-code-apps). That means that, theoretically, a user could manually do everything the application or automation does on their behalf. So what's the problem?
 
-Clearly, these have become enterprise-grade application development platforms, not point solutions to specific business problems. Many developers today choose to build their applications on platform-provided abstractions, whether those are serverless functions on the public cloud or extendable building blocks on SaaS low-code platforms.
+People are not robots. We don't move the same amount of data, we are not consistent when we do something again and again, and — most importantly — we have common sense. A human can understand that sharing a financial report externally is not a good idea, while sharing nonsensitive files might be all right. But if an automation is set up to sync data between you and your external vendors, with the intent of sharing nonsensitive files, no one is going to be there to flag it or second-guess when sensitive files are also transferred unintentionally.
 
-## The Introduction of Business Developers
+You could say that the person who created the automation should have thought about it, and you're right. But that requires them to stop and think. If you can create an automation by talking to a chatbot, then you quickly get into a situation where you're creating automations left and right without fully thinking through the consequences. Low-code/no-code platforms are lowering the bar to be creative within the enterprise, which is wonderful but also dangerous.
 
-Comparing how SaaS platforms started and where they are now clearly shows how far these have come from their earlier versions. But there's still a major shift we haven't mentioned yet: the introduction of business developers.
+## Tapping the Brakes, Not Taking the Keys
 
-SaaS low-code platforms draw their power from the data they maintain and their existing users. Those are both not limited to IT but rather skew heavily toward the business. Having access to both business data and business users means that SaaS is in the perfect position to tackle the most pressing issue many enterprises face today — digital transformation.
+Some friction could make all the difference in the world, if carefully used. Allowing citizen developers to create automations and applications is great, but perhaps if there are external data sources or vendors, somebody needs to take a second look. Low-code/no-code [doesn't really follow the software development life cycle process](https://www.darkreading.com/cyber-risk/where-there-s-no-code-there-s-no-sdlc), but notifying the security team or center of excellence for selective reviews where it matters is feasible. We must be careful not to add too much friction, however, or we'll lose the productivity benefits that citizen development brings — or people are going to find ways around our controls.
 
-With a global shortage of developers and the difficulty of streamlining a business process with so many stakeholders, low-code platforms introduce a shortcut, letting the business users streamline their processes themselves without waiting for IT.
+To hit the right balance, we should let citizen developers build freely but intervene where needed. We should set up automated guardrails that catch when developers go outside of our approved risk zone and intervene — even if just by nudging them to stop and rethink.
 
-Low code is taking off with business users, so much so that in his 2019 Inspire keynote, Microsoft CEO Satya Nadella [discussed the opportunity](https://qz.com/1740052/microsoft-shares-plan-to-make-anyone-a-software-developer/) of low code to empower people and to create new white-collar jobs just like Excel did.
-
-Just like the public cloud is an application development platform enabling developers to focus on their business logic, SaaS platforms have become application development platforms using low code to empower business users to become developers and address any business need.
-
-SaaS is now focused on new types of developers addressing a whole range of unmet business needs with dedicated applications, creating a new type of cloud: the business cloud.
-
-## Securing Low Code as an Extension of Cloud
-
-With the realization that some SaaS platforms are now application development platforms and an extension of the cloud, we should re-examine the [responsibilities](https://www.darkreading.com/cyber-risk/addressing-the-low-code-security-elephant-in-the-room) for securing those applications and bringing them under the security team's umbrella.
-
-We should treat platforms like Salesforce, ServiceNow, and Office365 the same way we treat AWS, Azure, and GCP, where we focus on the applications that were built and are hosted in these application development platforms rather than treating the whole platform as a single application.
-
-Shadow IT, for example, remains an issue with smaller and an ever-growing number of point-solution SaaS. But it doesn't make sense to treat any single platform mentioned above as a single app to discover and catalog. Instead, we should discover and catalog the applications built with those platforms — and there are tens of thousands of those. In most organizations, this enormous complexity is hidden behind a single line in an application inventory.
-
-Applications built with SaaS low-code platforms should be [examined](https://owasp.org/www-project-top-10-low-code-no-code-security-risks/) with the same security rigor we use for those built on the cloud because, at the end of the day, an application is an application, no matter where it was built and hosted.
-
-What does matter for the security of our business applications is the people, process, and tools that are involved in making, maintaining, and protecting those applications. For applications built in the cloud, we have professional developers, automated CI/CD processes, and various security tools from code scanning and dynamic analysis through runtime monitoring and prevention. For applications built on SaaS low-code platforms, we have some professional developers but also business users who are [not security-savvy](https://www.darkreading.com/cyber-risk/3-ways-no-code-developers-can-shoot-themselves-in-the-foot), with [few to no deployment processes](https://www.zenity.io/blog/low-code-sdlc-build-fast-stay-secure/) and no security controls or guarantees.
-
-Thinking about low-code platforms as part of SaaS makes it difficult for us to see that a [huge](https://www.techrepublic.com/article/report-60-of-apps-are-built-outside-of-it-and-thats-a-good-thing/)[portion](https://www.gartner.com/en/newsroom/press-releases/2021-11-10-gartner-says-cloud-will-be-the-centerpiece-of-new-digital-experiences) of our business applications are now being built by the business, outside of IT and outside of security control. To begin seeing the problem and figuring out our approach to it, we must shift our mindset to acknowledge low-code platforms as a part of the cloud and treat the applications on those platforms like we do any other application.
-
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/we-re-thinking-about-saas-the-wrong-way&title=We%27re%20Thinking%20About%20SaaS%20the%20Wrong%20Way)[Email](mailto:?subject=We%27re%20Thinking%20About%20SaaS%20the%20Wrong%20Way&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20We%27re%20Thinking%20About%20SaaS%20the%20Wrong%20Way%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fwe-re-thinking-about-saas-the-wrong-way)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/application-security/citizen-development-moves-too-fast-for-its-own-good&title=Citizen%20Development%20Moves%20Too%20Fast%20for%20Its%20Own%20Good)[Email](mailto:?subject=Citizen%20Development%20Moves%20Too%20Fast%20for%20Its%20Own%20Good&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Citizen%20Development%20Moves%20Too%20Fast%20for%20Its%20Own%20Good%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fapplication-security%2Fcitizen-development-moves-too-fast-for-its-own-good)
 
 ## About the Author
 
@@ -125,6 +107,22 @@ Events
 You May Also Like
 
 * * *
+
+[Application Security\\
+\\
+Gmail for Sensitive Comms: What's the Risk?](https://www.darkreading.com/application-security/gmail-not-secure-way-send-sensitive-comms)
+
+[Application Security\\
+\\
+DeepSeek Jailbreak Reveals Its Entire System Prompt](https://www.darkreading.com/application-security/deepseek-jailbreak-system-prompt)
+
+[Application Security\\
+\\
+Platform Engineering Is Security Engineering](https://www.darkreading.com/application-security/platform-engineering-is-security-engineering)
+
+[Application Security\\
+\\
+Hundreds of LLM Servers Expose Corporate, Health & Other Online Data](https://www.darkreading.com/application-security/hundreds-of-llm-servers-expose-corporate-health-and-other-online-data)
 
 ### Edge Picks
 

@@ -1,84 +1,75 @@
 ---
-date: '2025-07-21'
-description: The integration of AI into low-code/no-code platforms, exemplified by
-  Microsoft’s AI Copilot for Power Apps, dramatically reduces barriers for business
-  users to create applications leveraging organizational data. This trend raises significant
-  cybersecurity concerns, as unregulated access through user impersonation can lead
-  to unauthorized data exposure and credential sharing. With business users empowered
-  to create applications without IT oversight, security professionals must rethink
-  governance strategies and implement proactive guidance to prevent potential data
-  breaches linked to this democratization of app development. The reliance on users'
-  discretion amidst growing AI capabilities poses a critical challenge for enterprise
-  security models.
-link: https://www.darkreading.com/edge-articles/ai-has-your-business-data
+date: 2024-08-19
+description: In "Assume Breach When Building AI Apps," Michael Bargury emphasizes
+  the inevitability of AI jailbreaks, urging developers to design applications with
+  the understanding that such exploits are a matter of context, not mere vulnerabilities.
+  The rise of AI jailbreaking communities highlights the ease with which these bypasses
+  can be discovered, outpacing defensive strategies. Bargury advocates for proactive
+  oversight rather than reliance on perimeter defenses, suggesting monitoring systems
+  capable of rapid response to potential exploits, framing AI as an unpredictable
+  asset that requires diligent governance. This perspective is crucial for developers
+  and security professionals adapting to AI's growing role in enterprise applications.
+link: https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps
 tags:
-- Data Privacy
-- Business Empowerment
-- Low-Code Development
-- Artificial Intelligence
-- Cybersecurity
-title: AI Has Your Business Data
+- application security
+- jailbreaking
+- cybersecurity
+- AI security
+- vulnerability management
+title: Assume Breach When Building AI Apps
 ---
 
-- [Cyber Risk](https://www.darkreading.com/cyber-risk)
+- [Application Security](https://www.darkreading.com/application-security)
 
 [![The Edge Logo](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt530eb1f4e672eb44/653a71690e92cc040a3e9d6d/Dark_Reading_Logo_TheEdge_0.png?width=700&auto=webp&quality=80&disable=upscale)\\
 \\
 Cybersecurity In-Depth: Feature articles on security strategy, latest trends, and people to know.](https://www.darkreading.com/program/the-edge)
 
-# AI Has Your Business Data
+# Assume Breach When Building AI Apps
 
-No-code has lowered the barrier for non-developers to create applications. Artificial intelligence will completely eliminate it.
+AI jailbreaks are not vulnerabilities; they are expected behavior.
 
 [![Picture of Michael Bargury](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbd8a249d11a28466/64f150aad5f7ca2f7665bf81/Michael_Bargury_zenity.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/michael-bargury)
 
 [Michael Bargury](https://www.darkreading.com/author/michael-bargury), CTO & Co-Founder, Zenity
 
-March 20, 2023
+August 19, 2024
 
-5 Min Read
+4 Min Read
 
-![Photo of two toy robots standing on a laptop keyboard, staring at the display, which contains a layout of book pages](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt8ae371eda1673e31/64f15e55bf9134d51b853349/aidata-Josef_Kubes-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
+![person in a dark suit and beard breaking out of a white wall](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd42c317460171325/66bfe2c2473f2f75eb0c2115/Break-it-iStock_000047114688_Medium.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Source: Josef Kubes via Alamy Stock Photo
+Source: Pinkypills via iStock
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/ai-has-your-business-data)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/ai-has-your-business-data)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/ai-has-your-business-data)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/ai-has-your-business-data&title=AI%20Has%20Your%20Business%20Data)[Email](mailto:?subject=AI%20Has%20Your%20Business%20Data&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20AI%20Has%20Your%20Business%20Data%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fai-has-your-business-data)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps&title=Assume%20Breach%20When%20Building%20AI%20Apps)[Email](mailto:?subject=Assume%20Breach%20When%20Building%20AI%20Apps&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Assume%20Breach%20When%20Building%20AI%20Apps%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fapplication-security%2Fassume-breach-when-building-ai-apps)
 
-Ever since ChatGPT captured our imaginations, people have been contemplating its pending impact on the business world. This week these thoughts became a reality, with Google and Microsoft embedding artificial reality (AI) features into their business productivity suites.
+COMMENTARY
 
-Microsoft took another major step by releasing AI Copilot for Power Apps, Microsoft's low-code platform. Power Apps can connect far and beyond the Microsoft ecosystem, with almost 1,000 [built-in connectors](https://learn.microsoft.com/en-us/connectors/connector-reference/connector-reference-powerapps-connectors) to everything from Salesforce to on-prem and Amazon Web Services. With one swift move, AI has been integrated into the day-to-day workflows of the world's largest organizations.
+If you are still a skeptic about artificial intelligence (AI), you won't be for long. I was recently using Claude.ai to model security data I had at hand into a graph for attack path analysis. While I can do this myself, Claude took care of the task in minutes. More importantly, Claude was just as quick to adapt the script when significant changes were made to the initial requirements. Instead of me having to switch between being a security researcher and data engineer — exploring the graph, identifying a missing property or relation, and adapting the script — I could keep on my researcher hat while Claude played the engineer.
 
-This is an amazing achievement, and other low-code/no-code platforms will surely try to catch up quickly. But ask yourself: Who will make the decision to integrate data with AI? Who will grant access? The answer: Every business user, and you won't even know because they'll let AI impersonate their accounts.
+These are moments of clarity, when you realize your toolbox has been upgraded, saving you hours or days of work. It seems like many people have been having those moments, becoming more convinced of the impact AI is going to have in the enterprise.
 
-## AI + Low-Code/No-Code = A Perfect Storm
+But AI isn't infallible. There have been a number of public examples of AI jailbreaking, where the generative AI model was fed carefully crafted prompts to do or say unintended things. It can mean bypassing built-in safety features and guardrails or accessing capabilities that are supposed to be restricted. AI companies are trying to solve jailbreaking; some say they have either done so or are making significant progress. Jailbreaking is treated as a fixable problem — a quirk we'll soon get rid of.
 
-In recent years, low-code/no-code has given business users newfound freedom. They were granted developer-level power that enabled them to customize their digital experiences with the technical skills they already had rather than having to learn new ones. [Business users have started building applications](https://www.darkreading.com/cyber-risk/3-ways-no-code-developers-can-shoot-themselves-in-the-foot) that solve the problems that hurt most, on top of their day-to-day business data, without relying on IT or waiting for resources. After just a few years of low-code/no-code, many enterprises find themselves with tens or hundreds of thousands of applications, built outside of IT [with no oversight or control](https://www.darkreading.com/cyber-risk/why-so-many-security-experts-are-concerned-about-low-code-no-code-apps).
+As part of that mindset, AI vendors are treating jailbreaks as vulnerabilities. They expect researchers to submit their latest prompts to a bug-bounty program instead of publishing them on social media for laughs. Some security leaders are [talking about AI jailbreaks in terms of responsible disclosure](https://twitter.com/markrussinovich/status/1806036596556476852), creating a clear contrast with those supposedly irresponsible people who disclose jailbreaks publicly.
 
-Forget about continuous integration and continuous delivery (CI/CD) or security reviews — most of these applications follow the "push save to deploy to production" model instead. Quickly and quietly, applications developed outside of IT without the software development life cycle (SDLC) have become a significant portion of enterprise business applications. This has already become [a major concern for enterprise security](https://www.darkreading.com/cyberattacks-data-breaches/major-security-breach-from-business-users-low-code-apps-could-come-in-2023-analysts-warn).
+## Reality Sees Things Differently
 
-[Enter AI](https://cloudblogs.microsoft.com/powerplatform/2023/03/16/power-platform-is-leading-a-new-era-of-ai-generated-low-code-app-development/). Imagine that every conversation you had with ChatGPT involved you giving it access to business data and left behind a nice little application you could play around with and share with others. Have a long business email? Let AI shorten it for you. Need to find relevant customers in your CRM? Let AI generate statistics for you. Need to analyze user behavior over product telemetry? Let AI query the database for you. Don't stop there! Create mini-applications to allow answering those questions repeatedly, and share them with your co-workers! Every application requires access — your access. Low-code has lowered the barrier for non-developers to create applications. AI, however, will completely eliminate it.
+Meanwhile, AI jailbreaking communities are popping up on social media and community platforms, such as Discord and Reddit, like mushrooms after the rain. These communities are more akin to gaming speedrunners than to security researchers. Whenever a new generative AI model is released, these communities race to see who can find a jailbreak first. It usually takes minutes, and they never fail. These communities do not know about, of care about, responsible disclosure.
 
-Low-code/no-code provides ease of connectivity to business data by removing the difficult hurdles around authentication, and it provides a host of widgets business users can combine creatively to address their needs. AI brings power to everyone, allowing them to create by simply asking for what they want. The two techniques fit together like hand in glove. Superpowered by AI, low-code/no-code expands from "everyone can build an application" to "everyone builds an application for everything they think of, all of the time."
+[To quote an X post from Pliny the Prompter](https://x.com/i/web/status/1807105884381978700), a popular social media account from the AI breaking community: "circumventing AI 'safety' measures is getting easier as they become more powerful, not harder. this may seem counterintuitive but it's all about the surface area of attack, which seems to be expanding much faster than anyone on defense can keep up with."
 
-## You Are Not in Control
+Let's imagine for a second that vulnerability disclosure could work — that we can get every person on the planet to submit their evil prompts to a National Vulnerability Database-style repository before sharing it with their friends. Would that actually help? Last year at DEF CON, the AI village hosted the largest public AI red-teaming event, where they [reportedly collected over 17,000 jailbreaking conversations](https://www.humane-intelligence.org/grt). This was an incredible effort with huge benefits to our understanding of securing AI, but it did not make any significant change to the rate at which AI jailbreaks are discovered.
 
-Who decides what data the AI can access? You might be thinking this would be IT or the security team, but you would be wrong. Business users are making those decisions. But how?
+Vulnerabilities are quirks of the application in which they were found. If the application is complex, it has more surface for vulnerabilities. AI captures human languages so well, but can we really hope to enumerate all quirks of the human experience?
 
-Imagine a scenario where every business user in a large [enterprise starts to build their own applications](https://www.darkreading.com/cyber-risk/you-can-t-opt-out-of-citizen-development). Setting aside the skill gap, the No. 1 hurdle to progress would be identity and access. Provisioning an application identity and granting the right permissions to it would require approval, which would trigger questions and perhaps even a security review. You won't get to tens of thousands of applications in a large enterprise this way.
+## Stop Worrying About Jailbreaks
 
-To circumvent this hurdle, low-code/no-code platforms made a significant compromise: Applications can — and mostly do — [impersonate users rather than have their own identities](https://www.darkreading.com/cyber-risk/watch-out-for-user-impersonation-in-low-code-no-code-apps). This completely negates the permission issue. As a low-code/no-code developer, I can embed my own identity within my newly created application. I can even share my credentials with others, so they'll be able to build their own applications with my access to data or perform operations on my behalf. No more waiting for approval — we have a green light to create!
+We need to operate under the assumption that AI jailbreaks are trivial. Don't give your AI application capabilities it should not be using. If the AI application can perform actions and relies on people not knowing those prompts as a defense mechanism, expect those actions to be eventually exploited by a persistent user.
 
-The problem with this [credentials-sharing-as-a-service](https://youtu.be/D3A62Rzozq4) is that it completely negates the enterprise permission model. If users are sharing their credentials with each other, there's no easy way to distinguish them. Moreover, an application can leverage credentials across your organizational boundary — say, an employee's personal email account — in combination with a business account. To add a cherry on top, moving data between one account and another is done by automated copy and paste on the low-code/no-code platform's cloud. No data gets transmitted, so there is no opportunity to [block data leaking out](https://www.zenity.io/low-code-security-and-business-email-compromise-via-email-auto-forwarding/).
+AI startups are suggesting we think of AI agents as employees who know a lot of facts but need guidance on applying their knowledge to the real world. As security professionals, I believe we need a different analogy: I suggest you think of an AI agent as an expert you want to hire, even though that expert defrauded their previous employer. You really need this employee, so you put a bunch of guardrails in place to ensure this employee won't defraud you as well. But at the end of the day, every data and access you give this problematic employee exposes your organization and is risky. Instead of trying to create systems that can't be jailbroken, let's focus on applications that are easy to monitor for when they inevitably are, so we can quickly respond and limit the impact.
 
-Credential sharing and data leakage have been a major issue with low-code/no-code applications. AI doesn't change that, but it magnifies the scale of the problem. When AI is plugged into a low-code/no-code platform, the AI gains potential access to everything the platform can access. The transition between potential and in-practice access is up to whoever prompts the AI to build a low-code/no-code application for them. We are trusting our business users with making the right choice without any guardrails or guidance.
-
-## Business Users Build Enterprise Applications
-
-More than a specific technology, low-code/no-code is an idea — a strong push into IT decentralization and business empowerment. It has already brought tremendous productivity benefits to the world's largest organizations because the employees who know best how to impact the business are the business users.
-
-For professionals in IT and security, this is a paradigm shift. No longer can we rely on the security savviness of developers or official security mandates. We must [embrace business users](https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers) and help guide them in the right direction. If we fail to do so, the forces of productivity and data-hungry AI will surely be glad to do that for us.
-
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/ai-has-your-business-data)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/ai-has-your-business-data)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/ai-has-your-business-data)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/ai-has-your-business-data&title=AI%20Has%20Your%20Business%20Data)[Email](mailto:?subject=AI%20Has%20Your%20Business%20Data&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20AI%20Has%20Your%20Business%20Data%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fai-has-your-business-data)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/application-security/assume-breach-when-building-ai-apps&title=Assume%20Breach%20When%20Building%20AI%20Apps)[Email](mailto:?subject=Assume%20Breach%20When%20Building%20AI%20Apps&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Assume%20Breach%20When%20Building%20AI%20Apps%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fapplication-security%2Fassume-breach-when-building-ai-apps)
 
 ## About the Author
 
@@ -119,6 +110,22 @@ Events
 You May Also Like
 
 * * *
+
+[Application Security\\
+\\
+'Void Banshee' Exploits Second Microsoft Zero-Day](https://www.darkreading.com/application-security/void-banshee-exploits-second-microsoft-zero-day)
+
+[Application Security\\
+\\
+Microsoft VS Code Undermined in Asian Spy Attack](https://www.darkreading.com/application-security/microsoft-vs-code-undermined-in-asian-spy-attack)
+
+[Application Security\\
+\\
+Hackers Use Rare Stealth Techniques to Down Asian Military, Gov't Orgs](https://www.darkreading.com/application-security/hackers-use-rare-stealth-techniques-to-down-asian-military-govt-orgs)
+
+[Application Security\\
+\\
+Microsoft Talks Kernel Drivers Post CrowdStrike Outage](https://www.darkreading.com/application-security/microsoft-lowballs-crowdstrike-outage-impact)
 
 ### Edge Picks
 

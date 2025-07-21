@@ -1,23 +1,22 @@
 ---
-date: '2025-07-21'
-description: 'Michael Bargury''s article discusses the disruptive potential of AI
-  in enterprise environments, highlighting the rapid deployment of AI solutions like
-  Microsoft 365 Copilot across major companies. Key risks include: 1. **Permission
-  Management:** AI models may retain access to outdated data after personnel changes,
-  complicating security protocols. 2. **Data Boundary Erosion:** AI''s ability to
-  aggregate and access vast datasets challenges traditional data segregation principles.
-  3. **Activity Monitoring Dilemmas:** AI impersonation blurs the lines for monitoring
-  suspicious activities, complicating anomaly detection. These factors signal a need
-  for reevaluated security frameworks amidst fast-paced AI integration, emphasizing
-  innovation over static practices.'
-link: https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai
+date: 2022-10-24
+description: Michael Bargury emphasizes the transformative potential of low-code/no-code
+  platforms in enhancing cybersecurity mindshare among business users. By fostering
+  collaboration and security awareness similar to DevSecOps achieved with developers,
+  security teams can mitigate risks associated with shadow IT. As business units increasingly
+  create critical applications independently, engaging these users early in the security
+  dialogue is essential. This strategy aligns security as a business enabler, enabling
+  smoother implementation of broader security initiatives like zero trust and identity
+  systems. Addressing this shift presents a crucial opportunity for organizations
+  to promote a holistic security culture.
+link: https://www.darkreading.com/edge-articles/embracing-the-next-generation-of-business-developers
 tags:
+- Security Awareness
+- Business Collaboration
+- Low-Code/No-Code
+- DevSecOps
 - Cybersecurity
-- Artificial Intelligence
-- Machine Learning
-- Enterprise Security
-- Data Privacy
-title: Move Fast and Break the Enterprise With AI
+title: Embracing the Next Generation of Business Developers
 ---
 
 - [Cyber Risk](https://www.darkreading.com/cyber-risk)
@@ -26,54 +25,57 @@ title: Move Fast and Break the Enterprise With AI
 \\
 Cybersecurity In-Depth: Feature articles on security strategy, latest trends, and people to know.](https://www.darkreading.com/program/the-edge)
 
-# Move Fast and Break the Enterprise With AI
+# Embracing the Next Generation of Business Developers
 
-The tantalizing promise of true artificial intelligence, or at least decent machine learning, has whipped into a gallop large organizations not built for speed.
+Security teams that embrace low-code/no-code can change the security mindset of business users.
 
 [![Picture of Michael Bargury](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbd8a249d11a28466/64f150aad5f7ca2f7665bf81/Michael_Bargury_zenity.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/michael-bargury)
 
 [Michael Bargury](https://www.darkreading.com/author/michael-bargury), CTO & Co-Founder, Zenity
 
-January 23, 2024
+October 24, 2022
 
-4 Min Read
+5 Min Read
 
-![Jockeys race four horses down a racetrack, crops raised](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltf90b5e2bcc0f7e30/65af52aa45b4a8040a1f810b/horserace-Michael_Turner-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
+![Man standing next to two seated coworkers who are working on a project together. They all look happy.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt1ba3d2007b396441/64f15591e0ecf1691d65e7b1/teamcollab-Dmytro_Sidelnikov-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Source: Michael Turner via Alamy Stock Photo
+Source: Dmytro Sidelnikov via Alamy Stock Photo
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai&title=Move%20Fast%20and%20Break%20the%20Enterprise%20With%20AI)[Email](mailto:?subject=Move%20Fast%20and%20Break%20the%20Enterprise%20With%20AI&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Move%20Fast%20and%20Break%20the%20Enterprise%20With%20AI%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fmove-fast-and-break-the-enterprise-with-ai)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers&title=Embracing%20the%20Next%20Generation%20of%20Business%20Developers)[Email](mailto:?subject=Embracing%20the%20Next%20Generation%20of%20Business%20Developers&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Embracing%20the%20Next%20Generation%20of%20Business%20Developers%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fembracing-the-next-generation-of-business-developers)
 
-COMMENTARY
+Security teams constantly strive for mindshare and alignment within the business. Seasoned security leaders often describe how security needs to serve the business and how it depends on business buy-in about the importance of security to succeed. As a result, security teams invest a lot in raising security awareness, educating business users, and explaining why security is crucial to the business and cannot succeed without business users.
 
-Working for a large enterprise for many years often leaves you with a strong feeling that everything will forever stay the same. Sure, some things change, even drastically. There are ups and downs, reorgs on a regular cadence, and sometimes companies even reinvent and rejuvenate themselves like Satya Nadella's Microsoft did in recent years. But most things stay the same, and culture runs deep. There is an inherent unwillingness to change; after all, these are large, successful enterprises — why change?
+Without buy-in from business leaders, security teams can apply security measures only through formal gates, enforced controls, and corporate policies that, without proper communication, can often cause frustration and end up making the business buy-in problem worse. When business teams see security as a business-enabler, however, the conversation changes completely. People reach out to security to get input early on in the process, and security teams can focus on helping teams assess where to invest their security efforts.
 
-Security professionals often reach a point in their careers where they look back and ask: Have we made any progress? Are organizations really more secure today than they were 20 years ago? Sure, the threat landscape is different, but so is the amount of money and, more importantly, mindshare being spent on security throughout the industry. Even with all of that, some things never change. We have evergreen sayings, like "developers don't care about security," "you can't secure the perimeter," "x is the new perimeter," and my personal (un)favorite, "users are the weakest link."
+This dynamic is so fundamental to organizations that often security leaders focus most of their efforts on building relationships with business leaders to get that executive buy-in. In the best cases, that also translates to bringing business units and security teams closer together. With this lens, we can see just how important and transformational DevSecOps is. Suddenly, development teams more easily collaborate and even sometimes lead the effort for better security. The indirect effect of having more people — that is, developers, not just security professionals — thinking with a security mindset can be transformational to the ability of the security team to make big strides forward.
 
-Securing a large enterprise means having to deal with the problems of a large enterprise, which, as stated above, has a basic unwillingness to change.
+An organization where lots of developers understand and push for security in their day-to-day work is far more likely to go along with large security projects like rolling out a new identity system or applying zero trust, even though those might require some patience from users during implementation. This indirect effect could end up being much more important than the fact that we now have automated security tests as part of the CI/CD, even though those are important as well.
 
-Until it does.
+## Bringing Developers Closer to the Security Mindset
 
-## Changing at the Speed of AI
+One possible explanation for the success of DevSecOps is the value of automation. Whether it's through catching syntax errors, identifying an insecure dependency, or detecting hard-coded secrets, automated security testing helps developers achieve more in less time. The argument that automation is the reason why developers are jumping on the security bandwagon seems to imply that developers always saw the importance of security but lacked the resources to act on it.
 
-Enter artificial intelligence (AI). Emboldened by the technology's promise of changing all industries, large enterprises are mobilizing their AI initiatives at lightning speed. It's been incredible (and frightening) to see how fast Microsoft and others, including Salesforce, Google, and Amazon, have pushed AI directly into their core enterprise offerings. They do this despite knowing that AI has serious problems that no one can really solve yet, like [alignment](https://openai.com/blog/our-approach-to-alignment-research) with human values and [safety](https://www.safe.ai/statement-on-ai-risk) risks. They do this because their customers — the entire enterprise market — are eager to adopt the bleeding edge to get one up on their competition.
+While automation is extremely helpful, I find that the change in mindset for some development teams is far greater than just a change in the resources discussion. More and more developers are seeing security as part of their responsibility, rather than the responsibility of someone else.
 
-Whether you are an AI enthusiast or an AI skeptic doesn't matter at this point. The winds of change are blowing, and an opportunity has opened up in which enterprises are willing to risk their core competencies to reap the rewards of AI before their competitors do.
+There is a bigger shift here than just a reduction in the cost of applying good security practices. Security teams started talking to developers in the language of developers, rather than the language of security. This is a crucial point. Instead of painting a beautiful picture of how security should work, DevSecOps shifts the conversation to a much more practical one: How do we make one step forward to where our developers actually are?
 
-## Breaking the Enterprise
+Note that the goal remains the same — guiding developer teams toward a beautiful picture of how security should work. However, crucially, we start off at the practical side of the discussion and help guide every step of the journey rather than describe a future that seems far away or even impractical.
 
-The most significant advancement in enterprise AI is business Copilots. Every large Microsoft shop is looking into [Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365/microsoft-copilot) to seek fulfillment of the promise of a huge productivity boost. [Google](https://workspace.google.com/solutions/ai/), [AWS](https://aws.amazon.com/blogs/aws/introducing-amazon-q-a-new-generative-ai-powered-assistant-preview/), and [Salesforce](https://www.salesforce.com/news/press-releases/2023/09/12/ai-einstein-news-dreamforce/) have released their own versions: Duet AI, Amazon Q, and Einstein, respectively. They're doing this because they see a huge value to be gained. This idea of a Copilot also [completely breaks](https://www.zenity.io/microsoft-copilot-studio-vulnerabilities-explained/)[key assumptions](https://www.darkreading.com/cybersecurity-analytics/generative-ai-empowers-users-but-challenges-security) about how an enterprise operates.
+By shifting the security conversation to the language of developers and meeting them where they are, security teams and developers now share a security mindset, which helps with both day-to-day operations and the large security strides forward that require developer buy-in.
 
-- Breaking permissions. To service my requests, my personal corporate AI needs to munch through all of the data I can access in order to index it so that it's available for query. Pretty soon we can expect it to train on the previous conversation I had with it. Now let's consider what happens when I move to a different role in the company or somebody removes my access. Can we remove that knowledge from the AI's neural network? That does not seem to be an existing capability of models today. Maybe tomorrow?
+While the success with developers is important, security still struggles with getting mindshare for a much larger portion of corporate employees, namely business users. Can we apply lessons learned from DevSecOps to bringing business users closer to security?
 
-- Breaking data boundaries. If a single AI can answer questions across all of my corporate data access, it is difficult to see how data boundaries could be maintained. Every control we put in front of data becomes meaningless, when the AI can read the data and write it infinite times from its "memory."
+## The Times They Are A-Changin'
 
-- Breaking activity monitoring. We're used to monitoring user activity to find snooping employees or distinguish between human and scripted behavior. When AI works by user impersonation and has to touch every piece of data to which I have access to build an index, does [anomalous access](https://www.darkreading.com/vulnerabilities-threats/are-ai-engineered-threats-fud-or-reality-) mean anything anymore?
+In recent years, business units have been experiencing a tectonic shift brought forth by low-code/no-code platforms. By gaining the skills required to facilitate business processes or create custom applications on their own, business units have drastically reduced their reliance on IT and continue to accelerate digital transformation. Leading analyst firms [predict](https://www.gartner.com/en/newsroom/press-releases/2021-11-10-gartner-says-cloud-will-be-the-centerpiece-of-new-digital-experiences) that most enterprise applications will be developed using low-code/no-code by 2025, and [surveys reveal](https://www.quark.com/about/blog/low-code-no-code-componentized-content-solutions-increase-enterprise-agility) that business users are already a large part of — and in some cases, the majority of — low-code/no-code builders.
 
+The trend of business users becoming builders can be both a challenge and an opportunity for security teams. If left outside of security's perceived scope of responsibility, it will lead to a significant growth in shadow IT. However, it also presents an unprecedented opportunity to cultivate a security mindset with business users. If DevSecOps made developers more security-aware, an equivalent for low-code/no-code could do the same for business users. As with developers, the fundamental change of bringing business users closer to the security mindset would mean drastically increasing security mindshare across the organization. Low-code/no-code presents a unique [security awareness opportunity](https://www.zenity.io/blog/citizen-developers-security-awareness/).
 
-These problems might have solutions right around the corner, or they might be insurmountable in AI's current form and require a fundamental rethink. But one thing is clear: The problems have not been solved, yet we're moving forward anyway. And that is bound to be interesting.
+When trying to capture the security awareness opportunity that low-code/no-code presents, we should apply the lessons we learned from DevSecOps by meeting business users where they are. The [low-code/no-code development process](https://www.zenity.io/blog/low-code-sdlc-build-fast-stay-secure/) significantly differs from pro-code DevOps. Many business users nowadays are building their applications and automating their processes with low-code/no-code. Security teams should familiarize themselves with those platforms and their development processes, and learn [how to talk about security](https://www.darkreading.com/cyber-risk/in-app-development-does-no-code-mean-no-security-) for such purpose-built applications in the native language of business development.
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/move-fast-and-break-the-enterprise-with-ai&title=Move%20Fast%20and%20Break%20the%20Enterprise%20With%20AI)[Email](mailto:?subject=Move%20Fast%20and%20Break%20the%20Enterprise%20With%20AI&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Move%20Fast%20and%20Break%20the%20Enterprise%20With%20AI%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fmove-fast-and-break-the-enterprise-with-ai)
+Low-code/no-code is so dominant with business users that it is already being used for business-critical applications within many organizations [even if their security teams don't know about it](https://www.darkreading.com/cyber-risk/you-can-t-opt-out-of-citizen-development). With analysts [predicting](https://www.gartner.com/en/newsroom/press-releases/2021-11-10-gartner-says-cloud-will-be-the-centerpiece-of-new-digital-experiences) that 70% of new enterprise applications will be built with low-code/no-code in three years, it is apparent that we have a unique window of opportunity to affect the way that these applications will get built. But even more importantly, this is an opportunity to influence the next generation of developers — namely business users — and the way they will think about security and their roles in it.
+
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers&title=Embracing%20the%20Next%20Generation%20of%20Business%20Developers)[Email](mailto:?subject=Embracing%20the%20Next%20Generation%20of%20Business%20Developers&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Embracing%20the%20Next%20Generation%20of%20Business%20Developers%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fembracing-the-next-generation-of-business-developers)
 
 ## About the Author
 
@@ -114,22 +116,6 @@ Events
 You May Also Like
 
 * * *
-
-[Cyber Risk\\
-\\
-How CISOs Can Effectively Communicate Cyber-Risk](https://www.darkreading.com/cyber-risk/how-cisos-can-effectively-communicate-cyber-risk)
-
-[Cyber Risk\\
-\\
-Ransomware Gangs Pummel Southeast Asia](https://www.darkreading.com/cyber-risk/ransomware-gangs-pummel-southeast-asia)
-
-[Cyber Risk\\
-\\
-India's Critical Infrastructure Suffers Spike in Cyberattacks](https://www.darkreading.com/cyber-risk/india-s-critical-infrastructure-suffers-spike-in-cyberattacks)
-
-[Cyber Risk\\
-\\
-NIST Hands Off Post-Quantum Cryptography Work to Cyber Teams](https://www.darkreading.com/cyber-risk/nist-post-quantum-cryptography-work-cyber-teams)
 
 ### Edge Picks
 

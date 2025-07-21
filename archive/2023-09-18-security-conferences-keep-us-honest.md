@@ -1,83 +1,80 @@
 ---
-date: '2025-07-21'
-description: The article highlights the critical role of secure configuration management
-  in cloud and SaaS environments, likening current practices to an unregulated cockpit.
-  Misconfiguration remains a key cause of security vulnerabilities, exacerbated by
-  fluid user interfaces and the decentralized nature of decision-making. The piece
-  advocates for standardized practices to consolidate disparate efforts in mitigating
-  these risks, suggesting that aligned industry standards could significantly reduce
-  misconfiguration incidents. Continuous change in service functionalities adds complexity,
-  necessitating robust security governance frameworks to handle evolving threats and
-  configurations effectively.
-link: https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit
+date: 2023-09-18
+description: Michael Bargury highlights the duality of cybersecurity research and
+  responsible disclosure at security conferences, using his Black Hat USA presentation
+  as a case study. He divulged vulnerabilities in Microsoft’s Azure environment, emphasizing
+  that the shared responsibility model leaves customers needing to secure their own
+  systems. Bargury notes a shift from zero-day revelations to fostering vendor accountability
+  and transparency. He argues that public discourse can compel organizations to prioritize
+  security over public relations. This evolution in vulnerability reporting underscores
+  an ongoing need for collaboration between researchers and vendors to enhance overall
+  cybersecurity resilience.
+link: https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest
 tags:
-- configuration-management
-- cloud-security
-- misconfiguration
-- SaaS-security
-- cybersecurity-strategy
-title: Seizing Control of the Cloud Security Cockpit
+- Vulnerability Disclosure
+- Information Security
+- Cybersecurity
+- Security Conferences
+- Risk Management
+title: Security Conferences Keep Us Honest
 ---
 
-- [Сloud Security](https://www.darkreading.com/cloud-security)
+- [Cyber Risk](https://www.darkreading.com/cyber-risk)
+- [Commentary](https://www.darkreading.com/latest-commentary)
 
 [![The Edge Logo](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt530eb1f4e672eb44/653a71690e92cc040a3e9d6d/Dark_Reading_Logo_TheEdge_0.png?width=700&auto=webp&quality=80&disable=upscale)\\
 \\
 Cybersecurity In-Depth: Feature articles on security strategy, latest trends, and people to know.](https://www.darkreading.com/program/the-edge)
 
-# Seizing Control of the Cloud Security Cockpit
+# Security Conferences Keep Us Honest
 
-Much like an airplane's dashboard, configurations are the way we control cloud applications and SaaS tools. It's also the entry point for too many security threats. Here are some ideas for making the configuration process more secure.
+Conferences are where vendors and security researchers meet face to face to address problems and discuss solutions — despite the risks associated with public disclosure.
 
 [![Picture of Michael Bargury](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbd8a249d11a28466/64f150aad5f7ca2f7665bf81/Michael_Bargury_zenity.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/michael-bargury)
 
 [Michael Bargury](https://www.darkreading.com/author/michael-bargury), CTO & Co-Founder, Zenity
 
-May 23, 2024
+September 18, 2023
 
-3 Min Read
+4 Min Read
 
-![Airbus A380 cockpit, full of dials and controls and computers and joysticks](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt4ef53068f6e61e95/664e5067e0559141b7072b54/cockpit-JLBvdWOLF-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
+![Photo of an audience member taking a photo of a conference presentation with their cell phone](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbfe19b843f56c5ca/654e398658cf9d040abf76a2/audience-PG_Arphexad-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Source: JLBvdWOLF via Alamy Stock Photo
+Source: PG Arphexad via Alamy Stock Photo
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit&title=Seizing%20Control%20of%20the%20Cloud%20Security%20Cockpit)[Email](mailto:?subject=Seizing%20Control%20of%20the%20Cloud%20Security%20Cockpit&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Seizing%20Control%20of%20the%20Cloud%20Security%20Cockpit%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcloud-security%2Fseizing-control-cloud-security-configuration-cockpit)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest&title=Security%20Conferences%20Keep%20Us%20Honest)[Email](mailto:?subject=Security%20Conferences%20Keep%20Us%20Honest&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Security%20Conferences%20Keep%20Us%20Honest%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fsecurity-conferences-keep-us-honest)
 
-The image of a cockpit always struck me as overwhelming. So many knobs and whistles of different shapes and sizes. Do pilots really need all those options at arm's length? On every flight? And how do they verify that they're all in the right position before takeoff?
+In August on a stage at [Black Hat USA](https://www.blackhat.com/us-23/briefings/schedule/index.html#all-you-need-is-guest-32647), I described in detail how [Microsoft guest accounts could gain access to view and manipulate sensitive corporate data](https://www.darkreading.com/application-security/azure-ad-guests-steal-data-microsoft-power-apps), including SQL servers and Azure resources. On top of that, I showed how Power Platform could be leveraged by a hacker to [create internal phishing applications](https://www.blackhat.com/us-23/arsenal/schedule/index.html#powerguest-aad-guest-exploitation-beyond-enumeration-33687) that automatically authenticate their victims and create a backdoor that persists even if the hacked user is deleted. These are still open issues today, as mitigation falls in the customer's side of the shared responsibility model — meaning every Microsoft customer would have to monitor and harden their own environments to mitigate these security holes.
 
-Today's enterprises have tens of millions of these — or, rather, their digital equivalent: configuration. The cloud and software as a service (SaaS) are now ubiquitous, and they brought with them countless choices to make. Unlike aircraft, we do not have standards and procedures to ensure each and every toggle is switched to the right position. It is no wonder that misconfiguration continues to be the most dominant reason for [cloud security issues](https://www.darkreading.com/cyber-risk/10-essential-processes-for-reducing-top-11-cloud-risks).
+Preparing for the talk, I thought long and hard about what information to share, well aware of the double-edged sword that security research can be. How can I share enough to raise awareness and drive people to action while not making the problem worse by putting it on hackers' radar? After considering that we've already observed all of these issues being exploited in the wild, I decided to share the information; it was important that we leveled the playing field and gave security teams the knowledge and tools they need to keep their organizations secure.
 
-## Opaque Configurations
+This security researcher's dilemma is not new, and I'm definitely not the first or only one to have to deal with it. I could point to [a few](https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/nyxgeek%20-%20Track%20the%20Planet%20Mapping%20Identities%20Monitoring%20Presence%20and%20Decoding%20Business%20Alliances%20in%20the%20Azure%20Ecosystem.pdf)[other](https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/byt3bl33d3r%20-%20SpamChannel%20Spoofing%20Emails%20From%202%20Million%2B%20Domains%20and%20Virtually%20Becoming%20Satan.pdf)[researchers](https://www.tenable.com/security/research/tra-2023-25) who were in a similar position, where they could either remain silent or educate everyone about an [unsolved security issue](https://www.darkreading.com/cyber-risk/a-fintech-horror-story-how-one-company-prioritizes-cybersecurity).
 
-Commercial aircraft have thorough manuals that detail the function and implications of each and every toggle in that cockpit. For cloud and SaaS, you'll typically find a one-line explanation hidden on an obscure documentation page. If you're lucky, that short snippet is meaningful and still up to date. In most cases, however, you aren't that lucky — the docs were written three years ago and the service is now widely different. Entire companies are built on the premise of having a team of experts to figure out what these toggles do. They reverse-engineer, poke around, and brute-force their way to capture the meaning of each configuration.
+## The Bad Ol' Days
 
-In the SaaS and platform-as-a-service (PaaS) worlds, things become even worse. You never really have a full understanding of how things are built under the hood, so building an intuition about which knob does what becomes a guessing game.
+Gone are the days when security researchers used to drop zero-day vulnerabilities on the Black Hat or DEF CON stages. That is, of course, a very good thing — although we did lose something as a security community (but more on that later). In conjunction, most vendors realize that security researchers are acting to keep them honest and improve the security state of the entire community. [As cybersecurity executive Kymberlee Price put it](https://securityconversations.com/episode/kymberlee-price-reflects-on-life-at-the-msrc-hacker-vendor-engagement-bug-bounties/) in a recent interview with Ryan Naraine, just because security researchers are publishing vulnerabilities, it doesn't make them the enemy; if they were the bad guys, they would be using the vulnerability — they wouldn't tell you about them at all.
 
-## Distributed Choice
+Admittedly, we do still get zero-day drops now and again, with the pain of recent example Log4Shell being a fresh memory. But it feels like the average researcher, especially one who works for a respectable security vendor or consultancy, goes the vulnerability disclosure route first.
 
-A cockpit is managed by the captain and first officer, two highly trained professionals with well-defined responsibilities. They are sometimes backed up by the flight engineer, a well-oiled human machine who triple-checks that everything is in order. For cloud and SaaS, it's the Wild West. People across the enterprise make configuration choices every day — or, worse, fail to make them and leave an insecure default on.
+It is important to remember why people are sharing this information publicly. It is because they don't feel like they can get the vendor to fix the problem within a reasonable time frame. In the bad ol' days, security researchers essentially lit fires that forced vendors to fix things right away.
 
-It's not just your cloud developers and SaaS admins, even though they have received most of the attention. Business users are making those choices, too. [They leverage low-code/no-code](https://www.darkreading.com/cyber-risk/embracing-the-next-generation-of-business-developers) to build and customize their business processes, making configuration choices by the dozens as they go.
+## Where We Are Today
 
-Security teams have this problem, too. Can you really say your security stack is 100% optimized and correctly configured? How many incidents could have been prevented by a technology deployed in audit mode rather than enforcement mode?
+We're mostly in a whole different ballpark today. Most security researchers I know engage with the vendor, wait around for a reply, and then wait some more before they go out and expose things publicly.
 
-## Constant Change
+It is important to notice the balance of power here. As a researcher, you typically find yourself facing a giant enterprise with endless resources, a strong media presence, and a whole bunch of lawyers. In many cases, you can get the feeling that those endless resources are used to avoid a PR crisis and nullify the issue rather than face it and actually make customers more secure. While [some organizations do help researchers](https://www.eff.org/) through those challenges, it always feels like David vs. Goliath.
 
-Imagine what would happen if the cockpit changed its toggles — their functionality, their implications, or just their appearance — every quarter. Now imagine it changes multiple times a day.
+The main issue with responsible disclosure, coordinated disclosure, and the popular vulnerability disclosure platforms today is that they put all of the decision at the sole discretion of the organization whose vulnerability is being reported, without any transparency. Sure, we have the CVE system. But issuing those is mostly at the vendor's discretion. For the cloud services we all rely on today, the situation is even worse, with many vendors refusing to issue a CVE and having no transparency for security issues discovered and fixed on their services.
 
-[Continuous delivery](https://www.darkreading.com/cyber-risk/where-there-s-no-code-there-s-no-sdlc) is the holy grail of enterprise cloud and SaaS companies hoping to move fast. We have given permission to vendors to change their offerings under the hood as much and as fast as they can. This is a good thing, mostly, because this is how excellent software gets built. However, applying that same principle to the user interface means configuration can change at an alarming rate. The meaning of an existing configuration could change as well, making it much more difficult to understand what's going on.
+## Keeping Ourselves Honest
 
-Even if configuration options are the same, the enterprise environment is ever-evolving. SaaS and cloud resources are connected in different ways. They hold different data subject to different sets of regulations. Risk decisions adapt as the threat landscape changes.
+We've long known that discussing problems out in the open is the best way to push ourselves to do the right thing. We seem to rediscover this fact again and again in different contexts, be it developing open source software, challenging security by obscurity, or launching initiatives for open government. In today's state of vulnerability disclosure, many feel the pendulum has swung too much to one side, pushing vendors to make choices that minimize short-term visibility concerns at the cost of long-term customer trust and the security of the ecosystem.
 
-## It's Time for Standards
+Vendor security teams that receive vulnerability reports are doing incredible jobs trying to get their organizations to fix the issues and build strong relationships with researchers. But they too need help. Creating urgency to fix an issue is difficult when the organization feels they control the situation, even while their customers might be at risk.
 
-Public pressure in recent years has forced big vendors to change their insecure default, which helps put us all in a better position. S3 buckets are now [shut off from the Internet](https://aws.amazon.com/blogs/aws/heads-up-amazon-s3-security-changes-are-coming-in-april-of-2023/) by default. [So are Copilot bots](https://www.zenity.io/blog/security/microsoft-copilot-studio-vulnerabilities-explained/) built with Microsoft's Copilot Studio.
+Security conferences are where security researchers can help vendors make the right choices. They provide a tiny stick a security researcher can poke the vendor with, in hopes of spurring them into action. Information is put out there for the entire community to see and decide whether they accept the current state of things. In public.
 
-Some cloud and SaaS platforms have started publishing recommended configurations for a secure deployment. CISA and other organizations have [put out excellent recommendations](https://www.cisa.gov/resources-tools/services/secure-cloud-business-applications-scuba-project) to follow.
-
-These are, however, all dispersed efforts. Working together through industry standards might be what is needed to finally make a real impact in reducing the ever-growing risk of misconfiguration.
-
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cloud-security/seizing-control-cloud-security-configuration-cockpit&title=Seizing%20Control%20of%20the%20Cloud%20Security%20Cockpit)[Email](mailto:?subject=Seizing%20Control%20of%20the%20Cloud%20Security%20Cockpit&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Seizing%20Control%20of%20the%20Cloud%20Security%20Cockpit%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcloud-security%2Fseizing-control-cloud-security-configuration-cockpit)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/security-conferences-keep-us-honest&title=Security%20Conferences%20Keep%20Us%20Honest)[Email](mailto:?subject=Security%20Conferences%20Keep%20Us%20Honest&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Security%20Conferences%20Keep%20Us%20Honest%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fsecurity-conferences-keep-us-honest)
 
 ## About the Author
 
@@ -118,6 +115,22 @@ Events
 You May Also Like
 
 * * *
+
+[Cyber Risk\\
+\\
+How CISOs Can Effectively Communicate Cyber-Risk](https://www.darkreading.com/cyber-risk/how-cisos-can-effectively-communicate-cyber-risk)
+
+[Cyber Risk\\
+\\
+Ransomware Gangs Pummel Southeast Asia](https://www.darkreading.com/cyber-risk/ransomware-gangs-pummel-southeast-asia)
+
+[Cyber Risk\\
+\\
+India's Critical Infrastructure Suffers Spike in Cyberattacks](https://www.darkreading.com/cyber-risk/india-s-critical-infrastructure-suffers-spike-in-cyberattacks)
+
+[Cyber Risk\\
+\\
+NIST Hands Off Post-Quantum Cryptography Work to Cyber Teams](https://www.darkreading.com/cyber-risk/nist-post-quantum-cryptography-work-cyber-teams)
 
 ### Edge Picks
 

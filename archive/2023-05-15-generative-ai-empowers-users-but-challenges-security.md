@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2023-05-15
 description: Generative AI is rapidly transforming business application development,
   especially through low-code/no-code platforms, allowing non-technical users to create
   applications autonomously. This democratization enhances productivity but escalates

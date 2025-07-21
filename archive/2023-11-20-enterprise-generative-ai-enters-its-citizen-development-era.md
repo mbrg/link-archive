@@ -1,77 +1,73 @@
 ---
-date: '2025-07-21'
-description: In "To Map Shadow IT, Follow Citizen Developers," Michael Bargury discusses
-  the pervasive issue of shadow IT, where employees use unauthorized tools to meet
-  business needs. He emphasizes the dual role of citizen development—allowing users
-  to create apps with low-code/no-code platforms while exposing potential security
-  risks. By tracing user-built applications and their integrations with existing systems,
-  organizations can better understand their shadow IT landscape. This approach fosters
-  a proactive stance in governance, balancing efficiency with security, albeit requiring
-  careful risk management to mitigate vulnerabilities.
-link: https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers
+date: 2023-11-20
+description: The emergence of enterprise-level generative AI tools, such as OpenAI's
+  custom GPTs and Microsoft's Copilot Studio, enables business users to easily create
+  AI applications using organizational data. These tools facilitate user impersonation,
+  complicating security oversight, as AI actions become indistinguishable from legitimate
+  user activities. Security teams must shift focus from traditional monitoring to
+  integrating strategies that account for citizen-developed applications, particularly
+  as low-code/no-code platforms proliferate. Adopting industry standards for assessing
+  risks associated with these applications will be crucial for maintaining security
+  in an evolving landscape dominated by agile AI development.
+link: https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era
 tags:
-- SaaS Security
-- Low-Code Development
+- Generative AI
+- No-Code Development
 - Cybersecurity
-- Shadow IT
 - Citizen Development
-title: To Map Shadow IT, Follow Citizen Developers
+- Enterprise Security
+title: Enterprise Generative AI Enters Its Citizen Development Era
 ---
 
 - [Cyber Risk](https://www.darkreading.com/cyber-risk)
-- [Insider Threats](https://www.darkreading.com/vulnerabilities-threats/insider-threats)
 
 [![The Edge Logo](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt530eb1f4e672eb44/653a71690e92cc040a3e9d6d/Dark_Reading_Logo_TheEdge_0.png?width=700&auto=webp&quality=80&disable=upscale)\\
 \\
 Cybersecurity In-Depth: Feature articles on security strategy, latest trends, and people to know.](https://www.darkreading.com/program/the-edge)
 
-# To Map Shadow IT, Follow Citizen Developers
+# Enterprise Generative AI Enters Its Citizen Development Era
 
-The tangle of user-built tools is formidable to manage, but it can lead to a greater understanding of real-world business needs.
+Business users are building Copilots and GPTs with enterprise data. What can security teams do about it?
 
 [![Picture of Michael Bargury](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbd8a249d11a28466/64f150aad5f7ca2f7665bf81/Michael_Bargury_zenity.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/michael-bargury)
 
 [Michael Bargury](https://www.darkreading.com/author/michael-bargury), CTO & Co-Founder, Zenity
 
-November 18, 2024
+November 19, 2023
 
 4 Min Read
 
-![Shadow of hot-air balloon over the Namib desert. Namib-Naukluft Park, Namibia](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt5de5c92bd6a90dcd/673682a6897306f6b9292ba6/balloonshadow-Martin_Harvey-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
+![Robot version of a human hand hangs in a display case in Dortmund art exhibition; photo by Bernd Thissen](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt5fefa7b26ae3cb5b/655f4a4b71d6b8040a39617b/robothand-dpa_picture_alliance-alamy.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale)
 
-Source: Martin Harvey via Alamy Stock Photo
+Source: dpa picture alliance via Alamy Stock Photo
 
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers&title=To%20Map%20Shadow%20IT%2C%20Follow%20Citizen%20Developers)[Email](mailto:?subject=To%20Map%20Shadow%20IT,%20Follow%20Citizen%20Developers&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20To%20Map%20Shadow%20IT%2C%20Follow%20Citizen%20Developers%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fto-map-shadow-it-follow-citizen-developers)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era&title=Enterprise%20Generative%20AI%20Enters%20Its%20Citizen%20Development%20Era)[Email](mailto:?subject=Enterprise%20Generative%20AI%20Enters%20Its%20Citizen%20Development%20Era&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Enterprise%20Generative%20AI%20Enters%20Its%20Citizen%20Development%20Era%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fenterprise-generative-ai-enters-its-citizen-development-era)
 
-COMMENTARY
+There are times where we get a clear before-and-after moment that demands a reevaluation of our most basic assumptions. This month, [OpenAI announced custom GPTs](https://openai.com/blog/introducing-gpts), a no-code tool for people to create their own Generative Pre-trained Transformer (GPT) models based on their own data and using their own plug-ins. What used to be a tight mandate for a team inside a large R&D group or a chatbot startup can now be accomplished by my grandfather in five minutes while using a couple of wiki links as a knowledge base. Security leaders need to recognize that artificial intelligence (AI) tools are not something that is coming in the nebulous future; they are here.
 
-Shadow IT is what your business runs on while waiting for IT to provide an enterprise solution. It's your sales team buying licenses to an obscure software-as-a-service (SaaS) because it helps them get the job done. Or it's your finance team using an unapproved tool because the approved one is too clunky. Sometimes shadow IT exists specifically to bypass an overly annoying security mechanism — figuring out a way to forward business emails to your personal Gmail account because it's easier to view on mobile, for example.
+More importantly, these GPTs can act on the user's behalf. [OpenAI's tight integration with Zapier](https://zapier.com/blog/gpt-assistant/) means thousands of connectors are at your disposal, letting the AI query your CRM, update your ERP, or monitor your servers with a few clicks. How does the AI authenticate to all these services, you might ask? Great question, but more on that later.
 
-You might hope shadow IT is a problem only for large enterprises, too big to centrally manage. My experience running a small startup suggests otherwise. We agonized over our choice of a productivity tools suite — considering pros and cons and balancing user experience with governability. And people are happy to use our tool of choice; they just also use other tools in parallel. We run on Google Workspace, but many of our employees use Office because they're used to it. We use Google Drive for file sharing, but we quickly learned some people prefer iCloud.
+Another thought you might have is, well, this is amazing and all, but we will never allow this to happen in our highly regulated security-focused enterprise. You might have even blocked ChatGPT on the network level long ago and are now constantly monitoring for more bots to add to that deny list — which is annoying, but you can manage.
 
-People's personal preferences play a significant role here. They want to get their jobs done, not worry about learning a new tool. Platforms make this tendency even worse. Many try to get you to use and rely on them for a long time before asking for added licensing. Consider local file saves on Windows or Mac. By default, every local file save actually gets saved in a directory backed up into Microsoft's or Apple's cloud.
+Enter Microsoft. Last week at its Ignite conference, [Microsoft announced Copilot Studio](https://www.microsoft.com/en-us/microsoft-365/blog/2023/11/15/introducing-microsoft-copilot-studio-and-new-features-in-copilot-for-microsoft-365/), its own no-code GPT creator. It has everything the OpenAI tool has, from uploading files to use as a knowledge base to a chat interface for configuration and click-to-add integrations called plug-ins. Copilot Studio allows users to integrate their Copilots with Microsoft 365, Azure SaaS, and hundreds of other enterprise systems. This integration is done via user impersonation, meaning the Copilot acts on behalf of users.
 
-A large enterprise might have more mature security controls to prevent use of unauthorized software, but it also has much more variety in the software people would like to use. The sheer size of an enterprise and the independence of different business units exacerbate the software spread even further. The standard industry security practice for controlling software usage combines bringing in security on every license purchase and restricting software and SaaS usage on the endpoint. While those tactics are useful, they are limited in scope. Paying out of pocket, which some users will do to get the software they want, bypasses enterprise procurement.
+Here's the thing about these Microsoft-generated user impersonation bots: You can't block them. You have no way to distinguish between an AI-generated operation and a user-triggered operation because they look exactly alike in the logs. Copilots are hosted as applications inside your M365 environment, so forget about network-level blocks. Users log into these Copilots with their corporate credentials. The bottom line is that while GPTs live in the consumer world, Copilots live in the enterprise world.
 
-## Approved Apps Lead to Building Unapproved Apps
+## How Did This Happen So Quickly?
 
-Expanding the use of existing platforms into new and unapproved feature sets is even more pervasive. Did you purchase Office 365 for productivity or Salesforce for your sales reps? Congrats. You've now empowered your business users to build their own apps [with the no-code/low-code platform bundled in](https://www.darkreading.com/cyber-risk/you-can-t-opt-out-of-citizen-development). Unapproved uses of enterprise platforms also bypass SaaS usage controls. Enterprises can't block access to Microsoft or Salesforce, but through them users can send corporate data to unapproved systems.
+Well, it didn't. Microsoft and other major vendors — such as Salesforce, UiPath, and ServiceNow — have been building low-code/no-code platforms that [lowered the bar to building enterprise applications](https://www.darkreading.com/cyber-risk/you-can-t-opt-out-of-citizen-development) for years now. These companies have been building out hundreds of integrations, visual builders, automated production deployments, and [credential-sharing-as-a-service](https://www.darkreading.com/cyber-risk/credential-sharing-as-a-service-hidden-risk-of-low-code-no-code).
 
-With each new discovery of an unapproved system, the security team can either try to block it or bring it under their umbrella. Either way, it's an endless game of whack-a-mole. Some tools can help with this discovery, but they often lack context about how these systems are used and which are actually important to business functions.
+Chatbots are the killer app for low-code/no-code platforms. Who needs to code when you can leverage a platform that out of the box gives you everything you need to create, share, monitor, upgrade, and embed your bot within minutes inside the enterprise, directly on top of business data?
 
-What if we could ask every business user what systems they use in their day-to-day, regardless of corporate policies? And ask which of those are truly vital for the business? That could give us the ultimate list: a full mapping of shadow IT, coupled with its business importance. Unfortunately, that doesn't work — simply asking people likely won't result in a full list, and what end users find vital may be different from what management does.
+A crucial point here is just how easy it now is to build no-code apps. In recent years, professional developers and business users alike have used platforms, like the Power Platform, to build millions of new business applications, including some that handle sensitive data and facilitate business-critical processes. While some companies have started to [centralize the GenAI apps](https://www.darkreading.com/application-security/security-must-empower-ai-developers-now) being created by the engineering teams, this won't be enough. Security teams have to look at what business users are building as well. In fact, the sheer number of business users, combined with the ease of creating bots, suggests that security teams should, in fact, focus more on what business users are building.
 
-## User-Built Tools Expose Shadow IT Network
+## Where Do We Even Begin?
 
-Enter [citizen development](https://www.darkreading.com/application-security/building-application-security-into-shadow-it), in which business users leverage low-code/no-code tools to streamline their processes, analyze their data, and build custom business applications for their use cases. To be relevant, these apps must connect to the data and processes that the business uses in practice. A citizen developer is not going to call IT to integrate their app with the approved corporate service; instead, they'll connect directly to what we call shadow IT.
+Luckily, a growing number of organizations have already integrated citizen development (business users building apps) into their application security programs, and some of their insights have been [publicly](https://www.youtube.com/watch?v=nHDUVzrpZEk&t=23971s)[shared](https://www.zenity.io/securing-my-lcnc-where-to-start/). [Industry standards](https://owasp.org/www-project-top-10-low-code-no-code-security-risks/) that categorize, explain, and suggest remediation for security risks of low-code/no-code apps have emerged.
 
-Here's an example. Consider a sales team using an unapproved tool for lead tracking. To sync it with the approved CRM, they use no-code automation. By finding automations that connect to the CRM and following the data flow, we can easily find the unapproved tool and what type of data it holds.
+Not using code doesn't mean no vulnerabilities, especially logical ones. However, it typically does mean the [lack of a software development life cycle (SDLC)](https://www.darkreading.com/cyber-risk/where-there-s-no-code-there-s-no-sdlc), [visibility](https://www.zenity.io/unlocking-supply-chain-transparency-for-low-code-no-code-apps-with-sbom/), and controls. Whether our users are creating a GPT or a Copilot, they are doing so today and in large quantities. For security leaders, it's either get on board now and bring these new developers under the security umbrella — or miss the train and hope for the best.
 
-Embracing citizen development can leave security teams at a much better spot — having visibility into what software the business actually runs on — if used right.
-
-That "if" is very important. Citizen development [introduces its fair share of security risks](https://www.darkreading.com/cyber-risk/3-ways-no-code-developers-can-shoot-themselves-in-the-foot), which must be mitigated to avoid adverse effects. But by embracing citizen development, we're letting business users codify what used to be a copy-paste data integration. Following these processes will lead us directly to the most important elements of shadow IT.
-
-[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/to-map-shadow-it-follow-citizen-developers&title=To%20Map%20Shadow%20IT%2C%20Follow%20Citizen%20Developers)[Email](mailto:?subject=To%20Map%20Shadow%20IT,%20Follow%20Citizen%20Developers&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20To%20Map%20Shadow%20IT%2C%20Follow%20Citizen%20Developers%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fto-map-shadow-it-follow-citizen-developers)
+[Linkedin](https://www.linkedin.com/sharing/share-offsite/?url=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era)[Facebook](http://www.facebook.com/sharer/sharer.php?u=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era)[Twitter](http://www.twitter.com/intent/tweet?url=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era)[Reddit](https://www.reddit.com/submit?url=https://www.darkreading.com/cyber-risk/enterprise-generative-ai-enters-its-citizen-development-era&title=Enterprise%20Generative%20AI%20Enters%20Its%20Citizen%20Development%20Era)[Email](mailto:?subject=Enterprise%20Generative%20AI%20Enters%20Its%20Citizen%20Development%20Era&body=I%20thought%20the%20following%20from%20Dark%20Reading%20might%20interest%20you.%0D%0A%0D%0A%20Enterprise%20Generative%20AI%20Enters%20Its%20Citizen%20Development%20Era%0D%0Ahttps%3A%2F%2Fwww.darkreading.com%2Fcyber-risk%2Fenterprise-generative-ai-enters-its-citizen-development-era)
 
 ## About the Author
 
@@ -112,22 +108,6 @@ Events
 You May Also Like
 
 * * *
-
-[Cyber Risk\\
-\\
-How CISOs Can Effectively Communicate Cyber-Risk](https://www.darkreading.com/cyber-risk/how-cisos-can-effectively-communicate-cyber-risk)
-
-[Cyber Risk\\
-\\
-Ransomware Gangs Pummel Southeast Asia](https://www.darkreading.com/cyber-risk/ransomware-gangs-pummel-southeast-asia)
-
-[Cyber Risk\\
-\\
-India's Critical Infrastructure Suffers Spike in Cyberattacks](https://www.darkreading.com/cyber-risk/india-s-critical-infrastructure-suffers-spike-in-cyberattacks)
-
-[Cyber Risk\\
-\\
-NIST Hands Off Post-Quantum Cryptography Work to Cyber Teams](https://www.darkreading.com/cyber-risk/nist-post-quantum-cryptography-work-cyber-teams)
 
 ### Edge Picks
 

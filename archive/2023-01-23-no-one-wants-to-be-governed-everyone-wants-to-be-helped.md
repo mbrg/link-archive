@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2023-01-23
 description: Michael Bargury emphasizes the necessity for security teams to adapt
   as low-code/no-code (LCNC) development rises, expecting a 20% market growth in 2023.
   As business units increasingly create critical applications independently, conflicts
