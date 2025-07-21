@@ -35,25 +35,31 @@ def extract_url_from_weblog_file(file_path):
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
         
-        # Extract the archive file reference
-        archive_match = re.search(r'<!--\s*archive:\s*(.+?)\s*-->', content)
-        if archive_match:
-            archive_file = archive_match.group(1)
-            archive_path = Path('archive') / archive_file
-            
-            if archive_path.exists():
-                # Read archive file to get URL
-                with open(archive_path, 'r', encoding='utf-8') as f:
-                    archive_content = f.read()
+        # Extract frontmatter from weblog file
+        if content.startswith('---'):
+            parts = content.split('---', 2)
+            if len(parts) >= 3:
+                frontmatter = parts[1]
                 
-                # Extract URL from archive frontmatter
-                if archive_content.startswith('---'):
-                    parts = archive_content.split('---', 2)
-                    if len(parts) >= 3:
-                        frontmatter = parts[1]
-                        link_match = re.search(r'^link:\s*(.+)$', frontmatter, re.MULTILINE)
-                        if link_match:
-                            return link_match.group(1).strip()
+                # Extract the archive link reference
+                link_match = re.search(r'^link:\s*/archive/(.+)$', frontmatter, re.MULTILINE)
+                if link_match:
+                    archive_filename = link_match.group(1)
+                    archive_path = Path('archive') / f"{archive_filename}.md"
+                    
+                    if archive_path.exists():
+                        # Read archive file to get URL
+                        with open(archive_path, 'r', encoding='utf-8') as f:
+                            archive_content = f.read()
+                        
+                        # Extract URL from archive frontmatter
+                        if archive_content.startswith('---'):
+                            archive_parts = archive_content.split('---', 2)
+                            if len(archive_parts) >= 3:
+                                archive_frontmatter = archive_parts[1]
+                                url_match = re.search(r'^link:\s*(.+)$', archive_frontmatter, re.MULTILINE)
+                                if url_match:
+                                    return url_match.group(1).strip()
     except Exception as e:
         print(f"Error reading {file_path}: {e}")
     
