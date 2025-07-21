@@ -1,5 +1,5 @@
 ---
-title: "Surviving on a Diet of Poisoned Fruit: Reducing the National Security Risks of America’s Cyber Dependencies | CNAS"
+title: "Surviving on a Diet of Poisoned Fruit: Reducing the National Security Risks of America’s Cyber Dependencies ◆ CNAS"
 tags:
    - policy recommendations
    - information technology

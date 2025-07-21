@@ -1,5 +1,5 @@
 ---
-title: "Disrupting malicious uses of AI: June 2025 | OpenAI"
+title: "Disrupting malicious uses of AI: June 2025 ◆ OpenAI"
 tags:
    - Malicious AI Uses
    - AI Safety

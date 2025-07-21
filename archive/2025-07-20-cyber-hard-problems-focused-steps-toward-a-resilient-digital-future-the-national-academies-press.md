@@ -1,5 +1,5 @@
 ---
-title: "Cyber Hard Problems: Focused Steps Toward a Resilient Digital Future | The National Academies Press"
+title: "Cyber Hard Problems: Focused Steps Toward a Resilient Digital Future ◆ The National Academies Press"
 tags:
    - cybersecurity
    - digital resiliency

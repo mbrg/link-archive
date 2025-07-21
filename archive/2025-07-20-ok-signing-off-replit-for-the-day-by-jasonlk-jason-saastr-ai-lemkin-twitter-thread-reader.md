@@ -1,5 +1,5 @@
 ---
-title: "Ok signing off Replit for the day by @jasonlk(Jason ✨👾SaaStr.Ai✨ Lemkin) | Twitter Thread Reader"
+title: "Ok signing off Replit for the day by @jasonlk(Jason ✨👾SaaStr.Ai✨ Lemkin) ◆ Twitter Thread Reader"
 tags:
    - Replit
    - Claude AI

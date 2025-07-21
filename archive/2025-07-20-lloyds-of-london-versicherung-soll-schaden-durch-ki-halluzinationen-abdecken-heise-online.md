@@ -1,6 +1,6 @@
 ---
 title: "
-    Lloyd’s of London: Versicherung soll Schäden durch KI-Halluzinationen abdecken | heise online
+    Lloyd’s of London: Versicherung soll Schäden durch KI-Halluzinationen abdecken ◆ heise online
 "
 tags:
    - Lloyd's of London

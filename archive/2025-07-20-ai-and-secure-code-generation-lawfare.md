@@ -1,6 +1,6 @@
 ---
 title: "
-	AI and Secure Code Generation | Lawfare
+	AI and Secure Code Generation ◆ Lawfare
 "
 tags:
    - Code Analysis

@@ -1,5 +1,5 @@
 ---
-title: "Life Prediction - AI Prompt by mattshumer | ShumerPrompt | AI Prompt Marketplace"
+title: "Life Prediction - AI Prompt by mattshumer ◆ ShumerPrompt ◆ AI Prompt Marketplace"
 tags:
    - future planning
    - AI

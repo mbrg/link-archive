@@ -1,7 +1,7 @@
 ---
 title: "
       Asynchrony is not Concurrency
-      | Loris Cro's Blog
+      ◆ Loris Cro's Blog
     "
 tags:
    - parallelism

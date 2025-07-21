@@ -1,5 +1,5 @@
 ---
-title: "How China’s Patriotic ‘Honkers’ Became the Nation’s Elite Cyberspies | WIRED"
+title: "How China’s Patriotic ‘Honkers’ Became the Nation’s Elite Cyberspies ◆ WIRED"
 tags:
    - Hacking
    - Cybersecurity

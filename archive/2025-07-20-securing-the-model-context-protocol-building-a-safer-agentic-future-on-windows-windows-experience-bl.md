@@ -1,5 +1,5 @@
 ---
-title: "Securing the Model Context Protocol: Building a safer agentic future on Windows | Windows Experience Blog"
+title: "Securing the Model Context Protocol: Building a safer agentic future on Windows ◆ Windows Experience Blog"
 tags:
    - Model Context Protocol
    - Cybersecurity

@@ -1,5 +1,5 @@
 ---
-title: "Security on the path to AGI | OpenAI"
+title: "Security on the path to AGI ◆ OpenAI"
 tags:
    - Bug Bounty Program
    - AI Security

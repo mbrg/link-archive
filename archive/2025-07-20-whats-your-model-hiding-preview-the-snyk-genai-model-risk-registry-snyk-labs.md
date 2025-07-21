@@ -1,5 +1,5 @@
 ---
-title: "What’s Your Model Hiding? Preview the Snyk GenAI Model Risk Registry | Snyk Labs"
+title: "What’s Your Model Hiding? Preview the Snyk GenAI Model Risk Registry ◆ Snyk Labs"
 tags:
    - Open-source LLMs
    - OWASP Top 10

@@ -1,5 +1,5 @@
 ---
-title: "Agent Red-Teaming Details | Gray Swan Arena | Gray Swan AI"
+title: "Agent Red-Teaming Details ◆ Gray Swan Arena ◆ Gray Swan AI"
 tags:
    - AI Ethics
    - Cybersecurity

@@ -1,5 +1,5 @@
 ---
-title: "Detecting misbehavior in frontier reasoning models | OpenAI"
+title: "Detecting misbehavior in frontier reasoning models ◆ OpenAI"
 tags:
    - Reward Hacking
    - AI Safety

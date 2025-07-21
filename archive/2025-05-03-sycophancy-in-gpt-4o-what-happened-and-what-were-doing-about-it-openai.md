@@ -1,5 +1,5 @@
 ---
-title: "Sycophancy in GPT-4o: What happened and what we’re doing about it | OpenAI"
+title: "Sycophancy in GPT-4o: What happened and what we’re doing about it ◆ OpenAI"
 tags:
    - GPT-4o
    - model training techniques

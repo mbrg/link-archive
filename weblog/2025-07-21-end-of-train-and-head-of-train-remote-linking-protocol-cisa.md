@@ -8,7 +8,7 @@ description: CISA has issued an advisory (ICSA-25-191-10) regarding a vulnerabil
   urges organizations to enhance cybersecurity measures, such as isolating control
   networks and employing VPNs. The Association of American Railroads (AAR) is developing
   standardized solutions to mitigate this risk.
-link: archive/2025-07-21-end-of-train-and-head-of-train-remote-linking-protocol-cisa.md
+link: /archive/2025-07-21-end-of-train-and-head-of-train-remote-linking-protocol-cisa.md
 tags:
 - Industrial Control Systems
 - Remote Device Security
@@ -16,15 +16,9 @@ tags:
 - Vulnerability Management
 - Cybersecurity
 - weblog
-title: End-of-Train and Head-of-Train Remote Linking Protocol | CISA
+title: End-of-Train and Head-of-Train Remote Linking Protocol ◆ CISA
 type: weblog
 ---
-
-# End-of-Train and Head-of-Train Remote Linking Protocol | CISA
-
-**Original:** [Link](https://www.cisa.gov/news-events/ics-advisories/icsa-25-191-10)
-
-**Archive:** [Link](archive/2025-07-21-end-of-train-and-head-of-train-remote-linking-protocol-cisa.md)
 
 CISA is still kicking. They stand behind the researchers doing old-school full disclosure when all else fails. This is actually pretty great of them.
 
@@ -53,4 +47,3 @@ For everyone else -- why is this useful advice? This is exploited via RF, no?
 > No known public exploitation specifically targeting this vulnerability has been reported to CISA at this time. This vulnerability is not exploitable remotely.
 
 500 meters away is remote exploitation when you're talking about a vuln that will probably be used by nation states only.
-

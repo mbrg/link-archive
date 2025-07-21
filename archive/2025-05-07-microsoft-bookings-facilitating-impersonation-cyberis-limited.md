@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Bookings – Facilitating Impersonation | Cyberis Limited"
+title: "Microsoft Bookings – Facilitating Impersonation ◆ Cyberis Limited"
 tags:
    - accountimpersonation
    - securitybestpractices

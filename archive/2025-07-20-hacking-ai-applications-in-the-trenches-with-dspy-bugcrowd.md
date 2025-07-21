@@ -1,5 +1,5 @@
 ---
-title: "Hacking AI applications: In the trenches with DSPy | @Bugcrowd"
+title: "Hacking AI applications: In the trenches with DSPy ◆ @Bugcrowd"
 tags:
    - adversarial attacks
    - AI security

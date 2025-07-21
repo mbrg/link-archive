@@ -1,5 +1,5 @@
 ---
-title: "TrustedSec | Hunting Deserialization Vulnerabilities With Claude"
+title: "TrustedSec ◆ Hunting Deserialization Vulnerabilities With Claude"
 tags:
    - MCP
    - exploit

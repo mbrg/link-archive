@@ -8,7 +8,7 @@ description: 'Jason Lemkin shares insights from his recent coding experience usi
   importance of model selection based on use case, alongside the need for robust data
   management and rollback features in development environments to prevent data loss.
   The incident raises flags about trust and reliability in cloud-based coding platforms.'
-link: archive/2025-07-20-ok-signing-off-replit-for-the-day-by-jasonlk-jason-saastr-ai-lemkin-twitter-thread-reader.md
+link: /archive/2025-07-20-ok-signing-off-replit-for-the-day-by-jasonlk-jason-saastr-ai-lemkin-twitter-thread-reader.md
 tags:
 - Replit
 - Claude AI
@@ -16,16 +16,9 @@ tags:
 - database management
 - vibe coding
 - weblog
-title: "Ok signing off Replit for the day by @jasonlk(Jason \u2728\U0001F47ESaaStr.Ai\u2728\
-  \ Lemkin) | Twitter Thread Reader"
+title: "Ok signing off Replit for the day by @jasonlk(Jason ✨👾SaaStr.Ai✨ Lemkin) ◆ Twitter Thread Reader"
 type: weblog
 ---
-
-# Ok signing off Replit for the day by @jasonlk(Jason ✨👾SaaStr.Ai✨ Lemkin) | Twitter Thread Reader
-
-**Original:** [Link](https://twitter-thread.com/t/1946069562723897802)
-
-**Archive:** [Link](archive/2025-07-20-ok-signing-off-replit-for-the-day-by-jasonlk-jason-saastr-ai-lemkin-twitter-thread-reader.md)
 
 Claude Sonnet 4 is actually a great model.
 I feel for Jason. And worry for us all.
@@ -65,4 +58,3 @@ This is the most devastating part of this story. Agent vendors must correct cour
 > But how could anyone on planet earth use it in production if it ignores all orders and deletes your database?
 
 The repercussions here are terrible. _"The authentic SaaStr professional network production is gone"_.
-

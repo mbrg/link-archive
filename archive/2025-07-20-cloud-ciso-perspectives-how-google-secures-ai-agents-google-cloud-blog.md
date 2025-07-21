@@ -1,5 +1,5 @@
 ---
-title: "Cloud CISO Perspectives: How Google secures AI Agents | Google Cloud Blog"
+title: "Cloud CISO Perspectives: How Google secures AI Agents ◆ Google Cloud Blog"
 tags:
    - Agent Security
    - Cybersecurity

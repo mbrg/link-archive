@@ -1,5 +1,5 @@
 ---
-title: "Scaling security with responsible disclosure | OpenAI"
+title: "Scaling security with responsible disclosure ◆ OpenAI"
 tags:
    - CyberSecurity
    - CoordinatedDisclosure

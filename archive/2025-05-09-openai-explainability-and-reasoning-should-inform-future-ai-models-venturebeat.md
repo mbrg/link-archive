@@ -1,5 +1,5 @@
 ---
-title: "OpenAI: Explainability and reasoning should inform future AI models | VentureBeat"
+title: "OpenAI: Explainability and reasoning should inform future AI models ◆ VentureBeat"
 tags:
    - responsible AI
    - OpenAI

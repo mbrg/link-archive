@@ -1,5 +1,5 @@
 ---
-title: "Expanding on what we missed with sycophancy | OpenAI"
+title: "Expanding on what we missed with sycophancy ◆ OpenAI"
 tags:
    - model evaluation
    - safety concerns

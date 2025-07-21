@@ -1,5 +1,5 @@
 ---
-title: "New whitepaper outlines the taxonomy of failure modes in AI agents | Microsoft Security Blog"
+title: "New whitepaper outlines the taxonomy of failure modes in AI agents ◆ Microsoft Security Blog"
 tags:
    - AI Failure Modes
    - Safety and Security

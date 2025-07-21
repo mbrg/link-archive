@@ -1,5 +1,5 @@
 ---
-title: "Build a Knowledge Graph with MCP Memory and Amazon Neptune | by David Bechberger | Apr, 2025 | Medium"
+title: "Build a Knowledge Graph with MCP Memory and Amazon Neptune ◆ by David Bechberger ◆ Apr, 2025 ◆ Medium"
 tags:
    - Amazon Neptune
    - Knowledge Graph

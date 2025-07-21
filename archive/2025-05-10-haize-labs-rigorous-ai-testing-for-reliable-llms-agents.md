@@ -1,5 +1,5 @@
 ---
-title: "Haize Labs | Rigorous AI Testing for Reliable LLMs & Agents"
+title: "Haize Labs ◆ Rigorous AI Testing for Reliable LLMs & Agents"
 tags:
    - Ethical AI
    - AI Safety

@@ -1,5 +1,5 @@
 ---
-title: "Understanding Tokens in Microsoft Entra ID - Microsoft Entra ID | Microsoft Learn"
+title: "Understanding Tokens in Microsoft Entra ID - Microsoft Entra ID ◆ Microsoft Learn"
 tags:
    - cybersecurity
    - conditional access

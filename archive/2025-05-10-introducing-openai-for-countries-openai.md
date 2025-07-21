@@ -1,5 +1,5 @@
 ---
-title: "Introducing OpenAI for Countries | OpenAI"
+title: "Introducing OpenAI for Countries ◆ OpenAI"
 tags:
    - OpenAI
    - Data Sovereignty
