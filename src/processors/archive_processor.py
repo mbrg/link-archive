@@ -82,7 +82,9 @@ def process_content(content, model_name):
 
 def clean_string(text):
     """Clean string by removing newlines, extra whitespace, and quotes."""
-    return ' '.join(text.strip().replace('\n', ' ').replace('\r', ' ').split())
+    # Escape pipe characters to prevent Jekyll table creation
+    cleaned = ' '.join(text.strip().replace('\n', ' ').replace('\r', ' ').split())
+    return cleaned.replace('|', '\\|')
 
 def check_existing_file(toread_dir, clean_url):
     """Check if URL already exists in recent files."""

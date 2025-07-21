@@ -136,14 +136,12 @@ def create_weblog_entry(frontmatter, archive_content, review_comments, pr_commen
     
     # Add weblog-specific fields
     weblog_frontmatter['date'] = datetime.now().strftime('%Y-%m-%d')
-    weblog_frontmatter['link'] = f"archive/{Path(archive_filename).name}"
+    weblog_frontmatter['link'] = f"/archive/{Path(archive_filename).name}"
     weblog_frontmatter['tags'] = frontmatter.get('tags', []) + ['weblog']
     weblog_frontmatter['type'] = 'weblog'
     
     # Start building the weblog content
-    weblog_content = [f"# {frontmatter['title']}\n"]
-    weblog_content.append(f"**Original:** [Link]({frontmatter.get('link', '#')})\n")
-    weblog_content.append(f"**Archive:** [Link]({weblog_frontmatter['link']})\n")
+    weblog_content = []
     
     # Add review approval comments (from "Approve" button)
     if review_approval_comments:
