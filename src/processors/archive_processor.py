@@ -74,14 +74,15 @@ def process_content(content, model_name):
     # Generate title
     title_response = model.prompt(
         content,
-        system="Reply with a concise one-liner title for this content. "
+        system="Reply with a concise one-liner title for this content. Return only the title text, no quotes, no extra formatting, no newlines."
     )
     title = clean_string(title_response.text().strip('"'))
     
     return title, description, tags
 
 def clean_string(text):
-    return text.strip().split('\n')[0]
+    """Clean string by removing newlines, extra whitespace, and quotes."""
+    return ' '.join(text.strip().replace('\n', ' ').replace('\r', ' ').split())
 
 def check_existing_file(toread_dir, clean_url):
     """Check if URL already exists in recent files."""
@@ -169,7 +170,7 @@ def main():
     filename = create_filename(title_to_use)
     save_file(toread_dir, filename, title_to_use, [], clean_url, content, generated_description, generated_tags)
     print(f"filename:{filename}")
-    print(f"title:{title}")
+    print(f"title:{title_to_use}")
     print("existing_file:")
 
 if __name__ == '__main__':
