@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2024-12-16
 description: The rise of low-code/no-code platforms accelerates application development
   but introduces significant security risks. These tools allow non-technical users
   to create applications rapidly, often bypassing established security protocols.

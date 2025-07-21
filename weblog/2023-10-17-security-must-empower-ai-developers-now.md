@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2023-10-17
 description: The rise of generative AI (GenAI) necessitates a structured security
   framework for enterprises to manage their rapidly developing AI applications. As
   companies race to leverage GenAI for productivity gains, security teams must address

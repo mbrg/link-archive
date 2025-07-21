@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2023-03-20
 description: "The integration of AI into low-code/no-code platforms, exemplified by\
   \ Microsoft\u2019s AI Copilot for Power Apps, dramatically reduces barriers for\
   \ business users to create applications leveraging organizational data. This trend\

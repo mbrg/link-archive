@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2024-08-19
 description: In "Assume Breach When Building AI Apps," Michael Bargury emphasizes
   the inevitability of AI jailbreaks, urging developers to design applications with
   the understanding that such exploits are a matter of context, not mere vulnerabilities.

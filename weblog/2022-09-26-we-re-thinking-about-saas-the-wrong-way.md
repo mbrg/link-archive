@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2022-09-26
 description: Michael Bargury argues that the traditional separation of SaaS and public
   cloud security hinders effective risk management as low-code SaaS platforms evolve
   into business-centric application development solutions. With business users increasingly

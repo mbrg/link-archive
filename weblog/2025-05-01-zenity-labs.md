@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2025-05-01
 description: "The unavailable Zenity research page from RSAC 2025 highlights significant\
   \ trends in AI security, specifically concerning copilots and agents as new attack\
   \ vectors. The implications of these findings stress the need for robust application\

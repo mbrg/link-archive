@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2023-08-10
 description: In a recent Black Hat presentation, Michael Bargury unveiled vulnerabilities
   in Microsoft 365's guest accounts, exposing potential exploits in Power Apps. Guest
   accounts can circumvent restrictions using trial licenses, enabling attackers to

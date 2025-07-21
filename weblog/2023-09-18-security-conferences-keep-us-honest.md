@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2023-09-18
 description: "Michael Bargury highlights the duality of cybersecurity research and\
   \ responsible disclosure at security conferences, using his Black Hat USA presentation\
   \ as a case study. He divulged vulnerabilities in Microsoft\u2019s Azure environment,\

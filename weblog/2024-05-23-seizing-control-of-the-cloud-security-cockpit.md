@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2024-05-23
 description: The article highlights the critical role of secure configuration management
   in cloud and SaaS environments, likening current practices to an unregulated cockpit.
   Misconfiguration remains a key cause of security vulnerabilities, exacerbated by

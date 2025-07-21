@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2023-11-20
 description: The emergence of enterprise-level generative AI tools, such as OpenAI's
   custom GPTs and Microsoft's Copilot Studio, enables business users to easily create
   AI applications using organizational data. These tools facilitate user impersonation,

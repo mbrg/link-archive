@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2022-12-20
 description: The article examines the feasibility of attaining 100% security guarantees
   through formal verification methods. Major cloud providers like Amazon and Microsoft
   have begun commoditizing these capabilities in response to persistent issues like

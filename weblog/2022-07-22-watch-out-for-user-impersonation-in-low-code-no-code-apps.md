@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2022-07-22
 description: A recent article highlights significant cybersecurity risks associated
   with user impersonation in low-code/no-code applications. As employees bypass security
   protocols by sharing credentials for convenience, organizations face compromised

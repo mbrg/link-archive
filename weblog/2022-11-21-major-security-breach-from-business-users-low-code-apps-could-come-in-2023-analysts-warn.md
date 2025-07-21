@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2022-11-21
 description: Forrester analysts predict significant security breaches in enterprises
   stemming from low-code/no-code (LCNC) applications in 2023. As business users increasingly
   leverage LCNC for critical app development, security teams must adapt, shifting

@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2022-10-24
 description: Michael Bargury emphasizes the transformative potential of low-code/no-code
   platforms in enhancing cybersecurity mindshare among business users. By fostering
   collaboration and security awareness similar to DevSecOps achieved with developers,

@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2024-01-23
 description: 'Michael Bargury''s article discusses the disruptive potential of AI
   in enterprise environments, highlighting the rapid deployment of AI solutions like
   Microsoft 365 Copilot across major companies. Key risks include: 1. **Permission

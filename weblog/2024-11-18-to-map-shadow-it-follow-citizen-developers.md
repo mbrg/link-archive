@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2024-11-18
 description: "In \"To Map Shadow IT, Follow Citizen Developers,\" Michael Bargury\
   \ discusses the pervasive issue of shadow IT, where employees use unauthorized tools\
   \ to meet business needs. He emphasizes the dual role of citizen development\u2014\

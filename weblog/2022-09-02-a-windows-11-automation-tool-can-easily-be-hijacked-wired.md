@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2022-09-02
 description: "Recent research highlights a security vulnerability in Microsoft\u2019\
   s Power Automate tool that can be exploited to execute ransomware attacks on connected\
   \ systems. By leveraging the legitimate functionality of Power Automate, attackers\

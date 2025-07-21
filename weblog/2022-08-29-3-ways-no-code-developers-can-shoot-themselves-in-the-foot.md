@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2022-08-29
 description: 'The rise of no-code/low-code platforms affords business users significant
   autonomy but introduces critical cybersecurity risks. This article highlights three
   scenarios that demonstrate potential pitfalls: unauthorized data sharing with vendors,

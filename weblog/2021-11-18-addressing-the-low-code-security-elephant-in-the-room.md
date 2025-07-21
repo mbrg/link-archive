@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2021-11-18
 description: "The article addresses the critical security implications of low-code/no-code\
   \ applications, emphasizing that security is a shared responsibility among all stakeholders.\
   \ It delineates four operational layers\u2014infrastructure, runtime, application,\

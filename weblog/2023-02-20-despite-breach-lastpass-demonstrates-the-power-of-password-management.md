@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2023-02-20
 description: "The LastPass breach underscores critical vulnerabilities in password\
   \ management systems. Despite hackers accessing source code and user data, the architecture\u2019\
   s reliance on strong master passwords and endpoint MFA mitigates threat severity.\

@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2024-06-24
 description: 'Michael Bargury highlights the necessity of integrating application
   security (AppSec) within the burgeoning field of citizen development, particularly
   given the dramatic rise of shadow IT. A case study reveals two developers addressed

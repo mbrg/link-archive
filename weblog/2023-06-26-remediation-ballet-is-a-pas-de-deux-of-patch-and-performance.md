@@ -1,5 +1,5 @@
 ---
-date: '2025-07-21'
+date: 2023-06-26
 description: The article discusses the evolving landscape of vulnerability remediation,
   emphasizing the integration of AI in code generation. While tools like GitHub Copilot
   enhance efficiency, developers and security teams must navigate the complexities
