@@ -22,3 +22,5 @@ type: weblog
 
 A few default guest setting manipulations in Azure AD and over-promiscuous low-code app developer connections can upend data protections.
 
+A few default guest setting manipulations in Azure AD and over-promiscuous low-code app developer connections can upend data protections.
+
