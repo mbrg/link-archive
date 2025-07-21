@@ -9,7 +9,7 @@ description: 'The rise of no-code/low-code platforms affords business users sign
   responsibilities, and monitor developments to mitigate risks associated with citizen
   development. Without proper oversight, enterprises risk severe compliance violations
   and data breaches, necessitating a proactive security posture.'
-link: /archive/2025-07-21-3-ways-no-code-developers-can-shoot-themselves-in-the-foot
+link: /archive/2022-08-29-3-ways-no-code-developers-can-shoot-themselves-in-the-foot
 tags:
 - data privacy
 - SaaS security

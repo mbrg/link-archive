@@ -9,7 +9,7 @@ description: "The LastPass breach underscores critical vulnerabilities in passwo
   \ such as rotating sensitive passwords, and question the robustness of their chosen\
   \ vault providers. The systemic design flaws must prompt introspection into the\
   \ shared security paradigm of password management tools."
-link: /archive/2025-07-21-despite-breach-lastpass-demonstrates-the-power-of-password-management
+link: /archive/2023-02-20-despite-breach-lastpass-demonstrates-the-power-of-password-management
 tags:
 - Cybersecurity
 - Password Management

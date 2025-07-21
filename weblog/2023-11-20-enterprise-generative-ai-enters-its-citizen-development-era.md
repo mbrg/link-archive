@@ -9,7 +9,7 @@ description: The emergence of enterprise-level generative AI tools, such as Open
   as low-code/no-code platforms proliferate. Adopting industry standards for assessing
   risks associated with these applications will be crucial for maintaining security
   in an evolving landscape dominated by agile AI development.
-link: /archive/2025-07-21-enterprise-generative-ai-enters-its-citizen-development-era
+link: /archive/2023-11-20-enterprise-generative-ai-enters-its-citizen-development-era
 tags:
 - Generative AI
 - No-Code Development

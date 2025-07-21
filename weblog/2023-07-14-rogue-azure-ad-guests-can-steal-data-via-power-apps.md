@@ -8,7 +8,7 @@ description: A new vulnerability reported by Michael Bargury at Black Hat USA re
   bypass Standard Data Loss Prevention mechanisms. To defend against these risks,
   he recommends auditing guest access configurations and using the newly introduced
   PowerGuest tool to limit exposure and detect misconfigurations effectively.
-link: /archive/2025-07-21-rogue-azure-ad-guests-can-steal-data-via-power-apps
+link: /archive/2023-07-14-rogue-azure-ad-guests-can-steal-data-via-power-apps
 tags:
 - Azure AD
 - Data Protection

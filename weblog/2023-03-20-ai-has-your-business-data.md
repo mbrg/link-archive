@@ -10,7 +10,7 @@ description: "The integration of AI into low-code/no-code platforms, exemplified
   \ to prevent potential data breaches linked to this democratization of app development.\
   \ The reliance on users' discretion amidst growing AI capabilities poses a critical\
   \ challenge for enterprise security models."
-link: /archive/2025-07-21-ai-has-your-business-data
+link: /archive/2023-03-20-ai-has-your-business-data
 tags:
 - Data Privacy
 - Business Empowerment

@@ -8,7 +8,7 @@ description: "In \"To Map Shadow IT, Follow Citizen Developers,\" Michael Bargur
   \ existing systems, organizations can better understand their shadow IT landscape.\
   \ This approach fosters a proactive stance in governance, balancing efficiency with\
   \ security, albeit requiring careful risk management to mitigate vulnerabilities."
-link: /archive/2025-07-21-to-map-shadow-it-follow-citizen-developers
+link: /archive/2024-11-18-to-map-shadow-it-follow-citizen-developers
 tags:
 - SaaS Security
 - Low-Code Development

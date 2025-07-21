@@ -9,7 +9,7 @@ description: "The inevitability of low-code/no-code platforms in enterprise sett
   \ shadow IT practices, and SaaS vendor integrations. This shift emphasizes the urgent\
   \ need for security teams to establish visibility and guidelines for citizen developers\
   \ to safeguard critical business operations and data from potential exploitation."
-link: /archive/2025-07-21-you-can-t-opt-out-of-citizen-development
+link: /archive/2022-05-16-you-can-t-opt-out-of-citizen-development
 tags:
 - Citizen Development
 - Enterprise Applications

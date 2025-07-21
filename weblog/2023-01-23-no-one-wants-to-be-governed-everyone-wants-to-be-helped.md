@@ -9,7 +9,7 @@ description: Michael Bargury emphasizes the necessity for security teams to adap
   as enablers of innovation rather than obstacles. By aligning with business objectives
   and learning their operations, security can contribute to resilience in an evolving
   tech landscape.
-link: /archive/2025-07-21-no-one-wants-to-be-governed-everyone-wants-to-be-helped
+link: /archive/2023-01-23-no-one-wants-to-be-governed-everyone-wants-to-be-helped
 tags:
 - Low-Code/No-Code (LCNC)
 - Citizen Developers

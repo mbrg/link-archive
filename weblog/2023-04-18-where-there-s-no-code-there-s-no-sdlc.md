@@ -9,7 +9,7 @@ description: The rise of low-code/no-code development poses significant challeng
   Cross-industry frameworks are emerging to address these new dynamics, highlighting
   the necessity of guiding citizen developers in secure application creation to maintain
   effective governance without stifling productivity.
-link: /archive/2025-07-21-where-there-s-no-code-there-s-no-sdlc
+link: /archive/2023-04-18-where-there-s-no-code-there-s-no-sdlc
 tags:
 - No-Code
 - Low-Code

@@ -9,7 +9,7 @@ description: "Recent research highlights a security vulnerability in Microsoft\u
   \ challenges as these actions are indistinguishable from regular operations. Organizations\
   \ must enhance monitoring and implement stringent access controls to mitigate this\
   \ risk."
-link: /archive/2025-07-21-a-windows-11-automation-tool-can-easily-be-hijacked-wired
+link: /archive/2022-09-02-a-windows-11-automation-tool-can-easily-be-hijacked-wired
 tags:
 - cybersecurity
 - ransomware

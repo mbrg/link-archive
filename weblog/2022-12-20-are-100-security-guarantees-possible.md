@@ -9,7 +9,7 @@ description: The article examines the feasibility of attaining 100% security gua
   shift in evaluating security solutions but caution against over-reliance on absolute
   claims due to coverage and definition challenges. This could drive innovation but
   necessitates careful consideration of risk management strategies.
-link: /archive/2025-07-21-are-100-security-guarantees-possible
+link: /archive/2022-12-20-are-100-security-guarantees-possible
 tags:
 - Cybersecurity
 - Cloud Security

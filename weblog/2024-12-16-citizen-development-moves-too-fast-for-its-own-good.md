@@ -9,7 +9,7 @@ description: The rise of low-code/no-code platforms accelerates application deve
   guardrails to prompt users to reconsider their actions, thus balancing speed and
   security without stifling innovation. This highlights the need for proactive governance
   in emergent development environments.
-link: /archive/2025-07-21-citizen-development-moves-too-fast-for-its-own-good
+link: /archive/2024-12-16-citizen-development-moves-too-fast-for-its-own-good
 tags:
 - Application Security
 - Low-Code Development

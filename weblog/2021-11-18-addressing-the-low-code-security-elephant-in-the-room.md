@@ -9,7 +9,7 @@ description: "The article addresses the critical security implications of low-co
   \ regarding third-party components and the integration of these applications with\
   \ existing cloud and on-premises systems. Organizations must ensure comprehensive\
   \ visibility and adherence to security best practices to mitigate potential risks."
-link: /archive/2025-07-21-addressing-the-low-code-security-elephant-in-the-room
+link: /archive/2021-11-18-addressing-the-low-code-security-elephant-in-the-room
 tags:
 - cloud security
 - application security

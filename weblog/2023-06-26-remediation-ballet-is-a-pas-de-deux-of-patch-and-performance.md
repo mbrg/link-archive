@@ -8,7 +8,7 @@ description: The article discusses the evolving landscape of vulnerability remed
   in large enterprises with divided responsibilities. The article advocates for recognizing
   both mitigation risks and vulnerability threats, suggesting a measured approach
   to remediation that acknowledges the inherent challenges of both realms.
-link: /archive/2025-07-21-remediation-ballet-is-a-pas-de-deux-of-patch-and-performance
+link: /archive/2023-06-26-remediation-ballet-is-a-pas-de-deux-of-patch-and-performance
 tags:
 - Application Security
 - AI in Security

@@ -8,7 +8,7 @@ description: The rise of generative AI (GenAI) necessitates a structured securit
   can aid in the inventory, assessment, and monitoring of these applications, enhancing
   overall security posture. Organizations must adapt quickly to ensure secure development
   practices while navigating a diverse ecosystem of AI tools.
-link: /archive/2025-07-21-security-must-empower-ai-developers-now
+link: /archive/2023-10-17-security-must-empower-ai-developers-now
 tags:
 - Generative AI
 - Application Security

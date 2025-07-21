@@ -8,7 +8,7 @@ description: Generative AI is rapidly transforming business application developm
   Automated guardrails are essential to manage risks while leveraging the capabilities
   of generative AI. With predictions of significant growth in low-code/no-code development,
   it's critical to prepare for the heightened security landscape this trend introduces.
-link: /archive/2025-07-21-generative-ai-empowers-users-but-challenges-security
+link: /archive/2023-05-15-generative-ai-empowers-users-but-challenges-security
 tags:
 - Security Risks
 - Application Development

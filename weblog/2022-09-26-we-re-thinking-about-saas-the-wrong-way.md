@@ -8,7 +8,7 @@ description: Michael Bargury argues that the traditional separation of SaaS and 
   a reevaluation of security strategies to include the myriad applications stemming
   from enterprise SaaS, which currently lack adequate visibility and governance, thus
   exposing organizations to heightened cyber risks.
-link: /archive/2025-07-21-we-re-thinking-about-saas-the-wrong-way
+link: /archive/2022-09-26-we-re-thinking-about-saas-the-wrong-way
 tags:
 - Cyber Risk Management
 - Cloud Computing

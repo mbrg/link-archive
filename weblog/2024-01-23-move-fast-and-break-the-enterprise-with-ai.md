@@ -10,7 +10,7 @@ description: 'Michael Bargury''s article discusses the disruptive potential of A
   suspicious activities, complicating anomaly detection. These factors signal a need
   for reevaluated security frameworks amidst fast-paced AI integration, emphasizing
   innovation over static practices.'
-link: /archive/2025-07-21-move-fast-and-break-the-enterprise-with-ai
+link: /archive/2024-01-23-move-fast-and-break-the-enterprise-with-ai
 tags:
 - Cybersecurity
 - Artificial Intelligence

@@ -9,7 +9,7 @@ description: "The article emphasizes the security vulnerabilities associated wit
   \ like impersonation and unauthorized access. Consequently, organizations must adapt\
   \ their security frameworks to address these emergent risks, balancing rapid application\
   \ development with strategic identity governance."
-link: /archive/2025-07-21-credential-sharing-as-a-service-the-hidden-risk-of-low-code-no-code
+link: /archive/2022-06-20-credential-sharing-as-a-service-the-hidden-risk-of-low-code-no-code
 tags:
 - Application Security
 - Credential Leakage

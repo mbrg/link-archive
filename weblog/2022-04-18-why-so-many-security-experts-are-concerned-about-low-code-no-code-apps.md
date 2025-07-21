@@ -9,7 +9,7 @@ description: Recent concerns about low-code/no-code applications highlight signi
   these platforms, an urgent need arises for tailored security solutions that align
   with low-code/no-code architectures, emphasizing the necessity for robust governance
   and proactive security measures.
-link: /archive/2025-07-21-why-so-many-security-experts-are-concerned-about-low-code-no-code-apps
+link: /archive/2022-04-18-why-so-many-security-experts-are-concerned-about-low-code-no-code-apps
 tags:
 - Low-Code Applications
 - Application Security

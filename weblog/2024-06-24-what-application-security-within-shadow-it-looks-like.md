@@ -9,7 +9,7 @@ description: 'Michael Bargury highlights the necessity of integrating applicatio
   business users while fostering a security-first culture. As citizen development
   proliferates, effective AppSec solutions will increasingly rely on innovative automation
   and collaborative governance to mitigate risks without hindering business agility.'
-link: /archive/2025-07-21-what-application-security-within-shadow-it-looks-like
+link: /archive/2024-06-24-what-application-security-within-shadow-it-looks-like
 tags:
 - Vulnerabilities
 - Citizen Development

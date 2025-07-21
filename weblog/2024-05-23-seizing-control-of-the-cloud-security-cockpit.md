@@ -9,7 +9,7 @@ description: The article highlights the critical role of secure configuration ma
   misconfiguration incidents. Continuous change in service functionalities adds complexity,
   necessitating robust security governance frameworks to handle evolving threats and
   configurations effectively.
-link: /archive/2025-07-21-seizing-control-of-the-cloud-security-cockpit
+link: /archive/2024-05-23-seizing-control-of-the-cloud-security-cockpit
 tags:
 - configuration-management
 - cloud-security

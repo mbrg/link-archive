@@ -9,7 +9,7 @@ description: In a recent Black Hat presentation, Michael Bargury unveiled vulner
   While Microsoft is addressing these gaps, organizations must enforce stricter access
   controls to mitigate risks associated with low-code platforms. Effective governance
   is essential to safeguard internal data against guest account misuse.
-link: /archive/2025-07-21-microsoft-365-guests-power-apps-security-nightmare-the-register
+link: /archive/2023-08-10-microsoft-365-guests-power-apps-security-nightmare-the-register
 tags:
 - Power Apps
 - Microsoft 365

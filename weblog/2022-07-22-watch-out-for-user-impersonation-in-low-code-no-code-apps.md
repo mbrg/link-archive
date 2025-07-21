@@ -9,7 +9,7 @@ description: A recent article highlights significant cybersecurity risks associa
   for security teams to engage in the development of low-code applications, as they
   present unique risks that could exacerbate existing vulnerabilities within enterprise
   IT infrastructures.
-link: /archive/2025-07-21-watch-out-for-user-impersonation-in-low-code-no-code-apps
+link: /archive/2022-07-22-watch-out-for-user-impersonation-in-low-code-no-code-apps
 tags:
 - Identity Management
 - Credential Sharing

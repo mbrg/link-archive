@@ -9,7 +9,7 @@ description: In "Assume Breach When Building AI Apps," Michael Bargury emphasize
   capable of rapid response to potential exploits, framing AI as an unpredictable
   asset that requires diligent governance. This perspective is crucial for developers
   and security professionals adapting to AI's growing role in enterprise applications.
-link: /archive/2025-07-21-assume-breach-when-building-ai-apps
+link: /archive/2024-08-19-assume-breach-when-building-ai-apps
 tags:
 - application security
 - jailbreaking

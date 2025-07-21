@@ -9,7 +9,7 @@ description: Michael Bargury emphasizes the transformative potential of low-code
   smoother implementation of broader security initiatives like zero trust and identity
   systems. Addressing this shift presents a crucial opportunity for organizations
   to promote a holistic security culture.
-link: /archive/2025-07-21-embracing-the-next-generation-of-business-developers
+link: /archive/2022-10-24-embracing-the-next-generation-of-business-developers
 tags:
 - Security Awareness
 - Business Collaboration

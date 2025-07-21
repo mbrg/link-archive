@@ -9,7 +9,7 @@ description: Michael Bargury discusses the evolving landscape of AI security, hi
   strategies to accommodate AI, underscoring the need for further development in this
   domain. This evolving threat landscape calls for ongoing discussion and innovation
   in AI security methodologies.
-link: /archive/2025-07-21-the-challenges-of-ai-security-begin-with-defining-it
+link: /archive/2024-03-05-the-challenges-of-ai-security-begin-with-defining-it
 tags:
 - Data Protection
 - AI Security

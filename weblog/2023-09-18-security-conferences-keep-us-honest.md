@@ -9,7 +9,7 @@ description: "Michael Bargury highlights the duality of cybersecurity research a
   \ organizations to prioritize security over public relations. This evolution in\
   \ vulnerability reporting underscores an ongoing need for collaboration between\
   \ researchers and vendors to enhance overall cybersecurity resilience."
-link: /archive/2025-07-21-security-conferences-keep-us-honest
+link: /archive/2023-09-18-security-conferences-keep-us-honest
 tags:
 - Vulnerability Disclosure
 - Information Security
