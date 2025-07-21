@@ -187,12 +187,47 @@ jobs:
               body: commentBody
             });
             
-            // Merge the PR
-            await github.rest.pulls.merge({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: prNumber,
-              merge_method: 'squash',
-              commit_title: `Add archive + weblog: ${{ steps.create_weblog.outputs.title }}`,
-              commit_message: `Archive with weblog entry at ${{ steps.create_weblog.outputs.weblog_file }}`
-            });
+            // Wait for GitHub to process merge status - retry with exponential backoff
+            let retries = 0;
+            const maxRetries = 2;
+            
+            while (retries < maxRetries) {
+              try {
+                // Check if PR is actually mergeable
+                const pr = await github.rest.pulls.get({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: prNumber
+                });
+                
+                if (pr.data.mergeable === false) {
+                  console.log(`PR not mergeable yet, attempt ${retries + 1}/${maxRetries}`);
+                  retries++;
+                  await new Promise(resolve => setTimeout(resolve, 2000 * retries)); // 2s, 4s, 6s, 8s, 10s
+                  continue;
+                }
+                
+                // Try to merge
+                await github.rest.pulls.merge({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: prNumber,
+                  merge_method: 'squash',
+                  commit_title: `Add archive + weblog: ${{ steps.create_weblog.outputs.title }}`,
+                  commit_message: `Archive with weblog entry at ${{ steps.create_weblog.outputs.weblog_file }}`
+                });
+                
+                console.log('PR merged successfully');
+                break;
+                
+              } catch (error) {
+                if (error.status === 405 && retries < maxRetries - 1) {
+                  console.log(`Merge failed (not mergeable), retrying in ${2 * (retries + 1)}s...`);
+                  retries++;
+                  await new Promise(resolve => setTimeout(resolve, 2000 * retries));
+                } else {
+                  console.log(`Final merge attempt failed: ${error.message}`);
+                  throw error;
+                }
+              }
+            }
