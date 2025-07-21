@@ -22,3 +22,5 @@ type: weblog
 
 We published a summary of all research shared at RSAC 2025 by the Zenity research team.
 
+We published a summary of all research shared at RSAC 2025 by the Zenity research team.
+
