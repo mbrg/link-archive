@@ -173,23 +173,12 @@ jobs:
         with:
           script: |
             const prNumber = context.payload.pull_request?.number || parseInt('${{ github.event.inputs.pr_number }}');
-            
-            // Add a comment explaining what happened
             const weblogFile = "${{ steps.create_weblog.outputs.weblog_file }}";
-            const commentBody = "✅ **Weblog entry created!**\n\n" +
-              "Your review comments have been processed and a weblog entry has been created at `" + weblogFile + "`.\n\n" +
-              "The archive PR will now be merged with the weblog entry included.";
-            
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: prNumber,
-              body: commentBody
-            });
             
             // Wait for GitHub to process merge status - retry with exponential backoff
             let retries = 0;
             const maxRetries = 2;
+            let merged = false;
             
             while (retries < maxRetries) {
               try {
@@ -203,7 +192,7 @@ jobs:
                 if (pr.data.mergeable === false) {
                   console.log(`PR not mergeable yet, attempt ${retries + 1}/${maxRetries}`);
                   retries++;
-                  await new Promise(resolve => setTimeout(resolve, 2000 * retries)); // 2s, 4s, 6s, 8s, 10s
+                  await new Promise(resolve => setTimeout(resolve, 2000 * retries)); // 2s, 4s
                   continue;
                 }
                 
@@ -218,6 +207,7 @@ jobs:
                 });
                 
                 console.log('PR merged successfully');
+                merged = true;
                 break;
                 
               } catch (error) {
@@ -227,7 +217,33 @@ jobs:
                   await new Promise(resolve => setTimeout(resolve, 2000 * retries));
                 } else {
                   console.log(`Final merge attempt failed: ${error.message}`);
+                  // Post failure comment
+                  const failureBody = "❌ **Weblog entry created but merge failed!**\n\n" +
+                    "Your review comments have been processed and a weblog entry has been created at `" + weblogFile + "`.\n\n" +
+                    "However, the PR could not be merged automatically. Error: " + error.message + "\n\n" +
+                    "Please merge manually when ready.";
+                  
+                  await github.rest.issues.createComment({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: prNumber,
+                    body: failureBody
+                  });
                   throw error;
                 }
               }
+            }
+            
+            // Only post success comment if merge actually succeeded
+            if (merged) {
+              const successBody = "✅ **Weblog entry created!**\n\n" +
+                "Your review comments have been processed and a weblog entry has been created at `" + weblogFile + "`.\n\n" +
+                "The archive PR has been successfully merged.";
+              
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: successBody
+              });
             }
