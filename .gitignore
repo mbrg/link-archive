@@ -4,6 +4,7 @@ _site
 
 .idea/
 .tmp/
+.mypy_cache/
 
 .DS_Store
 
