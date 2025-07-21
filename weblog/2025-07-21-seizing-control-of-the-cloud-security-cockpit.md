@@ -23,3 +23,5 @@ type: weblog
 
 Much like an airplane's dashboard, configurations are the way we control cloud applications and SaaS tools. It's also the entry point for too many security threats. Here are some ideas for making the configuration process more secure.
 
+Much like an airplane's dashboard, configurations are the way we control cloud applications and SaaS tools. It's also the entry point for too many security threats. Here are some ideas for making the configuration process more secure.
+
