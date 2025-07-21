@@ -9,7 +9,7 @@ import re
 import os
 import shutil
 from pathlib import Path
-import yaml
+# import yaml  # Not actually used
 
 def load_pickle_dates(pickle_path):
     """Load URL to date mapping from pickle file."""
