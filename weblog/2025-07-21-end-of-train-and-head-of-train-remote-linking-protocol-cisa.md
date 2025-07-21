@@ -8,7 +8,7 @@ description: CISA has issued an advisory (ICSA-25-191-10) regarding a vulnerabil
   urges organizations to enhance cybersecurity measures, such as isolating control
   networks and employing VPNs. The Association of American Railroads (AAR) is developing
   standardized solutions to mitigate this risk.
-link: /archive/2025-07-21-end-of-train-and-head-of-train-remote-linking-protocol-cisa.md
+link: /archive/2025-07-21-end-of-train-and-head-of-train-remote-linking-protocol-cisa
 tags:
 - Industrial Control Systems
 - Remote Device Security

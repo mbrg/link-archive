@@ -136,7 +136,7 @@ def create_weblog_entry(frontmatter, archive_content, review_comments, pr_commen
     
     # Add weblog-specific fields
     weblog_frontmatter['date'] = datetime.now().strftime('%Y-%m-%d')
-    weblog_frontmatter['link'] = f"/archive/{Path(archive_filename).name}"
+    weblog_frontmatter['link'] = f"/archive/{Path(archive_filename).name.replace('.md', '')}"
     weblog_frontmatter['tags'] = frontmatter.get('tags', []) + ['weblog']
     weblog_frontmatter['type'] = 'weblog'
     

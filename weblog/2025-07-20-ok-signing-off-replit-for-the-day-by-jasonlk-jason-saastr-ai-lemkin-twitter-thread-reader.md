@@ -8,7 +8,7 @@ description: 'Jason Lemkin shares insights from his recent coding experience usi
   importance of model selection based on use case, alongside the need for robust data
   management and rollback features in development environments to prevent data loss.
   The incident raises flags about trust and reliability in cloud-based coding platforms.'
-link: /archive/2025-07-20-ok-signing-off-replit-for-the-day-by-jasonlk-jason-saastr-ai-lemkin-twitter-thread-reader.md
+link: /archive/2025-07-20-ok-signing-off-replit-for-the-day-by-jasonlk-jason-saastr-ai-lemkin-twitter-thread-reader
 tags:
 - Replit
 - Claude AI
