@@ -81,7 +81,7 @@ def process_content(content, model_name):
     return title, description, tags
 
 def clean_string(text):
-    return text.strip().replace('"', '\\"').split('\n')[0]
+    return text.strip().split('\n')[0]
 
 def check_existing_file(toread_dir, clean_url):
     """Check if URL already exists in recent files."""
@@ -124,13 +124,17 @@ def save_file(toread_dir, filename, title, tags, clean_url, content, generated_d
     # Format tags for YAML front matter
     tags_yaml = '\n   - '.join([''] + all_tags)
     
+    # Create frontmatter dictionary and use yaml.dump for proper formatting
+    frontmatter = {
+        'title': title,
+        'tags': all_tags,
+        'link': clean_url,
+        'date': datetime.now().strftime('%Y-%m-%d'),
+        'description': generated_description
+    }
+    
     file_content = f'''---
-title: "{title}"
-tags:{tags_yaml}
-link: {clean_url}
-date: {datetime.now().strftime('%Y-%m-%d')}
-description: "{generated_description}"
----
+{yaml.dump(frontmatter, default_flow_style=False, allow_unicode=True)}---
 
 {content}
 '''
