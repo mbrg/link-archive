@@ -68,7 +68,7 @@ def validate_weblog_file(filepath):
     
     # Validate link field (should point to archive)
     link_val = frontmatter.get('link')
-    if link_val and not link_val.startswith('archive/'):
+    if link_val and not link_val.startswith('/archive/'):
         errors.append(f"Weblog link should point to archive in {filepath}: '{link_val}'")
     
     # Validate tags is a list
