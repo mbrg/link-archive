@@ -22,6 +22,7 @@ type: weblog
 ---
 
 I think this aws spokesperson just gave us new information.
+Edit: no, this was in the AWS security blog.
 
 ---
 
