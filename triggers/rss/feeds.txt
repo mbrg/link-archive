@@ -5,4 +5,5 @@ https://embracethered.com/blog/index.xml
 https://simonwillison.net/tags/lethal-trifecta.atom
 https://simonwillison.net/tags/prompt-injection.atom
 https://simonwillison.net/tags/ai-agents.atom
-https://red.anthropic.com
+https://seclists.org/rss/dailydave.rss
+https://red.anthropic.com  # not rss
