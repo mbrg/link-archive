@@ -1,3 +1,8 @@
 https://googleprojectzero.blogspot.com/feeds/posts/default
 https://rss.beehiiv.com/feeds/iT8GfIzzC7.xml  # Zenity Labs
 https://newsletter.pragmaticengineer.com/feed
+https://embracethered.com/blog/index.xml
+https://simonwillison.net/tags/lethal-trifecta.atom
+https://simonwillison.net/tags/prompt-injection.atom
+https://simonwillison.net/tags/ai-agents.atom
+https://red.anthropic.com
