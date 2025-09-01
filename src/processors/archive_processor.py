@@ -21,7 +21,7 @@ from slugify import slugify
 import llm
 import json
 from typing import Tuple, List, Optional
-from firecrawl import FirecrawlApp
+from firecrawl import Firecrawl
 import logging
 from dotenv import load_dotenv
 
@@ -39,12 +39,27 @@ def extract_page_content(url):
     if not api_key:
         raise ValueError("FIRECRAWL_API_KEY environment variable is required. Please set it in .env file or environment variables.")
     
-    app = FirecrawlApp(api_key=api_key)
-    result = app.scrape_url(url, formats=['markdown'])
+    app = Firecrawl(api_key=api_key)
+    result = app.scrape(url, formats=['markdown'])
     logging.debug(f"Firecrawl results:\n---{result}\n---\n")
 
-    title = result.title if result.title else result.metadata.get("title", "")
-    return title, result.markdown
+    # Handle the new response structure - result is an object with attributes
+    title = ""
+    markdown = ""
+    
+    # Try to get title from various possible locations
+    if hasattr(result, 'title'):
+        title = result.title
+    elif hasattr(result, 'metadata') and hasattr(result.metadata, 'title'):
+        title = result.metadata.title
+    
+    # Get markdown content
+    if hasattr(result, 'markdown'):
+        markdown = result.markdown
+    elif hasattr(result, 'content'):
+        markdown = result.content
+    
+    return title, markdown
 
 def process_content(content, model_name):
     """Process content using llm to generate description and tags."""
