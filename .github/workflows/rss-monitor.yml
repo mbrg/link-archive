@@ -1,0 +1,58 @@
+name: RSS Feed Monitor
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install UV
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Check RSS Feeds
+        id: check_feeds
+        run: |
+          OUTPUT=$(triggers/rss/check_feeds.py)
+          echo "items=$OUTPUT" >> $GITHUB_OUTPUT
+
+      - name: Trigger Receive URL for Each Item
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const items = JSON.parse('${{ steps.check_feeds.outputs.items }}');
+
+            console.log(`Processing ${items.length} items from RSS feeds`);
+
+            for (const item of items) {
+              try {
+                await github.rest.actions.createWorkflowDispatch({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  workflow_id: 'receive-url.yml',
+                  ref: 'main',
+                  inputs: {
+                    url: item.url,
+                    source: `rss:${item.source}`
+                  }
+                });
+
+                console.log(`✓ Triggered: ${item.title}`);
+
+                // Small delay to avoid rate limits
+                await new Promise(resolve => setTimeout(resolve, 1000));
+              } catch (error) {
+                console.error(`✗ Failed: ${item.url} - ${error.message}`);
+              }
+            }
