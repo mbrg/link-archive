@@ -19,31 +19,6 @@ tags:
 title: What GreyNoise Learned from Deploying MCP Honeypots
 ---
 
-GreyNoise Launches Block: Fully configurable, real-time blocklists
-
-[Learn More\\
-![](https://cdn.prod.website-files.com/667dd40ebb8095e89f275639/667dd40ebb8095e89f275b5d_arrow-right-icon-black.svg)](https://www.greynoise.io/products/greynoise-block)
-
-[![](https://cdn.prod.website-files.com/667dd40ebb8095e89f275639/667dd40ebb8095e89f275b5c_x-icon-black.svg)](https://www.greynoise.io/blog/deploying-mcp-honeypots#)
-
-[![GreyNoise logo](https://cdn.prod.website-files.com/667dd40ebb8095e89f275639/667dd40ebb8095e89f27569d_GN_Logotype_20220410.svg)](https://www.greynoise.io/)
-
-[Login](https://viz.greynoise.io/login)
-
-[Search for free](https://viz.greynoise.io/)
-
-[Get a demo](https://www.greynoise.io/contact/sales)
-
-[Blog](https://www.greynoise.io/blog)
-
->
-
-[Insights](https://www.greynoise.io/category/insights)
-
-Follow us
-
-[Insights](https://www.greynoise.io/category/insights)
-
 # What GreyNoise Learned from Deploying MCP Honeypots
 
 Noah Stone
