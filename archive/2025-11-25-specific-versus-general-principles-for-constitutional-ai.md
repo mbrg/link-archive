@@ -16,7 +16,7 @@ tags:
 - Language Models
 - Reinforcement Learning
 - Constitutional AI
-title: intro_figure.png
+title: Specific versus General Principles for Constitutional AI
 ---
 
 # Specific versus General Principles for Constitutional AI

@@ -9,7 +9,7 @@ description: "The paper by Kundu et al. presents a novel approach called Constit
   \ similar performance to those trained with specific behavioral guidelines, the\
   \ study also highlights that detailed constitutions enhance fine-grained control,\
   \ suggesting that both specific and general principles are vital for safe AI deployment."
-link: /archive/2025-11-25-intro-figure-png
+link: /archive/2025-11-25-specific-versus-general-principles-for-constitutional-ai
 tags:
 - AI Safety
 - AI Ethics
@@ -17,7 +17,7 @@ tags:
 - Reinforcement Learning
 - Constitutional AI
 - weblog
-title: intro_figure.png
+title: Specific versus General Principles for Constitutional AI
 type: weblog
 ---
 
