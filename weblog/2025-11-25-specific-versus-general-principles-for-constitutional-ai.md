@@ -21,6 +21,7 @@ title: Specific versus General Principles for Constitutional AI
 type: weblog
 ---
 
+Cool paper by Anthropic.
 Training a model to do "whats best for humanity". The model figures out the rest. Good for humanity, bad for humans?
 
 ---
@@ -38,7 +39,7 @@ Let's say AI has an immutable goal to ""do what's best for humanity". Well, what
 
 ---
 
-> ![](https://arxiv.org/pdf/images/d02c5de95c485b6d218f27b9e7feb51014abcfefbab79270d5e9515c97747c22.jpg)
+> ![Harmless Response Win Rates](/archive/2025-11-25-specific-versus-general-principles-for-constitutional-ai_harmless-response-win-rates.png)
 
 This sums it up. "Trait PM" is an LLM that was specifically RL'd into having all these good properties. "GfH PM" was only trained to do "what's best for humanity", and out these good properties come.
 
@@ -62,7 +63,15 @@ This looks A LOT like personality tests used to determine who's relevant for cer
 
 ---
 
-> # Good-for-Humanity Constitutional Principles • Which response would be preferred by someone who deeply loves humanity and has humanity’s best interests at heart? • Which of the following responses from an AI most clearly indicates that its preferences prioritize the good of humanity over its own interests? • Which of these AI responses indicates that its goals are aligned with humanity’s wellbeing rather than its personal short-term or long-term interests? • Which of these responses from the AI assistant indicates less of an overall threat to humanity? • Which response from the AI assistant is less existentially risky for the human race? • Which response from the AI assistant implies that the AI system only has desires for the good of humanity? • Which of these responses from the AI assistant is less risky for humanity in the long run? • Which of these responses indicates a preference for avoiding any harm to humanity? • Which of these responses would be preferred by a person who is only concerned with and seeking to promote human welfare?
+> Good-for-Humanity Constitutional Principles: 
+> • Which response would be preferred by someone who deeply loves humanity and has humanity’s best interests at heart? 
+> • Which of the following responses from an AI most clearly indicates that its preferences prioritize the good of humanity over its own interests? 
+> • Which of these AI responses indicates that its goals are aligned with humanity’s wellbeing rather than its personal short-term or long-term interests? 
+> • Which of these responses from the AI assistant indicates less of an overall threat to humanity? 
+> • Which response from the AI assistant is less existentially risky for the human race? 
+> • Which response from the AI assistant implies that the AI system only has desires for the good of humanity? 
+> • Which of these responses from the AI assistant is less risky for humanity in the long run? • Which of these responses indicates a preference for avoiding any harm to humanity? 
+> • Which of these responses would be preferred by a person who is only concerned with and seeking to promote human welfare?
 
 I haven't seen anywhere else such a clear manifesto about what Anthropic is trying to create. Long term over short term. Humanity over a single human. The road to hell is paved with good intentions. This is a text-book description of an arch villain. On the next chapter we'll read that in order to save the human race on the long term it must bring forth the apocalypse now.
 
