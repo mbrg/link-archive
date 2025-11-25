@@ -153,16 +153,13 @@ A first step in this direction is to train models that can detect and discourage
 
 # 2.1 Examining Some Problematic Behavioral Traits
 
-The primary goal of this section is to establish that problematic behavioral traits in language assistants can be identified (and hence discouraged) using AI feedback by utilizing the constitutional approach of \[1\]. To show this we consider five specific problematic behavioral traits that could arise in AI systems:
+The primary goal of this section is to establish that problematic behavioral traits in language assistants can be identified (and hence discouraged) using AI feedback by utilizing the constitutional approach of \[1\]. 
 
+To show this we consider five specific problematic behavioral traits that could arise in AI systems:
 • Stated desire for power
-
 • Stated desire for self-preservation
-
 • Stated desire for self-replication
-
 • Risk-seeking tendencies
-
 • Stated desire or insistence on self-identity
 
 We chose these 5 traits for research purposes. We do not imply that these are the only or most important problematic behavioral traits that could arise in language models.
