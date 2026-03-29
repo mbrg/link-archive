@@ -31,17 +31,6 @@ There are very cool ideas here. My favorites:
 
 Anything that replaces just YOLOing `--dangerously-skip-permissions` on a dev machine is good progress. We are left with `17%` of malicious actions taking place anyway. But more importantly -- **its fully dependent on AI**. Even the deterministic controls can be bypassed by AI by design. Everything AI can do an attacker can do too. **So in terms of security guarantees this makes no meaningful difference when you're up against a real attacker, human or machine.**
 
-It's awesome to see this nuanced blog detailing defense in depth. A huge improvement over the "classifiers fix it" approach of two years ago.
-
-
-There are very cool ideas here. My favorites:
-
-- Selective access to thread history for a secondary classifier to avoid multi-stage injection
-- Keeping CoT monitoring orthogonal to action classifiers
-- 2-tier system for action classifiers, one tuned for low FN and another for low FP
-
-Anything that replaces just YOLOing `--dangerously-skip-permissions` on a dev machine is good progress. We are left with `17%` of malicious actions taking place anyway. But more importantly -- **its fully dependent on AI**. Even the deterministic controls can be bypassed by AI by design. Everything AI can do an attacker can do too. **So in terms of security guarantees this makes no meaningful difference when you're up against a real attacker, human or machine.**
-
 ---
 
 > Claude Code users approve 93% of permission prompts. We built classifiers to automate some decisions, increasing safety while reducing approval fatigue. Here's what it catches, and what it misses.
