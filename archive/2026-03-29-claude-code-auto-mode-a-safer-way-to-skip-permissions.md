@@ -20,8 +20,6 @@ title: 'Claude Code auto mode: a safer way to skip permissions'
 
 [Engineering at Anthropic](https://www.anthropic.com/engineering)
 
-![](https://www-cdn.anthropic.com/images/4zrzovbb/website/590360609ccdf39715a8ec6916b52447dcb31f16-1000x1000.svg)
-
 # Claude Code auto mode: a safer way to skip permissions
 
 Published Mar 25, 2026
